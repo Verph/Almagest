@@ -1,0 +1,294 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "body": "skybox"
+      },
+      "apply": {
+        "model": "almagest:block/skybox/milky_way"
+      }
+    },
+    {
+      "when": {
+        "body": "mercury"
+      },
+      "apply": {
+        "model": "almagest:block/planets/mercury"
+      }
+    },
+    {
+      "when": {
+        "body": "venus"
+      },
+      "apply": {
+        "model": "almagest:block/planets/venus"
+      }
+    },
+    {
+      "when": {
+        "body": "earth"
+      },
+      "apply": {
+        "model": "almagest:block/planets/earth"
+      }
+    },
+    {
+      "when": {
+        "body": "mars"
+      },
+      "apply": {
+        "model": "almagest:block/planets/mars"
+      }
+    },
+    {
+      "when": {
+        "body": "jupiter"
+      },
+      "apply": {
+        "model": "almagest:block/planets/jupiter"
+      }
+    },
+    {
+      "when": {
+        "body": "saturn"
+      },
+      "apply": {
+        "model": "almagest:block/planets/saturn"
+      }
+    },
+    {
+      "when": {
+        "body": "uranus"
+      },
+      "apply": {
+        "model": "almagest:block/planets/uranus"
+      }
+    },
+    {
+      "when": {
+        "body": "neptune"
+      },
+      "apply": {
+        "model": "almagest:block/planets/neptune"
+      }
+    },
+    {
+      "when": {
+        "body": "1_ceres"
+      },
+      "apply": {
+        "model": "almagest:block/minor_planets/ceres"
+      }
+    },
+    {
+      "when": {
+        "body": "136199_eris_2003_ub313"
+      },
+      "apply": {
+        "model": "almagest:block/minor_planets/eris"
+      }
+    },
+    {
+      "when": {
+        "body": "136108_haumea_2003_el61"
+      },
+      "apply": {
+        "model": "almagest:block/minor_planets/haumea"
+      }
+    },
+    {
+      "when": {
+        "body": "136472_makemake_2005_fy9"
+      },
+      "apply": {
+        "model": "almagest:block/minor_planets/makemake"
+      }
+    },
+    {
+      "when": {
+        "body": "134340_pluto_1930_bm"
+      },
+      "apply": {
+        "model": "almagest:block/minor_planets/pluto"
+      }
+    },
+    {
+      "when": {
+        "body": "90377_sedna_2003_vb12"
+      },
+      "apply": {
+        "model": "almagest:block/minor_planets/sedna"
+      }
+    },
+    {
+      "when": {
+        "body": "ariel"
+      },
+      "apply": {
+        "model": "almagest:block/moons/ariel"
+      }
+    },
+    {
+      "when": {
+        "body": "callisto"
+      },
+      "apply": {
+        "model": "almagest:block/moons/callisto"
+      }
+    },
+    {
+      "when": {
+        "body": "charon"
+      },
+      "apply": {
+        "model": "almagest:block/moons/charon"
+      }
+    },
+    {
+      "when": {
+        "body": "dione"
+      },
+      "apply": {
+        "model": "almagest:block/moons/dione"
+      }
+    },
+    {
+      "when": {
+        "body": "enceladus"
+      },
+      "apply": {
+        "model": "almagest:block/moons/enceladus"
+      }
+    },
+    {
+      "when": {
+        "body": "europa"
+      },
+      "apply": {
+        "model": "almagest:block/moons/europa"
+      }
+    },
+    {
+      "when": {
+        "body": "ganymede"
+      },
+      "apply": {
+        "model": "almagest:block/moons/ganymede"
+      }
+    },
+    {
+      "when": {
+        "body": "iapetus"
+      },
+      "apply": {
+        "model": "almagest:block/moons/iapetus"
+      }
+    },
+    {
+      "when": {
+        "body": "io"
+      },
+      "apply": {
+        "model": "almagest:block/moons/io"
+      }
+    },
+    {
+      "when": {
+        "body": "mimas"
+      },
+      "apply": {
+        "model": "almagest:block/moons/mimas"
+      }
+    },
+    {
+      "when": {
+        "body": "miranda"
+      },
+      "apply": {
+        "model": "almagest:block/moons/miranda"
+      }
+    },
+    {
+      "when": {
+        "body": "moon",
+        "alternative": false
+      },
+      "apply": {
+        "model": "almagest:block/moons/moon"
+      }
+    },
+    {
+      "when": {
+        "body": "moon",
+        "alternative": true
+      },
+      "apply": {
+        "model": "almagest:block/moons/moon_majora"
+      }
+    },
+    {
+      "when": {
+        "body": "oberon"
+      },
+      "apply": {
+        "model": "almagest:block/moons/oberon"
+      }
+    },
+    {
+      "when": {
+        "body": "rhea"
+      },
+      "apply": {
+        "model": "almagest:block/moons/rhea"
+      }
+    },
+    {
+      "when": {
+        "body": "tethys"
+      },
+      "apply": {
+        "model": "almagest:block/moons/tethys"
+      }
+    },
+    {
+      "when": {
+        "body": "titan"
+      },
+      "apply": {
+        "model": "almagest:block/moons/titan"
+      }
+    },
+    {
+      "when": {
+        "body": "titania"
+      },
+      "apply": {
+        "model": "almagest:block/moons/titania"
+      }
+    },
+    {
+      "when": {
+        "body": "triton"
+      },
+      "apply": {
+        "model": "almagest:block/moons/triton"
+      }
+    },
+    {
+      "when": {
+        "body": "umbriel"
+      },
+      "apply": {
+        "model": "almagest:block/moons/umbriel"
+      }
+    },
+    {
+      "when": {
+        "body": "comet"
+      },
+      "apply": {
+        "model": "almagest:block/comets/comet"
+      }
+    }
+  ]
+}

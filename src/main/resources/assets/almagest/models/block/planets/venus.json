@@ -1,0 +1,7 @@
+{
+  "parent": "almagest:block/default_cube_atmosphere",
+  "textures": {
+  	"surface": "almagest:block/planets/venus",
+  	"atmosphere": "almagest:block/planets/venus_atmosphere"
+  }
+}

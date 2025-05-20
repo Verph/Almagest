@@ -1,0 +1,36 @@
+{
+	"credit": "Made with Blockbench",
+    "parent": "block/block",
+    "ambientocclusion": true,
+	"textures": {
+		"particle": "#surface"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [4, 8, 8, 16], "texture": "#surface"},
+				"east": {"uv": [0, 8, 4, 16], "texture": "#surface"},
+				"south": {"uv": [12, 8, 16, 16], "texture": "#surface"},
+				"west": {"uv": [8, 8, 12, 16], "texture": "#surface"},
+				"up": {"uv": [4, 0, 8, 8], "rotation": 180, "texture": "#surface"},
+				"down": {"uv": [8, 0, 12, 8], "rotation": 180, "texture": "#surface"}
+			}
+		},
+		{
+			"from": [-0.025, -0.025, -0.025],
+			"to": [16.025, 16.025, 16.025],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [4, 8, 8, 16], "texture": "#atmosphere"},
+				"east": {"uv": [0, 8, 4, 16], "texture": "#atmosphere"},
+				"south": {"uv": [12, 8, 16, 16], "texture": "#atmosphere"},
+				"west": {"uv": [8, 8, 12, 16], "texture": "#atmosphere"},
+				"up": {"uv": [4, 0, 8, 8], "rotation": 180, "texture": "#atmosphere"},
+				"down": {"uv": [8, 0, 12, 8], "rotation": 180, "texture": "#atmosphere"}
+			}
+		}
+	]
+}

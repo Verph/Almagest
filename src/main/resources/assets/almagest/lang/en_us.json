@@ -1,0 +1,7 @@
+{
+    "almagest.key.reload_stellar_data": "Reload Stellar Data",
+    "almagest.key.show_star_name": "Show Name of Star",
+    "almagest.key.show_constellation_name": "Show Name of constellation",
+    "almagest.tooltip.looking_at_star": "Star: ",
+    "almagest.tooltip.looking_at_constellation": "Constellation: "
+}

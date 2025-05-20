@@ -1,0 +1,21 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "almagest.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"refmap": "almagest.refmap.json",
+	"mixins": [
+	],
+	"client": [
+		"client.BlockRenderDispatcherAccessor",
+		"client.GameRendererAccessor",
+		"client.GameRendererMixin",
+		"client.ParticleAccessor",
+		"client.ParticleEngineAccessor",
+		"client.LevelRendererMixin",
+		"client.ParticleEngineMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

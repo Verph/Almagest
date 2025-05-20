@@ -1,0 +1,5695 @@
+﻿{
+    "replace": false,
+    "nebulas": [
+        {
+            "ID": 0,
+            "AlphanumericName": "NGC 1977",
+            "Name": "NGC 1977",
+            "Constellation": "Orion",
+            "RightAscension": 83.825,
+            "Declination": -4.820833333333333,
+            "Pos": [
+                -29.32991957165484,
+                45.47849104574218,
+                497.0628357362101
+            ]
+        },
+        {
+            "ID": 1,
+            "AlphanumericName": "IC 1266",
+            "Name": "IC 1266",
+            "Constellation": "Ara",
+            "RightAscension": 266.3979166666667,
+            "Declination": -46.08861111111111,
+            "Pos": [
+                205.03575724385834,
+                -151.8497908419201,
+                -430.0023014737278
+            ]
+        },
+        {
+            "ID": 2,
+            "AlphanumericName": "IC 1271",
+            "Name": "IC 1271",
+            "Constellation": "Sagittarius",
+            "RightAscension": 271.3041666666667,
+            "Declination": -24.410555555555554,
+            "Pos": [
+                161.02479613617922,
+                338.86881474589984,
+                330.5131486371018
+            ]
+        },
+        {
+            "ID": 3,
+            "AlphanumericName": "IC 1274",
+            "Name": "IC 1274",
+            "Constellation": "Sagittarius",
+            "RightAscension": 272.4583333333333,
+            "Declination": -23.648333333333333,
+            "Pos": [
+                -28.1390453784829,
+                32.700117672736134,
+                498.1354197699426
+            ]
+        },
+        {
+            "ID": 4,
+            "AlphanumericName": "IC 1275",
+            "Name": "IC 1275",
+            "Constellation": "Sagittarius",
+            "RightAscension": 272.52916666666664,
+            "Declination": -23.761666666666667,
+            "Pos": [
+                -69.86294645617757,
+                70.4235387589453,
+                490.0609083584699
+            ]
+        },
+        {
+            "ID": 5,
+            "AlphanumericName": "IC 1283",
+            "Name": "IC 1283",
+            "Constellation": "Sagittarius",
+            "RightAscension": 274.31958333333336,
+            "Declination": -19.76222222222222,
+            "Pos": [
+                -164.97164327353758,
+                -257.506845509028,
+                -395.5686810550328
+            ]
+        },
+        {
+            "ID": 6,
+            "AlphanumericName": "IC 1284",
+            "Name": "IC 1284",
+            "Constellation": "Sagittarius",
+            "RightAscension": 274.4145833333333,
+            "Declination": -19.671944444444446,
+            "Pos": [
+                -155.53478231668396,
+                -302.60498157491867,
+                -366.38662177506546
+            ]
+        },
+        {
+            "ID": 7,
+            "AlphanumericName": "IC 1287",
+            "Name": "IC 1287",
+            "Constellation": "Scutum",
+            "RightAscension": 277.85833333333335,
+            "Declination": -10.795,
+            "Pos": [
+                -17.110111678711128,
+                -98.13564737856736,
+                489.9761614527094
+            ]
+        },
+        {
+            "ID": 8,
+            "AlphanumericName": "IC 1295",
+            "Name": "IC 1295",
+            "ApparentMagnitude": 12.5,
+            "Constellation": "Scutum",
+            "RightAscension": 283.65458333333333,
+            "Declination": -8.82638888888889,
+            "Pos": [
+                -253.14580763238803,
+                -326.476715316513,
+                -281.6560924856527
+            ]
+        },
+        {
+            "ID": 9,
+            "AlphanumericName": "IC 1297",
+            "Name": "IC 1297",
+            "ApparentMagnitude": 10.7,
+            "Constellation": "CoronaAustralis",
+            "RightAscension": 289.3475,
+            "Declination": -39.612500000000004,
+            "Pos": [
+                -159.38641905994746,
+                -52.991648173462956,
+                -470.94357904435515
+            ]
+        },
+        {
+            "ID": 10,
+            "AlphanumericName": "IC 1305",
+            "Name": "IC 1305",
+            "Constellation": "Vulpecula",
+            "RightAscension": 294.825,
+            "Declination": 20.194444444444446,
+            "Pos": [
+                99.09486521642187,
+                -52.184492012916266,
+                487.2955843028881
+            ]
+        },
+        {
+            "ID": 11,
+            "AlphanumericName": "IC 1308",
+            "Name": "IC 1308",
+            "Constellation": "Sagittarius",
+            "RightAscension": 296.27166666666665,
+            "Declination": -14.721388888888889,
+            "Pos": [
+                -157.72016431551296,
+                -226.22190505351924,
+                -417.07073673688035
+            ]
+        },
+        {
+            "ID": 12,
+            "AlphanumericName": "IC 131",
+            "Name": "IC 131",
+            "ApparentMagnitude": 14.0,
+            "Constellation": "Triangulum",
+            "RightAscension": 23.29625,
+            "Declination": 30.752777777777776,
+            "Pos": [
+                -103.46404423853886,
+                -380.20251251068953,
+                -307.80065144564696
+            ]
+        },
+        {
+            "ID": 13,
+            "AlphanumericName": "IC 1318",
+            "Name": "IC 1318",
+            "Constellation": "Cygnus",
+            "RightAscension": 305.55833333333334,
+            "Declination": 40.25666666666667,
+            "Pos": [
+                283.39411450749634,
+                306.0688249676764,
+                275.69847704588057
+            ]
+        },
+        {
+            "ID": 14,
+            "AlphanumericName": "IC 1318A",
+            "Name": "IC 1318A",
+            "Constellation": "Cygnus",
+            "RightAscension": 304.15,
+            "Declination": 41.81666666666667,
+            "Pos": [
+                233.67348426723635,
+                -154.59861044966215,
+                -414.12072200922677
+            ]
+        },
+        {
+            "ID": 15,
+            "AlphanumericName": "IC 1318B",
+            "Name": "IC 1318B",
+            "Constellation": "Cygnus",
+            "RightAscension": 306.975,
+            "Declination": 0.0,
+            "Pos": [
+                310.3817861194834,
+                -391.99891179093754,
+                0.0
+            ]
+        },
+        {
+            "ID": 16,
+            "AlphanumericName": "IC 132",
+            "Name": "IC 132",
+            "ApparentMagnitude": 13.5,
+            "Constellation": "Triangulum",
+            "RightAscension": 23.316666666666666,
+            "Declination": 30.945,
+            "Pos": [
+                -108.1970950951538,
+                -432.23802167078776,
+                -226.85608044549713
+            ]
+        },
+        {
+            "ID": 17,
+            "AlphanumericName": "IC 133",
+            "Name": "IC 133",
+            "ApparentMagnitude": 14.0,
+            "Constellation": "Triangulum",
+            "RightAscension": 23.315833333333334,
+            "Declination": 30.884722222222223,
+            "Pos": [
+                -105.03056462154456,
+                -418.10855804563073,
+                -253.28603235133795
+            ]
+        },
+        {
+            "ID": 18,
+            "AlphanumericName": "IC 1340",
+            "Name": "IC 1340",
+            "Constellation": "Cygnus",
+            "RightAscension": 314.03333333333336,
+            "Declination": 31.048333333333336,
+            "Pos": [
+                462.9025211564094,
+                -58.60438004731372,
+                -179.68523185367772
+            ]
+        },
+        {
+            "ID": 19,
+            "AlphanumericName": "IC 135",
+            "Name": "IC 135",
+            "ApparentMagnitude": 14.0,
+            "Constellation": "Triangulum",
+            "RightAscension": 23.564583333333335,
+            "Declination": 30.619444444444444,
+            "Pos": [
+                0.9224288320246702,
+                -349.6117761965181,
+                -357.4503532936645
+            ]
+        },
+        {
+            "ID": 20,
+            "AlphanumericName": "IC 136",
+            "Name": "IC 136",
+            "ApparentMagnitude": 14.5,
+            "Constellation": "Triangulum",
+            "RightAscension": 23.55625,
+            "Declination": 30.561111111111114,
+            "Pos": [
+                -1.8689364715748662,
+                -328.1735651045067,
+                -377.22489080529056
+            ]
+        },
+        {
+            "ID": 21,
+            "AlphanumericName": "IC 1363",
+            "Name": "IC 1363",
+            "Constellation": "Cygnus",
+            "RightAscension": 317.6666666666667,
+            "Declination": 46.87,
+            "Pos": [
+                451.94931157364937,
+                173.11876650390565,
+                125.58547866800002
+            ]
+        },
+        {
+            "ID": 22,
+            "AlphanumericName": "IC 137",
+            "Name": "IC 137",
+            "ApparentMagnitude": 14.0,
+            "Constellation": "Triangulum",
+            "RightAscension": 23.411666666666665,
+            "Declination": 30.523055555555555,
+            "Pos": [
+                -46.94846026282426,
+                -310.05491913779105,
+                -389.4377860421455
+            ]
+        },
+        {
+            "ID": 23,
+            "AlphanumericName": "IC 1378",
+            "Name": "IC 1378",
+            "Constellation": "Cepheus",
+            "RightAscension": 320.71666666666664,
+            "Declination": 55.46388888888889,
+            "Pos": [
+                224.82801885675804,
+                63.24465914138107,
+                -442.10007354335033
+            ]
+        },
+        {
+            "ID": 24,
+            "AlphanumericName": "IC 139",
+            "Name": "IC 139",
+            "ApparentMagnitude": 14.0,
+            "Constellation": "Triangulum",
+            "RightAscension": 23.497083333333332,
+            "Declination": 30.575833333333332,
+            "Pos": [
+                -21.628919046367816,
+                -332.99502131980597,
+                -372.3526629918304
+            ]
+        },
+        {
+            "ID": 25,
+            "AlphanumericName": "IC 1396",
+            "Name": "IC 1396",
+            "Constellation": "Cepheus",
+            "RightAscension": 324.725,
+            "Declination": 57.48888888888889,
+            "Pos": [
+                -122.85250909123005,
+                -267.98709655405406,
+                403.8442485544611
+            ]
+        },
+        {
+            "ID": 26,
+            "AlphanumericName": "IC 1396A",
+            "Name": "IC 1396A",
+            "Constellation": "Cepheus",
+            "RightAscension": 323.875,
+            "Declination": 57.38333333333333,
+            "Pos": [
+                -321.6027279291006,
+                -96.30553113470958,
+                370.5360037316514
+            ]
+        },
+        {
+            "ID": 27,
+            "AlphanumericName": "IC 1396B",
+            "Name": "IC 1396B",
+            "Constellation": "Cepheus",
+            "RightAscension": 323.625,
+            "Declination": 57.46666666666667,
+            "Pos": [
+                -303.4508199443009,
+                -12.435292174350407,
+                397.1938612109583
+            ]
+        },
+        {
+            "ID": 28,
+            "AlphanumericName": "IC 140",
+            "Name": "IC 140",
+            "ApparentMagnitude": 13.0,
+            "Constellation": "Triangulum",
+            "RightAscension": 23.492083333333333,
+            "Declination": 30.550555555555555,
+            "Pos": [
+                -22.6292256526185,
+                -323.3880815868333,
+                -380.6679219923193
+            ]
+        },
+        {
+            "ID": 29,
+            "AlphanumericName": "IC 1400",
+            "Name": "IC 1400",
+            "Constellation": "Cygnus",
+            "RightAscension": 326.06666666666666,
+            "Declination": 52.96666666666667,
+            "Pos": [
+                -357.59027188348034,
+                276.93747115081834,
+                213.15448512027206
+            ]
+        },
+        {
+            "ID": 30,
+            "AlphanumericName": "IC 1402",
+            "Name": "IC 1402",
+            "Constellation": "Cygnus",
+            "RightAscension": 326.2416666666667,
+            "Declination": 53.263333333333335,
+            "Pos": [
+                -438.0131640623503,
+                230.24882424228443,
+                71.62364863042211
+            ]
+        },
+        {
+            "ID": 31,
+            "AlphanumericName": "IC 142",
+            "Name": "IC 142",
+            "ApparentMagnitude": 14.2,
+            "Constellation": "Triangulum",
+            "RightAscension": 23.4825,
+            "Declination": 30.75611111111111,
+            "Pos": [
+                -31.35191851252902,
+                -393.80666163287856,
+                -306.48551427294444
+            ]
+        },
+        {
+            "ID": 32,
+            "AlphanumericName": "IC 143",
+            "Name": "IC 143",
+            "ApparentMagnitude": 13.7,
+            "Constellation": "Triangulum",
+            "RightAscension": 23.54625,
+            "Declination": 30.778055555555554,
+            "Pos": [
+                -6.3041116005773485,
+                -401.63321773728165,
+                -297.74320577794003
+            ]
+        },
+        {
+            "ID": 33,
+            "AlphanumericName": "IC 1454",
+            "Name": "IC 1454",
+            "ApparentMagnitude": 14.0,
+            "Constellation": "Cepheus",
+            "RightAscension": 340.6020833333333,
+            "Declination": 80.44305555555556,
+            "Pos": [
+                42.06298357771736,
+                157.66197290272936,
+                -472.6239601553858
+            ]
+        },
+        {
+            "ID": 34,
+            "AlphanumericName": "IC 1470",
+            "Name": "IC 1470",
+            "Constellation": "Cepheus",
+            "RightAscension": 346.29333333333335,
+            "Declination": 60.242222222222225,
+            "Pos": [
+                -320.601543934688,
+                -280.1368171918439,
+                -262.1793540313916
+            ]
+        },
+        {
+            "ID": 35,
+            "AlphanumericName": "IC 1537",
+            "Name": "IC 1537",
+            "Constellation": "Sculptor",
+            "RightAscension": 237.375,
+            "Declination": -39.26083333333333,
+            "Pos": [
+                0.8335366544203484,
+                -4.460136325423409,
+                -499.97941197673765
+            ]
+        },
+        {
+            "ID": 36,
+            "AlphanumericName": "IC 155",
+            "Name": "IC 155",
+            "Constellation": "Cassiopeia",
+            "RightAscension": 26.88458333333333,
+            "Declination": 60.61083333333333,
+            "Pos": [
+                54.50044575073549,
+                -297.73506462335956,
+                -397.9742864893347
+            ]
+        },
+        {
+            "ID": 37,
+            "AlphanumericName": "IC 1644",
+            "Name": "IC 1644",
+            "Constellation": "Tucana",
+            "RightAscension": 17.3,
+            "Declination": -73.19555555555556,
+            "Pos": [
+                -6.272416799889839,
+                295.26148013069667,
+                403.46166501728345
+            ]
+        },
+        {
+            "ID": 38,
+            "AlphanumericName": "IC 1747",
+            "Name": "IC 1747",
+            "ApparentMagnitude": 12.0,
+            "Constellation": "Cassiopeia",
+            "RightAscension": 29.399166666666666,
+            "Declination": 63.32277777777778,
+            "Pos": [
+                -190.1932257235156,
+                -397.8218757153197,
+                235.72079265781483
+            ]
+        },
+        {
+            "ID": 39,
+            "AlphanumericName": "IC 1795",
+            "Name": "IC 1795",
+            "Constellation": "Cassiopeia",
+            "RightAscension": 36.63333333333333,
+            "Declination": 62.041666666666664,
+            "Pos": [
+                170.23625248068723,
+                -307.9327462372037,
+                -355.2422302262861
+            ]
+        },
+        {
+            "ID": 40,
+            "AlphanumericName": "IC 1831",
+            "Name": "IC 1831",
+            "Constellation": "Cassiopeia",
+            "RightAscension": 41.0,
+            "Declination": 63.01,
+            "Pos": [
+                -485.8567036173291,
+                -78.05613403501964,
+                88.60306704403564
+            ]
+        },
+        {
+            "ID": 41,
+            "AlphanumericName": "IC 1851",
+            "Name": "IC 1851",
+            "Constellation": "Cassiopeia",
+            "RightAscension": 42.94166666666667,
+            "Declination": 58.31444444444444,
+            "Pos": [
+                -48.98671096892244,
+                83.57513008217151,
+                490.52573814244994
+            ]
+        },
+        {
+            "ID": 42,
+            "AlphanumericName": "IC 1871",
+            "Name": "IC 1871",
+            "Constellation": "Cassiopeia",
+            "RightAscension": 44.34041666666667,
+            "Declination": 60.67222222222222,
+            "Pos": [
+                -260.0783982817267,
+                -97.33628043958826,
+                -415.7942703518139
+            ]
+        },
+        {
+            "ID": 43,
+            "AlphanumericName": "IC 1990",
+            "Name": "IC 1990",
+            "Constellation": "Taurus",
+            "RightAscension": 56.8075,
+            "Declination": 24.333888888888886,
+            "Pos": [
+                337.1472469664596,
+                89.26699077052272,
+                -358.2780180554097
+            ]
+        },
+        {
+            "ID": 44,
+            "AlphanumericName": "IC 1995",
+            "Name": "IC 1995",
+            "Constellation": "Taurus",
+            "RightAscension": 57.577083333333334,
+            "Declination": 25.580833333333334,
+            "Pos": [
+                232.60858644598747,
+                385.9631477398507,
+                216.62339231566324
+            ]
+        },
+        {
+            "ID": 45,
+            "AlphanumericName": "IC 2003",
+            "Name": "IC 2003",
+            "ApparentMagnitude": 11.4,
+            "Constellation": "Perseus",
+            "RightAscension": 59.09166666666667,
+            "Declination": 33.87555555555556,
+            "Pos": [
+                320.6769812008439,
+                -218.7255459961697,
+                315.15933947225983
+            ]
+        },
+        {
+            "ID": 46,
+            "AlphanumericName": "IC 2067",
+            "Name": "IC 2067",
+            "Constellation": "Perseus",
+            "RightAscension": 67.71666666666667,
+            "Declination": 35.44499999999999,
+            "Pos": [
+                -54.162348616082134,
+                311.0027449052513,
+                -387.74183763657646
+            ]
+        },
+        {
+            "ID": 47,
+            "AlphanumericName": "IC 2087",
+            "Name": "IC 2087",
+            "Constellation": "Taurus",
+            "RightAscension": 70.0,
+            "Declination": 25.742222222222225,
+            "Pos": [
+                259.64352962013606,
+                317.27398619940845,
+                286.22099015888955
+            ]
+        },
+        {
+            "ID": 48,
+            "AlphanumericName": "IC 2088",
+            "Name": "IC 2088",
+            "Constellation": "Taurus",
+            "RightAscension": 70.75,
+            "Declination": 27.266666666666666,
+            "Pos": [
+                17.11508188379551,
+                -266.36808864686816,
+                422.79441259638844
+            ]
+        },
+        {
+            "ID": 49,
+            "AlphanumericName": "IC 2105",
+            "Name": "IC 2105",
+            "Constellation": "Dorado",
+            "RightAscension": 72.36125,
+            "Declination": -69.20083333333334,
+            "Pos": [
+                -495.4372029201373,
+                -52.02206328544377,
+                -42.84487010361935
+            ]
+        },
+        {
+            "ID": 50,
+            "AlphanumericName": "IC 2111",
+            "Name": "IC 2111",
+            "Constellation": "Dorado",
+            "RightAscension": 72.96416666666667,
+            "Declination": -69.39361111111111,
+            "Pos": [
+                -365.334200263682,
+                -312.4530612753701,
+                -137.49184200288278
+            ]
+        },
+        {
+            "ID": 51,
+            "AlphanumericName": "IC 2117",
+            "Name": "IC 2117",
+            "Constellation": "Dorado",
+            "RightAscension": 74.30958333333334,
+            "Declination": -68.44222222222223,
+            "Pos": [
+                181.3191365247072,
+                -346.4558420918793,
+                311.5954431796803
+            ]
+        },
+        {
+            "ID": 52,
+            "AlphanumericName": "IC 2144",
+            "Name": "IC 2144",
+            "Constellation": "Taurus",
+            "RightAscension": 87.55833333333334,
+            "Declination": 23.872222222222224,
+            "Pos": [
+                140.23546422891374,
+                -60.32832126658148,
+                -476.12446715712605
+            ]
+        },
+        {
+            "ID": 53,
+            "AlphanumericName": "IC 2149",
+            "Name": "IC 2149",
+            "ApparentMagnitude": 10.6,
+            "Constellation": "Auriga",
+            "RightAscension": 89.09958333333333,
+            "Declination": 46.10527777777778,
+            "Pos": [
+                -110.71700093824558,
+                -237.7591980199073,
+                425.69039155255905
+            ]
+        },
+        {
+            "ID": 54,
+            "AlphanumericName": "IC 2159",
+            "Name": "IC 2159",
+            "Constellation": "Orion",
+            "RightAscension": 92.4875,
+            "Declination": 20.43166666666667,
+            "Pos": [
+                1.0655208119991812,
+                5.555836147700276,
+                499.96799632586396
+            ]
+        },
+        {
+            "ID": 55,
+            "AlphanumericName": "IC 2162",
+            "Name": "IC 2162",
+            "Constellation": "Orion",
+            "RightAscension": 93.275,
+            "Declination": 17.979999999999997,
+            "Pos": [
+                181.61565136645717,
+                -266.5999186740042,
+                -382.02125404452545
+            ]
+        },
+        {
+            "ID": 56,
+            "AlphanumericName": "IC 2165",
+            "Name": "IC 2165",
+            "ApparentMagnitude": 10.5,
+            "Constellation": "CanisMajor",
+            "RightAscension": 95.42791666666666,
+            "Declination": -12.986666666666666,
+            "Pos": [
+                173.82827233617536,
+                422.09176373894076,
+                -204.01537863693193
+            ]
+        },
+        {
+            "ID": 57,
+            "AlphanumericName": "IC 2177",
+            "Name": "IC 2177",
+            "Constellation": "Monoceros",
+            "RightAscension": 106.10541666666667,
+            "Declination": -10.45361111111111,
+            "Pos": [
+                -195.80141929536805,
+                167.8662306701103,
+                428.3488447545164
+            ]
+        },
+        {
+            "ID": 58,
+            "AlphanumericName": "IC 2220",
+            "Name": "IC 2220",
+            "Constellation": "Carina",
+            "RightAscension": 119.21375,
+            "Declination": -59.125277777777775,
+            "Pos": [
+                -416.43994855798707,
+                70.10114304495148,
+                -267.70057711706994
+            ]
+        },
+        {
+            "ID": 59,
+            "AlphanumericName": "IC 2448",
+            "Name": "IC 2448",
+            "ApparentMagnitude": 10.4,
+            "Constellation": "Carina",
+            "RightAscension": 136.77708333333334,
+            "Declination": -69.9413888888889,
+            "Pos": [
+                39.81727889447697,
+                -336.4341550150426,
+                -367.7317550073065
+            ]
+        },
+        {
+            "ID": 60,
+            "AlphanumericName": "IC 2501",
+            "Name": "IC 2501",
+            "ApparentMagnitude": 10.4,
+            "Constellation": "Carina",
+            "RightAscension": 144.69708333333332,
+            "Declination": -60.09138888888889,
+            "Pos": [
+                -452.55534940177864,
+                -84.1391343793003,
+                195.22874223263372
+            ]
+        },
+        {
+            "ID": 61,
+            "AlphanumericName": "IC 2553",
+            "Name": "IC 2553",
+            "ApparentMagnitude": 10.3,
+            "Constellation": "Carina",
+            "RightAscension": 152.33708333333334,
+            "Declination": -62.613055555555555,
+            "Pos": [
+                14.718427010585426,
+                487.8576072457884,
+                108.52798237665758
+            ]
+        },
+        {
+            "ID": 62,
+            "AlphanumericName": "IC 2599",
+            "Name": "IC 2599",
+            "Constellation": "Carina",
+            "RightAscension": 159.3625,
+            "Declination": -58.733333333333334,
+            "Pos": [
+                188.19134268391457,
+                -218.03205729675705,
+                -408.7126625512954
+            ]
+        },
+        {
+            "ID": 63,
+            "AlphanumericName": "IC 2605",
+            "Name": "IC 2605",
+            "Constellation": "LeoMinor",
+            "RightAscension": 162.44791666666666,
+            "Declination": 32.97166666666667,
+            "Pos": [
+                4.590978511386545,
+                -5.96581040641172,
+                499.94332881087905
+            ]
+        },
+        {
+            "ID": 64,
+            "AlphanumericName": "IC 2621",
+            "Name": "IC 2621",
+            "ApparentMagnitude": 11.2,
+            "Constellation": "Carina",
+            "RightAscension": 165.08416666666668,
+            "Declination": -65.24888888888889,
+            "Pos": [
+                56.15359913351084,
+                -370.1615824016236,
+                -331.40183496516573
+            ]
+        },
+        {
+            "ID": 65,
+            "AlphanumericName": "IC 2631",
+            "Name": "IC 2631",
+            "Constellation": "Chamaeleon",
+            "RightAscension": 167.46041666666667,
+            "Declination": -76.61138888888888,
+            "Pos": [
+                -100.95398018347393,
+                -142.9794872827753,
+                -468.3643454635178
+            ]
+        },
+        {
+            "ID": 66,
+            "AlphanumericName": "IC 2872",
+            "Name": "IC 2872",
+            "Constellation": "Centaurus",
+            "RightAscension": 172.06666666666666,
+            "Declination": -62.983333333333334,
+            "Pos": [
+                -371.2952921120121,
+                326.262137291863,
+                -75.45080400632678
+            ]
+        },
+        {
+            "ID": 67,
+            "AlphanumericName": "IC 289",
+            "Name": "IC 289",
+            "ApparentMagnitude": 13.2,
+            "Constellation": "Cassiopeia",
+            "RightAscension": 47.58,
+            "Declination": 61.3175,
+            "Pos": [
+                -25.323152560351968,
+                -12.423878771566638,
+                -499.2037511684728
+            ],
+            "Texture": "IC 289"
+        },
+        {
+            "ID": 68,
+            "AlphanumericName": "IC 2944",
+            "Name": "IC 2944",
+            "Constellation": "Centaurus",
+            "RightAscension": 173.94708333333332,
+            "Declination": -63.01972222222222,
+            "Pos": [
+                -196.38728510041582,
+                -450.235108446008,
+                -93.38298224783458
+            ]
+        },
+        {
+            "ID": 69,
+            "AlphanumericName": "IC 2948",
+            "Name": "IC 2948",
+            "Constellation": "Centaurus",
+            "RightAscension": 174.77083333333334,
+            "Declination": -63.44333333333333,
+            "Pos": [
+                164.10653935332314,
+                -375.06938841713486,
+                -287.0400627331881
+            ]
+        },
+        {
+            "ID": 70,
+            "AlphanumericName": "IC 2966",
+            "Name": "IC 2966",
+            "Constellation": "Musca",
+            "RightAscension": 177.55375,
+            "Declination": -64.87138888888889,
+            "Pos": [
+                12.13866069027506,
+                -225.55465109014068,
+                -446.0692236506025
+            ]
+        },
+        {
+            "ID": 71,
+            "AlphanumericName": "IC 3329",
+            "Name": "IC 3329",
+            "Constellation": "ComaBerenices",
+            "RightAscension": 186.48291666666665,
+            "Declination": 27.564444444444444,
+            "Pos": [
+                162.15663114206637,
+                342.79839136006154,
+                325.87496046430124
+            ]
+        },
+        {
+            "ID": 72,
+            "AlphanumericName": "IC 336",
+            "Name": "IC 336",
+            "Constellation": "Taurus",
+            "RightAscension": 54.25,
+            "Declination": 23.4,
+            "Pos": [
+                53.63435571027062,
+                60.18950217767431,
+                -493.4577790603244
+            ]
+        },
+        {
+            "ID": 73,
+            "AlphanumericName": "IC 341",
+            "Name": "IC 341",
+            "Constellation": "Taurus",
+            "RightAscension": 55.0,
+            "Declination": 0.0,
+            "Pos": [
+                11.063378130977869,
+                -499.8775866793099,
+                0.0
+            ]
+        },
+        {
+            "ID": 74,
+            "AlphanumericName": "IC 349",
+            "Name": "IC 349",
+            "Constellation": "Taurus",
+            "RightAscension": 56.583333333333336,
+            "Declination": 23.939722222222223,
+            "Pos": [
+                184.31691297527,
+                6.39201124777243,
+                -464.7433891767317
+            ],
+            "Texture": "IC 349"
+        },
+        {
+            "ID": 75,
+            "AlphanumericName": "IC 351",
+            "Name": "IC 351",
+            "ApparentMagnitude": 11.9,
+            "Constellation": "Perseus",
+            "RightAscension": 56.8875,
+            "Declination": 35.04722222222222,
+            "Pos": [
+                -416.14912001855083,
+                -146.66074322165127,
+                -235.1819217232878
+            ]
+        },
+        {
+            "ID": 76,
+            "AlphanumericName": "IC 353",
+            "Name": "IC 353",
+            "Constellation": "Taurus",
+            "RightAscension": 58.25125,
+            "Declination": 25.8,
+            "Pos": [
+                -51.610603590037954,
+                389.35478608397074,
+                309.41751106001965
+            ]
+        },
+        {
+            "ID": 77,
+            "AlphanumericName": "IC 354",
+            "Name": "IC 354",
+            "Constellation": "Taurus",
+            "RightAscension": 58.25,
+            "Declination": 0.0,
+            "Pos": [
+                -65.08275525705947,
+                495.7461396401889,
+                0.0
+            ]
+        },
+        {
+            "ID": 78,
+            "AlphanumericName": "IC 3551",
+            "Name": "IC 3551",
+            "Constellation": "ComaBerenices",
+            "RightAscension": 188.97416666666666,
+            "Declination": 27.96388888888889,
+            "Pos": [
+                -422.6030202676244,
+                -219.26425804370785,
+                152.74119419863175
+            ]
+        },
+        {
+            "ID": 79,
+            "AlphanumericName": "IC 3552",
+            "Name": "IC 3552",
+            "Constellation": "ComaBerenices",
+            "RightAscension": 188.975,
+            "Declination": 27.993333333333336,
+            "Pos": [
+                -426.22678971528893,
+                -221.59542232767635,
+                138.6585465538191
+            ]
+        },
+        {
+            "ID": 80,
+            "AlphanumericName": "IC 3555",
+            "Name": "IC 3555",
+            "Constellation": "ComaBerenices",
+            "RightAscension": 188.98333333333332,
+            "Declination": 27.990000000000002,
+            "Pos": [
+                -423.9547331480387,
+                -224.92171378776217,
+                140.25907068047778
+            ]
+        },
+        {
+            "ID": 81,
+            "AlphanumericName": "IC 3563",
+            "Name": "IC 3563",
+            "Constellation": "ComaBerenices",
+            "RightAscension": 189.02958333333333,
+            "Declination": 27.92666666666667,
+            "Pos": [
+                -404.6331013239449,
+                -239.27388084172088,
+                170.35276123358878
+            ]
+        },
+        {
+            "ID": 82,
+            "AlphanumericName": "IC 3564",
+            "Name": "IC 3564",
+            "Constellation": "ComaBerenices",
+            "RightAscension": 189.03333333333333,
+            "Declination": 27.92777777777778,
+            "Pos": [
+                -403.8952960857706,
+                -240.8863748548418,
+                169.83033948349842
+            ]
+        },
+        {
+            "ID": 83,
+            "AlphanumericName": "IC 3568",
+            "Name": "IC 3568",
+            "ApparentMagnitude": 10.6,
+            "Constellation": "Camelopardalis",
+            "RightAscension": 188.27875,
+            "Declination": 82.56416666666667,
+            "Pos": [
+                310.0783118663826,
+                -68.30140158348625,
+                386.24650037485867
+            ]
+        },
+        {
+            "ID": 84,
+            "AlphanumericName": "IC 360",
+            "Name": "IC 360",
+            "Constellation": "Taurus",
+            "RightAscension": 62.25000000000001,
+            "Declination": 26.1,
+            "Pos": [
+                237.08219415316327,
+                -155.9574483294349,
+                411.66650036904076
+            ]
+        },
+        {
+            "ID": 85,
+            "AlphanumericName": "IC 3668",
+            "Name": "IC 3668",
+            "Constellation": "CanesVenatici",
+            "RightAscension": 190.38625,
+            "Declination": 41.12583333333333,
+            "Pos": [
+                150.8849635513381,
+                -455.4711462622231,
+                -140.6405442846689
+            ]
+        },
+        {
+            "ID": 86,
+            "AlphanumericName": "IC 3669",
+            "Name": "IC 3669",
+            "Constellation": "CanesVenatici",
+            "RightAscension": 190.40583333333333,
+            "Declination": 41.140277777777776,
+            "Pos": [
+                159.08199052826615,
+                -450.4665031688107,
+                -147.55625982122373
+            ]
+        },
+        {
+            "ID": 87,
+            "AlphanumericName": "IC 405",
+            "Name": "IC 405",
+            "Constellation": "Auriga",
+            "RightAscension": 79.1225,
+            "Declination": 34.35611111111111,
+            "Pos": [
+                409.05517501636194,
+                269.57178783023016,
+                100.02457197282517
+            ]
+        },
+        {
+            "ID": 88,
+            "AlphanumericName": "IC 417",
+            "Name": "IC 417",
+            "Constellation": "Auriga",
+            "RightAscension": 82.02458333333334,
+            "Declination": 34.42388888888889,
+            "Pos": [
+                -466.6479512515928,
+                -166.7391224931357,
+                66.61647411046418
+            ]
+        },
+        {
+            "ID": 89,
+            "AlphanumericName": "IC 418",
+            "Name": "IC 418",
+            "ApparentMagnitude": 9.3,
+            "Constellation": "Lepus",
+            "RightAscension": 81.86791666666667,
+            "Declination": -12.696666666666667,
+            "Pos": [
+                487.1641378547051,
+                91.9282413530824,
+                -64.96384556052226
+            ],
+            "Texture": "IC 418"
+        },
+        {
+            "ID": 90,
+            "AlphanumericName": "IC 419",
+            "Name": "IC 419",
+            "Constellation": "Auriga",
+            "RightAscension": 82.71666666666667,
+            "Declination": 30.118055555555557,
+            "Pos": [
+                68.77618106587467,
+                115.90552646456909,
+                -481.4932459058643
+            ]
+        },
+        {
+            "ID": 91,
+            "AlphanumericName": "IC 4191",
+            "Name": "IC 4191",
+            "ApparentMagnitude": 10.6,
+            "Constellation": "Musca",
+            "RightAscension": 197.19791666666666,
+            "Declination": -67.64305555555556,
+            "Pos": [
+                -37.0050259002867,
+                32.61473115955716,
+                497.56095844580585
+            ]
+        },
+        {
+            "ID": 92,
+            "AlphanumericName": "IC 420",
+            "Name": "IC 420",
+            "Constellation": "Orion",
+            "RightAscension": 83.03916666666667,
+            "Declination": -4.504722222222222,
+            "Pos": [
+                -21.79612430299119,
+                -100.75814641090257,
+                489.25731971755687
+            ]
+        },
+        {
+            "ID": 93,
+            "AlphanumericName": "IC 423",
+            "Name": "IC 423",
+            "Constellation": "Orion",
+            "RightAscension": 83.34166666666667,
+            "Declination": -36.86666666666667,
+            "Pos": [
+                -30.06670304915755,
+                335.1888844279322,
+                369.7896768755344
+            ]
+        },
+        {
+            "ID": 94,
+            "AlphanumericName": "IC 424",
+            "Name": "IC 424",
+            "Constellation": "Orion",
+            "RightAscension": 83.405,
+            "Declination": -24.783333333333335,
+            "Pos": [
+                -71.50209807196525,
+                464.31456728160714,
+                171.17077023078718
+            ]
+        },
+        {
+            "ID": 95,
+            "AlphanumericName": "IC 425",
+            "Name": "IC 425",
+            "Constellation": "Auriga",
+            "RightAscension": 84.3,
+            "Declination": 32.416666666666664,
+            "Pos": [
+                -233.76854039478903,
+                134.78027398135413,
+                420.9353243280979
+            ]
+        },
+        {
+            "ID": 96,
+            "AlphanumericName": "IC 426",
+            "Name": "IC 426",
+            "Constellation": "Orion",
+            "RightAscension": 84.12916666666666,
+            "Declination": -17.9,
+            "Pos": [
+                -223.73759005030047,
+                186.1057998480168,
+                406.5785558307443
+            ]
+        },
+        {
+            "ID": 97,
+            "AlphanumericName": "IC 427",
+            "Name": "IC 427",
+            "Constellation": "Orion",
+            "RightAscension": 84.075,
+            "Declination": -6.616666666666667,
+            "Pos": [
+                -346.33238193491115,
+                321.3516777454545,
+                -163.66728577657915
+            ]
+        },
+        {
+            "ID": 98,
+            "AlphanumericName": "IC 428",
+            "Name": "IC 428",
+            "Constellation": "Orion",
+            "RightAscension": 84.10083333333333,
+            "Declination": -6.451666666666667,
+            "Pos": [
+                -369.87466483552834,
+                325.82684588642803,
+                -83.84270279820095
+            ]
+        },
+        {
+            "ID": 99,
+            "AlphanumericName": "IC 429",
+            "Name": "IC 429",
+            "Constellation": "Orion",
+            "RightAscension": 84.58541666666666,
+            "Declination": -7.042222222222222,
+            "Pos": [
+                -352.5596555856439,
+                85.37533968718856,
+                -344.1115235307143
+            ]
+        },
+        {
+            "ID": 100,
+            "AlphanumericName": "IC 430",
+            "Name": "IC 430",
+            "Constellation": "Orion",
+            "RightAscension": 84.62666666666667,
+            "Declination": -7.0874999999999995,
+            "Pos": [
+                -340.139803026864,
+                67.65286488160388,
+                -360.17773983154154
+            ]
+        },
+        {
+            "ID": 101,
+            "AlphanumericName": "IC 431",
+            "Name": "IC 431",
+            "Constellation": "Orion",
+            "RightAscension": 85.05833333333334,
+            "Declination": -1.4633333333333334,
+            "Pos": [
+                -52.14998923981948,
+                -12.504234021627425,
+                -497.115703588027
+            ]
+        },
+        {
+            "ID": 102,
+            "AlphanumericName": "IC 432",
+            "Name": "IC 432",
+            "Constellation": "Orion",
+            "RightAscension": 85.22916666666667,
+            "Declination": -1.5066666666666666,
+            "Pos": [
+                -29.4359370294414,
+                -12.659788513456373,
+                -498.9721989910794
+            ]
+        },
+        {
+            "ID": 103,
+            "AlphanumericName": "IC 434",
+            "Name": "IC 434",
+            "Constellation": "Orion",
+            "RightAscension": 85.25,
+            "Declination": -2.4533333333333336,
+            "Pos": [
+                351.5027853061533,
+                159.93131168677849,
+                -317.5968631207852
+            ],
+            "Texture": "IC 434"
+        },
+        {
+            "ID": 104,
+            "AlphanumericName": "IC 435",
+            "Name": "IC 435",
+            "Constellation": "Orion",
+            "RightAscension": 85.75,
+            "Declination": -2.312777777777778,
+            "Pos": [
+                202.8051815084082,
+                270.23973666184725,
+                -368.565520745331
+            ]
+        },
+        {
+            "ID": 105,
+            "AlphanumericName": "IC 439",
+            "Name": "IC 439",
+            "Constellation": "Auriga",
+            "RightAscension": 89.175,
+            "Declination": 32.016666666666666,
+            "Pos": [
+                145.44936473004594,
+                385.962037442276,
+                282.62658748432204
+            ]
+        },
+        {
+            "ID": 106,
+            "AlphanumericName": "IC 4406",
+            "Name": "IC 4406",
+            "ApparentMagnitude": 10.2,
+            "Constellation": "Lupus",
+            "RightAscension": 215.61,
+            "Declination": -44.150555555555556,
+            "Pos": [
+                -196.89832315511657,
+                451.90692426147126,
+                -83.73280207445652
+            ]
+        },
+        {
+            "ID": 107,
+            "AlphanumericName": "IC 443",
+            "Name": "IC 443",
+            "Constellation": "Gemini",
+            "RightAscension": 94.15,
+            "Declination": 22.516666666666666,
+            "Pos": [
+                -430.46603501005995,
+                42.225456322515114,
+                -250.8306271990588
+            ],
+            "Texture": "IC 443"
+        },
+        {
+            "ID": 108,
+            "AlphanumericName": "IC 444",
+            "Name": "IC 444",
+            "Constellation": "Gemini",
+            "RightAscension": 95.275,
+            "Declination": 23.1,
+            "Pos": [
+                -115.25539132139392,
+                -190.72516586798343,
+                -447.5936839098409
+            ]
+        },
+        {
+            "ID": 109,
+            "AlphanumericName": "IC 446",
+            "Name": "IC 446",
+            "Constellation": "Monoceros",
+            "RightAscension": 97.775,
+            "Declination": 10.459722222222222,
+            "Pos": [
+                236.53929502869522,
+                96.02384271429555,
+                -429.91694958178624
+            ]
+        },
+        {
+            "ID": 110,
+            "AlphanumericName": "IC 447",
+            "Name": "IC 447",
+            "Constellation": "Monoceros",
+            "RightAscension": 97.775,
+            "Declination": 9.866666666666667,
+            "Pos": [
+                418.7810348728455,
+                170.00542856729874,
+                -213.82375707221505
+            ]
+        },
+        {
+            "ID": 111,
+            "AlphanumericName": "IC 448",
+            "Name": "IC 448",
+            "Constellation": "Monoceros",
+            "RightAscension": 98.1875,
+            "Declination": 7.388333333333334,
+            "Pos": [
+                -156.71266112637522,
+                -160.75409642444754,
+                446.76533250180603
+            ]
+        },
+        {
+            "ID": 112,
+            "AlphanumericName": "IC 4591",
+            "Name": "IC 4591",
+            "Constellation": "Scorpius",
+            "RightAscension": 243.075,
+            "Declination": -27.92777777777778,
+            "Pos": [
+                182.45334062852118,
+                433.4379243725824,
+                -169.83033948349842
+            ]
+        },
+        {
+            "ID": 113,
+            "AlphanumericName": "IC 4592",
+            "Name": "IC 4592",
+            "Constellation": "Scorpius",
+            "RightAscension": 242.99833333333333,
+            "Declination": -19.459722222222222,
+            "Pos": [
+                -187.4419519084781,
+                -364.3929024594293,
+                -286.501880101916
+            ]
+        },
+        {
+            "ID": 114,
+            "AlphanumericName": "IC 4593",
+            "Name": "IC 4593",
+            "ApparentMagnitude": 10.7,
+            "Constellation": "Hercules",
+            "RightAscension": 242.93541666666667,
+            "Declination": 12.071944444444444,
+            "Pos": [
+                -225.5316725024547,
+                -377.943893046291,
+                -237.26331028471142
+            ]
+        },
+        {
+            "ID": 115,
+            "AlphanumericName": "IC 4599",
+            "Name": "IC 4599",
+            "Constellation": "Scorpius",
+            "RightAscension": 244.84666666666666,
+            "Declination": -42.25944444444445,
+            "Pos": [
+                -74.26237026383953,
+                14.865198856031506,
+                494.2308430538983
+            ]
+        },
+        {
+            "ID": 116,
+            "AlphanumericName": "IC 4601",
+            "Name": "IC 4601",
+            "Constellation": "Scorpius",
+            "RightAscension": 245.075,
+            "Declination": -20.081666666666667,
+            "Pos": [
+                166.0451635446903,
+                5.111324678522572,
+                -471.5960962767268
+            ]
+        },
+        {
+            "ID": 117,
+            "AlphanumericName": "IC 4603",
+            "Name": "IC 4603",
+            "Constellation": "Ophiuchus",
+            "RightAscension": 246.35,
+            "Declination": -24.466666666666665,
+            "Pos": [
+                102.97235094952683,
+                379.4011639156316,
+                308.95218361324385
+            ]
+        },
+        {
+            "ID": 118,
+            "AlphanumericName": "IC 4604",
+            "Name": "IC 4604",
+            "Constellation": "Ophiuchus",
+            "RightAscension": 246.3875,
+            "Declination": -23.443333333333335,
+            "Pos": [
+                -13.345985326896503,
+                -57.64197774972305,
+                496.4869455250104
+            ]
+        },
+        {
+            "ID": 119,
+            "AlphanumericName": "IC 4605",
+            "Name": "IC 4605",
+            "Constellation": "Scorpius",
+            "RightAscension": 247.55208333333334,
+            "Declination": -25.114722222222223,
+            "Pos": [
+                -402.8449182418122,
+                296.03177106958924,
+                9.00901571482374
+            ]
+        },
+        {
+            "ID": 120,
+            "AlphanumericName": "IC 4628",
+            "Name": "IC 4628",
+            "Constellation": "Scorpius",
+            "RightAscension": 254.25,
+            "Declination": -40.45666666666667,
+            "Pos": [
+                452.50666799066954,
+                -100.71659732805264,
+                -187.33361269841794
+            ]
+        },
+        {
+            "ID": 121,
+            "AlphanumericName": "IC 4634",
+            "Name": "IC 4634",
+            "ApparentMagnitude": 10.9,
+            "Constellation": "Ophiuchus",
+            "RightAscension": 255.39,
+            "Declination": -21.825555555555557,
+            "Pos": [
+                298.3759353361548,
+                392.6563001223995,
+                -82.41863373329412
+            ]
+        },
+        {
+            "ID": 122,
+            "AlphanumericName": "IC 4637",
+            "Name": "IC 4637",
+            "ApparentMagnitude": 12.5,
+            "Constellation": "Scorpius",
+            "RightAscension": 256.29333333333335,
+            "Declination": -40.88472222222222,
+            "Pos": [
+                -125.2908582892756,
+                483.54743671383363,
+                22.001756216667914
+            ]
+        },
+        {
+            "ID": 123,
+            "AlphanumericName": "IC 4642",
+            "Name": "IC 4642",
+            "Constellation": "Ara",
+            "RightAscension": 257.93875,
+            "Declination": -55.39944444444444,
+            "Pos": [
+                193.6806487947411,
+                65.94086436280715,
+                456.22320051651695
+            ]
+        },
+        {
+            "ID": 124,
+            "AlphanumericName": "IC 4657",
+            "Name": "IC 4657",
+            "Constellation": "Ophiuchus",
+            "RightAscension": 263.175,
+            "Declination": -17.525,
+            "Pos": [
+                91.72763981626655,
+                -80.25405730816064,
+                484.91785529027055
+            ]
+        },
+        {
+            "ID": 125,
+            "AlphanumericName": "IC 466",
+            "Name": "IC 466",
+            "Constellation": "Monoceros",
+            "RightAscension": 107.16208333333333,
+            "Declination": -4.317222222222222,
+            "Pos": [
+                -180.947477515907,
+                -65.62747228362021,
+                461.4661908117354
+            ]
+        },
+        {
+            "ID": 126,
+            "AlphanumericName": "IC 4663",
+            "Name": "IC 4663",
+            "ApparentMagnitude": 12.5,
+            "Constellation": "Scorpius",
+            "RightAscension": 266.3695833333333,
+            "Declination": -44.904444444444444,
+            "Pos": [
+                -237.54456176953633,
+                186.57415716847254,
+                -398.45032946478165
+            ]
+        },
+        {
+            "ID": 127,
+            "AlphanumericName": "IC 4670",
+            "Name": "IC 4670",
+            "ApparentMagnitude": 12.0,
+            "Constellation": "Sagittarius",
+            "RightAscension": 268.77916666666664,
+            "Declination": -21.74416666666667,
+            "Pos": [
+                -83.45488291425734,
+                477.5906611900593,
+                -122.23928526382021
+            ]
+        },
+        {
+            "ID": 128,
+            "AlphanumericName": "IC 4673",
+            "Name": "IC 4673",
+            "ApparentMagnitude": 13.0,
+            "Constellation": "Sagittarius",
+            "RightAscension": 270.82666666666665,
+            "Declination": -27.10611111111111,
+            "Pos": [
+                -155.98356280573128,
+                -118.50518966014086,
+                -460.02787758791806
+            ]
+        },
+        {
+            "ID": 129,
+            "AlphanumericName": "IC 4677",
+            "Name": "IC 4677",
+            "Constellation": "Draco",
+            "RightAscension": 269.5654166666667,
+            "Declination": 66.63388888888889,
+            "Pos": [
+                -323.2950456283962,
+                226.70445069152555,
+                -306.733443740305
+            ]
+        },
+        {
+            "ID": 130,
+            "AlphanumericName": "IC 4678",
+            "Name": "IC 4678",
+            "Constellation": "Sagittarius",
+            "RightAscension": 271.63916666666665,
+            "Declination": -23.954444444444444,
+            "Pos": [
+                20.72849247006727,
+                190.12289476713553,
+                461.9779372278324
+            ]
+        },
+        {
+            "ID": 131,
+            "AlphanumericName": "IC 4684",
+            "Name": "IC 4684",
+            "Constellation": "Sagittarius",
+            "RightAscension": 272.28583333333336,
+            "Declination": -23.435833333333335,
+            "Pos": [
+                32.229153429735106,
+                -54.002590766639464,
+                496.0292348840877
+            ]
+        },
+        {
+            "ID": 132,
+            "AlphanumericName": "IC 4699",
+            "Name": "IC 4699",
+            "ApparentMagnitude": 13.0,
+            "Constellation": "Telescopium",
+            "RightAscension": 274.6333333333333,
+            "Declination": -45.983333333333334,
+            "Pos": [
+                52.810956129180106,
+                201.74680195498985,
+                -454.4328672242534
+            ]
+        },
+        {
+            "ID": 133,
+            "AlphanumericName": "IC 4701",
+            "Name": "IC 4701",
+            "Constellation": "Sagittarius",
+            "RightAscension": 274.0,
+            "Declination": -16.633333333333333,
+            "Pos": [
+                233.59774708605985,
+                189.45814175541386,
+                399.4217133292865
+            ]
+        },
+        {
+            "ID": 134,
+            "AlphanumericName": "IC 4703",
+            "Name": "IC 4703",
+            "Constellation": "Serpens",
+            "RightAscension": 274.5,
+            "Declination": -13.833333333333334,
+            "Pos": [
+                -56.78351390755948,
+                -138.39386624588653,
+                -477.0982816295042
+            ],
+            "Texture": "IC 4703"
+        },
+        {
+            "ID": 135,
+            "AlphanumericName": "IC 4706",
+            "Name": "IC 4706",
+            "Constellation": "Sagittarius",
+            "RightAscension": 274.9,
+            "Declination": -16.9,
+            "Pos": [
+                -1.9676497070281365,
+                184.87366117088376,
+                464.5620063671842
+            ],
+            "Texture": "IC 4706"
+        },
+        {
+            "ID": 136,
+            "AlphanumericName": "IC 4707",
+            "Name": "IC 4707",
+            "Constellation": "Sagittarius",
+            "RightAscension": 274.975,
+            "Declination": -16.6,
+            "Pos": [
+                -26.85162600748798,
+                312.7634899426215,
+                389.17603926714924
+            ],
+            "Texture": "IC 4707"
+        },
+        {
+            "ID": 137,
+            "AlphanumericName": "IC 4732",
+            "Name": "IC 4732",
+            "ApparentMagnitude": 12.1,
+            "Constellation": "Sagittarius",
+            "RightAscension": 278.4775,
+            "Declination": -22.644166666666667,
+            "Pos": [
+                171.50182478815535,
+                -358.18549137877716,
+                303.7931497912302
+            ]
+        },
+        {
+            "ID": 138,
+            "AlphanumericName": "IC 4776",
+            "Name": "IC 4776",
+            "ApparentMagnitude": 10.8,
+            "Constellation": "Sagittarius",
+            "RightAscension": 281.46125,
+            "Declination": -33.342222222222226,
+            "Pos": [
+                -49.54847624756649,
+                166.8266648853013,
+                -468.7363996798112
+            ]
+        },
+        {
+            "ID": 139,
+            "AlphanumericName": "IC 4812",
+            "Name": "IC 4812",
+            "Constellation": "CoronaAustralis",
+            "RightAscension": 285.26458333333335,
+            "Declination": -37.06027777777778,
+            "Pos": [
+                -326.6061393742295,
+                233.3387649262855,
+                298.1299221912102
+            ]
+        },
+        {
+            "ID": 140,
+            "AlphanumericName": "IC 4846",
+            "Name": "IC 4846",
+            "ApparentMagnitude": 11.9,
+            "Constellation": "Aquila",
+            "RightAscension": 289.11791666666664,
+            "Declination": -9.043055555555556,
+            "Pos": [
+                -462.07568685475854,
+                -42.34824065108389,
+                -186.25972761566328
+            ]
+        },
+        {
+            "ID": 141,
+            "AlphanumericName": "IC 4954",
+            "Name": "IC 4954",
+            "Constellation": "Vulpecula",
+            "RightAscension": 301.1875,
+            "Declination": 29.253333333333334,
+            "Pos": [
+                -256.3187130702649,
+                110.0035063248958,
+                -414.9698132710762
+            ]
+        },
+        {
+            "ID": 142,
+            "AlphanumericName": "IC 4955",
+            "Name": "IC 4955",
+            "Constellation": "Vulpecula",
+            "RightAscension": 301.22083333333336,
+            "Declination": 29.19,
+            "Pos": [
+                -283.7883577653131,
+                110.744600508693,
+                -396.4843016501872
+            ]
+        },
+        {
+            "ID": 143,
+            "AlphanumericName": "IC 4997",
+            "Name": "IC 4997",
+            "ApparentMagnitude": 10.5,
+            "Constellation": "Sagitta",
+            "RightAscension": 305.0366666666667,
+            "Declination": 16.73222222222222,
+            "Pos": [
+                248.0915847552105,
+                77.33651410282286,
+                -427.1646394074211
+            ]
+        },
+        {
+            "ID": 144,
+            "AlphanumericName": "IC 5067",
+            "Name": "IC 5067",
+            "Constellation": "Cygnus",
+            "RightAscension": 311.9583333333333,
+            "Declination": 44.36666666666667,
+            "Pos": [
+                -273.12973630322045,
+                -374.49784370048724,
+                187.48736546929953
+            ]
+        },
+        {
+            "ID": 145,
+            "AlphanumericName": "IC 5068",
+            "Name": "IC 5068",
+            "Constellation": "Cygnus",
+            "RightAscension": 312.625,
+            "Declination": 42.47833333333333,
+            "Pos": [
+                1.2195482964971545,
+                -33.36910628612295,
+                -498.88376947703756
+            ]
+        },
+        {
+            "ID": 146,
+            "AlphanumericName": "IC 5070",
+            "Name": "IC 5070",
+            "Constellation": "Cygnus",
+            "RightAscension": 312.75,
+            "Declination": 44.401666666666664,
+            "Pos": [
+                73.44644697614372,
+                -450.72805283441664,
+                203.59234222994687
+            ]
+        },
+        {
+            "ID": 147,
+            "AlphanumericName": "IC 5076",
+            "Name": "IC 5076",
+            "Constellation": "Cygnus",
+            "RightAscension": 313.8875,
+            "Declination": 47.394999999999996,
+            "Pos": [
+                -464.0566240692042,
+                129.31385349686474,
+                -133.9006234163408
+            ]
+        },
+        {
+            "ID": 148,
+            "AlphanumericName": "IC 5117",
+            "Name": "IC 5117",
+            "ApparentMagnitude": 11.5,
+            "Constellation": "Cygnus",
+            "RightAscension": 323.12916666666666,
+            "Declination": 44.59722222222222,
+            "Pos": [
+                -366.879428671813,
+                179.43482088847125,
+                288.4486607182746
+            ]
+        },
+        {
+            "ID": 149,
+            "AlphanumericName": "IC 5132",
+            "Name": "IC 5132",
+            "Constellation": "Cepheus",
+            "RightAscension": 325.6670833333333,
+            "Declination": 66.16833333333334,
+            "Pos": [
+                -240.42783391352364,
+                427.57311512761146,
+                -96.82813588891068
+            ]
+        },
+        {
+            "ID": 150,
+            "AlphanumericName": "IC 5133",
+            "Name": "IC 5133",
+            "Constellation": "Cepheus",
+            "RightAscension": 325.69625,
+            "Declination": 66.18111111111112,
+            "Pos": [
+                -252.13646086688112,
+                419.28518748127385,
+                -103.08800444434237
+            ]
+        },
+        {
+            "ID": 151,
+            "AlphanumericName": "IC 5134",
+            "Name": "IC 5134",
+            "Constellation": "Cepheus",
+            "RightAscension": 325.7441666666667,
+            "Declination": 66.10222222222221,
+            "Pos": [
+                -275.59975941393185,
+                412.21571155748563,
+                -64.2104333900549
+            ]
+        },
+        {
+            "ID": 152,
+            "AlphanumericName": "IC 5146",
+            "Name": "IC 5146",
+            "Constellation": "Cygnus",
+            "RightAscension": 328.35,
+            "Declination": 47.266666666666666,
+            "Pos": [
+                26.498638662223318,
+                -494.20243810688225,
+                -71.14613354401037
+            ]
+        },
+        {
+            "ID": 153,
+            "AlphanumericName": "IC 5148",
+            "Name": "IC 5148",
+            "ApparentMagnitude": 11.0,
+            "Constellation": "Grus",
+            "RightAscension": 329.89625,
+            "Declination": -39.385,
+            "Pos": [
+                57.39477716346905,
+                1.6661430308508167,
+                -496.6921214613299
+            ]
+        },
+        {
+            "ID": 154,
+            "AlphanumericName": "IC 5217",
+            "Name": "IC 5217",
+            "ApparentMagnitude": 11.3,
+            "Constellation": "Lacerta",
+            "RightAscension": 335.9820833333333,
+            "Declination": 50.9675,
+            "Pos": [
+                -376.3744376455184,
+                63.96059132898276,
+                322.8797383606885
+            ]
+        },
+        {
+            "ID": 155,
+            "AlphanumericName": "IC 5366",
+            "Name": "IC 5366",
+            "Constellation": "Cassiopeia",
+            "RightAscension": 359.4166666666667,
+            "Declination": 52.791666666666664,
+            "Pos": [
+                -118.97038305776488,
+                -390.5502673889339,
+                288.64604032884455
+            ]
+        },
+        {
+            "ID": 156,
+            "AlphanumericName": "IC 59",
+            "Name": "IC 59",
+            "Constellation": "Cassiopeia",
+            "RightAscension": 862.125,
+            "Declination": 61.14361111111111,
+            "Pos": [
+                -14.050722085027667,
+                -56.878120301876926,
+                -496.55559269815353
+            ]
+        },
+        {
+            "ID": 157,
+            "AlphanumericName": "IC 63",
+            "Name": "IC 63",
+            "Constellation": "Cassiopeia",
+            "RightAscension": 892.25,
+            "Declination": 60.91111111111111,
+            "Pos": [
+                -171.3016497039034,
+                -6.458797171165645,
+                -469.695676739549
+            ]
+        },
+        {
+            "ID": 158,
+            "AlphanumericName": "IC 972",
+            "Name": "IC 972",
+            "ApparentMagnitude": 13.9,
+            "Constellation": "Virgo",
+            "RightAscension": 211.10833333333332,
+            "Declination": -17.2275,
+            "Pos": [
+                20.82618201180569,
+                14.919166346448668,
+                499.34325730737385
+            ]
+        },
+        {
+            "ID": 159,
+            "AlphanumericName": "M1",
+            "Name": "M1",
+            "ApparentMagnitude": 8.4,
+            "Constellation": "Taurus",
+            "Diameter": 10.9953419908,
+            "Radius": 5.4976709954,
+            "RightAscension": 83.63291666666667,
+            "Declination": 22.014444444444443,
+            "DistanceFromEarth": 6300.0,
+            "DistanceFromSun": 6300.0,
+            "Pos": [
+                185.7400772027169,
+                -464.0743193504042,
+                -11.646881135643568
+            ],
+            "Texture": "M1"
+        },
+        {
+            "ID": 160,
+            "AlphanumericName": "M17",
+            "Name": "M17",
+            "Constellation": "Sagittarius",
+            "Diameter": 31.9971090839,
+            "Radius": 15.998554542,
+            "RightAscension": 275.1958333333333,
+            "Declination": -16.171666666666667,
+            "DistanceFromEarth": 5500.0,
+            "DistanceFromSun": 5500.0,
+            "Pos": [
+                -134.92096388105142,
+                426.36272714107923,
+                223.63174732186312
+            ],
+            "Texture": "M17"
+        },
+        {
+            "ID": 161,
+            "AlphanumericName": "M20",
+            "Name": "M20",
+            "Constellation": "Sagittarius",
+            "Diameter": 30.2518122248,
+            "Radius": 15.1259061124,
+            "RightAscension": 270.675,
+            "Declination": -22.971666666666664,
+            "DistanceFromEarth": 5200.0,
+            "DistanceFromSun": 5200.0,
+            "Pos": [
+                -244.48993331651758,
+                -132.94130783107744,
+                415.39292384325404
+            ],
+            "Texture": "M20"
+        },
+        {
+            "ID": 162,
+            "AlphanumericName": "M27",
+            "Name": "M27",
+            "ApparentMagnitude": 7.4,
+            "Constellation": "Vulpecula",
+            "Diameter": 2.4361374324,
+            "Radius": 1.2180687162,
+            "RightAscension": 299.90125,
+            "Declination": 22.721666666666664,
+            "DistanceFromEarth": 1250.0,
+            "DistanceFromSun": 1250.0,
+            "Pos": [
+                44.89622474818625,
+                369.6982761481071,
+                -333.6278070192565
+            ],
+            "Texture": "M27"
+        },
+        {
+            "ID": 163,
+            "AlphanumericName": "M42",
+            "Name": "M42",
+            "Constellation": "Orion",
+            "Diameter": 30.2526281862,
+            "Radius": 15.1263140931,
+            "RightAscension": 83.82125,
+            "Declination": -5.390277777777778,
+            "DistanceFromEarth": 1344.0,
+            "DistanceFromSun": 1344.0,
+            "Pos": [
+                -168.96284164437938,
+                264.1606367709725,
+                389.44924717376296
+            ],
+            "Texture": "M42"
+        },
+        {
+            "ID": 164,
+            "AlphanumericName": "M43",
+            "Name": "M43",
+            "Constellation": "Orion",
+            "Diameter": 9.3082499153,
+            "Radius": 4.6541249577,
+            "RightAscension": 83.88041666666666,
+            "Declination": -5.2675,
+            "DistanceFromEarth": 1600.0,
+            "DistanceFromSun": 1600.0,
+            "Pos": [
+                -154.8696281786409,
+                213.2078096035043,
+                424.9209669949052
+            ],
+            "Texture": "M43"
+        },
+        {
+            "ID": 165,
+            "AlphanumericName": "M57",
+            "Name": "M57",
+            "ApparentMagnitude": 8.8,
+            "Constellation": "Lyra",
+            "Diameter": 2.0070858543,
+            "Radius": 1.0035429271,
+            "RightAscension": 283.39625,
+            "Declination": 33.02972222222222,
+            "DistanceFromEarth": 2300.0,
+            "DistanceFromSun": 2300.0,
+            "Pos": [
+                -17.072333922162954,
+                -13.057060601324707,
+                499.5378349864037
+            ],
+            "Texture": "M57"
+        },
+        {
+            "ID": 166,
+            "AlphanumericName": "M76",
+            "Name": "M76",
+            "ApparentMagnitude": 10.1,
+            "Constellation": "Perseus",
+            "Diameter": 1.0681186739,
+            "Radius": 0.5340593369,
+            "RightAscension": 25.591666666666665,
+            "Declination": 51.580555555555556,
+            "DistanceFromEarth": 3400.0,
+            "DistanceFromSun": 3400.0,
+            "Pos": [
+                113.3863504146785,
+                56.02545960078425,
+                483.74030575936155
+            ],
+            "Texture": "M76"
+        },
+        {
+            "ID": 167,
+            "AlphanumericName": "M78",
+            "Name": "M78",
+            "Constellation": "Orion",
+            "Diameter": 3.7232911447,
+            "Radius": 1.8616455724,
+            "RightAscension": 86.6875,
+            "Declination": 4.8,
+            "DistanceFromEarth": 1600.0,
+            "DistanceFromSun": 1600.0,
+            "Pos": [
+                12.665377295841424,
+                -41.876082000207624,
+                -498.08230441792034
+            ],
+            "Texture": "M78"
+        },
+        {
+            "ID": 168,
+            "AlphanumericName": "M8",
+            "Name": "M8",
+            "Constellation": "Sagittarius",
+            "Diameter": 53.6684933775,
+            "Radius": 26.8342466887,
+            "RightAscension": 270.925,
+            "Declination": -24.38,
+            "DistanceFromEarth": 4100.0,
+            "DistanceFromSun": 4100.0,
+            "Pos": [
+                267.48875191473473,
+                248.20998745154495,
+                341.8209615111416
+            ],
+            "Texture": "M8"
+        },
+        {
+            "ID": 169,
+            "AlphanumericName": "M97",
+            "Name": "M97",
+            "ApparentMagnitude": 9.9,
+            "Constellation": "UrsaMajor",
+            "Diameter": 2.1403097989,
+            "Radius": 1.0701548995,
+            "RightAscension": 168.69875,
+            "Declination": 55.019444444444446,
+            "DistanceFromEarth": 2600.0,
+            "DistanceFromSun": 2600.0,
+            "Pos": [
+                12.134057330223794,
+                -16.869929083689758,
+                -499.56798350716804
+            ],
+            "Texture": "M97"
+        },
+        {
+            "ID": 170,
+            "AlphanumericName": "NGC 1333",
+            "Name": "NGC 1333",
+            "Constellation": "Perseus",
+            "RightAscension": 52.325,
+            "Declination": 31.416666666666668,
+            "Pos": [
+                -234.7485308668365,
+                441.4668620717734,
+                0.370065350581162
+            ]
+        },
+        {
+            "ID": 171,
+            "AlphanumericName": "NGC 1360",
+            "Name": "NGC 1360",
+            "ApparentMagnitude": 9.4,
+            "Constellation": "Fornax",
+            "RightAscension": 53.310833333333335,
+            "Declination": -25.871111111111112,
+            "Pos": [
+                -368.07213880205734,
+                35.53369480639147,
+                -336.54161283723175
+            ]
+        },
+        {
+            "ID": 172,
+            "AlphanumericName": "NGC 1432",
+            "Name": "NGC 1432",
+            "Constellation": "Taurus",
+            "RightAscension": 56.45625,
+            "Declination": 24.368333333333332,
+            "Pos": [
+                359.3560245331278,
+                -33.30575649312745,
+                -346.05487168390874
+            ]
+        },
+        {
+            "ID": 173,
+            "AlphanumericName": "NGC 1435",
+            "Name": "NGC 1435",
+            "Constellation": "Taurus",
+            "RightAscension": 56.541666666666664,
+            "Declination": 23.765,
+            "Pos": [
+                100.82882811945146,
+                -0.7059240355566154,
+                -489.72752535600256
+            ]
+        },
+        {
+            "ID": 174,
+            "AlphanumericName": "NGC 1491",
+            "Name": "NGC 1491",
+            "Constellation": "Perseus",
+            "RightAscension": 60.80625,
+            "Declination": 51.316111111111105,
+            "Pos": [
+                -109.16887683215897,
+                -223.25048317172536,
+                433.8679270178842
+            ]
+        },
+        {
+            "ID": 175,
+            "AlphanumericName": "NGC 1499",
+            "Name": "NGC 1499",
+            "Constellation": "Perseus",
+            "RightAscension": 60.80833333333333,
+            "Declination": 36.36666666666667,
+            "Pos": [
+                -51.63713924787261,
+                -106.15786646630495,
+                -485.86429508415
+            ]
+        },
+        {
+            "ID": 176,
+            "AlphanumericName": "NGC 1501",
+            "Name": "NGC 1501",
+            "ApparentMagnitude": 11.5,
+            "Constellation": "Camelopardalis",
+            "RightAscension": 61.7475,
+            "Declination": 60.921388888888885,
+            "Pos": [
+                -77.87685802500053,
+                147.26307802560223,
+                -471.4326896117613
+            ]
+        },
+        {
+            "ID": 177,
+            "AlphanumericName": "NGC 1514",
+            "Name": "NGC 1514",
+            "ApparentMagnitude": 10.9,
+            "Constellation": "Taurus",
+            "RightAscension": 62.32083333333333,
+            "Declination": 30.77638888888889,
+            "Pos": [
+                349.93288759164903,
+                -196.20676701322856,
+                -298.41226308579706
+            ]
+        },
+        {
+            "ID": 178,
+            "AlphanumericName": "NGC 1535",
+            "Name": "NGC 1535",
+            "ApparentMagnitude": 9.6,
+            "Constellation": "Eridanus",
+            "RightAscension": 63.56583333333333,
+            "Declination": -12.738888888888889,
+            "Pos": [
+                365.7460047203217,
+                329.94355037196857,
+                -85.8318915034651
+            ]
+        },
+        {
+            "ID": 179,
+            "AlphanumericName": "NGC 1555",
+            "Name": "NGC 1555",
+            "Constellation": "Taurus",
+            "RightAscension": 65.48625,
+            "Declination": 19.534444444444446,
+            "Pos": [
+                -342.1885261705288,
+                181.28854455786467,
+                316.2933388001279
+            ]
+        },
+        {
+            "ID": 180,
+            "AlphanumericName": "NGC 1579",
+            "Name": "NGC 1579",
+            "Constellation": "Perseus",
+            "RightAscension": 67.55916666666667,
+            "Declination": 35.27972222222222,
+            "Pos": [
+                -5.599143773541074,
+                375.1338466484331,
+                -330.5196615751521
+            ]
+        },
+        {
+            "ID": 181,
+            "AlphanumericName": "NGC 1715",
+            "Name": "NGC 1715",
+            "Constellation": "Dorado",
+            "RightAscension": 73.04375,
+            "Declination": -66.9088888888889,
+            "Pos": [
+                209.45906094584953,
+                210.18118027994063,
+                402.43107887415204
+            ]
+        },
+        {
+            "ID": 182,
+            "AlphanumericName": "NGC 1736",
+            "Name": "NGC 1736",
+            "Constellation": "Dorado",
+            "RightAscension": 73.25666666666666,
+            "Declination": -68.05333333333333,
+            "Pos": [
+                -131.6600331465633,
+                -205.06442466220813,
+                436.5938815533303
+            ]
+        },
+        {
+            "ID": 183,
+            "AlphanumericName": "NGC 1737",
+            "Name": "NGC 1737",
+            "Constellation": "Dorado",
+            "RightAscension": 73.49083333333333,
+            "Declination": -69.17444444444445,
+            "Pos": [
+                -164.84577772685847,
+                -471.11000497894315,
+                -29.685565084184113
+            ]
+        },
+        {
+            "ID": 184,
+            "AlphanumericName": "NGC 1743",
+            "Name": "NGC 1743",
+            "Constellation": "Dorado",
+            "RightAscension": 73.51333333333334,
+            "Declination": -69.19916666666667,
+            "Pos": [
+                -153.9311335834044,
+                -473.85650181326355,
+                -42.014542756344014
+            ]
+        },
+        {
+            "ID": 185,
+            "AlphanumericName": "NGC 1745",
+            "Name": "NGC 1745",
+            "Constellation": "Dorado",
+            "RightAscension": 73.58625,
+            "Declination": -69.1588888888889,
+            "Pos": [
+                -119.30823871023745,
+                -485.0619913064246,
+                -21.9182290732419
+            ]
+        },
+        {
+            "ID": 186,
+            "AlphanumericName": "NGC 1748",
+            "Name": "NGC 1748",
+            "Constellation": "Dorado",
+            "RightAscension": 73.59875,
+            "Declination": -69.185,
+            "Pos": [
+                -113.06747976988792,
+                -485.7922221082522,
+                -34.95228115034166
+            ]
+        },
+        {
+            "ID": 187,
+            "AlphanumericName": "NGC 1760",
+            "Name": "NGC 1760",
+            "Constellation": "Dorado",
+            "RightAscension": 74.15,
+            "Declination": -66.52333333333333,
+            "Pos": [
+                -135.13766926748798,
+                404.3047925099904,
+                261.295704324439
+            ]
+        },
+        {
+            "ID": 188,
+            "AlphanumericName": "NGC 1763",
+            "Name": "NGC 1763",
+            "Constellation": "Dorado",
+            "RightAscension": 74.1875,
+            "Declination": -66.41833333333334,
+            "Pos": [
+                -159.0224433981979,
+                422.386313700672,
+                215.17821565861254
+            ]
+        },
+        {
+            "ID": 189,
+            "AlphanumericName": "NGC 1769",
+            "Name": "NGC 1769",
+            "Constellation": "Dorado",
+            "RightAscension": 74.43625,
+            "Declination": -66.46361111111112,
+            "Pos": [
+                -252.28172183498825,
+                361.86656278643284,
+                235.38590349701536
+            ]
+        },
+        {
+            "ID": 190,
+            "AlphanumericName": "NGC 1773",
+            "Name": "NGC 1773",
+            "Constellation": "Dorado",
+            "RightAscension": 74.55,
+            "Declination": -66.36583333333333,
+            "Pos": [
+                -305.5278402530172,
+                346.5488863426312,
+                191.19782479152028
+            ]
+        },
+        {
+            "ID": 191,
+            "AlphanumericName": "NGC 1788",
+            "Name": "NGC 1788",
+            "Constellation": "Orion",
+            "RightAscension": 76.72166666666666,
+            "Declination": -3.341111111111111,
+            "Pos": [
+                -119.99082092722256,
+                -475.16487045040014,
+                99.09868204504892
+            ]
+        },
+        {
+            "ID": 192,
+            "AlphanumericName": "NGC 1874",
+            "Name": "NGC 1874",
+            "Constellation": "Dorado",
+            "RightAscension": 78.29875,
+            "Declination": -69.37638888888888,
+            "Pos": [
+                -469.0538959483332,
+                115.31558555879312,
+                -129.19271814975832
+            ]
+        },
+        {
+            "ID": 193,
+            "AlphanumericName": "NGC 1880",
+            "Name": "NGC 1880",
+            "Constellation": "Dorado",
+            "RightAscension": 78.41333333333333,
+            "Declination": -69.38111111111111,
+            "Pos": [
+                -478.5518854727614,
+                60.85353846739526,
+                -131.4722014969791
+            ]
+        },
+        {
+            "ID": 194,
+            "AlphanumericName": "NGC 1895",
+            "Name": "NGC 1895",
+            "Constellation": "Dorado",
+            "RightAscension": 79.21833333333333,
+            "Declination": -67.32972222222222,
+            "Pos": [
+                82.86333883115523,
+                66.80537816648149,
+                488.53936230951393
+            ]
+        },
+        {
+            "ID": 195,
+            "AlphanumericName": "NGC 1899",
+            "Name": "NGC 1899",
+            "Constellation": "Dorado",
+            "RightAscension": 79.44166666666666,
+            "Declination": -67.9,
+            "Pos": [
+                -108.00107123275019,
+                -136.6168253900231,
+                468.6913820766607
+            ]
+        },
+        {
+            "ID": 196,
+            "AlphanumericName": "NGC 1909",
+            "Name": "NGC 1909",
+            "Constellation": "Eridanus",
+            "RightAscension": 76.225,
+            "Declination": -7.25,
+            "Pos": [
+                192.31363792135906,
+                208.92565979521112,
+                -411.5404395057528
+            ]
+        },
+        {
+            "ID": 197,
+            "AlphanumericName": "NGC 1911",
+            "Name": "NGC 1911",
+            "Constellation": "Dorado",
+            "RightAscension": 80.1375,
+            "Declination": -66.7786111111111,
+            "Pos": [
+                -9.315231165732385,
+                346.370766813948,
+                360.4726319223785
+            ]
+        },
+        {
+            "ID": 198,
+            "AlphanumericName": "NGC 1918",
+            "Name": "NGC 1918",
+            "Constellation": "Dorado",
+            "RightAscension": 79.77958333333333,
+            "Declination": -69.66250000000001,
+            "Pos": [
+                -138.75749777004407,
+                -403.745828953934,
+                -260.2607584998109
+            ]
+        },
+        {
+            "ID": 199,
+            "AlphanumericName": "NGC 1921",
+            "Name": "NGC 1921",
+            "Constellation": "Dorado",
+            "RightAscension": 79.845,
+            "Declination": -69.78777777777778,
+            "Pos": [
+                -102.65312990824708,
+                -377.34509335338805,
+                -311.5654272254279
+            ]
+        },
+        {
+            "ID": 200,
+            "AlphanumericName": "NGC 1929",
+            "Name": "NGC 1929",
+            "Constellation": "Dorado",
+            "RightAscension": 80.40416666666667,
+            "Declination": -67.91333333333334,
+            "Pos": [
+                52.195203251316066,
+                -172.66748077878543,
+                466.32778368767777
+            ]
+        },
+        {
+            "ID": 201,
+            "AlphanumericName": "NGC 1934",
+            "Name": "NGC 1934",
+            "Constellation": "Dorado",
+            "RightAscension": 80.475,
+            "Declination": -67.915,
+            "Pos": [
+                64.5615964728043,
+                -169.2663734873634,
+                466.0264961000814
+            ]
+        },
+        {
+            "ID": 202,
+            "AlphanumericName": "NGC 1935",
+            "Name": "NGC 1935",
+            "Constellation": "Dorado",
+            "RightAscension": 80.495,
+            "Declination": -67.9575,
+            "Pos": [
+                75.29733116789888,
+                -186.14503979511585,
+                457.9086547322146
+            ]
+        },
+        {
+            "ID": 203,
+            "AlphanumericName": "NGC 1936",
+            "Name": "NGC 1936",
+            "Constellation": "Dorado",
+            "RightAscension": 80.56083333333333,
+            "Declination": -67.97611111111111,
+            "Pos": [
+                91.07312316637949,
+                -188.42952209405635,
+                454.092503175429
+            ]
+        },
+        {
+            "ID": 204,
+            "AlphanumericName": "NGC 1941",
+            "Name": "NGC 1941",
+            "Constellation": "Dorado",
+            "RightAscension": 80.7825,
+            "Declination": -66.3786111111111,
+            "Pos": [
+                -286.0338897966175,
+                359.64144172011805,
+                197.0853806990549
+            ]
+        },
+        {
+            "ID": 205,
+            "AlphanumericName": "NGC 1943",
+            "Name": "NGC 1943",
+            "Constellation": "Mensa",
+            "RightAscension": 80.62,
+            "Declination": -70.155,
+            "Pos": [
+                123.43531418551923,
+                -220.9905837064647,
+                -431.1923991966906
+            ]
+        },
+        {
+            "ID": 206,
+            "AlphanumericName": "NGC 1945",
+            "Name": "NGC 1945",
+            "Constellation": "Dorado",
+            "RightAscension": 81.225,
+            "Declination": -66.45333333333333,
+            "Pos": [
+                -398.12476832567893,
+                195.47297242513503,
+                230.83974072266437
+            ]
+        },
+        {
+            "ID": 207,
+            "AlphanumericName": "NGC 1949",
+            "Name": "NGC 1949",
+            "Constellation": "Dorado",
+            "RightAscension": 81.27083333333333,
+            "Declination": -68.47111111111111,
+            "Pos": [
+                366.63922721767165,
+                -159.60384139409396,
+                300.17043638152893
+            ]
+        },
+        {
+            "ID": 208,
+            "AlphanumericName": "NGC 1965",
+            "Name": "NGC 1965",
+            "Constellation": "Dorado",
+            "RightAscension": 81.62125,
+            "Declination": -68.80638888888889,
+            "Pos": [
+                475.51058230890305,
+                -28.64079763720346,
+                151.88611135634724
+            ]
+        },
+        {
+            "ID": 209,
+            "AlphanumericName": "NGC 1966",
+            "Name": "NGC 1966",
+            "Constellation": "Dorado",
+            "RightAscension": 81.6875,
+            "Declination": -68.815,
+            "Pos": [
+                477.6537126297912,
+                2.9094279277351833,
+                147.77843563967699
+            ]
+        },
+        {
+            "ID": 210,
+            "AlphanumericName": "NGC 1970",
+            "Name": "NGC 1970",
+            "Constellation": "Dorado",
+            "RightAscension": 81.71958333333333,
+            "Declination": -68.83666666666666,
+            "Pos": [
+                480.4018225793385,
+                18.347936072008846,
+                137.39520408059104
+            ]
+        },
+        {
+            "ID": 211,
+            "AlphanumericName": "NGC 1973",
+            "Name": "NGC 1973",
+            "Constellation": "Orion",
+            "RightAscension": 83.77,
+            "Declination": -4.731944444444444,
+            "Pos": [
+                -4.839327776144659,
+                8.495455496927852,
+                499.90439900302414
+            ]
+        },
+        {
+            "ID": 212,
+            "AlphanumericName": "NGC 1975",
+            "Name": "NGC 1975",
+            "Constellation": "Orion",
+            "RightAscension": 83.825,
+            "Declination": -4.683333333333334,
+            "Pos": [
+                7.872722370302516,
+                -12.207313864216506,
+                499.7889571916337
+            ]
+        },
+        {
+            "ID": 213,
+            "AlphanumericName": "NGC 1980",
+            "Name": "NGC 1980",
+            "Constellation": "Orion",
+            "RightAscension": 83.85416666666667,
+            "Declination": -5.915,
+            "Pos": [
+                -264.1552749669755,
+                384.4942889964362,
+                179.96147486683535
+            ]
+        },
+        {
+            "ID": 214,
+            "AlphanumericName": "NGC 1985",
+            "Name": "NGC 1985",
+            "Constellation": "Auriga",
+            "RightAscension": 84.44916666666667,
+            "Declination": 31.98888888888889,
+            "Pos": [
+                -391.13119239161864,
+                153.43359420306905,
+                271.06184258991254
+            ]
+        },
+        {
+            "ID": 215,
+            "AlphanumericName": "NGC 1999",
+            "Name": "NGC 1999",
+            "Constellation": "Orion",
+            "RightAscension": 84.10583333333334,
+            "Declination": -6.715833333333333,
+            "Pos": [
+                -342.1128723612696,
+                298.3464897926896,
+                -209.638151568607
+            ]
+        },
+        {
+            "ID": 216,
+            "AlphanumericName": "NGC 2020",
+            "Name": "NGC 2020",
+            "Constellation": "Dorado",
+            "RightAscension": 83.30291666666666,
+            "Declination": -67.71583333333334,
+            "Pos": [
+                -4.327637885300779,
+                85.26548464090354,
+                492.65715125154287
+            ]
+        },
+        {
+            "ID": 217,
+            "AlphanumericName": "NGC 2022",
+            "Name": "NGC 2022",
+            "ApparentMagnitude": 11.6,
+            "Constellation": "Orion",
+            "RightAscension": 85.52583333333334,
+            "Declination": 9.086666666666668,
+            "Pos": [
+                359.9075830806349,
+                304.89232297902396,
+                165.85295604694664
+            ]
+        },
+        {
+            "ID": 218,
+            "AlphanumericName": "NGC 2023",
+            "Name": "NGC 2023",
+            "Constellation": "Orion",
+            "RightAscension": 85.40916666666666,
+            "Declination": -2.2591666666666668,
+            "Pos": [
+                264.6155607873173,
+                175.70886662097345,
+                -386.1411648348134
+            ]
+        },
+        {
+            "ID": 219,
+            "AlphanumericName": "NGC 2024",
+            "Name": "NGC 2024",
+            "Constellation": "Orion",
+            "RightAscension": 85.425,
+            "Declination": -1.8566666666666667,
+            "Pos": [
+                116.20993214425599,
+                79.84488068524071,
+                -479.70829334022056
+            ]
+        },
+        {
+            "ID": 220,
+            "AlphanumericName": "NGC 2029",
+            "Name": "NGC 2029",
+            "Constellation": "Dorado",
+            "RightAscension": 83.90833333333333,
+            "Declination": -67.03333333333333,
+            "Pos": [
+                149.1489494016067,
+                -193.72025340465464,
+                436.15026574935547
+            ]
+        },
+        {
+            "ID": 221,
+            "AlphanumericName": "NGC 2030",
+            "Name": "NGC 2030",
+            "Constellation": "Dorado",
+            "RightAscension": 83.75,
+            "Declination": -67.55499999999999,
+            "Pos": [
+                -2.5683514601399255,
+                4.7260781764664666,
+                499.971066918724
+            ]
+        },
+        {
+            "ID": 222,
+            "AlphanumericName": "NGC 2032",
+            "Name": "NGC 2032",
+            "Constellation": "Dorado",
+            "RightAscension": 83.83333333333333,
+            "Declination": -67.57666666666667,
+            "Pos": [
+                -8.898464326207344,
+                13.548584402160024,
+                499.7371841211466
+            ]
+        },
+        {
+            "ID": 223,
+            "AlphanumericName": "NGC 2035",
+            "Name": "NGC 2035",
+            "Constellation": "Dorado",
+            "RightAscension": 83.88541666666667,
+            "Declination": -67.58555555555554,
+            "Pos": [
+                -12.21987857992776,
+                16.64731953125593,
+                499.5733592976271
+            ]
+        },
+        {
+            "ID": 224,
+            "AlphanumericName": "NGC 2040",
+            "Name": "NGC 2040",
+            "Constellation": "Dorado",
+            "RightAscension": 84.03166666666667,
+            "Declination": -67.56777777777778,
+            "Pos": [
+                -8.270824548863825,
+                8.369616963271055,
+                499.8615237975114
+            ]
+        },
+        {
+            "ID": 225,
+            "AlphanumericName": "NGC 2048",
+            "Name": "NGC 2048",
+            "Constellation": "Dorado",
+            "RightAscension": 83.98083333333334,
+            "Declination": -69.64944444444446,
+            "Pos": [
+                -286.50425011514074,
+                321.03123031799015,
+                -254.66500314428447
+            ]
+        },
+        {
+            "ID": 226,
+            "AlphanumericName": "NGC 2052",
+            "Name": "NGC 2052",
+            "Constellation": "Dorado",
+            "RightAscension": 84.29625,
+            "Declination": -69.77416666666666,
+            "Pos": [
+                -341.6831619190259,
+                198.70986710205054,
+                -306.21398658014
+            ]
+        },
+        {
+            "ID": 227,
+            "AlphanumericName": "NGC 206",
+            "Name": "NGC 206",
+            "Constellation": "Andromeda",
+            "RightAscension": 608.075,
+            "Declination": 40.73833333333334,
+            "Pos": [
+                -87.49032515805592,
+                489.6270200206697,
+                51.09622558874949
+            ]
+        },
+        {
+            "ID": 228,
+            "AlphanumericName": "NGC 2060",
+            "Name": "NGC 2060",
+            "ApparentMagnitude": 9.6,
+            "Constellation": "Dorado",
+            "RightAscension": 84.465,
+            "Declination": -69.17305555555556,
+            "Pos": [
+                -467.51153614484,
+                174.90685839103875,
+                -28.99231724559305
+            ]
+        },
+        {
+            "ID": 229,
+            "AlphanumericName": "NGC 2064",
+            "Name": "NGC 2064",
+            "Constellation": "Orion",
+            "RightAscension": 86.57666666666667,
+            "Declination": 0.0,
+            "Pos": [
+                90.92558918258989,
+                -491.6630321996956,
+                0.0
+            ]
+        },
+        {
+            "ID": 230,
+            "AlphanumericName": "NGC 2067",
+            "Name": "NGC 2067",
+            "Constellation": "Orion",
+            "RightAscension": 86.63333333333334,
+            "Declination": 7.9,
+            "Pos": [
+                -5.457031547805813,
+                22.344343747919467,
+                499.470670919886
+            ]
+        },
+        {
+            "ID": 231,
+            "AlphanumericName": "NGC 2069",
+            "Name": "NGC 2069",
+            "Constellation": "Dorado",
+            "RightAscension": 84.66666666666667,
+            "Declination": -69.005,
+            "Pos": [
+                -490.9150997762786,
+                77.3786259975981,
+                54.908223886502164
+            ]
+        },
+        {
+            "ID": 232,
+            "AlphanumericName": "NGC 2070",
+            "Name": "NGC 2070",
+            "Constellation": "Dorado",
+            "RightAscension": 84.67708333333333,
+            "Declination": -69.10083333333333,
+            "Pos": [
+                -494.6364907587654,
+                72.69318793656814,
+                7.102283961697541
+            ]
+        },
+        {
+            "ID": 233,
+            "AlphanumericName": "NGC 2071",
+            "Name": "NGC 2071",
+            "Constellation": "Orion",
+            "RightAscension": 86.78,
+            "Declination": 17.65,
+            "Pos": [
+                68.32311877148622,
+                -168.02607835047013,
+                -465.939039398395
+            ]
+        },
+        {
+            "ID": 234,
+            "AlphanumericName": "NGC 2074",
+            "Name": "NGC 2074",
+            "Constellation": "Dorado",
+            "RightAscension": 84.765,
+            "Declination": -69.49805555555555,
+            "Pos": [
+                -462.9907510337233,
+                26.88438089898437,
+                -186.86036102102335
+            ]
+        },
+        {
+            "ID": 235,
+            "AlphanumericName": "NGC 2077",
+            "Name": "NGC 2077",
+            "Constellation": "Dorado",
+            "RightAscension": 84.9,
+            "Declination": -69.65722222222223,
+            "Pos": [
+                -427.0229323367238,
+                -32.945196167991604,
+                -258.00393273746494
+            ]
+        },
+        {
+            "ID": 236,
+            "AlphanumericName": "NGC 2078",
+            "Name": "NGC 2078",
+            "Constellation": "Dorado",
+            "RightAscension": 84.91375,
+            "Declination": -69.74388888888889,
+            "Pos": [
+                -402.6882644616919,
+                -36.64394291516235,
+                -294.10777465490565
+            ]
+        },
+        {
+            "ID": 237,
+            "AlphanumericName": "NGC 2079",
+            "Name": "NGC 2079",
+            "Constellation": "Dorado",
+            "RightAscension": 84.91666666666667,
+            "Declination": -69.77388888888889,
+            "Pos": [
+                -393.6152861669563,
+                -36.97617919522437,
+                -306.10417943541336
+            ]
+        },
+        {
+            "ID": 238,
+            "AlphanumericName": "NGC 2080",
+            "Name": "NGC 2080",
+            "Constellation": "Dorado",
+            "RightAscension": 84.93416666666667,
+            "Declination": -69.64555555555556,
+            "Pos": [
+                -428.6107342517981,
+                -47.84376229681902,
+                -252.9897485935349
+            ]
+        },
+        {
+            "ID": 239,
+            "AlphanumericName": "NGC 2083",
+            "Name": "NGC 2083",
+            "Constellation": "Dorado",
+            "RightAscension": 84.99708333333334,
+            "Declination": -69.73777777777778,
+            "Pos": [
+                -400.00343473754174,
+                -70.34530377712431,
+                -291.63125764340367
+            ]
+        },
+        {
+            "ID": 240,
+            "AlphanumericName": "NGC 2084",
+            "Name": "NGC 2084",
+            "Constellation": "Dorado",
+            "RightAscension": 85.02958333333333,
+            "Declination": -69.75944444444444,
+            "Pos": [
+                -391.2292373709352,
+                -81.99046905781007,
+                -300.3618597788952
+            ]
+        },
+        {
+            "ID": 241,
+            "AlphanumericName": "NGC 2085",
+            "Name": "NGC 2085",
+            "Constellation": "Dorado",
+            "RightAscension": 85.0375,
+            "Declination": -69.67333333333333,
+            "Pos": [
+                -414.3612770425183,
+                -90.26848044130683,
+                -264.8704089295571
+            ]
+        },
+        {
+            "ID": 242,
+            "AlphanumericName": "NGC 2086",
+            "Name": "NGC 2086",
+            "Constellation": "Dorado",
+            "RightAscension": 85.05416666666666,
+            "Declination": -69.66805555555555,
+            "Pos": [
+                -414.1543101061513,
+                -97.4805717887452,
+                -262.62853147409027
+            ]
+        },
+        {
+            "ID": 243,
+            "AlphanumericName": "NGC 2103",
+            "Name": "NGC 2103",
+            "Constellation": "Mensa",
+            "RightAscension": 85.41666666666667,
+            "Declination": -71.33166666666666,
+            "Pos": [
+                249.440946064654,
+                168.34190567206667,
+                -399.2996584284382
+            ]
+        },
+        {
+            "ID": 244,
+            "AlphanumericName": "NGC 2149",
+            "Name": "NGC 2149",
+            "Constellation": "Monoceros",
+            "RightAscension": 90.87791666666666,
+            "Declination": -9.730555555555556,
+            "Pos": [
+                464.4378700089148,
+                -107.89800085662336,
+                150.5173953824823
+            ]
+        },
+        {
+            "ID": 245,
+            "AlphanumericName": "NGC 2163",
+            "Name": "NGC 2163",
+            "Constellation": "Orion",
+            "RightAscension": 91.95625,
+            "Declination": 18.6575,
+            "Pos": [
+                -323.90106080968275,
+                -368.7540584501286,
+                -95.43870903842637
+            ]
+        },
+        {
+            "ID": 246,
+            "AlphanumericName": "NGC 2170",
+            "Name": "NGC 2170",
+            "Constellation": "Monoceros",
+            "RightAscension": 91.88041666666666,
+            "Declination": -6.398055555555556,
+            "Pos": [
+                -355.1239897955188,
+                -347.27891134179913,
+                -57.308896420774445
+            ]
+        },
+        {
+            "ID": 247,
+            "AlphanumericName": "NGC 2174",
+            "Name": "NGC 2174",
+            "Constellation": "Orion",
+            "RightAscension": 92.34833333333333,
+            "Declination": 20.659444444444443,
+            "Pos": [
+                38.21878612012073,
+                112.07292540852394,
+                485.77668097375766
+            ]
+        },
+        {
+            "ID": 248,
+            "AlphanumericName": "NGC 2182",
+            "Name": "NGC 2182",
+            "Constellation": "Monoceros",
+            "RightAscension": 92.37875,
+            "Declination": -6.326388888888888,
+            "Pos": [
+                -146.7788759216925,
+                -477.48258028613014,
+                -21.595071346575484
+            ]
+        },
+        {
+            "ID": 249,
+            "AlphanumericName": "NGC 2183",
+            "Name": "NGC 2183",
+            "Constellation": "Monoceros",
+            "RightAscension": 92.69541666666667,
+            "Declination": -6.211944444444445,
+            "Pos": [
+                9.192793591940115,
+                -498.64699185454236,
+                35.590308517795755
+            ]
+        },
+        {
+            "ID": 250,
+            "AlphanumericName": "NGC 2185",
+            "Name": "NGC 2185",
+            "Constellation": "Monoceros",
+            "RightAscension": 92.75166666666667,
+            "Declination": -6.226666666666667,
+            "Pos": [
+                37.247419618344544,
+                -497.81009482992124,
+                28.244277600955144
+            ]
+        },
+        {
+            "ID": 251,
+            "AlphanumericName": "NGC 2237",
+            "Name": "NGC 2237",
+            "Constellation": "Monoceros",
+            "RightAscension": 97.7275,
+            "Declination": 5.047777777777777,
+            "Pos": [
+                -155.24988527196265,
+                -54.590786185650906,
+                -472.1412068297735
+            ]
+        },
+        {
+            "ID": 252,
+            "AlphanumericName": "NGC 2238",
+            "Name": "NGC 2238",
+            "Constellation": "Monoceros",
+            "RightAscension": 97.66791666666667,
+            "Declination": 5.013055555555556,
+            "Pos": [
+                -142.37103660319164,
+                -40.71513093457924,
+                -477.5696452346115
+            ]
+        },
+        {
+            "ID": 253,
+            "AlphanumericName": "NGC 2242",
+            "Name": "NGC 2242",
+            "ApparentMagnitude": 15.0,
+            "Constellation": "Auriga",
+            "RightAscension": 98.53083333333333,
+            "Declination": 44.77777777777778,
+            "Pos": [
+                -145.68110930807987,
+                -318.2083738377354,
+                357.1000493003485
+            ]
+        },
+        {
+            "ID": 254,
+            "AlphanumericName": "NGC 2245",
+            "Name": "NGC 2245",
+            "Constellation": "Monoceros",
+            "RightAscension": 98.17166666666667,
+            "Declination": 10.156666666666666,
+            "Pos": [
+                263.82822015421897,
+                262.19556437460557,
+                -334.1379300117528
+            ]
+        },
+        {
+            "ID": 255,
+            "AlphanumericName": "NGC 2246",
+            "Name": "NGC 2246",
+            "Constellation": "Monoceros",
+            "RightAscension": 98.14041666666667,
+            "Declination": 5.128333333333333,
+            "Pos": [
+                -147.67698130977442,
+                -137.8637242323863,
+                -457.36757945006235
+            ]
+        },
+        {
+            "ID": 256,
+            "AlphanumericName": "NGC 2247",
+            "Name": "NGC 2247",
+            "Constellation": "Monoceros",
+            "RightAscension": 98.27125,
+            "Declination": 10.321666666666667,
+            "Pos": [
+                198.3532883339688,
+                240.8604112670075,
+                -390.6945549804725
+            ]
+        },
+        {
+            "ID": 257,
+            "AlphanumericName": "NGC 2261",
+            "Name": "NGC 2261",
+            "Constellation": "Monoceros",
+            "RightAscension": 99.78958333333334,
+            "Declination": 8.744444444444444,
+            "Pos": [
+                -286.66669019801515,
+                262.4795281592418,
+                314.5261611189393
+            ]
+        },
+        {
+            "ID": 258,
+            "AlphanumericName": "NGC 2282",
+            "Name": "NGC 2282",
+            "Constellation": "Monoceros",
+            "RightAscension": 101.71333333333334,
+            "Declination": 1.315,
+            "Pos": [
+                47.91285070745148,
+                117.08381935859413,
+                483.73105955839713
+            ]
+        },
+        {
+            "ID": 259,
+            "AlphanumericName": "NGC 2296",
+            "Name": "NGC 2296",
+            "Constellation": "CanisMajor",
+            "RightAscension": 102.1625,
+            "Declination": -16.90111111111111,
+            "Pos": [
+                11.191389381520915,
+                -184.02785782966265,
+                464.76714637153157
+            ]
+        },
+        {
+            "ID": 260,
+            "AlphanumericName": "NGC 2313",
+            "Name": "NGC 2313",
+            "Constellation": "Monoceros",
+            "RightAscension": 104.51166666666667,
+            "Declination": -7.945,
+            "Pos": [
+                30.36390208748162,
+                33.81429146423759,
+                -497.9303436654503
+            ]
+        },
+        {
+            "ID": 261,
+            "AlphanumericName": "NGC 2316",
+            "Name": "NGC 2316",
+            "Constellation": "Monoceros",
+            "RightAscension": 104.92,
+            "Declination": -7.777222222222222,
+            "Pos": [
+                -12.183118896902577,
+                -36.35495467872199,
+                -498.5277212796215
+            ]
+        },
+        {
+            "ID": 262,
+            "AlphanumericName": "NGC 2327",
+            "Name": "NGC 2327",
+            "Constellation": "CanisMajor",
+            "RightAscension": 106.03,
+            "Declination": -11.314166666666667,
+            "Pos": [
+                110.88167406862704,
+                -110.60527120886678,
+                474.8386339974369
+            ]
+        },
+        {
+            "ID": 263,
+            "AlphanumericName": "NGC 2346",
+            "Name": "NGC 2346",
+            "ApparentMagnitude": 11.6,
+            "Constellation": "Monoceros",
+            "RightAscension": 107.34375,
+            "Declination": -48.36666666666667,
+            "Pos": [
+                -139.01730647064954,
+                -81.37788424861513,
+                473.3411332821864
+            ]
+        },
+        {
+            "ID": 264,
+            "AlphanumericName": "NGC 2359",
+            "Name": "NGC 2359",
+            "Constellation": "CanisMajor",
+            "RightAscension": 109.625,
+            "Declination": -13.225,
+            "Pos": [
+                -373.98491253117885,
+                128.4096312272086,
+                -306.01675086037164
+            ]
+        },
+        {
+            "ID": 265,
+            "AlphanumericName": "NGC 2361",
+            "Name": "NGC 2361",
+            "Constellation": "CanisMajor",
+            "RightAscension": 109.59875,
+            "Declination": -13.208888888888888,
+            "Pos": [
+                -375.0568486590538,
+                139.88628498853552,
+                -299.6067214633975
+            ]
+        },
+        {
+            "ID": 266,
+            "AlphanumericName": "NGC 2371",
+            "Name": "NGC 2371",
+            "ApparentMagnitude": 11.2,
+            "Constellation": "Gemini",
+            "RightAscension": 111.39125,
+            "Declination": 29.488333333333333,
+            "Pos": [
+                23.554536061646093,
+                173.0415468060139,
+                -468.51019936592917
+            ]
+        },
+        {
+            "ID": 267,
+            "AlphanumericName": "NGC 2392",
+            "Name": "NGC 2392",
+            "ApparentMagnitude": 9.1,
+            "Constellation": "Gemini",
+            "RightAscension": 112.295,
+            "Declination": 20.912499999999998,
+            "Pos": [
+                -164.207589135487,
+                169.86646474113712,
+                440.66001841176734
+            ]
+        },
+        {
+            "ID": 268,
+            "AlphanumericName": "NGC 2404",
+            "Name": "NGC 2404",
+            "Constellation": "Camelopardalis",
+            "RightAscension": 114.27916666666667,
+            "Declination": 65.6111111111111,
+            "Pos": [
+                -177.30416582894296,
+                -432.61192042142704,
+                177.2291146764197
+            ]
+        },
+        {
+            "ID": 269,
+            "AlphanumericName": "NGC 2438",
+            "Name": "NGC 2438",
+            "ApparentMagnitude": 10.8,
+            "Constellation": "Puppis",
+            "RightAscension": 115.46083333333333,
+            "Declination": -14.73472222222222,
+            "Pos": [
+                200.36473320004328,
+                -197.45924812596715,
+                -413.35676965449983
+            ]
+        },
+        {
+            "ID": 270,
+            "AlphanumericName": "NGC 2440",
+            "Name": "NGC 2440",
+            "ApparentMagnitude": 9.4,
+            "Constellation": "Puppis",
+            "RightAscension": 115.48083333333334,
+            "Declination": -18.208055555555553,
+            "Pos": [
+                -290.8941459165056,
+                275.42783566090105,
+                299.19910296432784
+            ]
+        },
+        {
+            "ID": 271,
+            "AlphanumericName": "NGC 2452",
+            "Name": "NGC 2452",
+            "ApparentMagnitude": 12.0,
+            "Constellation": "Puppis",
+            "RightAscension": 116.85916666666667,
+            "Declination": -27.334999999999997,
+            "Pos": [
+                240.1858280098267,
+                171.55731495117192,
+                -403.5825265171652
+            ]
+        },
+        {
+            "ID": 272,
+            "AlphanumericName": "NGC 246",
+            "Name": "NGC 246",
+            "ApparentMagnitude": 10.9,
+            "Constellation": "Cetus",
+            "RightAscension": 705.825,
+            "Declination": -11.87138888888889,
+            "Pos": [
+                -196.60421215641992,
+                329.89073967589314,
+                320.18570180200976
+            ]
+        },
+        {
+            "ID": 273,
+            "AlphanumericName": "NGC 248",
+            "Name": "NGC 248",
+            "Constellation": "Tucana",
+            "RightAscension": 681.0,
+            "Declination": -73.38027777777778,
+            "Pos": [
+                161.73761028183878,
+                -143.46693929773056,
+                450.8416382155283
+            ]
+        },
+        {
+            "ID": 274,
+            "AlphanumericName": "NGC 249",
+            "Name": "NGC 249",
+            "Constellation": "Tucana",
+            "RightAscension": 682.95,
+            "Declination": -73.08027777777778,
+            "Pos": [
+                115.35907124205093,
+                319.5926508637382,
+                366.81442473825933
+            ]
+        },
+        {
+            "ID": 275,
+            "AlphanumericName": "NGC 261",
+            "Name": "NGC 261",
+            "Constellation": "Tucana",
+            "RightAscension": 696.975,
+            "Declination": -73.10388888888889,
+            "Pos": [
+                -296.8216234347752,
+                146.53130286787984,
+                374.73390711461667
+            ]
+        },
+        {
+            "ID": 276,
+            "AlphanumericName": "NGC 2610",
+            "Name": "NGC 2610",
+            "ApparentMagnitude": 12.7,
+            "Constellation": "Hydra",
+            "RightAscension": 128.3475,
+            "Declination": -16.148611111111112,
+            "Pos": [
+                405.66973306112374,
+                -199.8776235763945,
+                213.2627564099502
+            ]
+        },
+        {
+            "ID": 277,
+            "AlphanumericName": "NGC 2626",
+            "Name": "NGC 2626",
+            "Constellation": "Vela",
+            "RightAscension": 128.87916666666666,
+            "Declination": -40.67222222222222,
+            "Pos": [
+                491.5760131871992,
+                36.377861673382505,
+                -83.84315379952528
+            ]
+        },
+        {
+            "ID": 278,
+            "AlphanumericName": "NGC 2736",
+            "Name": "NGC 2736",
+            "Constellation": "Vela",
+            "RightAscension": 135.07083333333333,
+            "Declination": -45.948055555555555,
+            "Pos": [
+                192.35662534390437,
+                -3.3955953892086175,
+                -461.50557810091266
+            ]
+        },
+        {
+            "ID": 279,
+            "AlphanumericName": "NGC 2792",
+            "Name": "NGC 2792",
+            "ApparentMagnitude": 11.6,
+            "Constellation": "Vela",
+            "RightAscension": 138.11041666666668,
+            "Declination": -42.427499999999995,
+            "Pos": [
+                7.942046534956726,
+                -0.954907998514263,
+                499.93600795256884
+            ]
+        },
+        {
+            "ID": 280,
+            "AlphanumericName": "NGC 281",
+            "Name": "NGC 281",
+            "Constellation": "Cassiopeia",
+            "RightAscension": 793.45,
+            "Declination": 56.625,
+            "Pos": [
+                -97.99711063418795,
+                488.8176967809208,
+                38.12906530648842
+            ]
+        },
+        {
+            "ID": 281,
+            "AlphanumericName": "NGC 2847",
+            "Name": "NGC 2847",
+            "Constellation": "Hydra",
+            "RightAscension": 140.03583333333333,
+            "Declination": -16.51722222222222,
+            "Pos": [
+                80.32156363686381,
+                -335.53764703540025,
+                361.88801283943684
+            ]
+        },
+        {
+            "ID": 282,
+            "AlphanumericName": "NGC 2867",
+            "Name": "NGC 2867",
+            "ApparentMagnitude": 9.7,
+            "Constellation": "Carina",
+            "RightAscension": 140.35583333333332,
+            "Declination": -58.31111111111111,
+            "Pos": [
+                50.181813243880086,
+                -80.9448208155267,
+                -490.8459245045217
+            ]
+        },
+        {
+            "ID": 283,
+            "AlphanumericName": "NGC 2875",
+            "Name": "NGC 2875",
+            "Constellation": "Leo",
+            "RightAscension": 141.45291666666665,
+            "Declination": 11.432222222222222,
+            "Pos": [
+                -210.75461923808174,
+                -17.16101155813113,
+                -453.0871772099856
+            ]
+        },
+        {
+            "ID": 284,
+            "AlphanumericName": "NGC 2899",
+            "Name": "NGC 2899",
+            "ApparentMagnitude": 11.8,
+            "Constellation": "Vela",
+            "RightAscension": 141.7625,
+            "Declination": -56.105555555555554,
+            "Pos": [
+                -417.64865882349363,
+                -172.08218012780782,
+                214.37658702712326
+            ]
+        },
+        {
+            "ID": 285,
+            "AlphanumericName": "NGC 2905",
+            "Name": "NGC 2905",
+            "Constellation": "Leo",
+            "RightAscension": 143.04916666666668,
+            "Declination": 21.51861111111111,
+            "Pos": [
+                -47.4140310517934,
+                442.676155008781,
+                227.5735736988398
+            ]
+        },
+        {
+            "ID": 286,
+            "AlphanumericName": "NGC 3132",
+            "Name": "NGC 3132",
+            "ApparentMagnitude": 9.2,
+            "Constellation": "Vela",
+            "RightAscension": 151.7575,
+            "Declination": -40.43611111111111,
+            "Pos": [
+                -263.21123038224505,
+                -376.8033309546903,
+                -196.82250374922802
+            ]
+        },
+        {
+            "ID": 287,
+            "AlphanumericName": "NGC 3180",
+            "Name": "NGC 3180",
+            "Constellation": "UrsaMajor",
+            "RightAscension": 154.54458333333332,
+            "Declination": 41.44916666666666,
+            "Pos": [
+                337.0824881427261,
+                233.86311065474374,
+                -285.8031519462234
+            ]
+        },
+        {
+            "ID": 288,
+            "AlphanumericName": "NGC 3181",
+            "Name": "NGC 3181",
+            "Constellation": "UrsaMajor",
+            "RightAscension": 154.54791666666668,
+            "Declination": 41.413333333333334,
+            "Pos": [
+                344.47835810627777,
+                240.69917491608834,
+                -270.9217008493734
+            ]
+        },
+        {
+            "ID": 289,
+            "AlphanumericName": "NGC 3195",
+            "Name": "NGC 3195",
+            "ApparentMagnitude": 11.6,
+            "Constellation": "Chamaeleon",
+            "RightAscension": 152.33791666666667,
+            "Declination": -80.85805555555555,
+            "Pos": [
+                9.966324010301502,
+                339.7366101032379,
+                366.7147503732052
+            ]
+        },
+        {
+            "ID": 290,
+            "AlphanumericName": "NGC 3199",
+            "Name": "NGC 3199",
+            "Constellation": "Carina",
+            "RightAscension": 154.35,
+            "Declination": -57.92166666666667,
+            "Pos": [
+                -90.03485290385146,
+                -39.34193687688227,
+                -490.2508921617148
+            ]
+        },
+        {
+            "ID": 291,
+            "AlphanumericName": "NGC 3211",
+            "Name": "NGC 3211",
+            "ApparentMagnitude": 10.7,
+            "Constellation": "Carina",
+            "RightAscension": 154.46,
+            "Declination": -62.669999999999995,
+            "Pos": [
+                -427.75715365553015,
+                -246.03191174531344,
+                80.57366753143064
+            ]
+        },
+        {
+            "ID": 292,
+            "AlphanumericName": "NGC 3242",
+            "Name": "NGC 3242",
+            "ApparentMagnitude": 7.7,
+            "Constellation": "Hydra",
+            "RightAscension": 156.19208333333333,
+            "Declination": -18.641944444444444,
+            "Pos": [
+                308.87882205410307,
+                -379.43665333603104,
+                103.0616290945485
+            ]
+        },
+        {
+            "ID": 293,
+            "AlphanumericName": "NGC 3324",
+            "Name": "NGC 3324",
+            "Constellation": "Carina",
+            "RightAscension": 159.33041666666668,
+            "Declination": -58.634166666666665,
+            "Pos": [
+                154.76748957319094,
+                -191.39209611666044,
+                -435.219587926926
+            ]
+        },
+        {
+            "ID": 294,
+            "AlphanumericName": "NGC 3372",
+            "Name": "NGC 3372",
+            "Constellation": "Carina",
+            "RightAscension": 161.275,
+            "Declination": -59.86666666666667,
+            "Pos": [
+                243.31110219827616,
+                427.902188032739,
+                87.7463675821086
+            ]
+        },
+        {
+            "ID": 295,
+            "AlphanumericName": "NGC 346",
+            "Name": "NGC 346",
+            "Constellation": "Tucana",
+            "RightAscension": 886.25,
+            "Declination": -72.17722222222223,
+            "Pos": [
+                -472.985233137663,
+                -157.2000006644321,
+                -39.66269058968541
+            ]
+        },
+        {
+            "ID": 296,
+            "AlphanumericName": "NGC 3503",
+            "Name": "NGC 3503",
+            "Constellation": "Carina",
+            "RightAscension": 165.32166666666666,
+            "Declination": -59.84722222222222,
+            "Pos": [
+                186.86735388241107,
+                -457.13428667474096,
+                78.15904297879764
+            ]
+        },
+        {
+            "ID": 297,
+            "AlphanumericName": "NGC 3576",
+            "Name": "NGC 3576",
+            "Constellation": "Carina",
+            "RightAscension": 167.88625,
+            "Declination": -61.36222222222222,
+            "Pos": [
+                -9.484986634129376,
+                -49.59769859517096,
+                497.4435679779295
+            ]
+        },
+        {
+            "ID": 298,
+            "AlphanumericName": "NGC 3579",
+            "Name": "NGC 3579",
+            "Constellation": "Carina",
+            "RightAscension": 167.99833333333333,
+            "Declination": -61.24305555555556,
+            "Pos": [
+                0.691189814176243,
+                8.973528406859637,
+                499.9189914821921
+            ]
+        },
+        {
+            "ID": 299,
+            "AlphanumericName": "NGC 3581",
+            "Name": "NGC 3581",
+            "Constellation": "Carina",
+            "RightAscension": 168.00791666666666,
+            "Declination": -61.30166666666666,
+            "Pos": [
+                -1.3649207937298138,
+                -20.253439950916768,
+                499.5877652238708
+            ]
+        },
+        {
+            "ID": 300,
+            "AlphanumericName": "NGC 3582",
+            "Name": "NGC 3582",
+            "Constellation": "Carina",
+            "RightAscension": 168.04958333333335,
+            "Declination": -61.27333333333333,
+            "Pos": [
+                -0.15726424004715908,
+                -6.136125028008173,
+                499.96232181795403
+            ]
+        },
+        {
+            "ID": 301,
+            "AlphanumericName": "NGC 3584",
+            "Name": "NGC 3584",
+            "Constellation": "Carina",
+            "RightAscension": 168.0825,
+            "Declination": -61.22833333333333,
+            "Pos": [
+                -0.11930410700941359,
+                16.358350865641224,
+                499.73231847008515
+            ]
+        },
+        {
+            "ID": 302,
+            "AlphanumericName": "NGC 3586",
+            "Name": "NGC 3586",
+            "Constellation": "Carina",
+            "RightAscension": 168.12458333333333,
+            "Declination": -61.352222222222224,
+            "Pos": [
+                2.2466804599381787,
+                -45.4641463277073,
+                497.9236526071078
+            ]
+        },
+        {
+            "ID": 303,
+            "AlphanumericName": "NGC 3699",
+            "Name": "NGC 3699",
+            "ApparentMagnitude": 11.3,
+            "Constellation": "Centaurus",
+            "RightAscension": 171.98833333333334,
+            "Declination": -59.9575,
+            "Pos": [
+                336.24303914135623,
+                -345.69838830069483,
+                132.0350065523776
+            ]
+        },
+        {
+            "ID": 304,
+            "AlphanumericName": "NGC 3918",
+            "Name": "NGC 3918",
+            "ApparentMagnitude": 8.1,
+            "Constellation": "Centaurus",
+            "RightAscension": 177.57416666666666,
+            "Declination": -57.18194444444444,
+            "Pos": [
+                -29.871266203928734,
+                401.9379080443492,
+                -295.89461896476973
+            ]
+        },
+        {
+            "ID": 305,
+            "AlphanumericName": "NGC 40",
+            "Name": "NGC 40",
+            "ApparentMagnitude": 12.3,
+            "Constellation": "Cepheus",
+            "RightAscension": 195.25,
+            "Declination": 72.5225,
+            "Pos": [
+                -429.8466714104252,
+                -219.0267953174295,
+                -131.3739015571769
+            ]
+        },
+        {
+            "ID": 306,
+            "AlphanumericName": "NGC 4071",
+            "Name": "NGC 4071",
+            "ApparentMagnitude": 13.0,
+            "Constellation": "Musca",
+            "RightAscension": 181.06375,
+            "Declination": -67.30916666666667,
+            "Pos": [
+                -47.717923142640146,
+                106.23323547522001,
+                486.2483927905773
+            ]
+        },
+        {
+            "ID": 307,
+            "AlphanumericName": "NGC 4361",
+            "Name": "NGC 4361",
+            "ApparentMagnitude": 10.9,
+            "Constellation": "Corvus",
+            "RightAscension": 186.12833333333333,
+            "Declination": -18.784166666666668,
+            "Pos": [
+                -356.6681119630404,
+                -348.88456813642387,
+                32.671333382356764
+            ]
+        },
+        {
+            "ID": 308,
+            "AlphanumericName": "NGC 4399",
+            "Name": "NGC 4399",
+            "Constellation": "CanesVenatici",
+            "RightAscension": 186.42875,
+            "Declination": 33.516666666666666,
+            "Pos": [
+                120.28586275673048,
+                222.28370531016256,
+                431.41773905862266
+            ]
+        },
+        {
+            "ID": 309,
+            "AlphanumericName": "NGC 4400",
+            "Name": "NGC 4400",
+            "Constellation": "CanesVenatici",
+            "RightAscension": 186.48291666666665,
+            "Declination": 33.51583333333333,
+            "Pos": [
+                107.92119512244452,
+                228.14492272732022,
+                431.62820792562707
+            ]
+        },
+        {
+            "ID": 310,
+            "AlphanumericName": "NGC 4401",
+            "Name": "NGC 4401",
+            "Constellation": "CanesVenatici",
+            "RightAscension": 186.49125,
+            "Declination": 33.52722222222222,
+            "Pos": [
+                108.07426514156218,
+                233.48242024944474,
+                428.72591786428427
+            ]
+        },
+        {
+            "ID": 311,
+            "AlphanumericName": "NGC 456",
+            "Name": "NGC 456",
+            "Constellation": "Tucana",
+            "RightAscension": 18.441666666666666,
+            "Declination": -73.29166666666667,
+            "Pos": [
+                -234.30716530070708,
+                101.24975583065202,
+                429.9402740299871
+            ]
+        },
+        {
+            "ID": 312,
+            "AlphanumericName": "NGC 5189",
+            "Name": "NGC 5189",
+            "Constellation": "Musca",
+            "RightAscension": 203.38708333333332,
+            "Declination": -65.97361111111111,
+            "Pos": [
+                342.4101839429744,
+                -364.35595108908115,
+                0.08269286234973436
+            ]
+        },
+        {
+            "ID": 313,
+            "AlphanumericName": "NGC 5307",
+            "Name": "NGC 5307",
+            "ApparentMagnitude": 11.2,
+            "Constellation": "Centaurus",
+            "RightAscension": 207.76375,
+            "Declination": -51.20527777777778,
+            "Pos": [
+                269.5038657067666,
+                119.9120153069364,
+                -403.7186829391701
+            ]
+        },
+        {
+            "ID": 314,
+            "AlphanumericName": "NGC 5315",
+            "Name": "NGC 5315",
+            "ApparentMagnitude": 9.8,
+            "Constellation": "Circinus",
+            "RightAscension": 208.48791666666668,
+            "Declination": -66.51333333333334,
+            "Pos": [
+                -178.00682882611406,
+                -390.1978910582705,
+                257.0197943835233
+            ]
+        },
+        {
+            "ID": 315,
+            "AlphanumericName": "NGC 5367",
+            "Name": "NGC 5367",
+            "Constellation": "Centaurus",
+            "RightAscension": 209.4325,
+            "Declination": -39.97833333333333,
+            "Pos": [
+                160.68065774383763,
+                -282.8681584154159,
+                -379.693733397957
+            ]
+        },
+        {
+            "ID": 316,
+            "AlphanumericName": "NGC 5408A",
+            "Name": "NGC 5408A",
+            "Constellation": "Centaurus",
+            "RightAscension": 210.82583333333332,
+            "Declination": -41.386944444444445,
+            "Pos": [
+                402.9087433570116,
+                142.12739051764552,
+                259.73900244498975
+            ]
+        },
+        {
+            "ID": 317,
+            "AlphanumericName": "NGC 5447",
+            "Name": "NGC 5447",
+            "Constellation": "UrsaMajor",
+            "RightAscension": 210.62083333333334,
+            "Declination": 54.2725,
+            "Pos": [
+                321.2469572277915,
+                43.34767143794452,
+                -380.68539747775134
+            ]
+        },
+        {
+            "ID": 318,
+            "AlphanumericName": "NGC 5449",
+            "Name": "NGC 5449",
+            "Constellation": "UrsaMajor",
+            "RightAscension": 210.6175,
+            "Declination": 54.331388888888895,
+            "Pos": [
+                298.618731969886,
+                39.28124917724185,
+                -399.10379148759387
+            ]
+        },
+        {
+            "ID": 319,
+            "AlphanumericName": "NGC 5450",
+            "Name": "NGC 5450",
+            "Constellation": "UrsaMajor",
+            "RightAscension": 210.62041666666667,
+            "Declination": 54.272777777777776,
+            "Pos": [
+                321.1601763930333,
+                43.1997160343634,
+                -380.77542677245617
+            ]
+        },
+        {
+            "ID": 320,
+            "AlphanumericName": "NGC 5451",
+            "Name": "NGC 5451",
+            "Constellation": "UrsaMajor",
+            "RightAscension": 210.65208333333334,
+            "Declination": 54.36361111111111,
+            "Pos": [
+                284.24539450548616,
+                47.44051163303094,
+                -408.59999211749476
+            ]
+        },
+        {
+            "ID": 321,
+            "AlphanumericName": "NGC 5453",
+            "Name": "NGC 5453",
+            "Constellation": "UrsaMajor",
+            "RightAscension": 210.73625,
+            "Declination": 54.308611111111105,
+            "Pos": [
+                300.5946637262644,
+                76.60785461779304,
+                -392.1403890829828
+            ]
+        },
+        {
+            "ID": 322,
+            "AlphanumericName": "NGC 5455",
+            "Name": "NGC 5455",
+            "Constellation": "UrsaMajor",
+            "RightAscension": 210.75416666666666,
+            "Declination": 54.240833333333335,
+            "Pos": [
+                324.10082395120247,
+                88.81149857416297,
+                -370.23124346165474
+            ]
+        },
+        {
+            "ID": 323,
+            "AlphanumericName": "NGC 5458",
+            "Name": "NGC 5458",
+            "Constellation": "UrsaMajor",
+            "RightAscension": 210.80166666666668,
+            "Declination": 54.29888888888889,
+            "Pos": [
+                298.5548033178917,
+                97.2703354391147,
+                -389.1060411499379
+            ]
+        },
+        {
+            "ID": 324,
+            "AlphanumericName": "NGC 5461",
+            "Name": "NGC 5461",
+            "Constellation": "UrsaMajor",
+            "RightAscension": 210.92291666666668,
+            "Declination": 54.31805555555556,
+            "Pos": [
+                277.78635821569463,
+                129.49216358391845,
+                -395.0525518960958
+            ]
+        },
+        {
+            "ID": 325,
+            "AlphanumericName": "NGC 5462",
+            "Name": "NGC 5462",
+            "Constellation": "UrsaMajor",
+            "RightAscension": 210.97083333333333,
+            "Declination": 54.367222222222225,
+            "Pos": [
+                253.75285695845375,
+                133.43996759192098,
+                -409.63796532363745
+            ]
+        },
+        {
+            "ID": 326,
+            "AlphanumericName": "NGC 5844",
+            "Name": "NGC 5844",
+            "Constellation": "TriangulumAustrale",
+            "RightAscension": 227.66958333333332,
+            "Declination": -64.67277777777778,
+            "Pos": [
+                -12.773982649387792,
+                -132.81470107179706,
+                -481.86832282946585
+            ]
+        },
+        {
+            "ID": 327,
+            "AlphanumericName": "NGC 5873",
+            "Name": "NGC 5873",
+            "ApparentMagnitude": 11.0,
+            "Constellation": "Lupus",
+            "RightAscension": 228.21125,
+            "Declination": -38.125277777777775,
+            "Pos": [
+                -196.29984588849305,
+                410.7858976023371,
+                -206.6913564598097
+            ]
+        },
+        {
+            "ID": 328,
+            "AlphanumericName": "NGC 588",
+            "Name": "NGC 588",
+            "ApparentMagnitude": 13.5,
+            "Constellation": "Triangulum",
+            "RightAscension": 23.190416666666668,
+            "Declination": 30.648888888888887,
+            "Pos": [
+                -130.68883952273933,
+                -335.42439507232655,
+                -347.00274122053196
+            ]
+        },
+        {
+            "ID": 329,
+            "AlphanumericName": "NGC 5882",
+            "Name": "NGC 5882",
+            "ApparentMagnitude": 9.4,
+            "Constellation": "Lupus",
+            "RightAscension": 229.20833333333334,
+            "Declination": -45.64888888888889,
+            "Pos": [
+                47.43366326306831,
+                -6.101529124984353,
+                -497.707563667444
+            ]
+        },
+        {
+            "ID": 330,
+            "AlphanumericName": "NGC 5906",
+            "Name": "NGC 5906",
+            "Constellation": "Draco",
+            "RightAscension": 228.96708333333333,
+            "Declination": 56.330555555555556,
+            "Pos": [
+                -455.26370476536795,
+                176.15087747907359,
+                -108.1934724771523
+            ]
+        },
+        {
+            "ID": 331,
+            "AlphanumericName": "NGC 592",
+            "Name": "NGC 592",
+            "ApparentMagnitude": 13.0,
+            "Constellation": "Triangulum",
+            "RightAscension": 23.3,
+            "Declination": 30.64638888888889,
+            "Pos": [
+                -92.99659373580366,
+                -346.8661092066163,
+                -347.90161804366704
+            ]
+        },
+        {
+            "ID": 332,
+            "AlphanumericName": "NGC 595",
+            "Name": "NGC 595",
+            "ApparentMagnitude": 13.5,
+            "Constellation": "Triangulum",
+            "RightAscension": 23.391666666666666,
+            "Declination": 30.692222222222224,
+            "Pos": [
+                -63.49181780562894,
+                -369.2602679267002,
+                -331.08253291655
+            ]
+        },
+        {
+            "ID": 333,
+            "AlphanumericName": "NGC 5979",
+            "Name": "NGC 5979",
+            "ApparentMagnitude": 11.5,
+            "Constellation": "TriangulumAustrale",
+            "RightAscension": 236.92125,
+            "Declination": -61.217222222222226,
+            "Pos": [
+                5.822932967664769,
+                21.12231540749789,
+                499.5197105655394
+            ]
+        },
+        {
+            "ID": 334,
+            "AlphanumericName": "NGC 602",
+            "Name": "NGC 602",
+            "Constellation": "Hydrus",
+            "RightAscension": 22.36,
+            "Declination": -73.55722222222222,
+            "Pos": [
+                124.48801796245559,
+                48.11989539037927,
+                481.85807978220964
+            ]
+        },
+        {
+            "ID": 335,
+            "AlphanumericName": "NGC 6026",
+            "Name": "NGC 6026",
+            "ApparentMagnitude": 12.9,
+            "Constellation": "Lupus",
+            "RightAscension": 240.3375,
+            "Declination": -34.54361111111111,
+            "Pos": [
+                2.8307112634039044,
+                -499.9436283529478,
+                -6.953814998459328
+            ]
+        },
+        {
+            "ID": 336,
+            "AlphanumericName": "NGC 604",
+            "Name": "NGC 604",
+            "ApparentMagnitude": 12.0,
+            "Constellation": "Triangulum",
+            "RightAscension": 23.635833333333334,
+            "Declination": 30.784444444444446,
+            "Pos": [
+                29.792525346448908,
+                -402.47556487189854,
+                -295.1708405559861
+            ]
+        },
+        {
+            "ID": 337,
+            "AlphanumericName": "NGC 6058",
+            "Name": "NGC 6058",
+            "ApparentMagnitude": 12.9,
+            "Constellation": "Hercules",
+            "RightAscension": 241.11083333333335,
+            "Declination": 40.683611111111105,
+            "Pos": [
+                346.95679150355164,
+                -351.42849465193825,
+                78.22402429070979
+            ]
+        },
+        {
+            "ID": 338,
+            "AlphanumericName": "NGC 6072",
+            "Name": "NGC 6072",
+            "ApparentMagnitude": 11.7,
+            "Constellation": "Scorpius",
+            "RightAscension": 243.2425,
+            "Declination": -36.22944444444445,
+            "Pos": [
+                -11.553658227023123,
+                -49.13831318603196,
+                497.44541324531735
+            ]
+        },
+        {
+            "ID": 339,
+            "AlphanumericName": "NGC 6153",
+            "Name": "NGC 6153",
+            "ApparentMagnitude": 10.9,
+            "Constellation": "Scorpius",
+            "RightAscension": 247.8775,
+            "Declination": -40.253055555555555,
+            "Pos": [
+                396.5008510287105,
+                -126.27589075213236,
+                -277.2029483037001
+            ]
+        },
+        {
+            "ID": 340,
+            "AlphanumericName": "NGC 6164",
+            "Name": "NGC 6164",
+            "Constellation": "Norma",
+            "RightAscension": 248.42083333333332,
+            "Declination": -48.07944444444445,
+            "Pos": [
+                280.64527844613997,
+                67.19719717105103,
+                408.316990068064
+            ]
+        },
+        {
+            "ID": 341,
+            "AlphanumericName": "NGC 6165",
+            "Name": "NGC 6165",
+            "Constellation": "Norma",
+            "RightAscension": 248.50833333333333,
+            "Declination": -48.151111111111106,
+            "Pos": [
+                245.26655966878204,
+                81.96354399508601,
+                427.93257899347344
+            ]
+        },
+        {
+            "ID": 342,
+            "AlphanumericName": "NGC 6188",
+            "Name": "NGC 6188",
+            "Constellation": "Ara",
+            "RightAscension": 250.02083333333334,
+            "Declination": -48.66166666666666,
+            "DistanceFromEarth": 4000.0,
+            "DistanceFromSun": 4000.0,
+            "Pos": [
+                -4.310797142241079,
+                15.933901988646367,
+                499.7274535138275
+            ]
+        },
+        {
+            "ID": 343,
+            "AlphanumericName": "NGC 6210",
+            "Name": "NGC 6210",
+            "ApparentMagnitude": 8.8,
+            "Constellation": "Hercules",
+            "RightAscension": 251.12291666666667,
+            "Declination": 23.800555555555555,
+            "Pos": [
+                115.71405710952497,
+                -23.998480759649453,
+                -485.8336442739246
+            ]
+        },
+        {
+            "ID": 344,
+            "AlphanumericName": "NGC 6302",
+            "Name": "NGC 6302",
+            "ApparentMagnitude": 9.6,
+            "Constellation": "Scorpius",
+            "RightAscension": 258.43375,
+            "Declination": -37.10333333333333,
+            "Pos": [
+                281.3860164691216,
+                303.4775962995593,
+                280.5766531268789
+            ]
+        },
+        {
+            "ID": 345,
+            "AlphanumericName": "NGC 6309",
+            "Name": "NGC 6309",
+            "ApparentMagnitude": 11.5,
+            "Constellation": "Ophiuchus",
+            "RightAscension": 258.5179166666667,
+            "Declination": -12.910277777777779,
+            "Pos": [
+                289.89906772625244,
+                370.86110577149515,
+                -168.58401690965135
+            ]
+        },
+        {
+            "ID": 346,
+            "AlphanumericName": "NGC 6326",
+            "Name": "NGC 6326",
+            "Constellation": "Ara",
+            "RightAscension": 260.1933333333333,
+            "Declination": -51.75388888888889,
+            "Pos": [
+                -34.88811843932661,
+                21.81757379841318,
+                -498.30393603233193
+            ]
+        },
+        {
+            "ID": 347,
+            "AlphanumericName": "NGC 6334",
+            "Name": "NGC 6334",
+            "Constellation": "Scorpius",
+            "RightAscension": 260.2,
+            "Declination": -36.10333333333333,
+            "Pos": [
+                10.633530112363594,
+                -6.551560645604755,
+                499.84398074844955
+            ]
+        },
+        {
+            "ID": 348,
+            "AlphanumericName": "NGC 6337",
+            "Name": "NGC 6337",
+            "ApparentMagnitude": 12.3,
+            "Constellation": "Scorpius",
+            "RightAscension": 260.5654166666667,
+            "Declination": -38.48305555555556,
+            "Pos": [
+                -347.90946815004,
+                65.74659069952587,
+                -353.0387907623542
+            ]
+        },
+        {
+            "ID": 349,
+            "AlphanumericName": "NGC 6357",
+            "Name": "NGC 6357",
+            "Constellation": "Scorpius",
+            "RightAscension": 261.18125,
+            "Declination": -34.20138888888889,
+            "Pos": [
+                426.14893710900236,
+                194.95610740458204,
+                -174.32498268039666
+            ]
+        },
+        {
+            "ID": 350,
+            "AlphanumericName": "NGC 6369",
+            "Name": "NGC 6369",
+            "ApparentMagnitude": 11.4,
+            "Constellation": "Ophiuchus",
+            "RightAscension": 262.335,
+            "Declination": -23.759166666666665,
+            "Pos": [
+                1.1769612718432596,
+                -97.9657862738901,
+                490.30737245314094
+            ]
+        },
+        {
+            "ID": 351,
+            "AlphanumericName": "NGC 6439",
+            "Name": "NGC 6439",
+            "ApparentMagnitude": 12.6,
+            "Constellation": "Sagittarius",
+            "RightAscension": 267.0825,
+            "Declination": -16.478888888888886,
+            "Pos": [
+                358.23486555002984,
+                16.894126693710998,
+                348.39972673297103
+            ]
+        },
+        {
+            "ID": 352,
+            "AlphanumericName": "NGC 6445",
+            "Name": "NGC 6445",
+            "ApparentMagnitude": 11.2,
+            "Constellation": "Sagittarius",
+            "RightAscension": 267.3129166666667,
+            "Declination": -20.00888888888889,
+            "Pos": [
+                -192.32283904920538,
+                -54.79162168178309,
+                -458.2682661646274
+            ]
+        },
+        {
+            "ID": 353,
+            "AlphanumericName": "NGC 6526",
+            "Name": "NGC 6526",
+            "Constellation": "Sagittarius",
+            "RightAscension": 271.025,
+            "Declination": -24.441666666666666,
+            "Pos": [
+                254.84803772847835,
+                288.95287055407033,
+                318.68278313160687
+            ]
+        },
+        {
+            "ID": 354,
+            "AlphanumericName": "NGC 6533",
+            "Name": "NGC 6533",
+            "Constellation": "Sagittarius",
+            "RightAscension": 271.025,
+            "Declination": -24.383333333333333,
+            "Pos": [
+                242.12509913572742,
+                274.5272949795964,
+                340.60270210275763
+            ]
+        },
+        {
+            "ID": 355,
+            "AlphanumericName": "NGC 6537",
+            "Name": "NGC 6537",
+            "ApparentMagnitude": 11.6,
+            "Constellation": "Sagittarius",
+            "RightAscension": 271.3041666666667,
+            "Declination": -19.842222222222222,
+            "Pos": [
+                117.26784307978062,
+                246.78444528907534,
+                -418.74298864909883
+            ]
+        },
+        {
+            "ID": 356,
+            "AlphanumericName": "NGC 6543",
+            "Name": "NGC 6543",
+            "ApparentMagnitude": 8.1,
+            "Constellation": "Draco",
+            "RightAscension": 269.63916666666665,
+            "Declination": 66.63361111111112,
+            "Pos": [
+                -339.1936971128056,
+                202.31043642573678,
+                -306.6237485130176
+            ],
+            "Texture": "NGC 6543"
+        },
+        {
+            "ID": 357,
+            "AlphanumericName": "NGC 6559",
+            "Name": "NGC 6559",
+            "Constellation": "Sagittarius",
+            "RightAscension": 272.49,
+            "Declination": -24.109722222222224,
+            "Pos": [
+                -176.01098201983842,
+                191.90092172501838,
+                426.84209076601206
+            ]
+        },
+        {
+            "ID": 358,
+            "AlphanumericName": "NGC 6563",
+            "Name": "NGC 6563",
+            "ApparentMagnitude": 11.0,
+            "Constellation": "Sagittarius",
+            "RightAscension": 273.0108333333333,
+            "Declination": -33.867777777777775,
+            "Pos": [
+                367.5865371145025,
+                -116.82770402486514,
+                -318.1688628770059
+            ]
+        },
+        {
+            "ID": 359,
+            "AlphanumericName": "NGC 6565",
+            "Name": "NGC 6565",
+            "ApparentMagnitude": 11.6,
+            "Constellation": "Sagittarius",
+            "RightAscension": 272.96875,
+            "Declination": -28.178055555555556,
+            "Pos": [
+                467.5434237224426,
+                -170.56646612694212,
+                -48.06482671208953
+            ]
+        },
+        {
+            "ID": 360,
+            "AlphanumericName": "NGC 6567",
+            "Name": "NGC 6567",
+            "ApparentMagnitude": 11.0,
+            "Constellation": "Sagittarius",
+            "RightAscension": 273.4379166666667,
+            "Declination": -19.075555555555557,
+            "Pos": [
+                -483.81852978332637,
+                -58.02233683535427,
+                -112.0403439233621
+            ]
+        },
+        {
+            "ID": 361,
+            "AlphanumericName": "NGC 6572",
+            "Name": "NGC 6572",
+            "ApparentMagnitude": 8.1,
+            "Constellation": "Ophiuchus",
+            "RightAscension": 273.02666666666664,
+            "Declination": 6.854166666666666,
+            "Pos": [
+                -402.89071523744707,
+                121.05932489972074,
+                270.2289981298864
+            ]
+        },
+        {
+            "ID": 362,
+            "AlphanumericName": "NGC 6578",
+            "Name": "NGC 6578",
+            "ApparentMagnitude": 12.9,
+            "Constellation": "Sagittarius",
+            "RightAscension": 274.06875,
+            "Declination": -20.45,
+            "Pos": [
+                10.842964961853502,
+                10.105099105598491,
+                -499.7802688011023
+            ]
+        },
+        {
+            "ID": 363,
+            "AlphanumericName": "NGC 6589",
+            "Name": "NGC 6589",
+            "Constellation": "Sagittarius",
+            "RightAscension": 274.21541666666667,
+            "Declination": -19.778055555555554,
+            "Pos": [
+                -186.92015580280494,
+                -234.03396619670715,
+                -400.36103459364483
+            ]
+        },
+        {
+            "ID": 364,
+            "AlphanumericName": "NGC 6590",
+            "Name": "NGC 6590",
+            "Constellation": "Sagittarius",
+            "RightAscension": 274.27,
+            "Declination": -19.866111111111113,
+            "Pos": [
+                -152.76117359509973,
+                -214.2696204163667,
+                -425.1500365852906
+            ]
+        },
+        {
+            "ID": 365,
+            "AlphanumericName": "NGC 6620",
+            "Name": "NGC 6620",
+            "ApparentMagnitude": 12.7,
+            "Constellation": "Sagittarius",
+            "RightAscension": 275.72583333333336,
+            "Declination": -26.82111111111111,
+            "Pos": [
+                -43.536163125626715,
+                39.30130882533631,
+                -496.54809396967215
+            ]
+        },
+        {
+            "ID": 366,
+            "AlphanumericName": "NGC 6629",
+            "Name": "NGC 6629",
+            "ApparentMagnitude": 11.3,
+            "Constellation": "Sagittarius",
+            "RightAscension": 276.4266666666667,
+            "Declination": -23.202222222222222,
+            "Pos": [
+                -175.9086629014891,
+                5.892829717417157,
+                467.9972402420038
+            ]
+        },
+        {
+            "ID": 367,
+            "AlphanumericName": "NGC 6644",
+            "Name": "NGC 6644",
+            "ApparentMagnitude": 10.7,
+            "Constellation": "Sagittarius",
+            "RightAscension": 278.14458333333334,
+            "Declination": -25.128333333333334,
+            "Pos": [
+                -56.69399842928525,
+                496.7705035407474,
+                2.203940555564018
+            ]
+        },
+        {
+            "ID": 368,
+            "AlphanumericName": "NGC 6726",
+            "Name": "NGC 6726",
+            "Constellation": "CoronaAustralis",
+            "RightAscension": 285.41333333333336,
+            "Declination": -36.89138888888889,
+            "Pos": [
+                -307.8513629979478,
+                156.99743580644642,
+                361.35763925854195
+            ]
+        },
+        {
+            "ID": 369,
+            "AlphanumericName": "NGC 6727",
+            "Name": "NGC 6727",
+            "Constellation": "CoronaAustralis",
+            "RightAscension": 285.42583333333334,
+            "Declination": -36.87638888888889,
+            "Pos": [
+                -304.89596134428615,
+                150.71801182000826,
+                366.5003869970227
+            ]
+        },
+        {
+            "ID": 370,
+            "AlphanumericName": "NGC 6729",
+            "Name": "NGC 6729",
+            "Constellation": "CoronaAustralis",
+            "RightAscension": 285.48041666666666,
+            "Declination": -36.95777777777778,
+            "Pos": [
+                -339.0208848759947,
+                145.14341255441684,
+                337.6362382949376
+            ]
+        },
+        {
+            "ID": 371,
+            "AlphanumericName": "NGC 6741",
+            "Name": "NGC 6741",
+            "ApparentMagnitude": 11.5,
+            "Constellation": "Aquila",
+            "RightAscension": 285.65416666666664,
+            "Declination": -26.933333333333334,
+            "Pos": [
+                110.87033031737086,
+                -26.049011412367754,
+                -486.85646638383616
+            ]
+        },
+        {
+            "ID": 372,
+            "AlphanumericName": "NGC 6742",
+            "Name": "NGC 6742",
+            "ApparentMagnitude": 13.4,
+            "Constellation": "Draco",
+            "RightAscension": 284.8325,
+            "Declination": 48.46638888888889,
+            "Pos": [
+                56.0661261138179,
+                -98.29391182517718,
+                -487.02658695464845
+            ]
+        },
+        {
+            "ID": 373,
+            "AlphanumericName": "NGC 6751",
+            "Name": "NGC 6751",
+            "ApparentMagnitude": 11.9,
+            "Constellation": "Aquila",
+            "RightAscension": 286.48125,
+            "Declination": -5.991666666666667,
+            "Pos": [
+                -396.2495648197438,
+                -268.95272600355827,
+                143.70356138738717
+            ]
+        },
+        {
+            "ID": 374,
+            "AlphanumericName": "NGC 6765",
+            "Name": "NGC 6765",
+            "ApparentMagnitude": 12.9,
+            "Constellation": "Lyra",
+            "RightAscension": 287.77708333333334,
+            "Declination": 30.54638888888889,
+            "Pos": [
+                101.89099462270227,
+                -306.07595586253007,
+                -382.01535892897687
+            ]
+        },
+        {
+            "ID": 375,
+            "AlphanumericName": "NGC 6766",
+            "Name": "NGC 6766",
+            "ApparentMagnitude": 10.9,
+            "Constellation": "Cygnus",
+            "RightAscension": 302.59875,
+            "Declination": 46.461666666666666,
+            "Pos": [
+                -211.10212244242578,
+                -333.0452279353095,
+                307.43579825684066
+            ]
+        },
+        {
+            "ID": 376,
+            "AlphanumericName": "NGC 6772",
+            "Name": "NGC 6772",
+            "ApparentMagnitude": 12.7,
+            "Constellation": "Aquila",
+            "RightAscension": 288.65166666666664,
+            "Declination": -2.7061111111111114,
+            "Pos": [
+                -421.853944716489,
+                165.98348156531958,
+                -210.92352446939776
+            ]
+        },
+        {
+            "ID": 377,
+            "AlphanumericName": "NGC 6778",
+            "Name": "NGC 6778",
+            "ApparentMagnitude": 12.3,
+            "Constellation": "Aquila",
+            "RightAscension": 289.60375,
+            "Declination": -1.5958333333333334,
+            "Pos": [
+                -10.489155915789224,
+                -6.830650756576706,
+                -499.843295262041
+            ]
+        },
+        {
+            "ID": 378,
+            "AlphanumericName": "NGC 6781",
+            "Name": "NGC 6781",
+            "ApparentMagnitude": 11.4,
+            "Constellation": "Aquila",
+            "RightAscension": 289.61791666666664,
+            "Declination": 6.540277777777778,
+            "Pos": [
+                401.4401919160091,
+                269.5969344589087,
+                127.1348309661702
+            ]
+        },
+        {
+            "ID": 379,
+            "AlphanumericName": "NGC 6790",
+            "Name": "NGC 6790",
+            "ApparentMagnitude": 10.5,
+            "Constellation": "Aquila",
+            "RightAscension": 290.7375,
+            "Declination": 1.513611111111111,
+            "Pos": [
+                -3.9928078536437566,
+                28.29671254698593,
+                499.18268554155316
+            ]
+        },
+        {
+            "ID": 380,
+            "AlphanumericName": "NGC 6803",
+            "Name": "NGC 6803",
+            "ApparentMagnitude": 11.4,
+            "Constellation": "Aquila",
+            "RightAscension": 292.8179166666667,
+            "Declination": 10.057222222222222,
+            "Pos": [
+                321.103489660847,
+                244.0029069364778,
+                -295.5590132852911
+            ]
+        },
+        {
+            "ID": 381,
+            "AlphanumericName": "NGC 6804",
+            "Name": "NGC 6804",
+            "ApparentMagnitude": 12.0,
+            "Constellation": "Aquila",
+            "RightAscension": 292.8975,
+            "Declination": 9.225833333333334,
+            "Pos": [
+                365.4397115261828,
+                326.63271468178567,
+                98.81744248495531
+            ]
+        },
+        {
+            "ID": 382,
+            "AlphanumericName": "NGC 6807",
+            "Name": "NGC 6807",
+            "ApparentMagnitude": 12.0,
+            "Constellation": "Aquila",
+            "RightAscension": 293.63958333333335,
+            "Declination": 5.684444444444445,
+            "Pos": [
+                -40.95804972660236,
+                -410.98711029131346,
+                -281.8014076206663
+            ]
+        },
+        {
+            "ID": 383,
+            "AlphanumericName": "NGC 6813",
+            "Name": "NGC 6813",
+            "Constellation": "Vulpecula",
+            "RightAscension": 295.1,
+            "Declination": 27.309444444444445,
+            "Pos": [
+                -278.51533385116363,
+                59.27884171381075,
+                410.9929777196246
+            ]
+        },
+        {
+            "ID": 384,
+            "AlphanumericName": "NGC 6818",
+            "Name": "NGC 6818",
+            "ApparentMagnitude": 9.3,
+            "Constellation": "Sagittarius",
+            "RightAscension": 295.99083333333334,
+            "Declination": -14.1525,
+            "Pos": [
+                -5.955629072270778,
+                -4.827167884455809,
+                -499.94122547812435
+            ]
+        },
+        {
+            "ID": 385,
+            "AlphanumericName": "NGC 6820",
+            "Name": "NGC 6820",
+            "Constellation": "Vulpecula",
+            "RightAscension": 295.6166666666667,
+            "Declination": 23.0875,
+            "Pos": [
+                -217.7453069519825,
+                -69.01998699011256,
+                -444.77322614594465
+            ]
+        },
+        {
+            "ID": 386,
+            "AlphanumericName": "NGC 6826",
+            "Name": "NGC 6826",
+            "ApparentMagnitude": 8.8,
+            "Constellation": "Cygnus",
+            "RightAscension": 296.2008333333333,
+            "Declination": 50.525555555555556,
+            "Pos": [
+                303.70064146474203,
+                375.8114373240074,
+                128.57559624737465
+            ]
+        },
+        {
+            "ID": 387,
+            "AlphanumericName": "NGC 6833",
+            "Name": "NGC 6833",
+            "ApparentMagnitude": 12.1,
+            "Constellation": "Cygnus",
+            "RightAscension": 297.44416666666666,
+            "Declination": 48.961666666666666,
+            "Pos": [
+                -70.47748963452261,
+                111.50422336597501,
+                -482.2859438407536
+            ]
+        },
+        {
+            "ID": 388,
+            "AlphanumericName": "NGC 6842",
+            "Name": "NGC 6842",
+            "ApparentMagnitude": 13.1,
+            "Constellation": "Vulpecula",
+            "RightAscension": 298.75958333333335,
+            "Declination": 29.289722222222224,
+            "Pos": [
+                251.21585012432274,
+                79.99552409688046,
+                -424.84269179400883
+            ]
+        },
+        {
+            "ID": 389,
+            "AlphanumericName": "NGC 6852",
+            "Name": "NGC 6852",
+            "ApparentMagnitude": 12.6,
+            "Constellation": "Aquila",
+            "RightAscension": 300.16333333333336,
+            "Declination": 1.7286111111111113,
+            "Pos": [
+                -11.061416626019517,
+                77.79783153324016,
+                493.7865353277175
+            ]
+        },
+        {
+            "ID": 390,
+            "AlphanumericName": "NGC 6857",
+            "Name": "NGC 6857",
+            "Constellation": "Cygnus",
+            "RightAscension": 300.45,
+            "Declination": 33.525,
+            "Pos": [
+                -106.36682104068683,
+                233.21777658789827,
+                429.29659684779205
+            ]
+        },
+        {
+            "ID": 391,
+            "AlphanumericName": "NGC 6879",
+            "Name": "NGC 6879",
+            "ApparentMagnitude": 12.5,
+            "Constellation": "Sagitta",
+            "RightAscension": 302.61083333333335,
+            "Declination": 16.92361111111111,
+            "Pos": [
+                -91.3001207200638,
+                -147.9636925021655,
+                -468.7974335015353
+            ]
+        },
+        {
+            "ID": 392,
+            "AlphanumericName": "NGC 6881",
+            "Name": "NGC 6881",
+            "ApparentMagnitude": 13.9,
+            "Constellation": "Cygnus",
+            "RightAscension": 302.71875,
+            "Declination": 37.41222222222222,
+            "Pos": [
+                206.40673649589095,
+                432.87204241179273,
+                -141.48517246467523
+            ]
+        },
+        {
+            "ID": 393,
+            "AlphanumericName": "NGC 6886",
+            "Name": "NGC 6886",
+            "ApparentMagnitude": 11.4,
+            "Constellation": "Sagitta",
+            "RightAscension": 303.17833333333334,
+            "Declination": 19.990000000000002,
+            "Pos": [
+                -3.054200502806081,
+                208.57311851405458,
+                454.4094256203438
+            ]
+        },
+        {
+            "ID": 394,
+            "AlphanumericName": "NGC 6888",
+            "Name": "NGC 6888",
+            "Constellation": "Cygnus",
+            "RightAscension": 303.02708333333334,
+            "Declination": 38.355000000000004,
+            "Pos": [
+                53.96305977678639,
+                392.5616646415657,
+                304.93167699235494
+            ]
+        },
+        {
+            "ID": 395,
+            "AlphanumericName": "NGC 6891",
+            "Name": "NGC 6891",
+            "ApparentMagnitude": 10.5,
+            "Constellation": "Delphinus",
+            "RightAscension": 303.7870833333333,
+            "Declination": 12.704722222222221,
+            "Pos": [
+                -289.1071853100265,
+                402.0723787586316,
+                68.95533076919747
+            ]
+        },
+        {
+            "ID": 396,
+            "AlphanumericName": "NGC 6894",
+            "Name": "NGC 6894",
+            "ApparentMagnitude": 12.3,
+            "Constellation": "Cygnus",
+            "RightAscension": 304.1,
+            "Declination": 30.565833333333334,
+            "Pos": [
+                -265.73898118945453,
+                195.58662005235382,
+                -375.6709569994557
+            ]
+        },
+        {
+            "ID": 397,
+            "AlphanumericName": "NGC 6905",
+            "Name": "NGC 6905",
+            "ApparentMagnitude": 11.1,
+            "Constellation": "Delphinus",
+            "RightAscension": 305.59583333333336,
+            "Declination": 20.105,
+            "Pos": [
+                -101.01891691917368,
+                -117.65902541144497,
+                475.3435937968514
+            ]
+        },
+        {
+            "ID": 398,
+            "AlphanumericName": "NGC 6914",
+            "Name": "NGC 6914",
+            "Constellation": "Cygnus",
+            "RightAscension": 306.1791666666667,
+            "Declination": 42.483333333333334,
+            "Pos": [
+                -4.513770112134942,
+                -35.600365892980236,
+                -498.7105772165462
+            ]
+        },
+        {
+            "ID": 399,
+            "AlphanumericName": "NGC 6960",
+            "Name": "NGC 6960",
+            "Constellation": "Cygnus",
+            "RightAscension": 311.425,
+            "Declination": 30.716666666666665,
+            "Pos": [
+                -351.35131412079687,
+                -151.59308691809838,
+                -321.8257138020997
+            ]
+        },
+        {
+            "ID": 400,
+            "AlphanumericName": "NGC 6974",
+            "Name": "NGC 6974",
+            "Constellation": "Cygnus",
+            "RightAscension": 312.76666666666665,
+            "Declination": 31.831666666666667,
+            "Pos": [
+                81.07847649002385,
+                -450.16565490656336,
+                201.93356281857052
+            ]
+        },
+        {
+            "ID": 401,
+            "AlphanumericName": "NGC 6979",
+            "Name": "NGC 6979",
+            "Constellation": "Cygnus",
+            "RightAscension": 312.625,
+            "Declination": 32.026666666666664,
+            "Pos": [
+                14.960191129869003,
+                -409.3386127529041,
+                286.73697492804405
+            ]
+        },
+        {
+            "ID": 402,
+            "AlphanumericName": "NGC 6992",
+            "Name": "NGC 6992",
+            "Constellation": "Cygnus",
+            "RightAscension": 314.075,
+            "Declination": 31.741666666666667,
+            "Pos": [
+                472.0262490207293,
+                -39.86987337134232,
+                160.0050418979776
+            ]
+        },
+        {
+            "ID": 403,
+            "AlphanumericName": "NGC 6995",
+            "Name": "NGC 6995",
+            "Constellation": "Cygnus",
+            "RightAscension": 314.2916666666667,
+            "Declination": 31.233333333333334,
+            "Pos": [
+                487.38468274343836,
+                64.91010704561847,
+                -90.79013729697907
+            ]
+        },
+        {
+            "ID": 404,
+            "AlphanumericName": "NGC 7000",
+            "Name": "NGC 7000",
+            "Constellation": "Cygnus",
+            "RightAscension": 314.825,
+            "Declination": 44.516666666666666,
+            "Pos": [
+                338.41116920161573,
+                265.76611252923595,
+                254.64927643858115
+            ]
+        },
+        {
+            "ID": 405,
+            "AlphanumericName": "NGC 7008",
+            "Name": "NGC 7008",
+            "ApparentMagnitude": 10.7,
+            "Constellation": "Cygnus",
+            "RightAscension": 315.13666666666666,
+            "Declination": 54.54388888888889,
+            "Pos": [
+                -117.56385918940988,
+                -174.3019529453708,
+                -453.64916864458417
+            ]
+        },
+        {
+            "ID": 406,
+            "AlphanumericName": "NGC 7009",
+            "Name": "NGC 7009",
+            "ApparentMagnitude": 8.0,
+            "Constellation": "Aquarius",
+            "RightAscension": 316.045,
+            "Declination": -11.363055555555555,
+            "Pos": [
+                -55.642727208953374,
+                170.79784084531804,
+                466.6175998302329
+            ]
+        },
+        {
+            "ID": 407,
+            "AlphanumericName": "NGC 7023",
+            "Name": "NGC 7023",
+            "Constellation": "Cepheus",
+            "RightAscension": 315.3979166666667,
+            "Declination": 68.16944444444445,
+            "Pos": [
+                95.41854788959488,
+                276.6369921637525,
+                -405.42234186738284
+            ]
+        },
+        {
+            "ID": 408,
+            "AlphanumericName": "NGC 7026",
+            "Name": "NGC 7026",
+            "ApparentMagnitude": 10.9,
+            "Constellation": "Cygnus",
+            "RightAscension": 316.5775,
+            "Declination": 47.85277777777778,
+            "Pos": [
+                279.5643892832463,
+                -246.86280034478403,
+                -333.0202847434624
+            ]
+        },
+        {
+            "ID": 409,
+            "AlphanumericName": "NGC 7027",
+            "Name": "NGC 7027",
+            "ApparentMagnitude": 8.5,
+            "Constellation": "Cygnus",
+            "RightAscension": 316.75708333333336,
+            "Declination": 42.236666666666665,
+            "Pos": [
+                74.42767497696529,
+                -44.996908040258866,
+                -492.37770000715886
+            ]
+        },
+        {
+            "ID": 410,
+            "AlphanumericName": "NGC 7048",
+            "Name": "NGC 7048",
+            "ApparentMagnitude": 12.1,
+            "Constellation": "Cygnus",
+            "RightAscension": 318.56333333333333,
+            "Declination": 46.28916666666667,
+            "Pos": [
+                101.86867307996827,
+                319.86172193628863,
+                370.5553295863911
+            ]
+        },
+        {
+            "ID": 411,
+            "AlphanumericName": "NGC 7076",
+            "Name": "NGC 7076",
+            "ApparentMagnitude": 13.5,
+            "Constellation": "Cepheus",
+            "RightAscension": 321.60041666666666,
+            "Declination": 62.891666666666666,
+            "Pos": [
+                200.243003504498,
+                457.17544678954454,
+                29.888967869064068
+            ]
+        },
+        {
+            "ID": 412,
+            "AlphanumericName": "NGC 7094",
+            "Name": "NGC 7094",
+            "ApparentMagnitude": 13.4,
+            "Constellation": "Pegasus",
+            "RightAscension": 324.22083333333336,
+            "Declination": 12.789444444444444,
+            "Pos": [
+                -392.04345881897433,
+                -289.9421198475103,
+                110.6141651669764
+            ]
+        },
+        {
+            "ID": 413,
+            "AlphanumericName": "NGC 7139",
+            "Name": "NGC 7139",
+            "ApparentMagnitude": 13.3,
+            "Constellation": "Cepheus",
+            "RightAscension": 326.535,
+            "Declination": 63.79222222222222,
+            "Pos": [
+                281.41654571331105,
+                -54.30760018037919,
+                409.7016138135607
+            ]
+        },
+        {
+            "ID": 414,
+            "AlphanumericName": "NGC 7293",
+            "Name": "NGC 7293",
+            "ApparentMagnitude": 7.3,
+            "Constellation": "Aquarius",
+            "RightAscension": 337.41,
+            "Declination": -20.836388888888887,
+            "Pos": [
+                61.87580265329353,
+                192.36251871390485,
+                -457.34893291671
+            ]
+        },
+        {
+            "ID": 415,
+            "AlphanumericName": "NGC 7354",
+            "Name": "NGC 7354",
+            "ApparentMagnitude": 12.2,
+            "Constellation": "Cepheus",
+            "RightAscension": 340.0833333333333,
+            "Declination": 61.28611111111111,
+            "Pos": [
+                8.804463817332786,
+                8.909483642026895,
+                -499.8430778935742
+            ]
+        },
+        {
+            "ID": 416,
+            "AlphanumericName": "NGC 7538",
+            "Name": "NGC 7538",
+            "Constellation": "Cepheus",
+            "RightAscension": 348.40833333333336,
+            "Declination": 61.51166666666666,
+            "Pos": [
+                -118.14536521774815,
+                37.64355250306465,
+                -484.38067223260873
+            ]
+        },
+        {
+            "ID": 417,
+            "AlphanumericName": "NGC 7635",
+            "Name": "NGC 7635",
+            "Constellation": "Cassiopeia",
+            "RightAscension": 350.1875,
+            "Declination": 61.211666666666666,
+            "Pos": [
+                2.4663743434560836,
+                24.561478724957094,
+                -499.3902790007445
+            ]
+        },
+        {
+            "ID": 418,
+            "AlphanumericName": "NGC 7662",
+            "Name": "NGC 7662",
+            "ApparentMagnitude": 8.3,
+            "Constellation": "Andromeda",
+            "RightAscension": 351.4745833333333,
+            "Declination": 42.535555555555554,
+            "Pos": [
+                57.36751233515547,
+                -23.16606423552068,
+                -496.1575374780792
+            ]
+        },
+        {
+            "ID": 419,
+            "AlphanumericName": "NGC 7822",
+            "Name": "NGC 7822",
+            "Constellation": "Cepheus",
+            "RightAscension": 54.0,
+            "Declination": 67.15,
+            "Pos": [
+                159.27247593994258,
+                107.31781031879899,
+                -461.6439818695124
+            ]
+        },
+        {
+            "ID": 420,
+            "AlphanumericName": "NGC 894",
+            "Name": "NGC 894",
+            "Constellation": "Cetus",
+            "RightAscension": 35.39375,
+            "Declination": -5.509722222222222,
+            "Pos": [
+                -239.78574809122375,
+                -265.4925258449559,
+                349.3086224713007
+            ]
+        },
+        {
+            "ID": 421,
+            "AlphanumericName": "NGC 896",
+            "Name": "NGC 896",
+            "Constellation": "Cassiopeia",
+            "RightAscension": 36.365833333333335,
+            "Declination": 62.019444444444446,
+            "Pos": [
+                80.91086695620169,
+                -334.22163223870115,
+                -362.97290828944
+            ]
+        }
+    ]
+}

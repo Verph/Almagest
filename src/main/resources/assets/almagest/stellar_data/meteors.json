@@ -1,0 +1,758 @@
+﻿{
+    "replace": false,
+    "meteors": [
+        {
+            "ID": 0,
+            "Names": {
+                "Name": "Quadrantids"
+            },
+            "Attributes": {
+                "DiurnalDriftDeclination": -12.0,
+                "DiurnalDriftRightAscension": 24.0,
+                "GeocentricVelocity": 41.0,
+                "NumberDensity": 80.0,
+                "ParentObject": [
+                    "196256 (2003 EH1)"
+                ],
+                "PopulationIndex": 2.1,
+                "RadiantAltitude": 49.15227385129497,
+                "RadiantAzimuth": 70.28336698250223,
+                "RadiantDeclination": 49.0,
+                "RadiantRightAscension": 230.0,
+                "RadiantSolarLongitude": 283.16,
+				"Inclination": 71.2,
+				"Eccentricity": 0.659,
+				"AscendingNodeLongitude": 283.4,
+				"PeriapsisLongitude": 172.4,
+				"SemimajorAxis": 2.872
+            }
+        },
+        {
+            "ID": 1,
+            "Names": {
+                "Name": "March Centaurids"
+            },
+            "Attributes": {
+                "GeocentricVelocity": 56.0,
+                "PopulationIndex": 2.0,
+                "RadiantAltitude": -32.81830092137583,
+                "RadiantAzimuth": 151.64552721589413,
+                "RadiantDeclination": -59.0,
+                "RadiantRightAscension": 211.0,
+                "RadiantSolarLongitude": 319.2,
+				"Inclination": 	137.4,
+				"Eccentricity": 0.998,
+				"AscendingNodeLongitude": 172.1,
+				"PeriapsisLongitude": 110.3,
+				"SemimajorAxis": 110
+            }
+        },
+        {
+            "ID": 2,
+            "Names": {
+                "Name": "Delta Leonids"
+            },
+            "Attributes": {
+                "ParentObject": [
+                    "109P Swift-Tuttle"
+                ],
+                "GeocentricVelocity": 23.0,
+                "PopulationIndex": 3.0,
+                "RadiantAltitude": 48.54936872568754,
+                "RadiantAzimuth": 168.63456683376,
+                "RadiantDeclination": 16.0,
+                "RadiantRightAscension": 168.0,
+                "RadiantSolarLongitude": 336.0,
+				"Inclination": 23.19,
+				"Eccentricity": 0.83,
+				"AscendingNodeLongitude": 182.80,
+				"PeriapsisLongitude": 59.90,
+				"SemimajorAxis": 1.89
+            }
+        },
+        {
+            "ID": 3,
+            "Names": {
+                "Name": "Gamma Normids"
+            },
+            "Attributes": {
+                "GeocentricVelocity": 56.0,
+                "ParentObject": [
+                    "27P Crommelin"
+                ],
+                "PopulationIndex": 2.4,
+                "RadiantAltitude": -35.08081711649298,
+                "RadiantAzimuth": 129.59983439244124,
+                "RadiantDeclination": -50.0,
+                "RadiantRightAscension": 239.0,
+                "RadiantSolarLongitude": 353.0,
+				"Inclination": 115.2,
+				"Eccentricity": 0.968,
+				"AscendingNodeLongitude": 134.5,
+				"PeriapsisLongitude": 307.8,
+				"SemimajorAxis": 25.5
+            }
+        },
+        {
+            "ID": 4,
+            "Names": {
+                "Name": "Lyrids"
+            },
+            "Attributes": {
+                "DiurnalDriftDeclination": 0,
+                "DiurnalDriftRightAscension": 66.0,
+                "GeocentricVelocity": 49.0,
+                "NumberDensity": 10,
+                "ParentObject": [
+                    "C 1861 G1 (Thatcher)"
+                ],
+                "PopulationIndex": 2.1,
+                "RadiantAltitude": 17.9947286316,
+                "RadiantAzimuth": 54.574177621397276,
+                "RadiantDeclination": 34.0,
+                "RadiantRightAscension": 271.0,
+                "RadiantSolarLongitude": 32.32,
+				"Inclination": 79.7,
+				"Eccentricity": 0.963,
+				"AscendingNodeLongitude": 32.2,
+				"PeriapsisLongitude": 214.0,
+				"SemimajorAxis": 25.1
+            }
+        },
+        {
+            "ID": 5,
+            "Names": {
+                "Name": "Pi Puppids"
+            },
+            "Attributes": {
+                "GeocentricVelocity": 18.0,
+                "ParentObject": [
+                    "26P Grigg-Skjellerup"
+                ],
+                "PopulationIndex": 2.0,
+                "RadiantAltitude": -20.29866806031811,
+                "RadiantAzimuth": 215.39663535163703,
+                "RadiantDeclination": -45.0,
+                "RadiantRightAscension": 110.0,
+                "RadiantSolarLongitude": 33.5,
+				"Inclination": 21,
+				"Eccentricity": 0.912,
+				"AscendingNodeLongitude": 48.0,
+				"PeriapsisLongitude": 359.00,
+				"SemimajorAxis": 11.2
+            }
+        },
+        {
+            "ID": 6,
+            "Names": {
+                "Name": "Eta Aquariids"
+            },
+            "Attributes": {
+                "GeocentricVelocity": 66.0,
+                "ParentObject": [
+                    "1P Halley"
+                ],
+                "PopulationIndex": 2.4,
+                "RadiantAltitude": -33.9422900023,
+                "RadiantAzimuth": 2.6521760797706437,
+                "RadiantDeclination": -1.0,
+                "RadiantRightAscension": 338.0,
+                "RadiantSolarLongitude": 45.5,
+				"Inclination": 163.6,
+				"Eccentricity": 0.960,
+				"AscendingNodeLongitude": 46.5,
+				"PeriapsisLongitude": 98.4,
+				"SemimajorAxis": 14.8
+            }
+        },
+        {
+            "ID": 7,
+            "Names": {
+                "Name": "Eta Lyrids"
+            },
+            "Attributes": {
+                "ParentObject": [
+                    "C 1983 H1 (IRAS-Araki-Alcock)"
+                ],
+                "GeocentricVelocity": 44.0,
+                "PopulationIndex": 3.0,
+                "RadiantAltitude": 20.382924067729572,
+                "RadiantAzimuth": 37.91380978970415,
+                "RadiantDeclination": 44.0,
+                "RadiantRightAscension": 287.0,
+                "RadiantSolarLongitude": 48.4,
+				"Inclination": 74.7,
+				"Eccentricity": 0.959,
+				"AscendingNodeLongitude": 49.3,
+				"PeriapsisLongitude": 190.8,
+				"SemimajorAxis": 24.2
+            }
+        },
+        {
+            "ID": 8,
+            "Names": {
+                "Name": "June Boötids"
+            },
+            "Attributes": {
+                "GeocentricVelocity": 18.0,
+                "ParentObject": [
+                    "7P Pons-Winnecke"
+                ],
+                "PopulationIndex": 2.2,
+                "RadiantAltitude": 51.65021795176029,
+                "RadiantAzimuth": 75.38389680918058,
+                "RadiantDeclination": 48.0,
+                "RadiantRightAscension": 224.0,
+                "RadiantSolarLongitude": 95.7,
+				"Inclination": 18.2,
+				"Eccentricity": 0.6739,
+				"AscendingNodeLongitude": 89.48,
+				"PeriapsisLongitude": 185.59,
+				"SemimajorAxis": 3.11
+            }
+        },
+        {
+            "ID": 9,
+            "Names": {
+                "Name": "Piscis Austrinids"
+            },
+            "Attributes": {
+                "GeocentricVelocity": 35.0,
+                "PopulationIndex": 3.2,
+                "RadiantAltitude": -62.9642144351,
+                "RadiantAzimuth": 358.476311160718,
+                "RadiantDeclination": -30.0,
+                "RadiantRightAscension": 341.0,
+                "RadiantSolarLongitude": 125.0,
+				"Inclination": 56.7,
+				"Eccentricity": 0.977,
+				"AscendingNodeLongitude": 314.8,
+				"PeriapsisLongitude": 140.1,
+				"SemimajorAxis": 5.64
+            }
+        },
+        {
+            "ID": 10,
+            "Names": {
+                "Name": "South Delta Aquariids"
+            },
+            "Attributes": {
+                "ParentObject": [
+                    "96P Machholz 1"
+                ],
+                "GeocentricVelocity": 41.0,
+                "PopulationIndex": 3.2,
+                "RadiantAltitude": -48.9599834721,
+                "RadiantAzimuth": 1.7574759214124498,
+                "RadiantDeclination": -16.0,
+                "RadiantRightAscension": 339.0,
+                "RadiantSolarLongitude": 125.0,
+				"Inclination": 26.6,
+				"Eccentricity": 0.965,
+				"AscendingNodeLongitude": 309.6,
+				"PeriapsisLongitude": 149.7,
+				"SemimajorAxis": 2.512
+            }
+        },
+        {
+            "ID": 11,
+            "Names": {
+                "Name": "Alpha Capricornids"
+            },
+            "Attributes": {
+                "ParentObject": [
+                    "169P NEAT"
+                ],
+                "DiurnalDriftDeclination": 18.0,
+                "DiurnalDriftRightAscension": 54.0,
+                "GeocentricVelocity": 23.0,
+                "NumberDensity": 150.0,
+                "PopulationIndex": 2.5,
+                "RadiantAltitude": -36.45067181981785,
+                "RadiantAzimuth": 42.097994777708855,
+                "RadiantDeclination": -10.0,
+                "RadiantRightAscension": 307.0,
+                "RadiantSolarLongitude": 127.0,
+				"Inclination": 7.4,
+				"Eccentricity": 0.763,
+				"AscendingNodeLongitude": 130.4,
+				"PeriapsisLongitude": 265.2,
+				"SemimajorAxis": 2.584
+            }
+        },
+        {
+            "ID": 12,
+            "Names": {
+                "Name": "Perseids"
+            },
+            "Attributes": {
+                "DiurnalDriftDeclination": 6.0,
+                "DiurnalDriftRightAscension": 78.0,
+                "GeocentricVelocity": 59.0,
+                "NumberDensity": 20,
+                "ParentObject": [
+                    "109P Swift-Tuttle"
+                ],
+                "PopulationIndex": 2.6,
+                "RadiantAltitude": 37.0499323183,
+                "RadiantAzimuth": 322.06652956859415,
+                "RadiantDeclination": 58.0,
+                "RadiantRightAscension": 48.0,
+                "RadiantSolarLongitude": 140.0,
+				"Inclination": 112.9,
+				"Eccentricity": 0.951,
+				"AscendingNodeLongitude": 138.1,
+				"PeriapsisLongitude": 150.6,
+				"SemimajorAxis": 19.3
+            }
+        },
+        {
+            "ID": 13,
+            "Names": {
+                "Name": "Kappa Cygnids"
+            },
+            "Attributes": {
+                "ParentObject": [
+                    "153311 (2001 MG1)"
+                ],
+                "DiurnalDriftDeclination": 6.0,
+                "DiurnalDriftRightAscension": 18.0,
+                "GeocentricVelocity": 25.0,
+                "NumberDensity": 125.0,
+                "PopulationIndex": 3.0,
+                "RadiantAltitude": 33.722595500612464,
+                "RadiantAzimuth": 30.148295712757655,
+                "RadiantDeclination": 59.0,
+                "RadiantRightAscension": 286.0,
+                "RadiantSolarLongitude": 145.0,
+				"Inclination": 34.0,
+				"Eccentricity": 0.725,
+				"AscendingNodeLongitude": 140.4,
+				"PeriapsisLongitude": 206.2,
+				"SemimajorAxis": 3.524
+            }
+        },
+        {
+            "ID": 14,
+            "Names": {
+                "Name": "Alpha Aurigids"
+            },
+            "Attributes": {
+                "ParentObject": [
+                    "C 1911 N1 (Kiess)"
+                ],
+                "GeocentricVelocity": 66.0,
+                "PopulationIndex": 2.6,
+                "RadiantAltitude": 41.135064069533776,
+                "RadiantAzimuth": 286.6204481811594,
+                "RadiantDeclination": 42.0,
+                "RadiantRightAscension": 84.0,
+                "RadiantSolarLongitude": 158.6,
+				"Inclination": 148.4,
+				"Eccentricity": 0.972,
+				"AscendingNodeLongitude": 154.9,
+				"PeriapsisLongitude": 107.9,
+				"SemimajorAxis": 24.2
+            }
+        },
+        {
+            "ID": 15,
+            "Names": {
+                "Name": "September Perseids"
+            },
+            "Attributes": {
+                "ParentObject": [
+                    "109P Swift-Tuttle"
+                ],
+                "GeocentricVelocity": 64.0,
+                "PopulationIndex": 2.9,
+                "RadiantAltitude": 33.21946647691686,
+                "RadiantAzimuth": 306.64599542832025,
+                "RadiantDeclination": 47.0,
+                "RadiantRightAscension": 4.0,
+                "RadiantSolarLongitude": 166.7,
+				"Inclination": 140.4,
+				"Eccentricity": 0.965,
+				"AscendingNodeLongitude": 170.4,
+				"PeriapsisLongitude": 245.9,
+				"SemimajorAxis": 20.7
+            }
+        },
+        {
+            "ID": 16,
+            "Names": {
+                "Name": "Delta Aurigids"
+            },
+            "Attributes": {
+                "ParentObject": [
+                    "C 1972 E1 (Bradfield)"
+                ],
+                "GeocentricVelocity": 64.0,
+                "PopulationIndex": 2.9,
+                "RadiantAltitude": 44.9246790314,
+                "RadiantAzimuth": 294.9046400637433,
+                "RadiantDeclination": 49.0,
+                "RadiantRightAscension": 82.0,
+                "RadiantSolarLongitude": 186.0,
+				"Inclination": 130.19,
+				"Eccentricity": 0.965,
+				"AscendingNodeLongitude": 191.70,
+				"PeriapsisLongitude": 226.70,
+				"SemimajorAxis": 24.1
+            }
+        },
+        {
+            "ID": 17,
+            "Names": {
+                "Name": "Draconids"
+            },
+            "Attributes": {
+                "DiurnalDriftDeclination": 0,
+                "DiurnalDriftRightAscension": 24.0,
+                "GeocentricVelocity": 20.0,
+                "ParentObject": [
+                    "21P Giacobini-Zinner"
+                ],
+                "PopulationIndex": 2.6,
+                "RadiantAltitude": 37.82982980303936,
+                "RadiantAzimuth": 46.757531191539464,
+                "RadiantDeclination": 54.0,
+                "RadiantRightAscension": 262.0,
+                "RadiantSolarLongitude": 195.4,
+				"Inclination": 32.8,
+				"Eccentricity": 0.667,
+				"AscendingNodeLongitude": 149.0,
+				"PeriapsisLongitude": 184.6,
+				"SemimajorAxis": 3.006
+            }
+        },
+        {
+            "ID": 18,
+            "Names": {
+                "Name": "Epsilon Geminids"
+            },
+            "Attributes": {
+                "ParentObject": [
+                    "C 1964 N1 (Ikeya)"
+                ],
+                "GeocentricVelocity": 70.0,
+                "PopulationIndex": 3.0,
+                "RadiantAltitude": 39.52307569114368,
+                "RadiantAzimuth": 259.0258789887,
+                "RadiantDeclination": 27.0,
+                "RadiantRightAscension": 102.0,
+                "RadiantSolarLongitude": 205.0,
+				"Inclination": 171.0,
+				"Eccentricity": 0.969,
+				"AscendingNodeLongitude": 207.1,
+				"PeriapsisLongitude": 235.1,
+				"SemimajorAxis": 25.2
+            }
+        },
+        {
+            "ID": 19,
+            "Names": {
+                "Name": "Orionids"
+            },
+            "Attributes": {
+                "DiurnalDriftDeclination": 6.0,
+                "DiurnalDriftRightAscension": 42.0,
+                "GeocentricVelocity": 66.0,
+                "NumberDensity": 2.0,
+                "ParentObject": [
+                    "1P Halley"
+                ],
+                "PopulationIndex": 2.5,
+                "RadiantAltitude": 26.786554925951677,
+                "RadiantAzimuth": 257.82524065070993,
+                "RadiantDeclination": 16.0,
+                "RadiantRightAscension": 95.0,
+                "RadiantSolarLongitude": 208.0,
+				"Inclination": 164.0,
+				"Eccentricity": 0.953,
+				"AscendingNodeLongitude": 30.2,
+				"PeriapsisLongitude": 	82.7,
+				"SemimajorAxis": 12.1
+            }
+        },
+        {
+            "ID": 20,
+            "Names": {
+                "Name": "Leonis Minorids"
+            },
+            "Attributes": {
+                "ParentObject": [
+                    "C 1739 K1"
+                ],
+                "GeocentricVelocity": 62.0,
+                "PopulationIndex": 3.0,
+                "RadiantAltitude": 70.9626629745,
+                "RadiantAzimuth": 178.06783293718442,
+                "RadiantDeclination": 38.0,
+                "RadiantRightAscension": 161.0,
+                "RadiantSolarLongitude": 210.0,
+				"Inclination": 124.8,
+				"Eccentricity": 0.973,
+				"AscendingNodeLongitude": 210.0,
+				"PeriapsisLongitude": 104.0,
+				"SemimajorAxis": 23.3
+            }
+        },
+        {
+            "ID": 21,
+            "Names": {
+                "Name": "Southern Taurids"
+            },
+            "Attributes": {
+                "ParentObject": [
+                    "2P Encke"
+                ],
+                "GeocentricVelocity": 27.0,
+                "PopulationIndex": 2.3,
+                "RadiantAltitude": 3.0354634924,
+                "RadiantAzimuth": 293.2356561829728,
+                "RadiantDeclination": 15.0,
+                "RadiantRightAscension": 52.0,
+                "RadiantSolarLongitude": 223.0,
+				"Inclination": 5.4,
+				"Eccentricity": 0.711,
+				"AscendingNodeLongitude": 85.1,
+				"PeriapsisLongitude": 84.0,
+				"SemimajorAxis": 2.140
+            }
+        },
+        {
+            "ID": 22,
+            "Names": {
+                "Name": "Northern Taurids"
+            },
+            "Attributes": {
+                "ParentObject": [
+                    "2004 TG10"
+                ],
+                "GeocentricVelocity": 29.0,
+                "PopulationIndex": 2.3,
+                "RadiantAltitude": 11.9844834461,
+                "RadiantAzimuth": 292.11414010116414,
+                "RadiantDeclination": 22.0,
+                "RadiantRightAscension": 58.0,
+                "RadiantSolarLongitude": 230.0,
+				"Inclination": 2.5,
+				"Eccentricity": 0.767,
+				"AscendingNodeLongitude": 263.9,
+				"PeriapsisLongitude": 276.3,
+				"SemimajorAxis": 2.186
+            }
+        },
+        {
+            "ID": 23,
+            "Names": {
+                "Name": "Leonids"
+            },
+            "Attributes": {
+                "DiurnalDriftDeclination": -24.0,
+                "DiurnalDriftRightAscension": 42.0,
+                "GeocentricVelocity": 71.0,
+                "NumberDensity": 2,
+                "ParentObject": [
+                    "55P Tempel-Tuttle"
+                ],
+                "PopulationIndex": 2.5,
+                "RadiantAltitude": 54.45829256065615,
+                "RadiantAzimuth": 193.1503271094665,
+                "RadiantDeclination": 22.0,
+                "RadiantRightAscension": 152.0,
+                "RadiantSolarLongitude": 235.27,
+				"Inclination": 162.4,
+				"Eccentricity": 0.897,
+				"AscendingNodeLongitude": 236.6,
+				"PeriapsisLongitude": 173.5,
+				"SemimajorAxis": 9.56
+            }
+        },
+        {
+            "ID": 24,
+            "Names": {
+                "Name": "Alpha Monocerotids"
+            },
+            "Attributes": {
+                "ParentObject": [
+                    "C 1917 F1 (Mellish)"
+                ],
+                "GeocentricVelocity": 65.0,
+                "PopulationIndex": 2.4,
+                "RadiantAltitude": 24.285517986681242,
+                "RadiantAzimuth": 228.66804341652573,
+                "RadiantDeclination": 1.0,
+                "RadiantRightAscension": 117.0,
+                "RadiantSolarLongitude": 239.32,
+				"Inclination": 134.0,
+				"Eccentricity": 0.976,
+				"AscendingNodeLongitude": 60.9,
+				"PeriapsisLongitude": 93.3,
+				"SemimajorAxis": 19.6
+            }
+        },
+        {
+            "ID": 25,
+            "Names": {
+                "Name": "December Phoenicids"
+            },
+            "Attributes": {
+                "ParentObject": [
+                    "D 1819 W1 (Blanpain)"
+                ],
+                "GeocentricVelocity": 18.0,
+                "PopulationIndex": 2.8,
+                "RadiantAltitude": -68.2489307449883,
+                "RadiantAzimuth": 264.4764928438052,
+                "RadiantDeclination": -53.0,
+                "RadiantRightAscension": 18.0,
+                "RadiantSolarLongitude": 254.25,
+				"Inclination": 2.7,
+				"Eccentricity": 0.708,
+				"AscendingNodeLongitude": 52.2,
+				"PeriapsisLongitude": 26.6,
+				"SemimajorAxis": 3.243
+            }
+        },
+        {
+            "ID": 26,
+            "Names": {
+                "Name": "Puppid/Velids"
+            },
+            "Attributes": {
+                "GeocentricVelocity": 40.0,
+                "PopulationIndex": 2.9,
+                "RadiantAltitude": -16.661799352637154,
+                "RadiantAzimuth": 206.50372649893714,
+                "RadiantDeclination": -45.0,
+                "RadiantRightAscension": 122.99999999999999,
+                "RadiantSolarLongitude": 255.0,
+				"Inclination": 75.8,
+				"Eccentricity": 0.632,
+				"AscendingNodeLongitude": 71.5,
+				"PeriapsisLongitude": 7.2,
+				"SemimajorAxis": 2.657
+            }
+        },
+        {
+            "ID": 27,
+            "Names": {
+                "Name": "Monocerotids"
+            },
+            "Attributes": {
+                "ParentObject": [
+                    "C 1917 F1 (Mellish)"
+                ],
+                "GeocentricVelocity": 42.0,
+                "PopulationIndex": 3.0,
+                "RadiantAltitude": 22.617584927022023,
+                "RadiantAzimuth": 248.578378759923,
+                "RadiantDeclination": 8.0,
+                "RadiantRightAscension": 100.0,
+                "RadiantSolarLongitude": 257.0,
+				"Inclination": 35.3,
+				"Eccentricity": 0.984,
+				"AscendingNodeLongitude": 79.0,
+				"PeriapsisLongitude": 129.1,
+				"SemimajorAxis": 11.6
+            }
+        },
+        {
+            "ID": 28,
+            "Names": {
+                "Name": "Sigma Hydrids"
+            },
+            "Attributes": {
+                "ParentObject": [
+                    "C 2023 P1 (Nishimura)"
+                ],
+                "GeocentricVelocity": 58.0,
+                "PopulationIndex": 3.0,
+                "RadiantAltitude": 28.9710172764,
+                "RadiantAzimuth": 218.7194472380031,
+                "RadiantDeclination": 2.0,
+                "RadiantRightAscension": 127.0,
+                "RadiantSolarLongitude": 260.0,
+				"Inclination": 129.2,
+				"Eccentricity": 0.990,
+				"AscendingNodeLongitude": 76.7,
+				"PeriapsisLongitude": 119.0,
+				"SemimajorAxis": 24.9
+            }
+        },
+        {
+            "ID": 29,
+            "Names": {
+                "Name": "Geminids"
+            },
+            "Attributes": {
+                "DiurnalDriftDeclination": -6.0,
+                "DiurnalDriftRightAscension": 4.0,
+                "GeocentricVelocity": 35.0,
+                "NumberDensity": 290.0,
+                "ParentObject": [
+                    "3200 Phaethon (1983 TB)"
+                ],
+                "PopulationIndex": 2.6,
+                "RadiantAltitude": 49.56431421121211,
+                "RadiantAzimuth": 254.56853010983542,
+                "RadiantDeclination": 33.0,
+                "RadiantRightAscension": 112.0,
+                "RadiantSolarLongitude": 262.2,
+				"Inclination": 22.9,
+				"Eccentricity": 0.889,
+				"AscendingNodeLongitude": 261.7,
+				"PeriapsisLongitude": 324.3,
+				"SemimajorAxis": 1.31
+            }
+        },
+        {
+            "ID": 30,
+            "Names": {
+                "Name": "Ursids"
+            },
+            "Attributes": {
+                "DiurnalDriftDeclination": 0,
+                "DiurnalDriftRightAscension": 0,
+                "GeocentricVelocity": 33.0,
+                "NumberDensity": 80.0,
+                "ParentObject": [
+                    "8P Tuttle"
+                ],
+                "PopulationIndex": 3.0,
+                "RadiantAltitude": 62.39021613467584,
+                "RadiantAzimuth": 25.899483206269462,
+                "RadiantDeclination": 76.0,
+                "RadiantRightAscension": 217.0,
+                "RadiantSolarLongitude": 270.7,
+				"Inclination": 52.5,
+				"Eccentricity": 0.838,
+				"AscendingNodeLongitude": 269.9,
+				"PeriapsisLongitude": 206.8,
+				"SemimajorAxis": 5.775
+            }
+        },
+        {
+            "ID": 31,
+            "Names": {
+                "Name": "Coma Berenicids"
+            },
+            "Attributes": {
+                "GeocentricVelocity": 65.0,
+                "PopulationIndex": 3.0,
+                "RadiantAltitude": 58.185643695010526,
+                "RadiantAzimuth": 163.13078143163182,
+                "RadiantDeclination": 26.0,
+                "RadiantRightAscension": 170.0,
+                "RadiantSolarLongitude": 278.0,
+				"Inclination": 135.1,
+				"Eccentricity": 0.972,
+				"AscendingNodeLongitude": 273.2,
+				"PeriapsisLongitude": 263.1,
+				"SemimajorAxis": 19.7
+            }
+        }
+    ]
+}

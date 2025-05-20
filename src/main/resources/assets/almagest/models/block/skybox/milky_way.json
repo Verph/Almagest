@@ -1,0 +1,6 @@
+{
+  "parent": "almagest:block/default_skybox",
+  "textures": {
+  	"all": "almagest:block/skybox/milky_way"
+  }
+}

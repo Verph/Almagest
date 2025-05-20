@@ -1,0 +1,6 @@
+{
+  "parent": "almagest:block/default_cube",
+  "textures": {
+  	"surface": "almagest:block/moons/umbriel"
+  }
+}
