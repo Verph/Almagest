@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license = "BSD 2"
+
+[[mods]]
+modId="almagest"
+version="${file.jarVersion}"
+logoFile="pack.png"
+displayName="Almagest"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/tfc-astrocraft"
+authors="Verph"
+description="Bringing the solar system to Minecraft"
+
+[[dependencies.almagest]]
+    modId = "forge"
+    mandatory = true
+    versionRange = "[0,)"
+    ordering = "AFTER"
+    side = "BOTH"
+
+[[dependencies.almagest]]
+    modId = "minecraft"
+    mandatory = true
+    versionRange = "[1.20.1,1.20.2)"
+    ordering = "NONE"
+    side = "BOTH"
