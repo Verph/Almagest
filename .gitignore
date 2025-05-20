@@ -22,12 +22,6 @@ eclipse
 run
 libs
 src/main/resources/assets/almagest/textures_copy*
-resources/Json Generator/assets/*
-resources/Json Generator/data/*
-resources/Json Generator/__pycache__
-resources/__pycache__
-resources_old
-resources_old/*
 .history
 .lh
 .vscode
