@@ -976,6 +976,16 @@ public class PlanetDataManager
     }
 
     /**
+     * Calculates the latitudinal seasonal offset.
+     * @param season The current season.
+     * @return The seasonal offset taking latitude into account.
+     */
+    public static double getSeasonOffset(double season)
+    {
+        return -(season * ((Math.sin((2.0D * Math.PI * (RenderEventHandler.latitudeDeg - 45.0D)) / 180.D) + 1.0D) * 0.5D));
+    }
+
+    /**
      * Calculates the seasonal obliquity/rotation.
      * @param t The time.
      * @param P The orbital period.
@@ -1121,15 +1131,12 @@ public class PlanetDataManager
         /*
          * Calculate and cache current angle around the sun
          */
-        if (RenderEventHandler.gameTime % 20 == 0)
+        if (updateCache && RenderEventHandler.gameTime % 20 == 0)
         {
             Vec3 vec0 = POSITION_CACHE.getOrDefault(0, new Vec3(0.0D, 0.0D, 0.0D)).multiply(1.0D, 0.0D, 1.0D).normalize();
             Vec3 vec1 = pos.normalize();
             double angle = Math.toDegrees(AHelpers.calculateAngleBetweenVectors(vec0.x(), vec0.z(), vec1.x(), vec1.z()));
-            if (updateCache)
-            {
-                ORBITAL_ANGLE_CACHE.put(id, angle);
-            }
+            ORBITAL_ANGLE_CACHE.put(id, angle);
         }
 
         pos = rotZ(i, pos);
@@ -1282,8 +1289,7 @@ public class PlanetDataManager
     }
 
     /**
-     * @param planet This body.
-     * @param parent The parent body.
+     * @param id The ID value of the body.
      * @param time The time.
      * @param P The orbital period.
      * @param T The elapsed time.
@@ -1295,7 +1301,7 @@ public class PlanetDataManager
      * @param i The inclination (radians).
      * @param w The wobble or the adjusted nodal precession (radians).
      * @param updateCache If the pos cache should be updated.
-     * @return Gets the planet's position plus their parent position based on the Tychonic model.
+     * @return Gets the position of the current planet irt. its parent based on the Tychonic model and Kepler's laws.
      */
     public static Vec3 getPos(int id, Level level, long time, double P, double T, double e, double O, double W, double a, double p, double i, double w, boolean updateCache)
     {
@@ -1303,8 +1309,7 @@ public class PlanetDataManager
     }
 
     /**
-     * @param planet This body.
-     * @param parent The parent body.
+     * @param id The ID value of the body.
      * @param time The time.
      * @param P The orbital period.
      * @param T The elapsed time.
@@ -1317,7 +1322,7 @@ public class PlanetDataManager
      * @param w The wobble or the adjusted nodal precession (radians).
      * @param updateCache If the pos cache should be updated.
      * @param playerOffset If the pos should be offset by player position.
-     * @return Gets the planet's position plus their parent position based on the Tychonic model.
+     * @return Gets the position of the current planet irt. its parent based on the Tychonic model and Kepler's laws.
      */
     public static Vec3 getPos(int id, Level level, long time, double P, double T, double e, double O, double W, double a, double p, double i, double w, boolean updateCache, boolean playerOffset)
     {
@@ -1325,8 +1330,7 @@ public class PlanetDataManager
     }
 
     /**
-     * @param planet This body.
-     * @param parent The parent body.
+     * @param id The ID value of the body.
      * @param time The time.
      * @param P The orbital period.
      * @param T The elapsed time.
@@ -1340,7 +1344,7 @@ public class PlanetDataManager
      * @param updateCache If the pos cache should be updated.
      * @param playerOffset If the pos should be offset by player position.
      * @param useSeasonOffset If the pos should be offset by the season of the observer body.
-     * @return Gets the planet's position plus their parent position based on the Tychonic model.
+     * @return Gets the position of the current planet irt. its parent based on the Tychonic model and Kepler's laws.
      */
     public static Vec3 getPos(int id, Level level, long time, double P, double T, double e, double O, double W, double a, double p, double i, double w, boolean updateCache, boolean playerOffset, boolean useSeasonOffset)
     {
@@ -1360,7 +1364,7 @@ public class PlanetDataManager
      * @param i The inclination (radians).
      * @param w The wobble or the adjusted nodal precession (radians).
      * @param rot The XYZ-axis rotation offsets of the planet (radians).
-     * @return Gets the planet's position plus their parent position based on the Tychonic model.
+     * @return Gets the position of the current planet irt. its parent based on the Tychonic model and Kepler's laws.
      */
     public static Vec3 getPos(int id, Level level, long time, double P, double T, double e, double O, double W, double a, double p, double i, double w, Vec3 rot)
     {
@@ -1368,8 +1372,7 @@ public class PlanetDataManager
     }
 
     /**
-     * @param planet This body.
-     * @param parent The parent body.
+     * @param id The ID value of the body.
      * @param time The time.
      * @param P The orbital period.
      * @param T The elapsed time.
@@ -1382,7 +1385,7 @@ public class PlanetDataManager
      * @param w The wobble or the adjusted nodal precession (radians).
      * @param rot The XYZ-axis rotation offsets of the planet (radians).
      * @param updateCache If the pos cache should be updated.
-     * @return Gets the planet's position plus their parent position based on the Tychonic model.
+     * @return Gets the position of the current planet irt. its parent based on the Tychonic model and Kepler's laws.
      */
     public static Vec3 getPos(int id, Level level, long time, double P, double T, double e, double O, double W, double a, double p, double i, double w, Vec3 rot, boolean updateCache)
     {
@@ -1390,8 +1393,7 @@ public class PlanetDataManager
     }
 
     /**
-     * @param planet This body.
-     * @param parent The parent body.
+     * @param id The ID value of the body.
      * @param time The time.
      * @param P The orbital period.
      * @param T The elapsed time.
@@ -1406,7 +1408,7 @@ public class PlanetDataManager
      * @param updateCache If the pos cache should be updated.
      * @param playerOffset If the pos should be offset by player position.
      * @param useSeasonOffset If the pos should be offset by the season of the observer body.
-     * @return Gets the planet's position plus their parent position based on the Tychonic model.
+     * @return Gets the position of the current planet irt. its parent based on the Tychonic model and Kepler's laws.
      */
     public static Vec3 getPos(int id, Level level, long time, double P, double T, double e, double O, double W, double a, double p, double i, double w, Vec3 rot, boolean updateCache, boolean playerOffset, boolean useSeasonOffset)
     {
@@ -1444,7 +1446,7 @@ public class PlanetDataManager
 
         if (isSun(id))
         {
-            final double seasonOffset = -(season * ((Math.sin((2.0D * Math.PI * (RenderEventHandler.latitudeDeg - 45.0D)) / 180.D) + 1.0D) * 0.5D));
+            final double seasonOffset = getSeasonOffset(season);
             Vec3 pos = PlanetDataManager.getPos(level, id, latitude, P, T, e, O, W, a, p, i, w, season, seasonOffset, timeOfDay, rot, updateCache, useRawPos);
             if (Config.COMMON.togglePlayerOffset.get() && playerOffset)
             {

@@ -1,8 +1,6 @@
 package almagest.client;
 
 import java.awt.Color;
-import java.nio.ByteBuffer;
-import java.nio.IntBuffer;
 import java.util.List;
 
 import javax.annotation.Nullable;
@@ -15,51 +13,43 @@ import org.joml.Vector2d;
 import org.joml.Vector3d;
 import org.joml.Vector3f;
 import org.joml.Vector4f;
-import org.lwjgl.system.MemoryStack;
 
-import com.mojang.authlib.minecraft.client.MinecraftClient;
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.BufferBuilder;
 import com.mojang.blaze3d.vertex.BufferUploader;
 import com.mojang.blaze3d.vertex.DefaultVertexFormat;
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.blaze3d.vertex.PoseStack.Pose;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.VertexFormat;
 import com.mojang.math.Axis;
 
 import net.minecraft.client.Camera;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.color.block.BlockColors;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.renderer.LightTexture;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.block.BlockRenderDispatcher;
 import net.minecraft.client.renderer.block.model.BakedQuad;
-import net.minecraft.client.renderer.entity.layers.RenderLayer;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.client.resources.model.BakedModel;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.core.Vec3i;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.BlockAndTintGetter;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
-import net.minecraftforge.client.ForgeHooksClient;
-import net.minecraftforge.client.event.ViewportEvent;
 import net.minecraftforge.client.model.data.ModelData;
 
 import almagest.client.blocks.ABlocks;
 import almagest.client.blocks.CelestialBodyBlock;
-import almagest.client.blocks.DayCycleBlock;
 import almagest.client.data.PlanetDataManager;
 import almagest.client.data.StarDataManager.StarData;
 import almagest.config.Config;
@@ -129,7 +119,7 @@ public class RenderHelpers
 
         poseStack.popPose();
         BufferUploader.drawWithShader(builder.end());
-        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
+        //RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
     }
 
     public static void drawBodyFlat(BufferBuilder builder, Camera camera, float partialTicks, ResourceLocation texture, Vec3 pos, Vec3 color, double alphaMod, float quadSize, float roll, float oRoll, int glow)
@@ -178,9 +168,9 @@ public class RenderHelpers
 
         renderTexturedQuad(builder, poseStack, vertices, r, g, b, alpha, glow);
 
-        BufferUploader.drawWithShader(builder.end());
         poseStack.popPose();
-        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
+        BufferUploader.drawWithShader(builder.end());
+        //RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
     }
 
     public static void drawGlow(BufferBuilder builder, Camera camera, float partialTicks, ResourceLocation texture, Vec3 pos, Vec3 color, double diameter, float quadSize, float roll, float oRoll, int glow)
@@ -236,7 +226,7 @@ public class RenderHelpers
         renderTexturedQuadDouble(buffer, poseStack, vertices, r, g, b, a, glow);
 
         poseStack.popPose();
-        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);*/
+        //RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);*/
     }
 
     public static void drawBody(BufferBuilder builder, Camera camera, float partialTicks, ResourceLocation texture, String name, Vec3 pos, Vec3 color, double obliquity, double rotationTime, double inclination, Vector2d dayNightCycle, double alphaMod, float quadSize, int glow, float sizeFactor)
@@ -265,23 +255,18 @@ public class RenderHelpers
 
     public static void drawCelestialBody(BufferBuilder builder, Camera camera, float partialTicks, ResourceLocation texture, String name, Vec3 pos, Vec3 color, double obliquity, double rotationTime, double inclination, Vector2d dayNightCycle, double alphaMod, float quadSize, int glow, float sizeFactor)
     {
-        PoseStack poseStack = new PoseStack();
+        PoseStack poseStack = RenderSystem.getModelViewStack();
+        RenderSystem.applyModelViewMatrix();
         poseStack.pushPose();
 
-        //poseStack.mulPose(Axis.XP.rotationDegrees(camera.getXRot()));
-        //poseStack.mulPose(Axis.YP.rotationDegrees(camera.getYRot() + 180.0F));
-
-        poseStack.pushPose();
-
-        final RenderType translucent = RenderType.translucent();
-        RenderSystem.setShader(GameRenderer::getRendertypeTranslucentShader);
+        //RenderSystem.setShader(GameRenderer::getRendertypeTranslucentShader);
         RenderSystem.depthMask(true);
-        RenderSystem.setShaderTexture(0, texture);
+        //RenderSystem.setShaderTexture(0, texture);
         builder.begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.BLOCK);
 
-        poseStack.mulPose(Axis.ZP.rotationDegrees((float) inclination));
+        /*poseStack.mulPose(Axis.ZP.rotationDegrees((float) inclination));
         poseStack.mulPose(Axis.ZP.rotationDegrees((float) obliquity));
-        poseStack.mulPose(Axis.YN.rotationDegrees((float) rotationTime));
+        poseStack.mulPose(Axis.YN.rotationDegrees((float) rotationTime));*/
         poseStack.translate(pos.x(), pos.y(), pos.z());
 
         float size = quadSize / sizeFactor;
@@ -289,30 +274,25 @@ public class RenderHelpers
         poseStack.scale(quadSize, quadSize, quadSize);
 
         poseStack.pushPose();
-        renderBlockModel(builder, ABlocks.CELESTIAL_BODY.get().defaultBlockState().setValue(CelestialBodyBlock.CELESTIAL_BODY, name).setValue(CelestialBodyBlock.ALTERNATIVE, Config.COMMON.toggleEasterEggMoon.get()), poseStack, glow, translucent, 1.0F);
+        //renderBlockModel(ABlocks.CELESTIAL_BODY.get().defaultBlockState().setValue(CelestialBodyBlock.CELESTIAL_BODY, name).setValue(CelestialBodyBlock.ALTERNATIVE, Config.COMMON.toggleEasterEggMoon.get()), poseStack, glow, RenderType.translucent());
+        renderBlockModel(Blocks.DIRT.defaultBlockState(), poseStack, glow, RenderType.translucent());
         poseStack.popPose();
-        poseStack.pushPose();
-        renderBlockModel(builder, ABlocks.DAY_CYCLE.get().defaultBlockState().setValue(DayCycleBlock.TIME, (int) dayNightCycle.y()).setValue(DayCycleBlock.OBLIQUITY, (int) Math.round((dayNightCycle.x() + 180.0F) / 2.5F)), poseStack, glow, translucent, 1.0F);
-        poseStack.popPose();
+        /*poseStack.pushPose();
+        renderBlockModel(ABlocks.DAY_CYCLE.get().defaultBlockState().setValue(DayCycleBlock.TIME, (int) dayNightCycle.y()).setValue(DayCycleBlock.OBLIQUITY, (int) Math.round((dayNightCycle.x() + 180.0F) / 2.5F)), poseStack, glow, RenderType.translucent());
+        poseStack.popPose();*/
 
         poseStack.popPose();
         BufferUploader.drawWithShader(builder.end());
-        poseStack.popPose();
-        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
+        //RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
     }
 
     public static void drawCelestialBodyNoOverlay(BufferBuilder builder, Camera camera, float partialTicks, ResourceLocation texture, String name, Vec3 pos, float quadSize, int glow)
     {
-        PoseStack poseStack = new PoseStack();
+        PoseStack poseStack = RenderSystem.getModelViewStack();
+        RenderSystem.applyModelViewMatrix();
         poseStack.pushPose();
 
-        //poseStack.mulPose(Axis.XP.rotationDegrees(camera.getXRot()));
-        //poseStack.mulPose(Axis.YP.rotationDegrees(camera.getYRot() + 180.0F));
-
-        poseStack.pushPose();
-
-        final RenderType translucent = RenderType.translucent();
-        RenderSystem.setShader(GameRenderer::getRendertypeTranslucentShader);
+        //RenderSystem.setShader(GameRenderer::getRendertypeTranslucentShader);
         RenderHelpers.translucentTransparency();
         RenderSystem.depthMask(true);
         RenderSystem.setShaderTexture(0, texture);
@@ -325,25 +305,25 @@ public class RenderHelpers
         poseStack.scale(quadSize, quadSize, quadSize);
 
         poseStack.pushPose();
-        renderBlockModel(builder, ABlocks.CELESTIAL_BODY.get().defaultBlockState().setValue(CelestialBodyBlock.CELESTIAL_BODY, name), poseStack, glow, translucent, 1.0F);
+        //renderBlockModel(ABlocks.CELESTIAL_BODY.get().defaultBlockState().setValue(CelestialBodyBlock.CELESTIAL_BODY, name), poseStack, glow, RenderType.translucent());
+        renderBlockModel(Blocks.DIRT.defaultBlockState(), poseStack, glow, RenderType.translucent());
         poseStack.popPose();
 
         poseStack.popPose();
         BufferUploader.drawWithShader(builder.end());
-        poseStack.popPose();
-        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
+        //RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
     }
 
     public static void drawCometTailBody(BufferBuilder builder, Camera camera, float partialTicks, ResourceLocation texture, Vec3 pos, Vec3 sunPos, Vec3 direction, Vec3 directionToSun, float quadSize, int glow)
     {
-        PoseStack poseStack = new PoseStack();
+        PoseStack poseStack = RenderSystem.getModelViewStack();
+        RenderSystem.applyModelViewMatrix();
         poseStack.pushPose();
 
-        final RenderType translucent = RenderType.translucent();
-        RenderSystem.setShader(GameRenderer::getRendertypeTranslucentShader);
+        //RenderSystem.setShader(GameRenderer::getRendertypeTranslucentShader);
         RenderHelpers.translucentTransparency();
         RenderSystem.depthMask(true);
-        RenderSystem.setShaderTexture(0, texture);
+        //RenderSystem.setShaderTexture(0, texture);
         builder.begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.BLOCK);
 
         double distanceToSunAU = sunPos.distanceTo(pos) / Config.COMMON.planetDistanceFactor.get();
@@ -360,12 +340,13 @@ public class RenderHelpers
         poseStack.mulPose(AHelpers.toQuaternionf(rotation));*/
 
         poseStack.pushPose();
-        renderBlockModel(builder, ABlocks.CELESTIAL_BODY.get().defaultBlockState().setValue(CelestialBodyBlock.CELESTIAL_BODY, "comet"), poseStack, glow, translucent, 1.0F);
+        //renderBlockModel(ABlocks.CELESTIAL_BODY.get().defaultBlockState().setValue(CelestialBodyBlock.CELESTIAL_BODY, "comet"), poseStack, glow, RenderType.translucent());
+        renderBlockModel(Blocks.DIRT.defaultBlockState(), poseStack, glow, RenderType.translucent());
         poseStack.popPose();
 
-        BufferUploader.drawWithShader(builder.end());
         poseStack.popPose();
-        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
+        BufferUploader.drawWithShader(builder.end());
+        //RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
     }
 
     public static void drawWhiteOverlay(BufferBuilder builder, Camera camera, float partialTicks, Vec3 pos, Vec3 color, double diameter, double alphaMod, float quadSize, double obliquity, int glow)
@@ -407,7 +388,7 @@ public class RenderHelpers
         renderTexturedQuadDouble(builder, poseStack, vertices, r, g, b, a, glow);
 
         poseStack.popPose();
-        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
+        //RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
     }
 
     public static void drawOrbit(BufferBuilder builder, Camera camera, float partialTicks, Level level, double configMod, Vec3 parentPos, Vec3 color, double segments, int body, long time, double orbit, double eccentricity, double ascendingNode, double periapsis, double semimajorAxis, double meanLongitude, double inclination, double wobble, Vec3 obliquityRotation)
@@ -450,7 +431,7 @@ public class RenderHelpers
         }
 
         poseStack.popPose();
-        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
+        //RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
     }
 
     public static void drawOrbitNoFade(BufferBuilder builder, Camera camera, float partialTicks, Level level, double configMod, Vec3 parentPos, Vec3 color, double segments, int body, long time, double orbit, double eccentricity, double ascendingNode, double periapsis, double semimajorAxis, double meanLongitude, double inclination, double wobble, Vec3 obliquityRotation)
@@ -492,7 +473,7 @@ public class RenderHelpers
         }
 
         poseStack.popPose();
-        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
+        //RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
     }
 
     public static void drawLines(BufferBuilder builder, Camera camera, float partialTicks, Player player, List<List<StarData>> pairs, float alpha)
@@ -509,7 +490,7 @@ public class RenderHelpers
         float g = Config.COMMON.constellationsGreen.get().floatValue();
         float b = Config.COMMON.constellationsBlue.get().floatValue();
 
-        RenderSystem.setShaderColor(r, g, b, alpha);
+        //RenderSystem.setShaderColor(r, g, b, alpha);
 
         double fov = RenderEventHandler.fov;
         double distance = Config.COMMON.constellationLineDistance.get();
@@ -535,7 +516,7 @@ public class RenderHelpers
         }
 
         poseStack.popPose();
-        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
+        //RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
     }
 
     public static void drawCometTail(BufferBuilder builder, Camera camera, float partialTicks, ResourceLocation texture, Vec3 pos, Vec3 sunPos, Vec3 direction, Vec3 directionToSun, float quadSize, int glow)
@@ -592,9 +573,9 @@ public class RenderHelpers
         }
         renderTexturedQuadDouble(buffer, poseStack, vertices, r, g, b, a, glow);*/
 
-        BufferUploader.drawWithShader(builder.end());
         poseStack.popPose();
-        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
+        BufferUploader.drawWithShader(builder.end());
+        //RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
     }
 
     public static void drawStellarObject(BufferBuilder builder, Camera camera, float partialTicks, ResourceLocation texture, Vec3 pos, float quadSize, float roll, float oRoll, float alpha)
@@ -641,9 +622,9 @@ public class RenderHelpers
 
         renderTexturedQuad(builder, poseStack, vertices, r, g, b, alpha, LightTexture.FULL_BRIGHT);
 
-        BufferUploader.drawWithShader(builder.end());
         poseStack.popPose();
-        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
+        BufferUploader.drawWithShader(builder.end());
+        //RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
     }
 
     public static void drawStar(BufferBuilder builder, Camera camera, float partialTicks, PoseStack poseStack, ResourceLocation texture, Vec3 pos, Vec3 color, double randomRotation, float quadSize, float roll, float oRoll, float alpha, boolean fancyTexture, float v0, float v1)
@@ -690,24 +671,21 @@ public class RenderHelpers
         renderTexturedQuad(builder, poseStack, vertices, r, g, b, alpha, v0, v1, LightTexture.FULL_BRIGHT);
 
         poseStack.popPose();
-        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
+        //RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
     }
 
     public static void drawSkybox(BufferBuilder builder, Camera camera, float partialTicks, List<StarData> stars, ResourceLocation texture, float timeOfDay, double minMagnitude, float roll, float oRoll)
     {
-        PoseStack poseStack = new PoseStack();
+        PoseStack poseStack = RenderSystem.getModelViewStack();
+        RenderSystem.applyModelViewMatrix();
         poseStack.pushPose();
 
-        //poseStack.mulPose(Axis.XP.rotationDegrees(camera.getXRot()));
-        //poseStack.mulPose(Axis.YP.rotationDegrees(camera.getYRot() + 180.0F));
-
-        poseStack.pushPose();
-
-        RenderSystem.setShader(GameRenderer::getRendertypeTranslucentShader);
+        //RenderSystem.setShader(GameRenderer::getRendertypeTranslucentShader);
         RenderHelpers.translucentTransparency();
         RenderSystem.depthMask(true);
-        RenderSystem.setShaderTexture(0, texture);
+        //RenderSystem.setShaderTexture(0, texture);
         builder.begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.BLOCK);
+        RenderSystem.applyModelViewMatrix();
 
         double k = Math.pow(2.512D, (minMagnitude - 5.2D) / 2.4D);
         float h = (float) (k * Config.COMMON.DSObrightness.get() * 0.2D);
@@ -715,7 +693,7 @@ public class RenderHelpers
         float a = Mth.clamp(v * h, 0.0F, 1.0F);
         float quadSize = Config.COMMON.skyboxDistance.get().floatValue();
         float size = quadSize / 2.0F;
-        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, a);
+        //RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, a);
 
         //rotatePoseStack(poseStack);
 
@@ -735,13 +713,12 @@ public class RenderHelpers
         poseStack.scale(quadSize, quadSize, quadSize);
 
         poseStack.pushPose();
-        renderBlockModel(builder, ABlocks.CELESTIAL_BODY.get().defaultBlockState().setValue(CelestialBodyBlock.CELESTIAL_BODY, "skybox"), poseStack, LightTexture.FULL_SKY, RenderType.translucent(), a);
+        renderBlockModel(ABlocks.CELESTIAL_BODY.get().defaultBlockState().setValue(CelestialBodyBlock.CELESTIAL_BODY, "skybox"), poseStack, LightTexture.FULL_SKY, RenderType.translucent());
         poseStack.popPose();
 
         poseStack.popPose();
         BufferUploader.drawWithShader(builder.end());
-        poseStack.popPose();
-        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
+        //RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
     }
 
     public static void renderTexturedCuboid(PoseStack poseStack, VertexConsumer buffer, int packedLight, Color color, AABB bounds, boolean individualFaces, boolean insideOut)
@@ -784,17 +761,6 @@ public class RenderHelpers
             .color(r, g, b, a)
             .uv2(packedLight)
             .normal(poseStack.last().normal(), normalX, normalY, normalZ)
-            .endVertex();
-    }
-
-    public static void renderTexturedVertexBlock(PoseStack poseStack, VertexConsumer buffer, float r, float g, float b, float a, float x, float y, float z, int packedLight, int combinedOverlay, float u, float v, float normalX, float normalY, float normalZ)
-    {
-        buffer.vertex(poseStack.last().pose(), x, y, z)
-            .color(r, g, b, a)
-            .uv(u, v)
-            .uv2(packedLight)
-            .normal(poseStack.last().normal(), normalX, normalY, normalZ)
-            .overlayCoords(combinedOverlay)
             .endVertex();
     }
 
@@ -1232,6 +1198,28 @@ public class RenderHelpers
                 return new Vector3f(z, y, x);
             default:
                 return new Vector3f(x, y, z);
+        }
+    }
+
+    public static Vec3 switchAxes(Vec3 vec)
+    {
+        double x = vec.x();
+        double y = vec.y();
+        double z = vec.z();
+        switch (Config.COMMON.skyboxAxisIndex.get())
+        {
+            case 0:
+                return new Vec3(x, z, y);
+            case 1:
+                return new Vec3(y, x, z);
+            case 2:
+                return new Vec3(y, z, x);
+            case 3:
+                return new Vec3(z, x, y);
+            case 4:
+                return new Vec3(z, y, x);
+            default:
+                return new Vec3(x, y, z);
         }
     }
 }
