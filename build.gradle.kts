@@ -57,9 +57,6 @@ repositories {
 dependencies {
     minecraft("net.minecraftforge", "forge", version = "$minecraftVersion-$forgeVersion")
     implementation(fg.deobf("curse.maven:terrafirmacraft-302973:5571484"))
-    implementation(fg.deobf("astrocraft:astrocraft:1.4.3"))
-    implementation(fg.deobf("lotr:lotr:Renewed-5.5"))
-    compileOnly(fg.deobf("net.fabricmc:fabric-loader:0.14.25"))
 
     if (System.getProperty("idea.sync.active") != "true") {
         annotationProcessor("org.spongepowered:mixin:${mixinVersion}:processor")
