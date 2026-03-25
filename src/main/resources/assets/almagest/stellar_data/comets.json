@@ -1,0 +1,2631 @@
+{
+  "celestialData": [
+    {
+      "comet": {
+        "names": [
+          "Halley",
+          "1P (Halley)"
+        ],
+        "mass": 3.681392236e-11,
+        "radius": 5.5,
+        "parentBody": "Sol",
+        "body": {
+          "rotationPeriod": 52.8
+        },
+        "orbit": {
+          "period": 75.3158906863,
+          "semiMajorAxis": 17.8341442926,
+          "eccentricity": 0.9671429085,
+          "inclination": 162.2626905792,
+          "ascendingNode": 58.4200809766,
+          "argOfPeriapsis": 111.3324851045,
+          "longOfPeriapsis": 169.75256608109999
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Hale-Bopp",
+          "C|1995 O1 (Hale-Bopp)"
+        ],
+        "radius": 33,
+        "parentBody": "Sol",
+        "body": {
+          "rotationPeriod": 11.78,
+          "obliquity": 375
+        },
+        "orbit": {
+          "period": 2533.9746898811,
+          "eccentricity": 0.994929,
+          "inclination": 89.5645,
+          "ascendingNode": 282.074,
+          "argOfPeriapsis": 130.641,
+          "longOfPeriapsis": 52.71500000000003
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Borrelly 3",
+          "19P (Borrelly)"
+        ],
+        "mass": 3.346720214e-12,
+        "radius": 13.3955,
+        "parentBody": "Sol",
+        "body": {
+          "rotationPeriod": 10,
+          "obliquity": 375,
+          "albedo": 0.142
+        },
+        "orbit": {
+          "period": 6.8522077238,
+          "semiMajorAxis": 3.6075709287,
+          "eccentricity": 0.6245174635,
+          "inclination": 30.3238109876,
+          "ascendingNode": 75.4385376235,
+          "argOfPeriapsis": 353.370943044,
+          "longOfPeriapsis": 68.8094806675
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Ikeya-Zhang",
+          "153P (Ikeya-Zhang)"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "body": {
+          "rotationPeriod": 10
+        },
+        "orbit": {
+          "period": 366.510077154,
+          "semiMajorAxis": 51.2135811371,
+          "eccentricity": 0.9900975229,
+          "inclination": 28.1198791625,
+          "ascendingNode": 93.3702692929,
+          "argOfPeriapsis": 34.6731680508,
+          "longOfPeriapsis": 128.04343734370002
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Lovejoy",
+          "C|2011 W3 (Lovejoy)"
+        ],
+        "radius": 0.08,
+        "parentBody": "Sol",
+        "orbit": {
+          "period": 697.96,
+          "semiMajorAxis": 78.68293963959538,
+          "eccentricity": 0.9999294152687143,
+          "inclination": 134.3558107377023,
+          "ascendingNode": 326.3691470244605,
+          "argOfPeriapsis": 53.50921241435645,
+          "longOfPeriapsis": 19.87835943881697
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "McNaught",
+          "C|2006 P1 (McNaught)"
+        ],
+        "radius": 12,
+        "parentBody": "Sol",
+        "body": {
+          "rotationPeriod": 21
+        },
+        "orbit": {
+          "eccentricity": 1.000019,
+          "inclination": 77.8349,
+          "ascendingNode": 267.4144,
+          "argOfPeriapsis": 155.9771,
+          "longOfPeriapsis": 63.39150000000001
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "PANSTARRS",
+          "C|2011 L4 (PANSTARRS)"
+        ],
+        "radius": 1,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1.00008601240538,
+          "inclination": 84.19941668595264,
+          "ascendingNode": 65.66544228753845,
+          "argOfPeriapsis": 333.6425286345507,
+          "longOfPeriapsis": 39.30797092208911
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Lemmon",
+          "C|2012 F6 (Lemmon)"
+        ],
+        "radius": 1,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.998533,
+          "inclination": 82.6078,
+          "ascendingNode": 332.715,
+          "argOfPeriapsis": 304.988,
+          "longOfPeriapsis": 277.703
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Siding Spring$CO",
+          "C|2013 A1 (Siding Spring)"
+        ],
+        "radius": 2,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1.00042,
+          "inclination": 129.024,
+          "ascendingNode": 300.967,
+          "argOfPeriapsis": 2.4315,
+          "longOfPeriapsis": 303.3985
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "ISON",
+          "C|2012 S1 (ISON)"
+        ],
+        "radius": 20,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1.000003917079469,
+          "inclination": 62.0112,
+          "ascendingNode": 295.711,
+          "argOfPeriapsis": 345.525,
+          "longOfPeriapsis": 281.236
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2020 F3 (NEOWISE)",
+          "NEOWISE"
+        ],
+        "radius": 2.5,
+        "parentBody": "Sol",
+        "orbit": {
+          "period": 6767.55,
+          "semiMajorAxis": 357.77945991059,
+          "eccentricity": 0.9991763725273225,
+          "inclination": 128.9375088727702,
+          "ascendingNode": 61.00969983840079,
+          "argOfPeriapsis": 37.2766782349599,
+          "longOfPeriapsis": 98.2863780733607
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P1996 R2 (Lagerkvist)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.3109,
+          "inclination": 2.5995,
+          "ascendingNode": 40.1329,
+          "argOfPeriapsis": 333.562,
+          "longOfPeriapsis": 13.694900000000018
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P1997 T3 (Lagerkvist-Carsenty)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.364648,
+          "inclination": 4.847,
+          "ascendingNode": 63.1538,
+          "argOfPeriapsis": 333.921,
+          "longOfPeriapsis": 37.07479999999998
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P1998 U3 (Jager)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.648229,
+          "inclination": 19.0529,
+          "ascendingNode": 303.441,
+          "argOfPeriapsis": 180.787,
+          "longOfPeriapsis": 124.22799999999995
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P1998 VS24 (LINEAR)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.242816,
+          "inclination": 5.0229,
+          "ascendingNode": 159.122,
+          "argOfPeriapsis": 245.055,
+          "longOfPeriapsis": 44.17700000000002
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P1998 Y2 (Li)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.587891,
+          "inclination": 24.3571,
+          "ascendingNode": 91.864,
+          "argOfPeriapsis": 319.028,
+          "longOfPeriapsis": 50.89200000000005
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P1999 D1 (Hermann)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.713823,
+          "inclination": 21.348,
+          "ascendingNode": 348.788,
+          "argOfPeriapsis": 173.96,
+          "longOfPeriapsis": 162.74800000000005
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P1999 XN120 (Catalina)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.212448,
+          "inclination": 5.0286,
+          "ascendingNode": 285.336,
+          "argOfPeriapsis": 161.753,
+          "longOfPeriapsis": 87.089
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2000 QJ46 (LINEAR)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.674754,
+          "inclination": 4.4252,
+          "ascendingNode": 158.114,
+          "argOfPeriapsis": 222.12,
+          "longOfPeriapsis": 20.234000000000037
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2000 R2 (LINEAR)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.564658,
+          "inclination": 10.995,
+          "ascendingNode": 163.04,
+          "argOfPeriapsis": 172.391,
+          "longOfPeriapsis": 335.431
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2002 VQ94 (LINEAR)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.964714,
+          "inclination": 70.5999,
+          "ascendingNode": 34.9854,
+          "argOfPeriapsis": 99.9633,
+          "longOfPeriapsis": 134.9487
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2003 S1 (NEAT)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.430542,
+          "inclination": 5.9569,
+          "ascendingNode": 241.042,
+          "argOfPeriapsis": 176.056,
+          "longOfPeriapsis": 57.09800000000001
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2003 U2 (LINEAR)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.623625,
+          "inclination": 24.6012,
+          "ascendingNode": 186.389,
+          "argOfPeriapsis": 177.462,
+          "longOfPeriapsis": 3.850999999999999
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2004 A1 (LONEOS)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.311993,
+          "inclination": 10.5689,
+          "ascendingNode": 124.945,
+          "argOfPeriapsis": 21.4446,
+          "longOfPeriapsis": 146.3896
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2004 FY140 (LINEAR)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.171216,
+          "inclination": 2.1325,
+          "ascendingNode": 326.836,
+          "argOfPeriapsis": 240.516,
+          "longOfPeriapsis": 207.35199999999998
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2005 L1 (McNaught)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.207551,
+          "inclination": 7.7306,
+          "ascendingNode": 138.271,
+          "argOfPeriapsis": 149.809,
+          "longOfPeriapsis": 288.08
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2005 L3 (McNaught)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1.00013,
+          "inclination": 139.4,
+          "ascendingNode": 288.842,
+          "argOfPeriapsis": 47.1155,
+          "longOfPeriapsis": 335.9575
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2005 RV25 (LONEOS-Christensen)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.168512,
+          "inclination": 9.8975,
+          "ascendingNode": 246.88,
+          "argOfPeriapsis": 191.364,
+          "longOfPeriapsis": 78.24400000000003
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2005 SB216 (LONEOS)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.465352,
+          "inclination": 24.0851,
+          "ascendingNode": 1.5922,
+          "argOfPeriapsis": 83.3495,
+          "longOfPeriapsis": 84.94170000000001
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2005 T2 (Christensen)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.421813,
+          "inclination": 8.3375,
+          "ascendingNode": 260.454,
+          "argOfPeriapsis": 58.6613,
+          "longOfPeriapsis": 319.1153
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2006 F1 (Kowalski)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.117846,
+          "inclination": 21.2781,
+          "ascendingNode": 124.756,
+          "argOfPeriapsis": 186.188,
+          "longOfPeriapsis": 310.94399999999996
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2006 F4 (Spacewatch)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.336724,
+          "inclination": 12.3806,
+          "ascendingNode": 184.062,
+          "argOfPeriapsis": 31.0348,
+          "longOfPeriapsis": 215.0968
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2006 R2 (Christensen)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.269528,
+          "inclination": 16.2987,
+          "ascendingNode": 139.076,
+          "argOfPeriapsis": 189.181,
+          "longOfPeriapsis": 328.257
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2006 S1 (Christensen)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.61098,
+          "inclination": 11.8889,
+          "ascendingNode": 213.478,
+          "argOfPeriapsis": 128.299,
+          "longOfPeriapsis": 341.77700000000004
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2006 S3 (LONEOS)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1.00375,
+          "inclination": 166.032,
+          "ascendingNode": 38.3715,
+          "argOfPeriapsis": 140.102,
+          "longOfPeriapsis": 178.4735
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2006 W3 (Christensen)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1.00042,
+          "inclination": 127.09,
+          "ascendingNode": 113.657,
+          "argOfPeriapsis": 133.574,
+          "longOfPeriapsis": 247.231
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2007 H1 (McNaught)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.377122,
+          "inclination": 11.8619,
+          "ascendingNode": 144.308,
+          "argOfPeriapsis": 202.873,
+          "longOfPeriapsis": 347.181
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2007 Q3 (Siding Spring)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.999612,
+          "inclination": 65.6913,
+          "ascendingNode": 149.328,
+          "argOfPeriapsis": 2.0435,
+          "longOfPeriapsis": 151.3715
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2007 R1 (Larson)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.277052,
+          "inclination": 7.871,
+          "ascendingNode": 181.655,
+          "argOfPeriapsis": 175.704,
+          "longOfPeriapsis": 357.35900000000004
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2007 T2 (Kowalski)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.775114,
+          "inclination": 9.8927,
+          "ascendingNode": 3.9429,
+          "argOfPeriapsis": 358.65,
+          "longOfPeriapsis": 2.592899999999986
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2008 CL94 (Lemmon)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.121312,
+          "inclination": 8.3539,
+          "ascendingNode": 33.4352,
+          "argOfPeriapsis": 80.8466,
+          "longOfPeriapsis": 114.2818
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2008 FK75 (Lemmon-Siding Spring)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1.00118,
+          "inclination": 61.1775,
+          "ascendingNode": 218.269,
+          "argOfPeriapsis": 80.4989,
+          "longOfPeriapsis": 298.7679
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2008 J2 (Beshore)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.318665,
+          "inclination": 10.3242,
+          "ascendingNode": 97.705,
+          "argOfPeriapsis": 131.965,
+          "longOfPeriapsis": 229.67000000000002
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2008 O2 (McNaught)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.151291,
+          "inclination": 9.5157,
+          "ascendingNode": 325.865,
+          "argOfPeriapsis": 27.5397,
+          "longOfPeriapsis": 353.4047
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2008 S3 (Boattini)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1.00172,
+          "inclination": 162.706,
+          "ascendingNode": 54.9508,
+          "argOfPeriapsis": 40.1058,
+          "longOfPeriapsis": 95.0566
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2009 F2 (McNaught)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.982188,
+          "inclination": 59.3715,
+          "ascendingNode": 214.046,
+          "argOfPeriapsis": 336.213,
+          "longOfPeriapsis": 190.25900000000001
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2009 F4 (McNaught)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1.00039,
+          "inclination": 79.3486,
+          "ascendingNode": 53.5822,
+          "argOfPeriapsis": 260.399,
+          "longOfPeriapsis": 313.9812
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2009 P1 (Garradd)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1.00078,
+          "inclination": 106.17,
+          "ascendingNode": 325.998,
+          "argOfPeriapsis": 90.7417,
+          "longOfPeriapsis": 56.73969999999997
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2009 P2 (Boattini)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1.00277,
+          "inclination": 163.459,
+          "ascendingNode": 60.4644,
+          "argOfPeriapsis": 76.3564,
+          "longOfPeriapsis": 136.8208
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2009 S3 (Lemmon)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1.00143,
+          "inclination": 60.383,
+          "ascendingNode": 225.133,
+          "argOfPeriapsis": 129.857,
+          "longOfPeriapsis": 354.99
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2010 A2 (LINEAR)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.125309,
+          "inclination": 5.2559,
+          "ascendingNode": 320.243,
+          "argOfPeriapsis": 132.916,
+          "longOfPeriapsis": 93.15899999999999
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2010 B1 (Cardinal)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.999205,
+          "inclination": 101.984,
+          "ascendingNode": 277.198,
+          "argOfPeriapsis": 211.585,
+          "longOfPeriapsis": 128.78300000000002
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2010 G2 (Hill)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.97887,
+          "inclination": 103.762,
+          "ascendingNode": 246.788,
+          "argOfPeriapsis": 137.381,
+          "longOfPeriapsis": 24.168999999999983
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2010 H2 (Vales)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.192696,
+          "inclination": 14.2573,
+          "ascendingNode": 64.3099,
+          "argOfPeriapsis": 129.683,
+          "longOfPeriapsis": 193.9929
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2010 H5 (Scotti)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.155645,
+          "inclination": 14.0854,
+          "ascendingNode": 24.8792,
+          "argOfPeriapsis": 174.481,
+          "longOfPeriapsis": 199.3602
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2010 J5 (McNaught)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.086774,
+          "inclination": 7.3565,
+          "ascendingNode": 65.6701,
+          "argOfPeriapsis": 149.609,
+          "longOfPeriapsis": 215.27910000000003
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2010 JC81 (WISE)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.777303,
+          "inclination": 38.6835,
+          "ascendingNode": 30.7811,
+          "argOfPeriapsis": 12.6204,
+          "longOfPeriapsis": 43.4015
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2010 L3 (Catalina)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1.00256,
+          "inclination": 102.626,
+          "ascendingNode": 38.2746,
+          "argOfPeriapsis": 121.755,
+          "longOfPeriapsis": 160.0296
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2010 M1 (Gibbs)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1,
+          "inclination": 78.373,
+          "ascendingNode": 82.15,
+          "argOfPeriapsis": 265.318,
+          "longOfPeriapsis": 347.46799999999996
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2010 R1 (LINEAR)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1.00331,
+          "inclination": 156.928,
+          "ascendingNode": 343.666,
+          "argOfPeriapsis": 114.48,
+          "longOfPeriapsis": 98.14600000000002
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2010 R2 (La Sagra)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.153857,
+          "inclination": 21.4201,
+          "ascendingNode": 270.652,
+          "argOfPeriapsis": 58.8754,
+          "longOfPeriapsis": 329.5274
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2010 S1 (LINEAR)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1.00167,
+          "inclination": 125.336,
+          "ascendingNode": 93.431,
+          "argOfPeriapsis": 118.618,
+          "longOfPeriapsis": 212.04899999999998
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2010 TO20 (LINEAR-Grauer)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.068036,
+          "inclination": 2.5115,
+          "ascendingNode": 43.9462,
+          "argOfPeriapsis": 267.647,
+          "longOfPeriapsis": 311.59319999999997
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2010 U3 (Boattini)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1.00284,
+          "inclination": 55.4324,
+          "ascendingNode": 43.0323,
+          "argOfPeriapsis": 87.9185,
+          "longOfPeriapsis": 130.9508
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2010 UH55 (Spacewatch)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.575801,
+          "inclination": 8.6628,
+          "ascendingNode": 235.257,
+          "argOfPeriapsis": 221.734,
+          "longOfPeriapsis": 96.99099999999999
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2010 V1 (Ikeya-Murakami)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.486716,
+          "inclination": 9.3822,
+          "ascendingNode": 3.7771,
+          "argOfPeriapsis": 152.236,
+          "longOfPeriapsis": 156.01309999999998
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2011 A3 (Gibbs)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.997311,
+          "inclination": 26.0786,
+          "ascendingNode": 124.894,
+          "argOfPeriapsis": 141.141,
+          "longOfPeriapsis": 266.03499999999997
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2011 C2 (Gibbs)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.269938,
+          "inclination": 10.9039,
+          "ascendingNode": 12.2029,
+          "argOfPeriapsis": 160.518,
+          "longOfPeriapsis": 172.7209
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2011 F1 (LINEAR)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1.00006,
+          "inclination": 56.6129,
+          "ascendingNode": 85.1151,
+          "argOfPeriapsis": 192.552,
+          "longOfPeriapsis": 277.6671
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2011 FR143 (Lemmon)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.453375,
+          "inclination": 16.0105,
+          "ascendingNode": 191.003,
+          "argOfPeriapsis": 349.859,
+          "longOfPeriapsis": 180.86199999999997
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2011 J2 (LINEAR)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1.00039,
+          "inclination": 122.796,
+          "ascendingNode": 163.94,
+          "argOfPeriapsis": 85.2737,
+          "longOfPeriapsis": 249.21370000000002
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2011 JB15 (Spacewatch-Boattini)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.317606,
+          "inclination": 19.1472,
+          "ascendingNode": 153.738,
+          "argOfPeriapsis": 110.856,
+          "longOfPeriapsis": 264.594
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2011 KP36 (Spacewatch)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.872912,
+          "inclination": 18.9811,
+          "ascendingNode": 173.459,
+          "argOfPeriapsis": 180.618,
+          "longOfPeriapsis": 354.077
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2011 N1 (ASH)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.545943,
+          "inclination": 35.6904,
+          "ascendingNode": 77.6732,
+          "argOfPeriapsis": 330.848,
+          "longOfPeriapsis": 48.52120000000002
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2011 O1 (LINEAR)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.996342,
+          "inclination": 76.4997,
+          "ascendingNode": 89.8185,
+          "argOfPeriapsis": 232.379,
+          "longOfPeriapsis": 322.1975
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2011 P1 (McNaught)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.330357,
+          "inclination": 5.6558,
+          "ascendingNode": 5.0115,
+          "argOfPeriapsis": 347.941,
+          "longOfPeriapsis": 352.9525
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2011 Q2 (McNaught)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1.00046,
+          "inclination": 36.98,
+          "ascendingNode": 287.239,
+          "argOfPeriapsis": 34.7903,
+          "longOfPeriapsis": 322.0293
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2011 R1 (McNaught)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1.00077,
+          "inclination": 116.195,
+          "ascendingNode": 221.409,
+          "argOfPeriapsis": 308.859,
+          "longOfPeriapsis": 170.26800000000003
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2011 R3 (Novichonok-Gerke)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.264494,
+          "inclination": 19.2195,
+          "ascendingNode": 190.458,
+          "argOfPeriapsis": 224.932,
+          "longOfPeriapsis": 55.389999999999986
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2011 S1 (Gibbs)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.203146,
+          "inclination": 2.6793,
+          "ascendingNode": 218.897,
+          "argOfPeriapsis": 193.298,
+          "longOfPeriapsis": 52.19499999999999
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2011 U1 (PANSTARRS)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.417793,
+          "inclination": 15.2423,
+          "ascendingNode": 135.003,
+          "argOfPeriapsis": 353.184,
+          "longOfPeriapsis": 128.187
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "P2011 U2 (Bressi)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.09497,
+          "inclination": 9.7725,
+          "ascendingNode": 266.519,
+          "argOfPeriapsis": 155.731,
+          "longOfPeriapsis": 62.25
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2011 UF305 (LINEAR)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.332358,
+          "inclination": 12.1145,
+          "ascendingNode": 234.775,
+          "argOfPeriapsis": 134.182,
+          "longOfPeriapsis": 8.956999999999994
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "203P Korlevic"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.316194,
+          "inclination": 2.9745,
+          "ascendingNode": 290.448,
+          "argOfPeriapsis": 154.926,
+          "longOfPeriapsis": 85.37399999999997
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "213P Van Ness"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.382937,
+          "inclination": 10.2899,
+          "ascendingNode": 312.149,
+          "argOfPeriapsis": 3.7588,
+          "longOfPeriapsis": 315.9078
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "215P NEAT"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.214242,
+          "inclination": 12.8892,
+          "ascendingNode": 74.8727,
+          "argOfPeriapsis": 231.954,
+          "longOfPeriapsis": 306.8267
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "219P LINEAR"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.352051,
+          "inclination": 11.5291,
+          "ascendingNode": 231.029,
+          "argOfPeriapsis": 107.561,
+          "longOfPeriapsis": 338.59000000000003
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "228P LINEAR"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.178025,
+          "inclination": 7.9132,
+          "ascendingNode": 31.0683,
+          "argOfPeriapsis": 114.881,
+          "longOfPeriapsis": 145.9493
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "231P LINEAR-NEAT"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.246998,
+          "inclination": 12.3278,
+          "ascendingNode": 133.07,
+          "argOfPeriapsis": 42.3846,
+          "longOfPeriapsis": 175.4546
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "237P LINEAR"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.41298,
+          "inclination": 16.7798,
+          "ascendingNode": 251.374,
+          "argOfPeriapsis": 18.8783,
+          "longOfPeriapsis": 270.2523
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "242P Spahr"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.277619,
+          "inclination": 32.4824,
+          "ascendingNode": 180.724,
+          "argOfPeriapsis": 247.728,
+          "longOfPeriapsis": 68.452
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "244P Scotti"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.198993,
+          "inclination": 2.2595,
+          "ascendingNode": 354.133,
+          "argOfPeriapsis": 92.685,
+          "longOfPeriapsis": 86.81799999999998
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "246P NEAT"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.285061,
+          "inclination": 15.9718,
+          "ascendingNode": 78.7804,
+          "argOfPeriapsis": 176.183,
+          "longOfPeriapsis": 254.96339999999998
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "256P LINEAR"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.418791,
+          "inclination": 27.637,
+          "ascendingNode": 81.446,
+          "argOfPeriapsis": 124.12,
+          "longOfPeriapsis": 205.566
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "257P Catalina"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.432849,
+          "inclination": 20.2447,
+          "ascendingNode": 207.869,
+          "argOfPeriapsis": 117.811,
+          "longOfPeriapsis": 325.68
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "259P Garradd"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.340939,
+          "inclination": 15.8988,
+          "ascendingNode": 51.9607,
+          "argOfPeriapsis": 256.559,
+          "longOfPeriapsis": 308.51970000000006
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "260P McNaught"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.593648,
+          "inclination": 15.7349,
+          "ascendingNode": 351.944,
+          "argOfPeriapsis": 15.7047,
+          "longOfPeriapsis": 7.648700000000019
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "261P Larson"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.389878,
+          "inclination": 6.3255,
+          "ascendingNode": 298.471,
+          "argOfPeriapsis": 58.8564,
+          "longOfPeriapsis": 357.3274
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "262P McNaught-Russell"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.815411,
+          "inclination": 29.0777,
+          "ascendingNode": 218.01,
+          "argOfPeriapsis": 171.19,
+          "longOfPeriapsis": 29.19999999999999
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "265P LINEAR"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.646956,
+          "inclination": 14.6922,
+          "ascendingNode": 344.716,
+          "argOfPeriapsis": 32.8395,
+          "longOfPeriapsis": 17.555499999999995
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "266P Christensen"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.34097,
+          "inclination": 3.4287,
+          "ascendingNode": 5.0872,
+          "argOfPeriapsis": 98.0497,
+          "longOfPeriapsis": 103.1369
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "269P Jedicke"
+        ],
+        "parentBody": "Sol",
+        "radius": 1.27,
+        "body": {
+          "albedo": 0.621,
+          "rotationPeriod": 2.748,
+          "obliquity": 3.0
+        },
+        "orbit": {
+          "eccentricity": 0.438679,
+          "inclination": 6.617,
+          "ascendingNode": 248.766,
+          "argOfPeriapsis": 223.549,
+          "longOfPeriapsis": 112.315
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "270P Gehrels"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.473523,
+          "inclination": 2.8573,
+          "ascendingNode": 225.302,
+          "argOfPeriapsis": 211.006,
+          "longOfPeriapsis": 76.30799999999999
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "271P van Houten-Lemmon"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.390986,
+          "inclination": 6.8553,
+          "ascendingNode": 9.5884,
+          "argOfPeriapsis": 35.1108,
+          "longOfPeriapsis": 44.6992
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "272P NEAT"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.45573,
+          "inclination": 18.1017,
+          "ascendingNode": 109.503,
+          "argOfPeriapsis": 27.8918,
+          "longOfPeriapsis": 137.3948
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "273P Pons-Gambart"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.97531,
+          "inclination": 136.397,
+          "ascendingNode": 320.427,
+          "argOfPeriapsis": 20.1921,
+          "longOfPeriapsis": 340.6191
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "274P Tombaugh-Tenagra"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.440062,
+          "inclination": 15.8384,
+          "ascendingNode": 81.3628,
+          "argOfPeriapsis": 38.458,
+          "longOfPeriapsis": 119.82079999999999
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "275P Hermann"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.714168,
+          "inclination": 21.3424,
+          "ascendingNode": 348.755,
+          "argOfPeriapsis": 173.987,
+          "longOfPeriapsis": 162.74199999999996
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "276P Vorobjov"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.273637,
+          "inclination": 14.454,
+          "ascendingNode": 214.28,
+          "argOfPeriapsis": 205.763,
+          "longOfPeriapsis": 60.043000000000006
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "277P LINEAR"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.504443,
+          "inclination": 16.7474,
+          "ascendingNode": 276.363,
+          "argOfPeriapsis": 152.299,
+          "longOfPeriapsis": 68.66200000000003
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "278P McNaught"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.433177,
+          "inclination": 6.6821,
+          "ascendingNode": 15.5043,
+          "argOfPeriapsis": 238.001,
+          "longOfPeriapsis": 253.5053
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "280P Larsen"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.417218,
+          "inclination": 11.7728,
+          "ascendingNode": 131.514,
+          "argOfPeriapsis": 104.612,
+          "longOfPeriapsis": 236.126
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Hyakutake",
+          "Great Comet of 1996",
+          "C|1996 B2 (Hyakutake)"
+        ],
+        "radius": 2.1,
+        "parentBody": "Sol",
+        "body": {
+          "rotationPeriod": 6,
+          "class": "Asteroid"
+        },
+        "orbit": {
+          "period": 108306.05983088794,
+          "semiMajorAxis": 2272.079439771763,
+          "eccentricity": 0.9998986702212276,
+          "inclination": 124.9226625944912,
+          "ascendingNode": 188.0452284985425,
+          "argOfPeriapsis": 130.1740835084622,
+          "longOfPeriapsis": 318.2193120070047
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "West",
+          "Great Comet of 1976",
+          "C|1975 V1 (West)"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.999971,
+          "inclination": 43.0664,
+          "ascendingNode": 118.924,
+          "argOfPeriapsis": 358.427,
+          "longOfPeriapsis": 117.351
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Bennet",
+          "Great Comet of 1970",
+          "C|1969 Y1 (Bennett)"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.996193,
+          "inclination": 90.0394,
+          "ascendingNode": 224.6574,
+          "argOfPeriapsis": 354.146,
+          "longOfPeriapsis": 218.8034
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Ikeya-Seki A",
+          "Great Comet of 1965 A",
+          "C|1965 S1-A (Ikeya-Seki)"
+        ],
+        "radius": 5,
+        "parentBody": "Sol",
+        "orbit": {
+          "period": 880.0188174646604,
+          "eccentricity": 0.999915,
+          "inclination": 141.8642,
+          "ascendingNode": 346.9947,
+          "argOfPeriapsis": 69.0486,
+          "longOfPeriapsis": 56.043300000000045
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Ikeya-Seki B",
+          "Great Comet of 1965 B",
+          "C|1965 S1-B (Ikeya-Seki)"
+        ],
+        "radius": 5,
+        "parentBody": "Sol",
+        "orbit": {
+          "period": 1056.132,
+          "eccentricity": 0.999925,
+          "inclination": 141.861,
+          "ascendingNode": 346.9811,
+          "argOfPeriapsis": 69.0343,
+          "longOfPeriapsis": 56.0154
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Seki-Lines",
+          "Great Comet of 1962",
+          "C|1962 C1 (Seki-Lines)"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1.000003,
+          "inclination": 65.0142,
+          "ascendingNode": 304.6776,
+          "argOfPeriapsis": 11.4731,
+          "longOfPeriapsis": 316.1507
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Arend-Roland",
+          "Great Comet of 1957",
+          "C|1956 R1 (Arend-Roland)"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1.000246171221804,
+          "inclination": 119.9442980711338,
+          "ascendingNode": 215.855416219375,
+          "argOfPeriapsis": 308.7745688762147,
+          "longOfPeriapsis": 164.62998509558975
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Skjellerup-Maristany",
+          "Great Comet of 1927",
+          "C|1927 X1 (Skjellerup-Maristany)"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.99984,
+          "inclination": 85.1126,
+          "ascendingNode": 78.2436,
+          "argOfPeriapsis": 47.1588,
+          "longOfPeriapsis": 125.4024
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Daylight",
+          "Great Comet of 1910",
+          "C|1910 A1"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.999995,
+          "inclination": 138.7812,
+          "ascendingNode": 90.0354,
+          "argOfPeriapsis": 320.9122,
+          "longOfPeriapsis": 50.947599999999966
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Viscara",
+          "Great Comet of 1901",
+          "C|1901 G1"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1,
+          "inclination": 131.077,
+          "ascendingNode": 111.0333,
+          "argOfPeriapsis": 203.0522,
+          "longOfPeriapsis": 314.0855
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Great Comet of 1882 A",
+          "C|1882 R1-A"
+        ],
+        "radius": 2.5,
+        "parentBody": "Sol",
+        "orbit": {
+          "period": 669.0143055498385,
+          "eccentricity": 0.999899,
+          "inclination": 142.0112,
+          "ascendingNode": 347.6563,
+          "argOfPeriapsis": 69.5843,
+          "longOfPeriapsis": 57.24059999999997
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Great Comet of 1882 B",
+          "C|1882 R1-B"
+        ],
+        "radius": 2.5,
+        "parentBody": "Sol",
+        "orbit": {
+          "period": 761.117916199891,
+          "eccentricity": 0.9999069978685318,
+          "inclination": 142.0206977584303,
+          "ascendingNode": 347.6858552595434,
+          "argOfPeriapsis": 69.60913377721184,
+          "longOfPeriapsis": 57.29498903675528
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Great Comet of 1882 C",
+          "C|1882 R1-C"
+        ],
+        "radius": 2.5,
+        "parentBody": "Sol",
+        "orbit": {
+          "period": 874.018689163765,
+          "eccentricity": 0.999915,
+          "inclination": 142.0105,
+          "ascendingNode": 347.6545,
+          "argOfPeriapsis": 69.584,
+          "longOfPeriapsis": 57.23849999999999
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Great Comet of 1882 D",
+          "C|1882 R1-D"
+        ],
+        "radius": 2.5,
+        "parentBody": "Sol",
+        "orbit": {
+          "period": 952.0203570754054,
+          "eccentricity": 0.99992,
+          "inclination": 142.0093,
+          "ascendingNode": 347.651,
+          "argOfPeriapsis": 69.5808,
+          "longOfPeriapsis": 57.23180000000002
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Great Comet of 1881",
+          "C|1881 K1"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "period": 2586.2647710196256,
+          "eccentricity": 0.9961013234924838,
+          "inclination": 63.42776992249976,
+          "ascendingNode": 272.6307976658445,
+          "argOfPeriapsis": 354.2362613788583,
+          "longOfPeriapsis": 266.8670590447027
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Coggia",
+          "Great Comet of 1874",
+          "C|1874 H1 (Coggia)"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "period": 13708,
+          "eccentricity": 0.99882,
+          "inclination": 66.3439,
+          "ascendingNode": 120.495,
+          "argOfPeriapsis": 152.3804,
+          "longOfPeriapsis": 272.8754
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Great Comet of 1861",
+          "C|1861 J1"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "period": 409,
+          "eccentricity": 0.98507,
+          "inclination": 85.4424,
+          "ascendingNode": 280.9099,
+          "argOfPeriapsis": 330.0841,
+          "longOfPeriapsis": 250.99399999999991
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Great Comet of 1860",
+          "C|1860 M1"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1,
+          "inclination": 79.3233,
+          "ascendingNode": 86.6271,
+          "argOfPeriapsis": 76.8841,
+          "longOfPeriapsis": 163.5112
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Donati",
+          "Great Comet of 1858",
+          "C|1858 L1 (Donati)"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.996295,
+          "inclination": 116.9512,
+          "ascendingNode": 167.3044,
+          "argOfPeriapsis": 129.1144,
+          "longOfPeriapsis": 296.4188
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Great Comet of 1854",
+          "C|1854 F1"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1,
+          "inclination": 97.4867,
+          "ascendingNode": 317.496,
+          "argOfPeriapsis": 101.6255,
+          "longOfPeriapsis": 59.12149999999997
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Great Comet of 1844",
+          "C|1844 Y1"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.999302,
+          "inclination": 45.5651,
+          "ascendingNode": 120.591,
+          "argOfPeriapsis": 177.5055,
+          "longOfPeriapsis": 298.0965
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Great March Comet",
+          "Great Comet of 1843",
+          "C|1843 D1"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "period": 513,
+          "eccentricity": 0.999914,
+          "inclination": 144.3548,
+          "ascendingNode": 3.5272,
+          "argOfPeriapsis": 82.639,
+          "longOfPeriapsis": 86.16619999999999
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Great Comet of 1831",
+          "C|1831 A1"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1,
+          "inclination": 135.263,
+          "ascendingNode": 340.2392,
+          "argOfPeriapsis": 26.8884,
+          "longOfPeriapsis": 7.127599999999973
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Great Comet of 1830",
+          "C|1830 F1"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1,
+          "inclination": 21.257,
+          "ascendingNode": 208.7642,
+          "argOfPeriapsis": 5.7962,
+          "longOfPeriapsis": 214.5604
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Great Comet of 1823",
+          "C|1823 Y1"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1,
+          "inclination": 103.8194,
+          "ascendingNode": 305.5054,
+          "argOfPeriapsis": 28.4867,
+          "longOfPeriapsis": 333.9921
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Tralles",
+          "Great Comet of 1819",
+          "C|1819 N1 (Tralles)"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1,
+          "inclination": 80.7517,
+          "ascendingNode": 276.2349,
+          "argOfPeriapsis": 13.4158,
+          "longOfPeriapsis": 289.6507
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Great Comet of 1811",
+          "C|1811 F1"
+        ],
+        "radius": 17.5,
+        "parentBody": "Sol",
+        "orbit": {
+          "period": 3096,
+          "eccentricity": 0.995125,
+          "inclination": 106.9342,
+          "ascendingNode": 143.0497,
+          "argOfPeriapsis": 65.4097,
+          "longOfPeriapsis": 208.45940000000002
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Great Comet of 1807",
+          "C|1807 R1"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.995488,
+          "inclination": 63.1762,
+          "ascendingNode": 269.4837,
+          "argOfPeriapsis": 4.097,
+          "longOfPeriapsis": 273.5807
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Great Comet of 1783",
+          "C|1783 X1"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1,
+          "inclination": 128.859,
+          "ascendingNode": 59.856,
+          "argOfPeriapsis": 336.115,
+          "longOfPeriapsis": 35.971000000000004
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Great Comet of 1771",
+          "C|1771 A1"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1,
+          "inclination": 148.555,
+          "ascendingNode": 111.944,
+          "argOfPeriapsis": 260.375,
+          "longOfPeriapsis": 12.319000000000017
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Great Comet of 1760",
+          "C|1760 A1"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1,
+          "inclination": 175.126,
+          "ascendingNode": 83.553,
+          "argOfPeriapsis": 301.727,
+          "longOfPeriapsis": 25.279999999999973
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "de Cheseaux",
+          "Klinkenberg-Cheseaux",
+          "Great Comet of 1744",
+          "C|1743 X1"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1,
+          "inclination": 47.1417,
+          "ascendingNode": 49.2966,
+          "argOfPeriapsis": 151.4855,
+          "longOfPeriapsis": 200.7821
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Kirch",
+          "Newton",
+          "Great Comet of 1680",
+          "C|1680 V1"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 0.999986,
+          "inclination": 60.6784,
+          "ascendingNode": 276.6339,
+          "argOfPeriapsis": 350.6128,
+          "longOfPeriapsis": 267.2466999999999
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Great Comet of 1577",
+          "C|1577 V1"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1,
+          "inclination": 104.883,
+          "ascendingNode": 31.237,
+          "argOfPeriapsis": 255.673,
+          "longOfPeriapsis": 286.91
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Charles V",
+          "Great Comet of 1556",
+          "C|1556 D1"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1,
+          "inclination": 32.37,
+          "ascendingNode": 181.436,
+          "argOfPeriapsis": 100.866,
+          "longOfPeriapsis": 282.302
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Great Comet of 1402",
+          "C|1402 D1"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1,
+          "inclination": 55,
+          "ascendingNode": 126,
+          "argOfPeriapsis": 91,
+          "longOfPeriapsis": 217
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Great Comet of 1264",
+          "C|1264 N1"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1,
+          "inclination": 16.4,
+          "ascendingNode": 151.04,
+          "argOfPeriapsis": 159.71,
+          "longOfPeriapsis": 310.75
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "Caesar",
+          "Great Comet of 44 BC",
+          "C|-43 K1"
+        ],
+        "radius": 10,
+        "parentBody": "Sol",
+        "orbit": {
+          "eccentricity": 1,
+          "inclination": 110,
+          "ascendingNode": 170,
+          "argOfPeriapsis": 17,
+          "longOfPeriapsis": 187
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "2I",
+          "Borisov",
+          "C|2019 Q4 (Borisov)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "semiMajorAxis": -0.7856957098425218,
+          "eccentricity": 3.635363102615178,
+          "inclination": 43.48353042247117,
+          "ascendingNode": 308.7089145318114,
+          "argOfPeriapsis": 207.702910899327,
+          "longOfPeriapsis": 156.41182543113837
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2013 N4 (Borisov)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "period": 332.99,
+          "semiMajorAxis": 48.04164823820172,
+          "eccentricity": 0.9748050807991576,
+          "inclination": 37.03522605369348,
+          "ascendingNode": 322.609908763809,
+          "argOfPeriapsis": 142.2808577303502,
+          "longOfPeriapsis": 104.89076649415921
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2013 V2 (Borisov)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "semiMajorAxis": -785.8943491023365,
+          "eccentricity": 1.004463606775171,
+          "inclination": 37.8483928055803,
+          "ascendingNode": 48.43578555923206,
+          "argOfPeriapsis": 94.46239143486949,
+          "longOfPeriapsis": 142.89817699410156
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2014 Q3 (Borisov)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "period": 151.64,
+          "semiMajorAxis": 28.4359948398803,
+          "eccentricity": 0.94206610918932,
+          "inclination": 89.9488839162881,
+          "ascendingNode": 63.12952382129158,
+          "argOfPeriapsis": 47.38085359039041,
+          "longOfPeriapsis": 110.51037741168199
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2014 R1 (Borisov)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "period": 2403.35,
+          "semiMajorAxis": 179.4205747042781,
+          "eccentricity": 0.9925012419859855,
+          "inclination": 9.932887506776527,
+          "ascendingNode": 104.05184205,
+          "argOfPeriapsis": 55.64907729008527,
+          "longOfPeriapsis": 159.70091934008528
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C",
+          "|",
+          "2",
+          "0",
+          "1",
+          "5",
+          " ",
+          "D",
+          "4",
+          " ",
+          "(",
+          "B",
+          "o",
+          "r",
+          "i",
+          "s",
+          "o",
+          "v",
+          ")"
+        ],
+        "parentBody": "Sol",
+        "radius": 2.5,
+        "orbit": {
+          "period": 699.89,
+          "semiMajorAxis": 78.82836015451596,
+          "eccentricity": 0.9890689358364761,
+          "inclination": 77.3017394114994,
+          "ascendingNode": 305.8103155231655,
+          "argOfPeriapsis": 314.694290201562,
+          "longOfPeriapsis": 260.5046057247275
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2016 R3 (Borisov)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "period": 997.76,
+          "semiMajorAxis": 99.84903045303973,
+          "eccentricity": 0.9955252918070322,
+          "inclination": 53.06733479371518,
+          "ascendingNode": 78.66956585039243,
+          "argOfPeriapsis": 118.1339081976788,
+          "longOfPeriapsis": 196.80347404807122
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2017 E1 (Borisov)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "semiMajorAxis": -349.6136135435225,
+          "eccentricity": 1.002576166737233,
+          "inclination": 14.55412835868398,
+          "ascendingNode": 142.732904879384,
+          "argOfPeriapsis": 152.4734032448525,
+          "longOfPeriapsis": 295.2063081242365
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2019 Y4 (ATLAS)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "period": 6121.3,
+          "semiMajorAxis": 334.6240690172499,
+          "eccentricity": 0.9992444279234511,
+          "inclination": 45.38507225915464,
+          "ascendingNode": 120.5732078366555,
+          "argOfPeriapsis": 177.4075353245124,
+          "longOfPeriapsis": 297.9807431611679
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2019 Y1 (ATLAS)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "period": 3473.59,
+          "semiMajorAxis": 229.3578450506209,
+          "eccentricity": 0.996347299225202,
+          "inclination": 73.34710380124754,
+          "ascendingNode": 31.36759582196825,
+          "argOfPeriapsis": 57.5016854466327,
+          "longOfPeriapsis": 88.86928126860096
+        }
+      }
+    },
+    {
+      "comet": {
+        "names": [
+          "C|2017 T2 (PANSTARRS)"
+        ],
+        "parentBody": "Sol",
+        "orbit": {
+          "period": 507574.6,
+          "semiMajorAxis": 6362.9881968335,
+          "eccentricity": 0.9997461853104503,
+          "inclination": 57.23354044022197,
+          "ascendingNode": 64.37912389421788,
+          "argOfPeriapsis": 92.9945109555977,
+          "longOfPeriapsis": 157.37363484981557
+        }
+      }
+    }
+  ]
+}

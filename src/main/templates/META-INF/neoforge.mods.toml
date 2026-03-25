@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license = "BSD 2"
+
+[[mods]]
+    modId = "${modId}"
+    version = "${modVersion}"
+	logoFile="pack.png"
+	displayName="Almagest"
+	displayURL="https://www.curseforge.com/minecraft/mc-mods/almagest"
+	authors="Verph"
+	description="Adding the whole universe to Minecraft!"
+
+[[mixins]]
+    config = "almagest.mixins.json"
+
+[[dependencies.almagest]]
+    modId = "neoforge"
+    type = "required"
+    versionRange="[21.0.0-beta,)"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[dependencies.almagest]]
+    modId = "minecraft"
+    type = "required"
+    versionRange = "[1.21.,)"
+    ordering = "NONE"
+    side = "BOTH"

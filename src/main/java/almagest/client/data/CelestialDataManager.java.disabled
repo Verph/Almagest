@@ -1,0 +1,1161 @@
+package almagest.client.data;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Comparator;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+import java.util.Objects;
+import java.util.Optional;
+import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
+
+import org.joml.Math;
+
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.mojang.blaze3d.vertex.VertexBuffer;
+
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.multiplayer.ClientLevel;
+import net.minecraft.client.particle.ParticleEngine;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.RandomSource;
+import net.minecraft.world.entity.player.Player;
+
+import almagest.Almagest;
+import almagest.client.CelestialObjectHandler;
+import almagest.client.data.CelestialObjectTypes.Atmosphere;
+import almagest.client.data.CelestialObjectTypes.Body;
+import almagest.client.data.CelestialObjectTypes.Body.BodyClass;
+import almagest.client.data.CelestialObjectTypes.Body.BodySize;
+import almagest.client.data.CelestialObjectTypes.Body.BodyTemperature;
+import almagest.client.data.CelestialObjectTypes.CelestialData;
+import almagest.client.data.CelestialObjectTypes.ConstellationData;
+import almagest.client.data.CelestialObjectTypes.Life;
+import almagest.client.data.CelestialObjectTypes.Orbit;
+import almagest.client.data.CelestialObjectTypes.Season;
+import almagest.client.data.CelestialObjectTypes.StarData;
+import almagest.client.data.CelestialObjectTypes.Trail;
+import almagest.client.particle.CelestialObject;
+import almagest.client.particle.Constellations;
+import almagest.client.particle.Skybox;
+import almagest.client.particle.Star;
+import almagest.config.Config;
+import almagest.util.AHelpers;
+import almagest.util.Color;
+import almagest.util.ColorUtils;
+import almagest.util.DataHelpers;
+import almagest.util.Nature;
+import almagest.util.PlanetHelpers;
+import it.unimi.dsi.fastutil.longs.Long2ObjectMap;
+import it.unimi.dsi.fastutil.longs.Long2ObjectMaps;
+import it.unimi.dsi.fastutil.longs.Long2ObjectOpenHashMap;
+
+public class CelestialDataManager
+{
+    public static long globalIdCounter = 0L;
+    public static long starIdCounter = 0L;
+    public static long planetIdCounter = 0L;
+    public static long constellationIdCounter = 0L;
+    public static final int NUM_STAR_CHUNKS = Config.COMMON.numStarChunks.get();
+    public static final double DEFAULT_SURFACE_LEVEL = 63.0D;
+
+    public static volatile boolean HAS_INITIALIZED_CELESTIAL_DATA = false;
+    public static volatile boolean HAS_INITIALIZED_CELESTIAL_OBJECTS = false;
+    public static volatile boolean HAS_INITIALIZED_OTHER_PARAMETERS = false;
+
+    public static final ConcurrentMap<Long, CelestialData> CELESTIAL_DATA_BY_ID = new ConcurrentHashMap<>();
+    public static final ConcurrentMap<Long, CelestialObject> CELESTIAL_OBJECTS_BY_ID = new ConcurrentHashMap<>();
+    public static final ConcurrentMap<Long, StarData> STAR_DATA_BY_ID = new ConcurrentHashMap<>();
+    //public static final ConcurrentMap<Long, Star> STAR_OBJECTS_BY_ID = new ConcurrentHashMap<>();
+    public static final Long2ObjectMap<Star> STAR_OBJECTS_BY_ID = Long2ObjectMaps.synchronize(new Long2ObjectOpenHashMap<>());
+    public static final ConcurrentMap<Long, ConstellationData> CONSTELLATION_DATA_BY_ID = new ConcurrentHashMap<>();
+    public static final ConcurrentMap<Long, Constellations> CONSTELLATIONS_BY_ID = new ConcurrentHashMap<>();
+    public static final ConcurrentMap<Long, Skybox> SKYBOX = new ConcurrentHashMap<>();
+
+    public static final ConcurrentMap<Integer, List<Long>> STAR_OBJECTS_BY_CHUNK = new ConcurrentHashMap<>();
+    public static final ConcurrentMap<Integer, VertexBuffer> STAR_CHUNK_VBOS = new ConcurrentHashMap<>();
+    public static final Map<String, ConstellationData> STAR_NAME_TO_CONSTELLATION = new ConcurrentHashMap<>();
+    public static final ConcurrentMap<StarData, ConstellationData> STAR_DATA_TO_CONSTELLATIONS = new ConcurrentHashMap<>();
+    public static final Set<String> BODY_MODELS = new LinkedHashSet<>();
+
+    public static void init()
+    {
+        List<ConcurrentMap.Entry<ResourceLocation, JsonElement>> JSON_ENTRIES = DataHelpers.scanDirectoryForAllJson("stellar_data");
+        // Add custom entries from config dir 
+        JSON_ENTRIES.addAll(DataHelpers.scanCustomData());
+
+        CELESTIAL_DATA_BY_ID.clear();
+        CELESTIAL_OBJECTS_BY_ID.clear();
+        STAR_DATA_BY_ID.clear();
+        STAR_OBJECTS_BY_ID.clear();
+        CONSTELLATION_DATA_BY_ID.clear();
+        CONSTELLATIONS_BY_ID.clear();
+        SKYBOX.clear();
+        STAR_OBJECTS_BY_CHUNK.clear();
+        STAR_CHUNK_VBOS.clear();
+        STAR_DATA_TO_CONSTELLATIONS.clear();
+
+        initData(JSON_ENTRIES);
+        JSON_ENTRIES.clear();
+    }
+
+    public static Collection<String> getBlockStateData()
+    {
+        if (!BODY_MODELS.isEmpty())
+        {
+            return BODY_MODELS;
+        }
+
+        Set<String> bodies = new LinkedHashSet<>();
+        CelestialDataManager.CELESTIAL_DATA_BY_ID.values().forEach(object -> {
+            String model = "asteroid";
+            if (object.hasModel() && !object.getNames().isEmpty())
+            {
+                model = object.getNames().get(0).toLowerCase(Locale.ROOT).replace("-", "_").trim();
+            }
+            else
+            {
+                model = object.getBody().getBodyDescription().replace(" ", "_").toLowerCase(Locale.ROOT).trim();
+            }
+            bodies.add(model);
+        });
+        for (CelestialObjectTypes type : CelestialObjectTypes.values())
+        {
+            bodies.add(type.getSerializedName());
+        }
+        //bodies.addAll(Body.getAllCombinations());
+        bodies.add("skybox");
+        BODY_MODELS.addAll(bodies);
+        return BODY_MODELS;
+    }
+
+
+    /**
+     * Retrieves planet/moon/asteroid data by ID, name, or list of names.
+     * <p>
+     * Supported key types:
+     * <ul>
+     *   <li>{@link Long} - direct ID lookup (fastest)</li>
+     *   <li>{@link String} - case-insensitive name search</li>
+     *   <li>{@link List} - first match from any name in the list</li>
+     * </ul>
+     * Name lookups scan {@link CelestialData#getNames()} across all entries.
+     *
+     * @param key the lookup key (ID, name, or list of names)
+     * @return Optional containing the {@link CelestialData}, or empty if not found
+     */
+    public static Optional<CelestialData> getPlanetData(Object key)
+    {
+        if (key == null)
+        {
+            Almagest.LOGGER.warn("Input key is null.");
+            return Optional.empty();
+        }
+        if (key instanceof Long id)
+        {
+            return Optional.ofNullable(CELESTIAL_DATA_BY_ID.get(id));
+        }
+        if (key instanceof String name)
+        {
+            String normalized = name.trim().toLowerCase(Locale.ROOT);
+            return CELESTIAL_DATA_BY_ID.values().parallelStream()
+                    .filter(data -> data.getNames().stream()
+                            .anyMatch(n -> n.trim().toLowerCase(Locale.ROOT).equals(normalized)))
+                    .findFirst();
+        }
+        if (key instanceof List<?> list)
+        {
+            List<String> search = list.parallelStream()
+                    .filter(Objects::nonNull)
+                    .map(Object::toString)
+                    .map(s -> s.trim().toLowerCase(Locale.ROOT))
+                    .toList();
+            return CELESTIAL_DATA_BY_ID.values().parallelStream()
+                    .filter(data -> data.getNames().stream()
+                            .map(n -> n.trim().toLowerCase(Locale.ROOT))
+                            .anyMatch(search::contains))
+                    .findFirst();
+        }
+        Almagest.LOGGER.warn("Invalid key type: {}", key.getClass().getSimpleName());
+        return Optional.empty();
+    }
+
+    /**
+     * Retrieves star data by ID, proper name, or catalog designation.
+     * <p>
+     * Supported key types:
+     * <ul>
+     *   <li>{@link Long} - direct ID lookup (fastest)</li>
+     *   <li>{@link String} - case-insensitive name search</li>
+     *   <li>{@link List} - first match from any name in the list</li>
+     * </ul>
+     * Uses case-insensitive matching against all known names from {@link StarData#getAllNames()}.
+     *
+     * @param key the lookup key
+     * @return Optional containing the {@link StarData}, or empty if not found
+     */
+    public static Optional<StarData> getStarData(Object key)
+    {
+        if (key == null)
+        {
+            Almagest.LOGGER.warn("Input key is null.");
+            return Optional.empty();
+        }
+        if (key instanceof Long id)
+        {
+            return Optional.ofNullable(STAR_DATA_BY_ID.get(id));
+        }
+        if (key instanceof String name)
+        {
+            String normalized = name.trim().toLowerCase(Locale.ROOT);
+            return STAR_DATA_BY_ID.values().parallelStream()
+                    .filter(data -> data.getAllNames().stream()
+                            .anyMatch(n -> n.trim().toLowerCase(Locale.ROOT).equals(normalized)))
+                    .findFirst();
+        }
+        if (key instanceof List<?> list)
+        {
+            List<String> search = list.parallelStream()
+                    .filter(Objects::nonNull)
+                    .map(Object::toString)
+                    .map(s -> s.trim().toLowerCase(Locale.ROOT))
+                    .toList();
+            return STAR_DATA_BY_ID.values().parallelStream()
+                    .filter(data -> data.getAllNames().stream()
+                            .map(n -> n.trim().toLowerCase(Locale.ROOT))
+                            .anyMatch(search::contains))
+                    .findFirst();
+        }
+        Almagest.LOGGER.warn("Invalid key type: {}", key.getClass().getSimpleName());
+        return Optional.empty();
+    }
+
+    /**
+     * Retrieves constellation data by ID or name (case-insensitive).
+     * <p>
+     * Supported key types:
+     * <ul>
+     *   <li>{@link Long} - direct ID lookup (fastest)</li>
+     *   <li>{@link String} - case-insensitive name search</li>
+     *   <li>{@link List} - first match from any name in the list</li>
+     * </ul>
+     * Constellations have a single canonical name via {@link ConstellationData#getName()}.
+     *
+     * @param key the lookup key
+     * @return Optional containing the {@link ConstellationData}, or empty if not found
+     */
+    public static Optional<ConstellationData> getConstellationData(Object key)
+    {
+        if (key == null)
+        {
+            Almagest.LOGGER.warn("Input key is null.");
+            return Optional.empty();
+        }
+        if (key instanceof Long id)
+        {
+            return Optional.ofNullable(CONSTELLATION_DATA_BY_ID.get(id));
+        }
+        if (key instanceof String name)
+        {
+            String normalized = name.trim().toLowerCase(Locale.ROOT);
+            return CONSTELLATION_DATA_BY_ID.values().parallelStream()
+                    .filter(c -> c.getName().trim().toLowerCase(Locale.ROOT).equals(normalized))
+                    .findFirst();
+        }
+        if (key instanceof List<?> list)
+        {
+            List<String> search = list.parallelStream()
+                    .filter(Objects::nonNull)
+                    .map(Object::toString)
+                    .map(s -> s.trim().toLowerCase(Locale.ROOT))
+                    .toList();
+            return CONSTELLATION_DATA_BY_ID.values().parallelStream()
+                    .filter(c -> search.contains(c.getName().trim().toLowerCase(Locale.ROOT)))
+                    .findFirst();
+        }
+        Almagest.LOGGER.warn("Invalid key type: {}", key.getClass().getSimpleName());
+        return Optional.empty();
+    }
+
+    /**
+     * Retrieves a rendered celestial body (planet, moon, etc.) by its data, ID, or name.
+     * <p>
+     * Supported key types:
+     * <ul>
+     *   <li>{@link CelestialData} - direct lookup using the data object's ID</li>
+     *   <li>{@link Long} - direct ID lookup</li>
+     *   <li>{@link String} - case-insensitive name search</li>
+     *   <li>{@link List} - first match from any name in the list</li>
+     * </ul>
+     * Fast path for {@link CelestialData} or {@link Long} ID. Name lookups scan all objects.
+     *
+     * @param key the lookup key
+     * @return Optional containing the {@link CelestialObject}, or empty if not found
+     */
+    public static Optional<CelestialObject> getCelestialObject(Object key)
+    {
+        if (key == null)
+        {
+            Almagest.LOGGER.warn("Input key is null.");
+            return Optional.empty();
+        }
+        if (key instanceof CelestialData data)
+        {
+            return Optional.ofNullable(CELESTIAL_OBJECTS_BY_ID.get(data.getId()));
+        }
+        if (key instanceof Long id)
+        {
+            return Optional.ofNullable(CELESTIAL_OBJECTS_BY_ID.get(id));
+        }
+        if (key instanceof String name)
+        {
+            String norm = name.trim().toLowerCase(Locale.ROOT);
+            return CELESTIAL_OBJECTS_BY_ID.values().parallelStream()
+                    .filter(obj -> obj.body.getNames().stream()
+                            .anyMatch(n -> n.trim().toLowerCase(Locale.ROOT).equals(norm)))
+                    .findFirst();
+        }
+        if (key instanceof List<?> list)
+        {
+            List<String> search = list.parallelStream()
+                    .filter(Objects::nonNull)
+                    .map(Object::toString)
+                    .map(s -> s.trim().toLowerCase(Locale.ROOT))
+                    .toList();
+            return CELESTIAL_OBJECTS_BY_ID.values().parallelStream()
+                    .filter(obj -> obj.body.getNames().stream()
+                            .map(n -> n.trim().toLowerCase(Locale.ROOT))
+                            .anyMatch(search::contains))
+                    .findFirst();
+        }
+        Almagest.LOGGER.warn("Invalid key type: {}", key.getClass().getSimpleName());
+        return Optional.empty();
+    }
+
+    /**
+     * Retrieves a rendered star object by ID or any of its names/designations.
+     * <p>
+     * Supported key types:
+     * <ul>
+     *   <li>{@link StarData} - direct lookup using the data object's ID</li>
+     *   <li>{@link Long} - direct ID lookup (fastest)</li>
+     *   <li>{@link String} - case-insensitive name search</li>
+     *   <li>{@link List} - first match from any name in the list</li>
+     * </ul>
+     * Searches across all names returned by {@code star.getAllNames()}.
+     *
+     * @param key the lookup key
+     * @return Optional containing the {@link Star}, or empty if not found
+     */
+    public static Optional<Star> getStarObject(Object key)
+    {
+        if (key == null)
+        {
+            Almagest.LOGGER.warn("Input key is null.");
+            return Optional.empty();
+        }
+        if (key instanceof StarData data)
+        {
+            return Optional.ofNullable(STAR_OBJECTS_BY_ID.get(data.getId()));
+        }
+        if (key instanceof Long id)
+        {
+            return Optional.ofNullable(STAR_OBJECTS_BY_ID.get(id));
+        }
+        if (key instanceof String name)
+        {
+            String norm = name.trim().toLowerCase(Locale.ROOT);
+            return STAR_OBJECTS_BY_ID.values().parallelStream()
+                    .filter(s -> s.star.getAllNames().stream()
+                            .anyMatch(n -> n.trim().toLowerCase(Locale.ROOT).equals(norm)))
+                    .findFirst();
+        }
+        if (key instanceof List<?> list)
+        {
+            List<String> search = list.parallelStream()
+                    .filter(Objects::nonNull)
+                    .map(Object::toString)
+                    .map(s -> s.trim().toLowerCase(Locale.ROOT))
+                    .toList();
+            return STAR_OBJECTS_BY_ID.values().parallelStream()
+                    .filter(s -> s.star.getAllNames().stream()
+                            .map(n -> n.trim().toLowerCase(Locale.ROOT))
+                            .anyMatch(search::contains))
+                    .findFirst();
+        }
+        Almagest.LOGGER.warn("Invalid key type: {}", key.getClass().getSimpleName());
+        return Optional.empty();
+    }
+
+    /**
+     * Retrieves a rendered constellation by ID or name (case-insensitive).
+     * <p>
+     * Supported key types:
+     * <ul>
+     *   <li>{@link ConstellationData} - direct lookup using the data object's ID</li>
+     *   <li>{@link Long} - direct ID lookup (fastest)</li>
+     *   <li>{@link String} - case-insensitive name search</li>
+     *   <li>{@link List} - first match from any name in the list</li>
+     * </ul>
+     * @param key the lookup key
+     * @return Optional containing the {@link Constellations} object, or empty if not found
+     */
+    public static Optional<Constellations> getConstellationObject(Object key)
+    {
+        if (key == null)
+        {
+            Almagest.LOGGER.warn("Input key is null.");
+            return Optional.empty();
+        }
+        if (key instanceof ConstellationData data)
+        {
+            return Optional.ofNullable(CONSTELLATIONS_BY_ID.get(data.getId()));
+        }
+        if (key instanceof Long id)
+        {
+            return Optional.ofNullable(CONSTELLATIONS_BY_ID.get(id));
+        }
+        if (key instanceof String name)
+        {
+            String norm = name.trim().toLowerCase(Locale.ROOT);
+            return CONSTELLATIONS_BY_ID.values().parallelStream()
+                    .filter(c -> c.constellation.getName().trim().toLowerCase(Locale.ROOT).equals(norm))
+                    .findFirst();
+        }
+        if (key instanceof List<?> list)
+        {
+            List<String> search = list.parallelStream()
+                    .filter(Objects::nonNull)
+                    .map(Object::toString)
+                    .map(s -> s.trim().toLowerCase(Locale.ROOT))
+                    .toList();
+            return CONSTELLATIONS_BY_ID.values().parallelStream()
+                    .filter(c -> search.contains(c.constellation.getName().trim().toLowerCase(Locale.ROOT)))
+                    .findFirst();
+        }
+        Almagest.LOGGER.warn("Invalid key type: {}", key.getClass().getSimpleName());
+        return Optional.empty();
+    }
+
+    public static void initData(List<ConcurrentMap.Entry<ResourceLocation, JsonElement>> dataEntries)
+    {
+        Almagest.LOGGER.debug("Initializing all data");
+        long startTime = System.nanoTime();
+
+        List<String> celestialObjectNames = new ArrayList<>();
+        List<String> starObjectNames = new ArrayList<>();
+        List<String> constellationObjectNames = new ArrayList<>();
+
+        for (ConcurrentMap.Entry<ResourceLocation, JsonElement> entry : dataEntries)
+        {
+            ResourceLocation key = entry.getKey();
+            String fileName = key.getPath();
+            Almagest.LOGGER.debug("Parsing JSON file: " + fileName);
+
+            if (Config.COMMON.skipGaia.get() && fileName.toLowerCase(Locale.ROOT).contains("gaia"))
+            {
+                Almagest.LOGGER.debug("Skipping {} JSON file due to mod config", fileName);
+                continue;
+            }
+
+            JsonElement json = entry.getValue();
+
+            JsonObject root = json.isJsonObject() ? json.getAsJsonObject() : null;
+            if (root == null)
+            {
+                Almagest.LOGGER.error("Invalid JSON for {}: not an object", key);
+                continue;
+            }
+            JsonArray celestialDataArray = root.getAsJsonArray("celestialData");
+            if (celestialDataArray == null && root.has("almagest"))
+            {
+                celestialDataArray = root.getAsJsonObject("almagest").getAsJsonArray("celestialData");
+            }
+            if (celestialDataArray == null)
+            {
+                Almagest.LOGGER.error("No 'celestialData' array found in {}", key);
+                continue;
+            }
+
+            for (JsonElement element : celestialDataArray)
+            {
+                if (!element.isJsonObject())
+                {
+                    Almagest.LOGGER.warn("Skipping non-object entry in celestialData for {}", key);
+                    continue;
+                }
+                JsonObject typeObj = element.getAsJsonObject();
+                if (typeObj.size() != 1)
+                {
+                    Almagest.LOGGER.warn("Expected exactly one type key in {}, got: {}", key, typeObj.keySet());
+                    continue;
+                }
+                String typeName = typeObj.keySet().iterator().next();
+                Optional<CelestialObjectTypes> typeOpt = CelestialObjectTypes.fromString(typeName);
+                if (typeOpt.isEmpty())
+                {
+                    Almagest.LOGGER.warn("Invalid type '{}' in {}", typeName, key);
+                    continue;
+                }
+                CelestialObjectTypes type = typeOpt.get();
+
+                final RandomSource random = RandomSource.create(globalIdCounter);
+
+                JsonObject dataObj = typeObj.getAsJsonObject(typeName);
+
+                if (type != CelestialObjectTypes.CONSTELLATION)
+                {
+                    List<String> names = new ArrayList<>();
+                    if (dataObj.has("names") && dataObj.get("names").isJsonArray())
+                    {
+                        for (JsonElement name : dataObj.getAsJsonArray("names"))
+                        {
+                            if (name.isJsonPrimitive() && name.getAsJsonPrimitive().isString())
+                            {
+                                names.add(name.getAsString().trim());
+                            }
+                        }
+                    }
+                    if (names.isEmpty())
+                    {
+                        names.add("Unknown");
+                    }
+
+                    boolean hasModel = dataObj.has("hasModel") && !dataObj.get("hasModel").isJsonNull() ? dataObj.get("hasModel").getAsBoolean() : false;
+                    boolean hasRing = dataObj.has("hasRing") && !dataObj.get("hasRing").isJsonNull() ? dataObj.get("hasRing").getAsBoolean() : false;
+                    double radius = (dataObj.has("radius") ? dataObj.get("radius").getAsDouble() : 5.0D + random.nextDouble() * 100.0D);
+                    double mass = dataObj.has("mass") ? dataObj.get("mass").getAsDouble() * (type.equals(CelestialObjectTypes.STAR) ? Nature.SOLAR_MASS_KG : Nature.EARTH_MASS_KG) : PlanetHelpers.getMass(radius, PlanetHelpers.getDensityFromType(type));
+                    double gravity = dataObj.has("gravity") ? dataObj.get("gravity").getAsDouble() : PlanetHelpers.calculateSurfaceGravity(mass, radius);
+                    double temperature = dataObj.has("temperature") ? dataObj.get("temperature").getAsDouble() : 0.0D;
+                    double surfaceHeight = dataObj.has("surfaceHeight") ? dataObj.get("surfaceHeight").getAsDouble() : DEFAULT_SURFACE_LEVEL;
+                    List<Double> color = new ArrayList<>();
+
+                    if (dataObj.has("color") && dataObj.get("color").isJsonArray())
+                    {
+                        for (JsonElement colorElem : dataObj.getAsJsonArray("color"))
+                        {
+                            if (colorElem.isJsonPrimitive() && colorElem.getAsJsonPrimitive().isNumber())
+                            {
+                                color.add(colorElem.getAsDouble());
+                            }
+                        }
+                    }
+                    else
+                    {
+                        color.addAll(List.of(1.0, 1.0, 1.0, 1.0));
+                    }
+
+                    String parentBody = dataObj.has("parentBody") && !dataObj.get("parentBody").isJsonNull() ?
+                        dataObj.get("parentBody").getAsString() : "unknown";
+
+                    Body body = null;
+                    if (dataObj.has("body") && dataObj.get("body").isJsonObject())
+                    {
+                        JsonObject bodyObj = dataObj.getAsJsonObject("body");
+                        body = type.new Body(
+                            bodyObj.has("albedo") ? bodyObj.get("albedo").getAsDouble() : random.nextDouble() * 0.5D,
+                            bodyObj.has("rotationPeriod") ? bodyObj.get("rotationPeriod").getAsDouble() * Nature.H_TO_TICKS : random.nextDouble() * Nature.H_TO_TICKS,
+                            bodyObj.has("precession") ? bodyObj.get("precession").getAsDouble() : 0.0D,
+                            bodyObj.has("obliquity") ? Math.toRadians(bodyObj.get("obliquity").getAsDouble()) : Math.toRadians(random.nextGaussian() * 90.0D),
+                            bodyObj.has("temperature") ? Body.BodyTemperature.fromString(bodyObj.get("temperature").getAsString()) : Body.BodyTemperature.UNKNOWN,
+                            bodyObj.has("surface") ? Body.BodySurface.fromString(bodyObj.get("surface").getAsString()) : Body.BodySurface.UNKNOWN,
+                            bodyObj.has("size") ? Body.BodySize.fromString(bodyObj.get("size").getAsString()) : Body.BodySize.UNKNOWN,
+                            bodyObj.has("class") ? Body.BodyClass.fromString(bodyObj.get("class").getAsString()) : Body.BodyClass.UNKNOWN
+                        );
+                    }
+
+                    Orbit orbit = null;
+                    if (dataObj.has("orbit") && dataObj.get("orbit").isJsonObject())
+                    {
+                        JsonObject orbitObj = dataObj.getAsJsonObject("orbit");
+                        double ascendingNode = Math.toRadians(random.nextDouble() * 360.0D);
+                        double argOfPeriapsis = Math.toRadians(random.nextDouble() * 360.0D);
+                        double longOfPeriapsis = (ascendingNode + argOfPeriapsis) % (Math.PI * 2.0D);
+
+                        orbit = type.new Orbit(
+                            orbitObj.has("period") ? orbitObj.get("period").getAsDouble() * Nature.Y_TO_TICKS : 0.0D,
+                            orbitObj.has("semiMajorAxis") ? orbitObj.get("semiMajorAxis").getAsDouble() : 0.0D,
+                            orbitObj.has("periapsis") ? orbitObj.get("periapsis").getAsDouble() : 0.0D,
+                            orbitObj.has("eccentricity") ? orbitObj.get("eccentricity").getAsDouble() : random.nextDouble() * 0.99D,
+                            orbitObj.has("inclination") ? Math.toRadians(orbitObj.get("inclination").getAsDouble()) : Math.toRadians(random.nextDouble() * 90.0D),
+                            orbitObj.has("ascendingNode") ? Math.toRadians(orbitObj.get("ascendingNode").getAsDouble()) : ascendingNode,
+                            orbitObj.has("argOfPeriapsis") ? Math.toRadians(orbitObj.get("argOfPeriapsis").getAsDouble()) : argOfPeriapsis,
+                            orbitObj.has("longOfPeriapsis") ? Math.toRadians(orbitObj.get("longOfPeriapsis").getAsDouble()) : longOfPeriapsis,
+                            orbitObj.has("meanLongitude") ? Math.toRadians(orbitObj.get("meanLongitude").getAsDouble()) : 0.0D,
+                            orbitObj.has("nodalPrecession") ? orbitObj.get("nodalPrecession").getAsDouble() : 0.0D,
+                            orbitObj.has("orbitLineSize") ? orbitObj.get("orbitLineSize").getAsDouble() : 0.0D,
+                            orbitObj.has("segments") ? orbitObj.get("segments").getAsInt() : 20
+                        );
+                    }
+
+                    Atmosphere atmosphere = null;
+                    if (dataObj.has("atmosphere") && dataObj.get("atmosphere").isJsonObject())
+                    {
+                        JsonObject atmObj = dataObj.getAsJsonObject("atmosphere");
+                        atmosphere = type.new Atmosphere(
+                            atmObj.has("height") ? atmObj.get("height").getAsDouble() : 0.0D,
+                            atmObj.has("greenhouse") ? atmObj.get("greenhouse").getAsDouble() : 0.0D,
+                            atmObj.has("pressure") ? atmObj.get("pressure").getAsDouble() : 0.0D,
+                            atmObj.has("density") ? atmObj.get("density").getAsDouble() : 0.0D,
+                            atmObj.has("opacity") ? atmObj.get("opacity").getAsDouble() : 0.0D
+                        );
+                    }
+
+                    Life life = null;
+                    if (dataObj.has("life") && dataObj.get("life").isJsonObject())
+                    {
+                        JsonObject lifeObj = dataObj.getAsJsonObject("life");
+                        List<Life.LifeClass> lifeClasses = new ArrayList<>();
+                        if (lifeObj.has("class") && lifeObj.get("class").isJsonArray())
+                        {
+                            for (JsonElement elem : lifeObj.getAsJsonArray("class"))
+                            {
+                                if (elem.isJsonPrimitive() && elem.getAsJsonPrimitive().isString())
+                                {
+                                    lifeClasses.add(Life.LifeClass.fromString(elem.getAsString()));
+                                }
+                            }
+                        }
+                        else
+                        {
+                            lifeClasses.add(Life.LifeClass.UNKNOWN);
+                        }
+                        List<Life.LifeType> lifeTypes = new ArrayList<>();
+                        if (lifeObj.has("type") && lifeObj.get("type").isJsonArray())
+                        {
+                            for (JsonElement elem : lifeObj.getAsJsonArray("type"))
+                            {
+                                if (elem.isJsonPrimitive() && elem.getAsJsonPrimitive().isString())
+                                {
+                                    lifeTypes.add(Life.LifeType.fromString(elem.getAsString()));
+                                }
+                            }
+                        }
+                        else
+                        {
+                            lifeTypes.add(Life.LifeType.UNKNOWN);
+                        }
+                        List<Life.LifeBiome> lifeBiomes = new ArrayList<>();
+                        if (lifeObj.has("biome") && lifeObj.get("biome").isJsonArray())
+                        {
+                            for (JsonElement elem : lifeObj.getAsJsonArray("biome"))
+                            {
+                                if (elem.isJsonPrimitive() && elem.getAsJsonPrimitive().isString())
+                                {
+                                    lifeBiomes.add(Life.LifeBiome.fromString(elem.getAsString()));
+                                }
+                            }
+                        }
+                        else
+                        {
+                            lifeBiomes.add(Life.LifeBiome.UNKNOWN);
+                        }
+                        life = type.new Life(lifeClasses, lifeTypes, lifeBiomes);
+                    }
+
+                    Season season = null;
+                    if (dataObj.has("season") && dataObj.get("season").isJsonObject())
+                    {
+                        JsonObject seasonObj = dataObj.getAsJsonObject("season");
+                        season = type.new Season(
+                            seasonObj.has("minObliquity") ? seasonObj.get("minObliquity").getAsDouble() : 0.0D,
+                            seasonObj.has("maxObliquity") ? seasonObj.get("maxObliquity").getAsDouble() : 0.0D,
+                            seasonObj.has("amplitudeObliquity") ? seasonObj.get("amplitudeObliquity").getAsDouble() : 0.0D,
+                            seasonObj.has("meanObliquity") ? seasonObj.get("meanObliquity").getAsDouble() : 0.0D,
+                            seasonObj.has("milankovitchCycle") ? seasonObj.get("milankovitchCycle").getAsDouble() : 0.0D,
+                            seasonObj.has("seasonOffset") ? seasonObj.get("seasonOffset").getAsDouble() : 0.0D,
+                            seasonObj.has("winterSolsticeOffset") ? seasonObj.get("winterSolsticeOffset").getAsDouble() : 0.0D
+                        );
+                    }
+
+                    Trail trail = null;
+                    if (dataObj.has("trail") && dataObj.get("trail").isJsonObject())
+                    {
+                        JsonObject trailObj = dataObj.getAsJsonObject("trail");
+                        trail = type.new Trail(
+                            trailObj.has("hasTrail") ? trailObj.get("hasTrail").getAsBoolean() : false,
+                            trailObj.has("name") ? trailObj.get("name").getAsString() : "Unknown",
+                            trailObj.has("density") ? trailObj.get("density").getAsDouble() : 0.0D,
+                            trailObj.has("population") ? trailObj.get("population").getAsInt() : 10000
+                        );
+                    }
+
+                    StarData starData = null;
+                    if (dataObj.has("star") && dataObj.get("star").isJsonObject())
+                    {
+                        JsonObject starObj = dataObj.getAsJsonObject("star");
+                        List<Double> coords = new ArrayList<>();
+                        if (starObj.has("xyz") && starObj.get("xyz").isJsonArray())
+                        {
+                            for (JsonElement coord : starObj.getAsJsonArray("xyz"))
+                            {
+                                if (coord.isJsonPrimitive() && coord.getAsJsonPrimitive().isNumber())
+                                {
+                                    coords.add(coord.getAsDouble());
+                                }
+                            }
+                        }
+                        else
+                        {
+                            coords.addAll(List.of(0.0D, 0.0D, 0.0D));
+                        }
+                        starData = type.new StarData(
+                            starIdCounter,
+                            null,
+                            coords,
+                            starObj.has("parallax") ? starObj.get("parallax").getAsDouble() : 0.0D,
+                            starObj.has("distance") ? starObj.get("distance").getAsDouble() : 0.0D,
+                            starObj.has("ra") ? starObj.get("ra").getAsDouble() : random.nextDouble() * 180.0D - 90.0D,
+                            starObj.has("dec") ? starObj.get("dec").getAsDouble() : random.nextDouble() * 360.0D,
+                            starObj.has("appMag") ? starObj.get("appMag").getAsDouble() : 0.0D,
+                            starObj.has("absMag") ? starObj.get("absMag").getAsDouble() : 0.0D,
+                            starObj.has("tEff") ? starObj.get("tEff").getAsDouble() : 0.0D,
+                            starObj.has("metallicity") ? starObj.get("metallicity").getAsDouble() : 0.0D,
+                            starObj.has("luminosity") ? starObj.get("luminosity").getAsDouble() : 0.0D,
+                            starObj.has("gravity") ? starObj.get("gravity").getAsDouble() : 0.0D,
+                            starObj.has("age") ? starObj.get("age").getAsDouble() : 0.0D,
+                            starObj.has("spectralType") ? starObj.get("spectralType").getAsString() : ""
+                        );
+                    }
+
+                    CelestialData celestialData = type.new CelestialData(
+                        planetIdCounter++,
+                        type,
+                        names,
+                        hasModel,
+                        hasRing,
+                        mass,
+                        gravity,
+                        radius,
+                        temperature,
+                        surfaceHeight,
+                        ColorUtils.getColor(color),
+                        parentBody,
+                        null,
+                        trail,
+                        atmosphere,
+                        body,
+                        life,
+                        orbit,
+                        season
+                    );
+
+                    Body bodyData = celestialData.getBody();
+                    if (bodyData.getBodyTemperature().equals(BodyTemperature.UNKNOWN))
+                    {
+                        bodyData.setBodyTemperature(celestialData.getBodyTemperature());
+                    }
+                    if (bodyData.getBodyClass().equals(BodyClass.UNKNOWN))
+                    {
+                        bodyData.setBodyClass(celestialData.getBodyClassRough());
+                    }
+                    if (bodyData.getBodySize().equals(BodySize.UNKNOWN))
+                    {
+                        bodyData.setBodySize(celestialData.getBodySizePrefix());
+                    }
+
+                    if (starData != null)
+                    {
+                        starData.setCelestialData(celestialData);
+                        if (celestialData.isStar())
+                        {
+                            /*if (starData.getApparentMagnitude() > Config.COMMON.minApparentMagnitudeToLoad.get())
+                            {
+                                continue;
+                            }*/
+
+                            STAR_DATA_BY_ID.put(starData.getId(), starData);
+                            starIdCounter++;
+                        }
+                    }
+                    celestialData.setStarData(starData);
+
+                    if (!celestialData.isStar() || (starData != null && starData.isAParent()))
+                    {
+                        CELESTIAL_DATA_BY_ID.put(celestialData.getId(), celestialData);
+                    }
+
+                    if (!celestialData.isStar())
+                    {
+                        celestialObjectNames.add(names.isEmpty() ? "No names, Unknown" : names.get(0));
+                    }
+                    else
+                    {
+                        starObjectNames.add(names.isEmpty() ? "No names, Unknown" : names.get(0));
+                    }
+                }
+                else
+                {
+                    String name = dataObj.has("name") ? dataObj.get("name").getAsString().trim() : "Unknown";
+                    boolean zodiac = dataObj.has("zodiac") ? dataObj.get("zodiac").getAsBoolean() : false;
+                    List<List<String>> pairs = new ArrayList<>();
+                    if (dataObj.has("pairs") && dataObj.get("pairs").isJsonArray())
+                    {
+                        for (JsonElement pairElem : dataObj.getAsJsonArray("pairs"))
+                        {
+                            if (pairElem.isJsonArray())
+                            {
+                                List<String> pair = new ArrayList<>();
+                                for (JsonElement starName : pairElem.getAsJsonArray())
+                                {
+                                    if (starName.isJsonPrimitive() && starName.getAsJsonPrimitive().isString())
+                                    {
+                                        pair.add(starName.getAsString().trim());
+                                    }
+                                }
+                                if (!pair.isEmpty())
+                                {
+                                    pairs.add(pair);
+                                }
+                            }
+                        }
+                    }
+                    Color color = null;
+                    if (dataObj.has("color") && dataObj.get("color").isJsonArray())
+                    {
+                        List<Double> colors = new ArrayList<>();
+                        for (JsonElement colorElem : dataObj.getAsJsonArray("color"))
+                        {
+                            if (colorElem.isJsonPrimitive() && colorElem.getAsJsonPrimitive().isNumber())
+                            {
+                                colors.add(colorElem.getAsDouble());
+                            }
+                        }
+                        color = ColorUtils.getColor(colors);
+                    }
+
+                    ConstellationData constellationData = type.new ConstellationData(
+                        constellationIdCounter++,
+                        type,
+                        name,
+                        zodiac,
+                        pairs,
+                        color
+                    );
+                    CONSTELLATION_DATA_BY_ID.put(constellationData.getId(), constellationData);
+                    constellationObjectNames.add(name);
+                }
+            }
+        }
+
+        // Sort STAR_DATA_BY_ID by appMag in ascending order and filter by maxStarsToLoad
+        if (!STAR_DATA_BY_ID.isEmpty())
+        {
+            Almagest.LOGGER.debug("Sorting stars by apparent magnitude and filtering by maxStarsToLoad");
+            int maxStarsToLoad = Config.COMMON.maxStarsToLoad.get();
+            double minApparentMagnitudeToLoad = Config.COMMON.minApparentMagnitudeToLoad.get();
+
+            if (maxStarsToLoad == 0)
+            {
+                STAR_DATA_BY_ID.clear();
+            }
+            else
+            {
+                // Sort entries by appMag and filter by minApparentMagnitudeToLoad
+                List<Map.Entry<Long, StarData>> sortedStars = STAR_DATA_BY_ID.entrySet().stream()
+                    .filter(entry -> entry.getValue().getApparentMagnitude() <= minApparentMagnitudeToLoad)
+                    .sorted(Comparator.comparingDouble(entry -> entry.getValue().getApparentMagnitude()))
+                    .toList();
+
+                // Clear current STAR_DATA_BY_ID and repopulate with sorted entries up to maxStarsToLoad
+                STAR_DATA_BY_ID.clear();
+                int limit = (maxStarsToLoad <= -1) ? sortedStars.size() : Math.min(sortedStars.size(), maxStarsToLoad);
+
+                for (int i = 0; i < limit; i++)
+                {
+                    Map.Entry<Long, StarData> entry = sortedStars.get(i);
+                    STAR_DATA_BY_ID.put(entry.getKey(), entry.getValue());
+                }
+            }
+        }
+
+        if (Config.COMMON.printListAllCelestialObjects.get())
+        {
+            AHelpers.printListPerRow(celestialObjectNames, 20, "Parsed CelestialData: Total: " + celestialObjectNames.size());
+            AHelpers.printListPerRow(starObjectNames, 20, "Parsed StarData: Total: " + starObjectNames.size());
+            AHelpers.printListPerRow(constellationObjectNames, 20, "Parsed ConstellationData: Total: " + constellationObjectNames.size());
+        }
+        HAS_INITIALIZED_CELESTIAL_DATA = true;
+
+        logDuration("Data processing", startTime);
+    }
+
+    public static void clearCaches()
+    {
+        Almagest.LOGGER.debug("Clearing caches...");
+
+        SKYBOX.clear();
+        CELESTIAL_OBJECTS_BY_ID.clear();
+        STAR_OBJECTS_BY_ID.clear();
+        STAR_OBJECTS_BY_CHUNK.clear();
+        CONSTELLATIONS_BY_ID.clear();
+        STAR_CHUNK_VBOS.values().forEach(VertexBuffer::close);
+        STAR_CHUNK_VBOS.clear();
+    }
+
+    public static void initObjects(ClientLevel level, Player player, Minecraft instance)
+    {
+        Almagest.LOGGER.debug("Initializing celestial objects...");
+        long totalStartTime = System.nanoTime();
+        final double TO_SECONDS = Nature.S_TO_NS;
+
+        // Initialize orbit parameters (once)
+        initializeOrbitParameters();
+
+        if (level != null && player != null)
+        {
+            CelestialObjectHandler handler = new CelestialObjectHandler(level, player);
+
+            indexConstellationMembership();
+            initializeCelestialObjects(level, player, handler);
+            initializeConstellations(level, player, handler);
+            initializeStars(level, player, handler);
+            initializeSkybox(level, player, handler);
+            initializeParticleEngine(instance);
+
+            logTotalTime(totalStartTime, TO_SECONDS);
+        }
+    }
+
+    public static void initializeOrbitParameters()
+    {
+        if (HAS_INITIALIZED_OTHER_PARAMETERS) return;
+
+        Almagest.LOGGER.debug("Processing planet orbits...");
+        long startTime = System.nanoTime();
+
+        CELESTIAL_DATA_BY_ID.values().parallelStream().forEach(data -> {
+            Orbit orbit = data.getOrbit();
+            double semiMajorAxis = orbit.getSemiMajorAxis();
+            double periapsis = orbit.getPeriapsis();
+            Optional<CelestialData> parent = data.getParent();
+
+            if (semiMajorAxis <= 0.0D && parent.isPresent())
+            {
+                RandomSource random = RandomSource.create(data.getId());
+                double diameter = parent.get().getRadius() * 2.0D;
+                semiMajorAxis = (1.0D + diameter + random.nextDouble() * 50.0D);
+                double newPeriod = PlanetHelpers.getOrbitalPeriod(
+                    parent.get().getMass(), 
+                    data.getMass(), 
+                    semiMajorAxis * Nature.AU_TO_M
+                );
+                orbit.setPeriod(newPeriod);
+            }
+
+            if (periapsis <= 0.0D)
+            {
+                RandomSource random = RandomSource.create(data.getId());
+                periapsis = PlanetHelpers.calculatePeriapsis(
+                    semiMajorAxis * Nature.AU_TO_KM, 
+                    orbit.getEccentricity(), 
+                    Math.max(random.nextDouble() * 200.0D, 0.01D), 
+                    data.getGravity()
+                ) * Nature.KM_TO_AU;
+            }
+
+            double scaleFactor = Nature.AU_TO_GM * Config.COMMON.universeScale.get();
+            orbit.setSegments(PlanetHelpers.getOrbitSegments(semiMajorAxis, orbit.getEccentricity()));
+            orbit.setSemiMajorAxis(semiMajorAxis * scaleFactor);
+            orbit.setPeriapsis(periapsis * scaleFactor);
+
+            if (Config.COMMON.printListAllCelestialObjects.get())
+            {
+                Almagest.LOGGER.debug("{}: Set semi major axis to {} and periapsis to {}", getObjectName(data), semiMajorAxis, periapsis);
+            }
+        });
+
+        HAS_INITIALIZED_OTHER_PARAMETERS = true;
+        logDuration("Planet orbit processing", startTime);
+    }
+
+    public static void initializeCelestialObjects(ClientLevel level, Player player, CelestialObjectHandler handler)
+    {
+        Almagest.LOGGER.debug("Adding planets, moons, asteroids, comets, meteor showers...");
+        long startTime = System.nanoTime();
+        List<String> foundPlanets = new ArrayList<>();
+
+        CELESTIAL_DATA_BY_ID.entrySet().forEach(entry -> {
+            Long id = entry.getKey();
+            CelestialData data = entry.getValue();
+            CelestialObject celestialObject = new CelestialObject(level, player, handler, data);
+
+            // Set observer for Earth
+            if (isEarth(data.getNames())) {
+                CelestialObjectHandler.observer = celestialObject.name;
+                CelestialObjectHandler.observerObject = celestialObject;
+            }
+
+            // Register object
+            CELESTIAL_OBJECTS_BY_ID.put(id, celestialObject);
+            foundPlanets.add(celestialObject.name);
+        });
+
+        // Set parent relationships
+        CELESTIAL_OBJECTS_BY_ID.values().parallelStream().forEach(body -> 
+            body.setParentObjects(body.body.getParentObjects())
+        );
+
+        if (Config.COMMON.printListAllCelestialObjects.get())
+        {
+            AHelpers.printListPerRow(foundPlanets, 10, "Added bodies");
+        }
+        logDuration("Planet and body processing", startTime);
+    }
+
+    public static void initializeConstellations(ClientLevel level, Player player, CelestialObjectHandler handler)
+    {
+        Almagest.LOGGER.debug("Adding constellations...");
+        long startTime = System.nanoTime();
+
+        CONSTELLATION_DATA_BY_ID.forEach((id, data) -> {
+            Constellations constellation = new Constellations(level, player, handler, data);
+            CONSTELLATIONS_BY_ID.put(id, constellation);
+        });
+
+        logDuration("Constellation processing", startTime);
+    }
+
+    public static void indexConstellationMembership()
+    {
+        STAR_NAME_TO_CONSTELLATION.clear();
+
+        CONSTELLATION_DATA_BY_ID.values().parallelStream().forEach(constellation -> {
+            constellation.getPairs().forEach(pair ->
+                pair.forEach(starName -> {
+                    String key = starName.trim().toLowerCase(Locale.ROOT);
+                    STAR_NAME_TO_CONSTELLATION.put(key, constellation);
+                })
+            );
+        });
+    }
+
+    public static void isStarInConstellation(StarData starData)
+    {
+        for (String alias : starData.getAllNames())
+        {
+            ConstellationData c = STAR_NAME_TO_CONSTELLATION.get(
+                alias.trim().toLowerCase(Locale.ROOT)
+            );
+            if (c != null)
+            {
+                STAR_DATA_TO_CONSTELLATIONS.put(starData, c);
+                return;
+            }
+        }
+    }
+
+    public static void initializeStars(ClientLevel level, Player player, CelestialObjectHandler handler)
+    {
+        Almagest.LOGGER.debug("Adding stars...");
+        long startTime = System.nanoTime();
+        List<String> foundStars = new ArrayList<>();
+
+        STAR_DATA_BY_ID.entrySet().forEach(entry -> {
+            Long id = entry.getKey();
+            StarData data = entry.getValue();
+
+            isStarInConstellation(data);
+
+            Star starObject = new Star(level, player, handler, data);
+
+            ConstellationData constellation = STAR_DATA_TO_CONSTELLATIONS.get(data);
+            if (constellation != null)
+            {
+                starObject.setConstellation(constellation);
+            }
+
+            STAR_OBJECTS_BY_ID.put(id, starObject);
+            foundStars.add(starObject.name);
+        });
+
+        CONSTELLATIONS_BY_ID.values().parallelStream().forEach(constellation ->
+            constellation.setStarPairs(constellation.constellation.getStarPairs())
+        );
+
+        if (Config.COMMON.printListAllCelestialObjects.get())
+        {
+            AHelpers.printListPerRow(foundStars, 2, "Added stars");
+        }
+        logDuration("Star processing", startTime);
+    }
+
+    public static void initializeStarChunks()
+    {
+        Almagest.LOGGER.debug("Dividing {} stars into {} chunks...", STAR_OBJECTS_BY_ID.size(), NUM_STAR_CHUNKS);
+        long startTime = System.nanoTime();
+
+        List<Long> allStarIds = new ArrayList<>(STAR_OBJECTS_BY_ID.keySet());
+        int starsPerChunk = (int) Math.ceil((double) allStarIds.size() / NUM_STAR_CHUNKS);
+
+        STAR_OBJECTS_BY_CHUNK.clear();
+        for (int chunk = 0; chunk < NUM_STAR_CHUNKS; chunk++)
+        {
+            int startIndex = chunk * starsPerChunk;
+            int endIndex = Math.min(startIndex + starsPerChunk, allStarIds.size());
+            List<Long> chunkIds = allStarIds.subList(startIndex, endIndex);
+            STAR_OBJECTS_BY_CHUNK.put(chunk, new ArrayList<>(chunkIds));
+            STAR_CHUNK_VBOS.put(chunk, new VertexBuffer(VertexBuffer.Usage.STATIC));
+        }
+
+        logDurationWithDetail("Star chunk division", startTime, starsPerChunk + " stars/chunk");
+    }
+
+    public static void initializeSkybox(ClientLevel level, Player player, CelestialObjectHandler handler)
+    {
+        Almagest.LOGGER.debug("Adding skybox...");
+        long startTime = System.nanoTime();
+        Skybox skybox = new Skybox(level, player, handler);
+        SKYBOX.put(0L, skybox);
+        logDuration("Skybox creation", startTime);
+    }
+
+    public static void initializeParticleEngine(Minecraft mc)
+    {
+        long startTime = System.nanoTime();
+        final ParticleEngine particleEngine = mc.particleEngine;
+        particleEngine.add(CelestialObjectHandler.getInstance(mc.level, mc.player));
+        logDuration("Particle engine handler addition", startTime);
+    }
+
+    public static String getObjectName(CelestialData data)
+    {
+        return data.getNames().isEmpty() ? "Unknown " + data.getId() : data.getNames().get(0);
+    }
+
+    public static boolean isEarth(List<String> names)
+    {
+        List<String> normalized = names.stream()
+            .filter(Objects::nonNull)
+            .map(e -> e.trim().toLowerCase(Locale.ROOT))
+            .toList();
+        return normalized.stream().anyMatch(name -> name.replace("-", "_").trim().equalsIgnoreCase("earth"));
+    }
+
+    public static void logDuration(String operation, long startTime)
+    {
+        long endTime = System.nanoTime();
+        double duration = (endTime - startTime) / Nature.S_TO_NS;
+        Almagest.LOGGER.debug("{} took {} s", operation, String.format("%.2f", duration));
+    }
+
+    public static void logDurationWithDetail(String operation, long startTime, String detail)
+    {
+        long endTime = System.nanoTime();
+        double duration = (endTime - startTime) / Nature.S_TO_NS;
+        Almagest.LOGGER.debug("{} took {} s ({})", operation, String.format("%.2f", duration), detail);
+    }
+
+    public static void logTotalTime(long totalStartTime, double toSeconds)
+    {
+        long totalEndTime = System.nanoTime();
+        double totalDuration = (totalEndTime - totalStartTime) / toSeconds;
+        Almagest.LOGGER.debug("Total initialization time took {} s", String.format("%.2f", totalDuration));
+    }
+}

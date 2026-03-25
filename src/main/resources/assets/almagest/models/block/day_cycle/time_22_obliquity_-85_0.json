@@ -1,0 +1,6 @@
+{
+  "parent": "almagest:block/default_cube_day_cycle",
+  "textures": {
+    "all": "almagest:block/day_cycle/-85/22"
+  }
+}

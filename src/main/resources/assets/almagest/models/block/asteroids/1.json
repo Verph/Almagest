@@ -1,0 +1,6 @@
+{
+  "parent": "almagest:block/default_asteroids/1",
+  "textures": {
+    "surface": "almagest:block/asteroids/surface"
+  }
+}

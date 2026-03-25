@@ -1,0 +1,11 @@
+{
+  "loader": "forge:obj",
+  "model": "almagest:models/block/planets/rings/obj/uranus.obj",
+  "flip-v": true,
+  "detectCullableFaces": false,
+  "emissive_ambient": true,
+  "textures": {
+    "particle": "almagest:block/planets/rings/uranus",
+    "texture0": "almagest:block/planets/rings/uranus"
+  }
+}

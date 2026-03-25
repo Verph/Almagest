@@ -1,0 +1,18 @@
+{
+	"credit": "Made with Blockbench",
+    "parent": "block/block",
+    "ambientocclusion": false,
+	"textures": {
+		"particle": "#all"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 0]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#all", "cullface": "none"}
+			}
+		}
+	]
+}

@@ -1,0 +1,11 @@
+{
+  "loader": "forge:obj",
+  "model": "almagest:models/block/planets/rings/obj/neptune.obj",
+  "flip-v": true,
+  "detectCullableFaces": false,
+  "emissive_ambient": true,
+  "textures": {
+    "particle": "almagest:block/planets/rings/neptune",
+    "texture0": "almagest:block/planets/rings/neptune"
+  }
+}

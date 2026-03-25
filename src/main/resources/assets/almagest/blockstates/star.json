@@ -1,0 +1,57 @@
+{
+  "multipart": [
+    {
+      "when": {
+		"fancy": false
+      },
+      "apply": {
+        "model": "almagest:block/stars/star"
+      }
+    },
+    {
+      "when": {
+		"fancy": true,
+        "state": 0
+      },
+      "apply": {
+        "model": "almagest:block/stars/0"
+      }
+    },
+    {
+      "when": {
+		"fancy": true,
+        "state": 1
+      },
+      "apply": {
+        "model": "almagest:block/stars/1"
+      }
+    },
+    {
+      "when": {
+		"fancy": true,
+        "state": 2
+      },
+      "apply": {
+        "model": "almagest:block/stars/2"
+      }
+    },
+    {
+      "when": {
+		"fancy": true,
+        "state": 3
+      },
+      "apply": {
+        "model": "almagest:block/stars/3"
+      }
+    },
+    {
+      "when": {
+		"fancy": true,
+        "state": 4
+      },
+      "apply": {
+        "model": "almagest:block/stars/4"
+      }
+    }
+  ]
+}

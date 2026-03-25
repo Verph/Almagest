@@ -1,0 +1,6 @@
+{
+  "parent": "almagest:block/default_cube",
+  "textures": {
+    "surface": "almagest:block/body/frigid/oceanic/mega/ferria"
+  }
+}

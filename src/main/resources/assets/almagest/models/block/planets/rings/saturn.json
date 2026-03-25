@@ -1,0 +1,11 @@
+{
+  "loader": "forge:obj",
+  "model": "almagest:models/block/planets/rings/obj/saturn.obj",
+  "flip-v": true,
+  "detectCullableFaces": false,
+  "emissive_ambient": true,
+  "textures": {
+    "particle": "almagest:block/planets/rings/saturn",
+    "texture0": "almagest:block/planets/rings/saturn"
+  }
+}
