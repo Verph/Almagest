@@ -572,8 +572,8 @@
           "class": "Jupiter"
         },
         "ring": {
-		  "innerRadius": 64535.0,
-		  "outerRadius": 318120.0,
+		  "innerRadius": 74500.0,
+		  "outerRadius": 150000.0,
 		  "thickness": 0.15
         },
         "orbit": {

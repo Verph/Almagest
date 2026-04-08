@@ -12,7 +12,6 @@ import org.joml.Quaternionf;
 import org.joml.Vector3f;
 
 import it.unimi.dsi.fastutil.longs.Long2ObjectMap;
-import it.unimi.dsi.fastutil.longs.Long2ObjectMaps;
 import it.unimi.dsi.fastutil.longs.Long2ObjectOpenHashMap;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import it.unimi.dsi.fastutil.objects.ObjectOpenHashSet;
@@ -88,7 +87,7 @@ public class CelestialObjectHandler extends TextureSheetParticle
     public static CelestialObject observerObject;
     public static CelestialObject systemCenterObject;
     public static CelestialData observerBody;
-    public static Matrix4f skyboxRotationMatrix;
+    public static Matrix4f skyboxRotationMatrix = new Matrix4f();
     public static Camera camera;
     public static Matrix4f projectionMatrix = new Matrix4f();
     public static Matrix4f modelViewMatrix = new Matrix4f();
@@ -143,12 +142,7 @@ public class CelestialObjectHandler extends TextureSheetParticle
     public static boolean changedFOV = true;
     public static Constellations lastFocusedConstellation;
 
-    public static List<Constellations> pendingInitConstellations = new ArrayList<>();
-    public static int pendingConstIndex = 0;
-    public static boolean initializingConstellations = false;
-    public static long startTimeConstellations = 0;
-
-    public static final Long2ObjectMap<CelestialObject> STAR_OBJECTS_MAP = Long2ObjectMaps.synchronize(new Long2ObjectOpenHashMap<>());
+    public static final Long2ObjectMap<CelestialObject> STAR_OBJECTS_MAP = new Long2ObjectOpenHashMap<>();
 
     public static final int MIN_MAG_BUCKET = -1;
     public static final int NUM_MAG_BUCKETS = 30;
@@ -182,6 +176,7 @@ public class CelestialObjectHandler extends TextureSheetParticle
     public static int pendingInitIndex = 0;
     public static boolean initializingStars = false;
     public static long startTimeStars = 0;
+    public static boolean initializedCelestialStars = false;
 
     public CelestialObjectHandler(ClientLevel level, Player player)
     {
@@ -231,8 +226,8 @@ public class CelestialObjectHandler extends TextureSheetParticle
         if (observerObject == null || systemCenterObject == null) return;
 
         observerObject.elapsedTime = PlanetHelpers.getElapsedTime(dayTime, observerObject.period);
-        observerObject.timeOfDay   = PlanetHelpers.getTimeOfDay(dayTime, observerObject.rotationPeriod);
-        observerObject.season      = PlanetHelpers.getSeason(observerObject, dayTime);
+        observerObject.timeOfDay = PlanetHelpers.getTimeOfDay(dayTime, observerObject.rotationPeriod, Config.COMMON.enableManualTimeOfDay.get());
+        observerObject.season = PlanetHelpers.getSeason(observerObject, dayTime, Config.COMMON.enableManualSeason.get());
 
         observerObject.posAU = PlanetHelpers.getPosWithParents(
             observerObject,
@@ -333,16 +328,29 @@ public class CelestialObjectHandler extends TextureSheetParticle
             Almagest.LOGGER.info("Beginning batched star initialization: {} stars", pendingInitStars.size());
         }
 
-        initStarAndConstellationObjects();
-        //initConstellationObjects();
-        updateConstellations(CONSTELLATIONS_BY_ID.values());
+        initStarObjects();
+        updateConstellations();
 
         fovOld = fov;
         firstTick = false;
     }
 
-    public void initStarAndConstellationObjects()
+    public void initStarObjects()
     {
+        if (!initializedCelestialStars)
+        {
+            long i = 0;
+            for (CelestialObject obj : CELESTIAL_OBJECTS_BY_ID.values())
+            {
+                if (obj.isStar)
+                {
+                    STAR_OBJECTS_MAP.put(i, obj);
+                    i++;
+                }
+            }
+            initializedCelestialStars = true;
+        }
+
         if (initializingStars)
         {
             if (startTimeStars == 0)
@@ -382,70 +390,51 @@ public class CelestialObjectHandler extends TextureSheetParticle
                 logDuration("Task", startTimeStars);
 
                 Almagest.LOGGER.info("Finished batched star initialization.");
-
-                /*Almagest.LOGGER.debug("Initializing constellations.");
-                pendingInitConstellations = new ArrayList<>(CONSTELLATIONS_BY_ID.values());
-                pendingConstIndex = 0;
-                initializingConstellations = true;
-                startTimeConstellations = System.nanoTime();*/
             }
-        }
-    }
-
-    public void initConstellationObjects()
-    {
-        if (!initializingConstellations) return;
-
-        int end = Math.min(pendingConstIndex + 1, pendingInitConstellations.size());
-
-        for (int i = pendingConstIndex; i < end; i++)
-        {
-            Constellations c = pendingInitConstellations.get(i);
-            if (c == null) continue;
-
-            c.setStarPairs(c.constellation.getStarPairs());
-        }
-
-        pendingConstIndex = end;
-
-        if (pendingConstIndex >= pendingInitConstellations.size())
-        {
-            initializingConstellations = false;
-            pendingInitConstellations.clear();
-
-            logDuration("Constellations", startTimeConstellations);
-            Almagest.LOGGER.info("Finished batched constellation initialization.");
         }
     }
 
     public void updateObserverObjects()
     {
-        String observingBody = level.dimension().equals(Level.OVERWORLD) ? "earth" : level.dimension().location().getPath().toLowerCase(Locale.ROOT);
-        if (CelestialObjectHandler.observer != null && !CelestialObjectHandler.observer.equals(observingBody))
+        String override = Config.COMMON.manualObserverBody.get();
+        String normalizedOverride = override == null ? "" : override.trim().toLowerCase(Locale.ROOT);
+
+        String fallbackObserver = level.dimension().equals(Level.OVERWORLD)
+            ? "earth"
+            : level.dimension().location().getPath().toLowerCase(Locale.ROOT);
+
+        String requestedObserver = normalizedOverride.isEmpty()
+            ? fallbackObserver
+            : normalizedOverride;
+
+        Optional<CelestialObject> requestedObject = getCelestialObject(requestedObserver);
+
+        CelestialObject finalObserverObject = requestedObject.orElseGet(() ->
+            getCelestialObject(fallbackObserver).orElse(null)
+        );
+
+        if (finalObserverObject == null)
         {
-            CelestialObjectHandler.observer = observingBody;
+            return;
+        }
+
+        if (CelestialObjectHandler.observerObject != finalObserverObject)
+        {
+            CelestialObjectHandler.observerObject = finalObserverObject;
+            CelestialObjectHandler.observer = finalObserverObject.body.getNames().get(0).toLowerCase(Locale.ROOT);
+
+            CelestialObject systemCenter =
+                finalObserverObject.parentObjects.isEmpty()
+                    ? finalObserverObject
+                    : finalObserverObject.parentObjects.get(finalObserverObject.parentObjects.size() - 1);
+
+            systemCenter.isSystemCenterObject = true;
+            CelestialObjectHandler.systemCenterObject = systemCenter;
+            CelestialObjectHandler.observerBody = finalObserverObject.body;
+
             hasObserverChanged = true;
-            if (systemCenterObject != null)
-            {
-                CelestialObjectHandler.systemCenterObject.isSystemCenterObject = false;
-            }
         }
-        if (CelestialObjectHandler.observerObject != null && hasObserverChanged)
-        {
-            if (CelestialObjectHandler.observerObject.body.getNames().stream().anyMatch(name -> name.replace("-","_").trim().equalsIgnoreCase(observer.trim())))
-            {
-                Optional<CelestialObject> observingObject = getCelestialObject(observer);
-                if (observingObject.isPresent())
-                {
-                    CelestialObjectHandler.observerObject = observingObject.get();
-                    CelestialObject systemCenter = observerObject.parentObjects.isEmpty() ? observerObject : observerObject.parentObjects.get(observerObject.parentObjects.size() - 1);
-                    systemCenter.isSystemCenterObject = true;
-                    CelestialObjectHandler.systemCenterObject = systemCenter;
-                    CelestialObjectHandler.observerBody = CelestialObjectHandler.observerObject.body;
-                }
-            }
-        }
-        if (hasObserverChanged)
+        else
         {
             hasObserverChanged = false;
         }
@@ -556,10 +545,11 @@ public class CelestialObjectHandler extends TextureSheetParticle
         skyboxRotationMatrix = rotationMatrix;
     }
 
-    public static void updateConstellations(Collection<Constellations> constellations)
+    public static void updateConstellations()
     {
         if (!Config.COMMON.drawConstellations.get()) return;
 
+        Collection<Constellations> constellations = CONSTELLATIONS_BY_ID.values();
         double bufferAngle = Config.COMMON.constellationDisplayNameAngleThreshold.get() * CelestialObjectHandler.fov;
         Vec3 lookDir = CelestialObjectHandler.lookAngle.normalize();
 
@@ -656,6 +646,29 @@ public class CelestialObjectHandler extends TextureSheetParticle
             });
         }
 
+        if (Config.COMMON.renderPlanets.get() || Config.COMMON.renderMoons.get() || Config.COMMON.renderMinorPlanets.get() || Config.COMMON.renderComets.get())
+        {
+            final BufferBuilder celestialObjectBuilder = tess.begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.BLOCK);
+
+            RenderSystem.setShader(GameRenderer::getRendertypeCutoutShader);
+            RenderHelpers.noTransparency();
+            RenderSystem.depthMask(true);
+            RenderSystem.enableDepthTest();
+            RenderSystem.disableCull();
+
+            CELESTIAL_OBJECTS_BY_ID.values().stream().forEach(celestialObject -> celestialObject.renderBody(celestialObjectBuilder, camera, partialTicks));
+
+            MeshData mesh = celestialObjectBuilder.build();
+            if (mesh != null)
+            {
+                BufferUploader.drawWithShader(mesh);
+            }
+
+            CELESTIAL_OBJECTS_BY_ID.values().stream().forEach(celestialObject -> {if (celestialObject.body.hasRing()) RenderHelpers.drawRing(tess, celestialObject);});
+
+            STAR_OBJECTS_MAP.values().stream().forEach(celestialObject -> {if (celestialObject.isStar) {LensFlareEffect.renderLensFlare(camera, partialTicks, celestialObject);}});
+        }
+
         if (Config.COMMON.renderStars.get())
         {
             AVertexBuffers.rebuildStarBuckets(tess);
@@ -698,28 +711,6 @@ public class CelestialObjectHandler extends TextureSheetParticle
             {
                 BufferUploader.drawWithShader(mesh);
             }
-        }
-
-        if (Config.COMMON.renderPlanets.get() || Config.COMMON.renderMoons.get() || Config.COMMON.renderMinorPlanets.get() || Config.COMMON.renderComets.get())
-        {
-            final BufferBuilder celestialObjectBuilder = tess.begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.BLOCK);
-
-            RenderSystem.setShader(GameRenderer::getRendertypeCutoutShader);
-            RenderHelpers.noTransparency();
-            RenderSystem.depthMask(true);
-            RenderSystem.enableDepthTest();
-
-            CELESTIAL_OBJECTS_BY_ID.values().stream().forEach(celestialObject -> celestialObject.renderBody(celestialObjectBuilder, camera, partialTicks));
-
-            MeshData mesh = celestialObjectBuilder.build();
-            if (mesh != null)
-            {
-                BufferUploader.drawWithShader(mesh);
-            }
-
-            CELESTIAL_OBJECTS_BY_ID.values().stream().forEach(celestialObject -> {if (celestialObject.body.hasRing()) RenderHelpers.drawRing(tess, celestialObject);});
-
-            STAR_OBJECTS_MAP.values().stream().forEach(celestialObject -> {if (celestialObject.isStar) {LensFlareEffect.renderLensFlare(camera, partialTicks, celestialObject);}});
         }
 
         float alpha = (float) StarData.getStarAlpha(0.0D);
@@ -1029,14 +1020,45 @@ public class CelestialObjectHandler extends TextureSheetParticle
 
     public static void updateAtmosphereFactor()
     {
-        // Atmosphere factor: how much twinkle/variation applies
+        if (observerBody == null)
+        {
+            atmosphereFactor = 0.0D;
+            return;
+        }
+
         Atmosphere atmosphere = observerBody.getAtmosphere();
+
+        // No atmosphere object OR height <= 0 -> no atmospheric effects
+        if (atmosphere == null || atmosphere.getHeight() <= 0.0D)
+        {
+            atmosphereFactor = 0.0D;
+            return;
+        }
+
         double surfaceHeight = observerBody.getSurfaceHeight();
         double atmosphereHeight = atmosphere.getHeight();
 
-        // Fade atmosphere influence starting ~200 blocks above surface
+        // Fade atmosphere influence starting at 10% of atmosphere height
         double atmosphereFadeStart = atmosphereHeight * 0.1D;
         double relAlt = playerPos.y() - surfaceHeight;
-        atmosphereFactor = relAlt < atmosphereFadeStart ? 1.0D : Mth.clamp(1.0D - ((relAlt - atmosphereFadeStart) / (atmosphereHeight - atmosphereFadeStart)), 0.0D, 1.0D);
+
+        if (relAlt < atmosphereFadeStart)
+        {
+            atmosphereFactor = 1.0D;
+        }
+        else
+        {
+            double fadeRange = atmosphereHeight - atmosphereFadeStart;
+
+            // Prevent division by zero (extremely thin atmospheres)
+            if (fadeRange <= 0.0D)
+            {
+                atmosphereFactor = 0.0D;
+                return;
+            }
+
+            double t = 1.0D - ((relAlt - atmosphereFadeStart) / fadeRange);
+            atmosphereFactor = Mth.clamp(t, 0.0D, 1.0D);
+        }
     }
 }

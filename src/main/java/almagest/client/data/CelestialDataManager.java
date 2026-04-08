@@ -3,6 +3,7 @@ package almagest.client.data;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Locale;
@@ -11,7 +12,6 @@ import java.util.Map.Entry;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -86,7 +86,7 @@ public class CelestialDataManager
     public static final Long2ObjectMap<Constellations> CONSTELLATIONS_BY_ID = new Long2ObjectOpenHashMap<>();
     public static final Long2ObjectMap<Skybox> SKYBOX = new Long2ObjectOpenHashMap<>();
 
-    public static final ConcurrentMap<String, ConstellationData> STAR_NAME_TO_CONSTELLATION = new ConcurrentHashMap<>();
+    public static final Object2ObjectMap<ConstellationData, Constellations> CONSTELLATION_OBJECTS = new Object2ObjectOpenHashMap<>();
     public static final Object2ObjectMap<StarData, ConstellationData> STAR_DATA_TO_CONSTELLATIONS = new Object2ObjectOpenHashMap<>();
     public static final Set<String> BODY_MODELS = new LinkedHashSet<>();
 
@@ -103,7 +103,9 @@ public class CelestialDataManager
         CONSTELLATION_DATA_BY_ID.clear();
         CONSTELLATIONS_BY_ID.clear();
         SKYBOX.clear();
+        CONSTELLATION_OBJECTS.clear();
         STAR_DATA_TO_CONSTELLATIONS.clear();
+        BODY_MODELS.clear();
 
         initData(JSON_ENTRIES);
         JSON_ENTRIES.clear();
@@ -502,6 +504,35 @@ public class CelestialDataManager
             }
         }
 
+        Almagest.LOGGER.debug("Indexing constellation memberships");
+        long startTimeConstellations = System.nanoTime();
+
+        Map<String, StarData> STAR_ALIAS_MAP = new HashMap<>(STAR_DATA_BY_ID.size() * 3);
+        for (StarData star : STAR_DATA_BY_ID.values())
+        {
+            for (String alias : star.getAllNames())
+            {
+                STAR_ALIAS_MAP.put(alias.trim().toLowerCase(Locale.ROOT), star);
+            }
+        }
+
+        for (ConstellationData constellation : CONSTELLATION_DATA_BY_ID.values())
+        {
+            for (List<String> pair : constellation.getPairs())
+            {
+                for (String name : pair)
+                {
+                    StarData star = STAR_ALIAS_MAP.get(name.trim().toLowerCase(Locale.ROOT));
+                    if (star != null)
+                    {
+                        STAR_DATA_TO_CONSTELLATIONS.put(star, constellation);
+                    }
+                }
+            }
+        }
+
+        logDuration("Task", startTimeConstellations);
+
         //finalizeStarSorting();
 
         logParsedLists(celestialObjectNames, starObjectNames, constellationObjectNames);
@@ -722,7 +753,6 @@ public class CelestialDataManager
         CelestialObjectHandler handler = new CelestialObjectHandler(level, player);
 
         initializeOrbitParameters();
-        indexConstellationMembership();
         initializeCelestialObjects(level, player, handler);
         initializeConstellations(level, player, handler);
         initializeStars(level, player, handler);
@@ -842,10 +872,11 @@ public class CelestialDataManager
         List<Entry<Long, Constellations>> created =
             CONSTELLATION_DATA_BY_ID.long2ObjectEntrySet()
                 .stream()
-                .map(entry -> Map.entry(
-                    entry.getLongKey(),
-                    new Constellations(level, player, handler, entry.getValue())
-                ))
+                .map(entry -> {
+                    Constellations constellation = new Constellations(level, player, handler, entry.getValue());
+                    CONSTELLATION_OBJECTS.put(entry.getValue(), constellation);
+                    return Map.entry(entry.getLongKey(), constellation);
+                })
                 .toList();
 
         for (Entry<Long, Constellations> e : created)
@@ -854,41 +885,6 @@ public class CelestialDataManager
         }
 
         logDuration("Task", startTime);
-    }
-
-    public static void indexConstellationMembership()
-    {
-        Almagest.LOGGER.debug("Indexing constellation memberships");
-        long startTime = System.nanoTime();
-        STAR_NAME_TO_CONSTELLATION.clear();
-
-        CONSTELLATION_DATA_BY_ID.values().stream().forEach(constellation -> {
-            for (List<String> pair : constellation.getPairs())
-            {
-                for (String starName : pair)
-                {
-                    STAR_NAME_TO_CONSTELLATION.put(
-                        starName.trim().toLowerCase(Locale.ROOT),
-                        constellation
-                    );
-                }
-            }
-        });
-        logDuration("Task", startTime);
-    }
-
-    public static void isStarInConstellation(StarData starData)
-    {
-        for (String alias : starData.getAllNames())
-        {
-            String key = alias.trim().toLowerCase(Locale.ROOT);
-            ConstellationData data = STAR_NAME_TO_CONSTELLATION.get(key);
-            if (data != null)
-            {
-                STAR_DATA_TO_CONSTELLATIONS.put(starData, data);
-                return;
-            }
-        }
     }
 
     public static void initializeStars(ClientLevel level, Player player, CelestialObjectHandler handler)
@@ -918,30 +914,26 @@ public class CelestialDataManager
             batch.add(star);
             starsCreated++;
 
-            ConstellationData constellation = null;
-            if (STAR_DATA_TO_CONSTELLATIONS != null)
-            {
-                constellation = STAR_DATA_TO_CONSTELLATIONS.get(data);
-            }
-
-            try
-            {
-                isStarInConstellation(data);
-            }
-            catch (Exception ex)
-            {
-                Almagest.LOGGER.error("Failed constellation check for star '{}': {}", star.name, ex.getMessage());
-            }
+            ConstellationData constellation = STAR_DATA_TO_CONSTELLATIONS.get(data);
 
             if (constellation != null)
             {
                 try
                 {
                     star.setConstellation(constellation);
+
+                    Constellations renderObj = CONSTELLATION_OBJECTS.get(constellation);
+                    if (renderObj != null)
+                    {
+                        renderObj.addStarToPairs(star);
+                    }
                 }
                 catch (Exception ex)
                 {
-                    Almagest.LOGGER.error("Failed to assign constellation '{}' to star '{}': {}", constellation.getName(), star.name, ex.getMessage());
+                    Almagest.LOGGER.error(
+                        "Failed to assign constellation '{}' to star '{}': {}",
+                        constellation.getName(), star.name, ex.getMessage()
+                    );
                 }
             }
 
@@ -1197,7 +1189,7 @@ public class CelestialDataManager
 
         JsonObject b = obj.getAsJsonObject("ring");
 
-        double f = 1.0D / 1000000.0D;
+        double f = (1.0D / 10000.0D);
         return type.new Ring(
             parseDouble(b, "innerRadius", 0.0D) * f,
             parseDouble(b, "outerRadius", 0.0D) * f,

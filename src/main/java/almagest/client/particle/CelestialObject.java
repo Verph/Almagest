@@ -154,17 +154,13 @@ public class CelestialObject implements ICelestialObject
         this.orbitLineSegments = orbitParam.getSegments();
 
         this.orientationMatrix = new Matrix4f()
-            .rotate(Axis.ZP.rotation((float) ascendingNode))
-            .rotate(Axis.XP.rotation((float) inclination))
-            .rotate(Axis.ZP.rotation((float) obliquity))
-            .rotate(Axis.YN.rotation((float) ((rotationCompletion / Level.TICKS_PER_DAY) * Math.PI * 2.0D)));
+            .rotate(Axis.XP.rotationDegrees((float) this.obliquity));
 
-        float half = (float) diameter * 0.5F;
         this.transformationMatrix = new Matrix4f()
             .translate((float) pos.x, (float) pos.y, (float) pos.z)
-            .translate(-half, -half, -half)
+            .mul(orientationMatrix)
             .scale((float) diameter)
-            .mul(orientationMatrix);
+            .translate(-0.5F, -0.5F, -0.5F);
 
         Trail trailParam = body.getTrail();
         this.hasTrail = trailParam.getHasTrail();
@@ -210,17 +206,13 @@ public class CelestialObject implements ICelestialObject
         this.shouldRenderOrbits = this.renderOrbit();
 
         this.orientationMatrix = new Matrix4f()
-            .rotate(Axis.ZP.rotation((float) ascendingNode))
-            .rotate(Axis.XP.rotation((float) inclination))
-            .rotate(Axis.ZP.rotation((float) obliquity))
-            .rotate(Axis.YN.rotation((float) ((rotationCompletion / Level.TICKS_PER_DAY) * Math.PI * 2.0D)));
+            .rotate(Axis.XP.rotationDegrees((float) this.obliquity));
 
-        float half = (float) diameter * 0.5F;
         this.transformationMatrix = new Matrix4f()
             .translate((float) pos.x, (float) pos.y, (float) pos.z)
-            .translate(-half, -half, -half)
+            .mul(orientationMatrix)
             .scale((float) diameter)
-            .mul(orientationMatrix);
+            .translate(-0.5F, -0.5F, -0.5F);
     }
 
     public void renderOrbit(BufferBuilder builder, Camera camera, float partialTicks)
@@ -308,7 +300,9 @@ public class CelestialObject implements ICelestialObject
                 return Config.COMMON.showPlanetOrbits.get() && size >= Config.COMMON.planetMinSizeForOrbitLine.get();
             case BARYCENTER_PLANET:
                 return Config.COMMON.showPlanetOrbits.get();
-            case MOON, DWARFMOON:
+            case MOON:
+                return Config.COMMON.showMoonOrbits.get() && size >= Config.COMMON.moonMinSizeForOrbitLine.get();
+            case DWARFMOON:
                 return Config.COMMON.showMoonOrbits.get() && size >= Config.COMMON.moonMinSizeForOrbitLine.get();
             case DWARFPLANET:
                 return Config.COMMON.showMinorPlanetOrbits.get() && size >= Config.COMMON.minorPlanetMinSizeForOrbitLine.get();
@@ -463,7 +457,7 @@ public class CelestialObject implements ICelestialObject
     }
 
     @Override
-    public Matrix4f getTransformMatrix()
+    public Matrix4f getTransformationMatrix()
     {
         return this.transformationMatrix;
     }
@@ -527,34 +521,54 @@ public class CelestialObject implements ICelestialObject
             this.blockModel = ABlocks.CELESTIAL_BODY.get().defaultBlockState().trySetValue(CelestialBodyBlock.CELESTIAL_BODY, this.textureName).trySetValue(CelestialBodyBlock.VARIANT, this.modelVariant).trySetValue(CelestialBodyBlock.ALTERNATIVE, Config.COMMON.toggleEasterEggMoon.get());
             this.applyColor = true;
 
-            this.orientationMatrix = new Matrix4f()
+            Matrix4f orbitFrame = new Matrix4f()
                 .rotate(Axis.ZP.rotation((float) this.mainBody.ascendingNode))
-                .rotate(Axis.XP.rotation((float) this.mainBody.inclination))
-                .rotate(Axis.ZP.rotation((float) this.mainBody.obliquity))
-                .rotate(Axis.YN.rotation((float) ((this.mainBody.rotationCompletion / Level.TICKS_PER_DAY) * Math.PI * 2.0D)));
+                .rotate(Axis.XP.rotation((float) this.mainBody.inclination));
 
-            float half = (float) diameter * 0.5F;
+            Matrix4f tilt = new Matrix4f()
+                .rotate(Axis.XP.rotation((float) this.mainBody.obliquity));
+
+            Matrix4f planetOrientation = new Matrix4f()
+                .mul(orbitFrame)
+                .mul(tilt);
+
+            Matrix4f observerFrame = new Matrix4f(CelestialObjectHandler.skyboxRotationMatrix);
+
+            this.orientationMatrix = new Matrix4f()
+                .mul(observerFrame)
+                .mul(planetOrientation);
+
             this.transformationMatrix = new Matrix4f()
                 .translate((float) pos.x, (float) pos.y, (float) pos.z)
-                .translate(-half, -half, -half)
+                .mul(orientationMatrix)
                 .scale((float) diameter)
-                .mul(orientationMatrix);
+                .translate(-0.5F, -0.5F, -0.5F);
         }
 
         public void tick()
         {
-            this.orientationMatrix = new Matrix4f()
+            Matrix4f orbitFrame = new Matrix4f()
                 .rotate(Axis.ZP.rotation((float) this.mainBody.ascendingNode))
-                .rotate(Axis.XP.rotation((float) this.mainBody.inclination))
-                .rotate(Axis.ZP.rotation((float) this.mainBody.obliquity))
-                .rotate(Axis.YN.rotation((float) ((this.mainBody.rotationCompletion / Level.TICKS_PER_DAY) * Math.PI * 2.0D)));
+                .rotate(Axis.XP.rotation((float) this.mainBody.inclination));
 
-            float half = (float) diameter * 0.5F;
+            Matrix4f tilt = new Matrix4f()
+                .rotate(Axis.XP.rotation((float) this.mainBody.obliquity));
+
+            Matrix4f planetOrientation = new Matrix4f()
+                .mul(orbitFrame)
+                .mul(tilt);
+
+            Matrix4f observerFrame = new Matrix4f(CelestialObjectHandler.skyboxRotationMatrix);
+
+            this.orientationMatrix = new Matrix4f()
+                .mul(observerFrame)
+                .mul(planetOrientation);
+
             this.transformationMatrix = new Matrix4f()
                 .translate((float) pos.x, (float) pos.y, (float) pos.z)
-                .translate(-half, -half, -half)
+                .mul(orientationMatrix)
                 .scale((float) diameter)
-                .mul(orientationMatrix);
+                .translate(-0.5F, -0.5F, -0.5F);
         }
 
         public void render(BufferBuilder builder, Camera camera, float partialTicks)
@@ -686,7 +700,7 @@ public class CelestialObject implements ICelestialObject
         }
 
         @Override
-        public Matrix4f getTransformMatrix()
+        public Matrix4f getTransformationMatrix()
         {
             return this.transformationMatrix;
         }

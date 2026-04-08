@@ -1212,12 +1212,12 @@ public enum CelestialObjectTypes
 
         public double getInnerRadius()
         {
-            return innerRadius * Config.COMMON.planetDiameterFactor.get() * Config.COMMON.universeScale.get();
+            return innerRadius;
         }
 
         public double getOuterRadius()
         {
-            return this.outerRadius * Config.COMMON.planetDiameterFactor.get() * Config.COMMON.universeScale.get();
+            return this.outerRadius;
         }
 
         public double getThickness()
@@ -1984,6 +1984,12 @@ public enum CelestialObjectTypes
         public static double getStarAlpha(CelestialData data, double altitude, double apparentMagnitude, double starBrightness, double rainLevel)
         {
             Atmosphere atmosphere = data.getAtmosphere();
+
+            if (atmosphere == null || atmosphere.getHeight() <= 0.0D)
+            {
+                return 1.0D;
+            }
+
             double gravity = data.getGravity();
             double surfaceHeight = data.getSurfaceHeight();
             double atmosphereHeight = atmosphere.getHeight();
@@ -2105,56 +2111,6 @@ public enum CelestialObjectTypes
         public Color getColor()
         {
             return this.zodiac ? this.color.mul(2.0F, 2.0F, 3.0F, 1.0F) : this.color;
-        }
-
-        public List<List<Star>> getStarPairs()
-        {
-            List<List<Star>> result = new ArrayList<>(pairs.size());
-
-            for (List<String> pair : pairs)
-            {
-                List<Star> starPair = new ArrayList<>(pair.size());
-
-                for (String starName : pair)
-                {
-                    ConstellationData c = CelestialDataManager.STAR_NAME_TO_CONSTELLATION.get(starName.toLowerCase());
-                    if (c != null && c == this)
-                    {
-                        Optional<Star> star = CelestialDataManager.getStarObject(starName);
-                        star.ifPresent(starPair::add);
-                    }
-                }
-
-                if (!starPair.isEmpty())
-                {
-                    result.add(starPair);
-                }
-            }
-
-            return result;
-        }
-
-        public List<List<StarData>> getPairs(StarData star)
-        {
-            List<List<StarData>> pairs = new ArrayList<>();
-            for (List<String> pair : this.pairs)
-            {
-                List<StarData> starPair = new ArrayList<>();
-                for (String starName : pair)
-                {
-                    boolean validStar = star.getAllNames().stream().anyMatch(name -> name.equalsIgnoreCase(starName));
-                    if (validStar)
-                    {
-                        starPair.add(star);
-                    }
-                    else
-                    {
-                        Almagest.LOGGER.debug("Constellation '{}': Failed to add star with name {}", this.name, starName);
-                    }
-                }
-                pairs.add(starPair);
-            }
-            return pairs;
         }
     }
 }

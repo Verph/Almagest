@@ -54,7 +54,7 @@ public interface ICelestialObject
 
     public boolean getApplyColor();
 
-    public Matrix4f getTransformMatrix();
+    public Matrix4f getTransformationMatrix();
 
     public Matrix4f getOrientationMatrix();
 }

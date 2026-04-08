@@ -6,8 +6,6 @@
           "Himalia",
           "Jupiter VI"
         ],
-        "mass": 1.12e-06,
-        "radius": 85.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04,
@@ -20,8 +18,11 @@
           "inclination": 30.182,
           "ascendingNode": 90.236,
           "argOfPeriapsis": 316.73,
-          "longOfPeriapsis": 46.96600000000001
-        }
+          "meanAnomaly": 78.236,
+          "longOfPeriapsis": 406.966
+        },
+        "radius": 85.0,
+        "mass": 1.12e-06
       }
     },
     {
@@ -30,8 +31,6 @@
           "Elara",
           "Jupiter VII"
         ],
-        "mass": 1.46e-07,
-        "radius": 43.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04,
@@ -44,8 +43,11 @@
           "inclination": 30.52,
           "ascendingNode": 137.714,
           "argOfPeriapsis": 126.817,
+          "meanAnomaly": 346.909,
           "longOfPeriapsis": 264.531
-        }
+        },
+        "radius": 43.0,
+        "mass": 1.46e-07
       }
     },
     {
@@ -54,8 +56,6 @@
           "Pasiphae",
           "Jupiter VIII"
         ],
-        "mass": 5e-08,
-        "radius": 30.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -67,8 +67,11 @@
           "inclination": 138.021,
           "ascendingNode": 338.919,
           "argOfPeriapsis": 174.075,
-          "longOfPeriapsis": 152.99399999999991
-        }
+          "meanAnomaly": 279.225,
+          "longOfPeriapsis": 512.9939999999999
+        },
+        "radius": 30.0,
+        "mass": 5e-08
       }
     },
     {
@@ -77,8 +80,6 @@
           "Sinope",
           "Jupiter IX"
         ],
-        "mass": 1.25e-08,
-        "radius": 19.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -90,8 +91,11 @@
           "inclination": 150.19,
           "ascendingNode": 332.196,
           "argOfPeriapsis": 356.497,
-          "longOfPeriapsis": 328.693
-        }
+          "meanAnomaly": 157.451,
+          "longOfPeriapsis": 688.693
+        },
+        "radius": 19.0,
+        "mass": 1.25e-08
       }
     },
     {
@@ -100,8 +104,6 @@
           "Lysithea",
           "Jupiter X"
         ],
-        "mass": 1e-08,
-        "radius": 18.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -113,8 +115,11 @@
           "inclination": 25.989,
           "ascendingNode": 33.831,
           "argOfPeriapsis": 45.606,
+          "meanAnomaly": 328.46,
           "longOfPeriapsis": 79.43700000000001
-        }
+        },
+        "radius": 18.0,
+        "mass": 1e-08
       }
     },
     {
@@ -123,8 +128,6 @@
           "Carme",
           "Jupiter XI"
         ],
-        "mass": 2.8e-08,
-        "radius": 23.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -136,8 +139,11 @@
           "inclination": 166.287,
           "ascendingNode": 131.608,
           "argOfPeriapsis": 0.166,
+          "meanAnomaly": 259.474,
           "longOfPeriapsis": 131.774
-        }
+        },
+        "radius": 23.0,
+        "mass": 2.8e-08
       }
     },
     {
@@ -146,8 +152,6 @@
           "Ananke",
           "Jupiter XII"
         ],
-        "mass": 5e-09,
-        "radius": 14.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -159,8 +163,11 @@
           "inclination": 149.828,
           "ascendingNode": 33.659,
           "argOfPeriapsis": 76.129,
+          "meanAnomaly": 271.82,
           "longOfPeriapsis": 109.78800000000001
-        }
+        },
+        "radius": 14.0,
+        "mass": 5e-09
       }
     },
     {
@@ -169,8 +176,6 @@
           "Leda",
           "Jupiter XIII"
         ],
-        "mass": 1.8e-09,
-        "radius": 10.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -182,8 +187,11 @@
           "inclination": 28.776,
           "ascendingNode": 235.611,
           "argOfPeriapsis": 275.215,
-          "longOfPeriapsis": 150.82599999999996
-        }
+          "meanAnomaly": 232.639,
+          "longOfPeriapsis": 510.82599999999996
+        },
+        "radius": 10.0,
+        "mass": 1.8e-09
       }
     },
     {
@@ -193,12 +201,11 @@
           "Jupiter XIV",
           "S|1979 J 2"
         ],
-        "mass": 7.2e-08,
-        "radius": 49.3,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.047,
-          "rotationPeriod": 16.188857715136475
+          "rotationPeriod": 0.6745357381306865,
+          "obliquity": 25.510000000000005
         },
         "orbit": {
           "period": 0.001846719793,
@@ -207,8 +214,11 @@
           "inclination": 1.075,
           "ascendingNode": 0.415,
           "argOfPeriapsis": 28.001,
+          "meanAnomaly": 181.09,
           "longOfPeriapsis": 28.416
-        }
+        },
+        "radius": 49.3,
+        "mass": 7.2e-08
       }
     },
     {
@@ -218,12 +228,11 @@
           "Jupiter XV",
           "S|1979 J 1"
         ],
-        "mass": 3.3e-10,
-        "radius": 8.2,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.1,
-          "rotationPeriod": 7.158251524958901
+          "rotationPeriod": 0.2982604802066209,
+          "obliquity": 25.510000000000005
         },
         "orbit": {
           "period": 0.0008166088146,
@@ -232,8 +241,11 @@
           "inclination": 0.054,
           "ascendingNode": 36.236,
           "argOfPeriapsis": 213.656,
+          "meanAnomaly": 344.875,
           "longOfPeriapsis": 249.892
-        }
+        },
+        "radius": 8.2,
+        "mass": 3.3e-10
       }
     },
     {
@@ -243,12 +255,11 @@
           "Jupiter XVI",
           "S|1979 J 3"
         ],
-        "mass": 6e-09,
-        "radius": 21.5,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.061,
-          "rotationPeriod": 7.074691124670224
+          "rotationPeriod": 0.29477879686125935,
+          "obliquity": 25.510000000000005
         },
         "orbit": {
           "period": 0.0008070808904,
@@ -257,8 +268,11 @@
           "inclination": 0.019,
           "ascendingNode": 263.953,
           "argOfPeriapsis": 274.588,
-          "longOfPeriapsis": 178.54099999999994
-        }
+          "meanAnomaly": 7.649,
+          "longOfPeriapsis": 538.5409999999999
+        },
+        "radius": 21.5,
+        "mass": 6e-09
       }
     },
     {
@@ -268,8 +282,6 @@
           "Jupiter XVII",
           "S|1999 J 1"
         ],
-        "mass": 1.46e-10,
-        "radius": 4.3,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -281,8 +293,11 @@
           "inclination": 138.004,
           "ascendingNode": 302.562,
           "argOfPeriapsis": 16.381,
+          "meanAnomaly": 117.9,
           "longOfPeriapsis": 318.943
-        }
+        },
+        "radius": 4.3,
+        "mass": 1.46e-10
       }
     },
     {
@@ -293,8 +308,6 @@
           "S|1975 J 1",
           "S|2000 J 1"
         ],
-        "mass": 1.16e-10,
-        "radius": 4.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -306,8 +319,11 @@
           "inclination": 47.584,
           "ascendingNode": 223.444,
           "argOfPeriapsis": 238.413,
-          "longOfPeriapsis": 101.85699999999997
-        }
+          "meanAnomaly": 289.151,
+          "longOfPeriapsis": 461.85699999999997
+        },
+        "radius": 4.0,
+        "mass": 1.16e-10
       }
     },
     {
@@ -317,8 +333,6 @@
           "Jupiter XIX",
           "S|2000 J 8"
         ],
-        "mass": 3.5e-11,
-        "radius": 2.7,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -330,8 +344,11 @@
           "inclination": 150.37,
           "ascendingNode": 317.211,
           "argOfPeriapsis": 313.167,
-          "longOfPeriapsis": 270.37799999999993
-        }
+          "meanAnomaly": 116.082,
+          "longOfPeriapsis": 630.3779999999999
+        },
+        "radius": 2.7,
+        "mass": 3.5e-11
       }
     },
     {
@@ -341,8 +358,6 @@
           "Jupiter XX",
           "S|2000 J 9"
         ],
-        "mass": 2.68e-11,
-        "radius": 2.5,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -354,8 +369,11 @@
           "inclination": 160.215,
           "ascendingNode": 326.765,
           "argOfPeriapsis": 211.713,
-          "longOfPeriapsis": 178.47799999999995
-        }
+          "meanAnomaly": 116.364,
+          "longOfPeriapsis": 538.478
+        },
+        "radius": 2.5,
+        "mass": 2.68e-11
       }
     },
     {
@@ -365,8 +383,6 @@
           "Jupiter XXI",
           "S|2000 J 10"
         ],
-        "mass": 1.26e-11,
-        "radius": 1.9,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -378,8 +394,11 @@
           "inclination": 167.733,
           "ascendingNode": 152.657,
           "argOfPeriapsis": 227.365,
-          "longOfPeriapsis": 20.022000000000048
-        }
+          "meanAnomaly": 275.502,
+          "longOfPeriapsis": 380.02200000000005
+        },
+        "radius": 1.9,
+        "mass": 1.26e-11
       }
     },
     {
@@ -389,8 +408,6 @@
           "Jupiter XXII",
           "S|2000 J 5"
         ],
-        "mass": 2e-11,
-        "radius": 2.2,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -402,8 +419,11 @@
           "inclination": 148.725,
           "ascendingNode": 54.669,
           "argOfPeriapsis": 100.638,
+          "meanAnomaly": 255.488,
           "longOfPeriapsis": 155.30700000000002
-        }
+        },
+        "radius": 2.2,
+        "mass": 2e-11
       }
     },
     {
@@ -413,8 +433,6 @@
           "Jupiter XXIII",
           "S|2000 J 2"
         ],
-        "mass": 3.2e-11,
-        "radius": 2.6,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -426,8 +444,11 @@
           "inclination": 165.215,
           "ascendingNode": 52.607,
           "argOfPeriapsis": 232.978,
+          "meanAnomaly": 225.334,
           "longOfPeriapsis": 285.58500000000004
-        }
+        },
+        "radius": 2.6,
+        "mass": 3.2e-11
       }
     },
     {
@@ -437,8 +458,6 @@
           "Jupiter XXIV",
           "S|2000 J 3"
         ],
-        "mass": 3.18e-11,
-        "radius": 2.6,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -450,8 +469,11 @@
           "inclination": 148.117,
           "ascendingNode": 294.484,
           "argOfPeriapsis": 95.23,
-          "longOfPeriapsis": 29.714
-        }
+          "meanAnomaly": 182.064,
+          "longOfPeriapsis": 389.714
+        },
+        "radius": 2.6,
+        "mass": 3.18e-11
       }
     },
     {
@@ -461,8 +483,6 @@
           "Jupiter XXV",
           "S|2000 J 4"
         ],
-        "mass": 7.5e-12,
-        "radius": 1.6,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -474,8 +494,11 @@
           "inclination": 159.212,
           "ascendingNode": 336.042,
           "argOfPeriapsis": 2.668,
+          "meanAnomaly": 273.099,
           "longOfPeriapsis": 338.71
-        }
+        },
+        "radius": 1.6,
+        "mass": 7.5e-12
       }
     },
     {
@@ -485,8 +508,6 @@
           "Jupiter XXVI",
           "S|2000 J 6"
         ],
-        "mass": 1.26e-11,
-        "radius": 1.9,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -498,8 +519,11 @@
           "inclination": 168.026,
           "ascendingNode": 152.118,
           "argOfPeriapsis": 126.56,
+          "meanAnomaly": 116.296,
           "longOfPeriapsis": 278.678
-        }
+        },
+        "radius": 1.9,
+        "mass": 1.26e-11
       }
     },
     {
@@ -509,8 +533,6 @@
           "Jupiter XXVII",
           "S|2000 J 7"
         ],
-        "mass": 7.2e-11,
-        "radius": 3.4,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -522,8 +544,11 @@
           "inclination": 141.869,
           "ascendingNode": 305.912,
           "argOfPeriapsis": 185.546,
-          "longOfPeriapsis": 131.45799999999997
-        }
+          "meanAnomaly": 127.898,
+          "longOfPeriapsis": 491.45799999999997
+        },
+        "radius": 3.4,
+        "mass": 7.2e-11
       }
     },
     {
@@ -533,7 +558,6 @@
           "Jupiter XXVIII",
           "S|2001 J 1"
         ],
-        "radius": 2.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -545,8 +569,10 @@
           "inclination": 149.551,
           "ascendingNode": 290.639,
           "argOfPeriapsis": 65.418,
+          "meanAnomaly": 134.044,
           "longOfPeriapsis": 356.057
-        }
+        },
+        "radius": 2.0
       }
     },
     {
@@ -556,7 +582,6 @@
           "Jupiter XXIX",
           "S|2001 J 2"
         ],
-        "radius": 2.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -568,8 +593,10 @@
           "inclination": 150.1,
           "ascendingNode": 266.835,
           "argOfPeriapsis": 109.494,
-          "longOfPeriapsis": 16.32899999999995
-        }
+          "meanAnomaly": 242.603,
+          "longOfPeriapsis": 376.32899999999995
+        },
+        "radius": 2.0
       }
     },
     {
@@ -579,7 +606,6 @@
           "Jupiter XXX",
           "S|2001 J 3"
         ],
-        "radius": 2.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -591,8 +617,10 @@
           "inclination": 147.712,
           "ascendingNode": 353.025,
           "argOfPeriapsis": 277.841,
-          "longOfPeriapsis": 270.866
-        }
+          "meanAnomaly": 158.433,
+          "longOfPeriapsis": 630.866
+        },
+        "radius": 2.0
       }
     },
     {
@@ -602,7 +630,6 @@
           "Jupiter XXXI",
           "S|2001 J 11"
         ],
-        "radius": 1.5,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -614,8 +641,10 @@
           "inclination": 163.705,
           "ascendingNode": 17.939,
           "argOfPeriapsis": 69.387,
+          "meanAnomaly": 120.574,
           "longOfPeriapsis": 87.326
-        }
+        },
+        "radius": 1.5
       }
     },
     {
@@ -625,7 +654,6 @@
           "Jupiter XXXII",
           "S|2001 J 4"
         ],
-        "radius": 1.5,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -637,8 +665,10 @@
           "inclination": 144.35,
           "ascendingNode": 321.938,
           "argOfPeriapsis": 225.861,
-          "longOfPeriapsis": 187.79899999999998
-        }
+          "meanAnomaly": 281.794,
+          "longOfPeriapsis": 547.799
+        },
+        "radius": 1.5
       }
     },
     {
@@ -648,7 +678,6 @@
           "Jupiter XXXIII",
           "S|2001 J 7"
         ],
-        "radius": 1.5,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -660,8 +689,10 @@
           "inclination": 145.251,
           "ascendingNode": 290.469,
           "argOfPeriapsis": 316.075,
-          "longOfPeriapsis": 246.54399999999998
-        }
+          "meanAnomaly": 353.616,
+          "longOfPeriapsis": 606.544
+        },
+        "radius": 1.5
       }
     },
     {
@@ -671,7 +702,6 @@
           "Jupiter XXXIV",
           "S|2001 J 10"
         ],
-        "radius": 1.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -683,8 +713,10 @@
           "inclination": 146.861,
           "ascendingNode": 82.199,
           "argOfPeriapsis": 105.607,
+          "meanAnomaly": 56.246,
           "longOfPeriapsis": 187.80599999999998
-        }
+        },
+        "radius": 1.0
       }
     },
     {
@@ -694,7 +726,6 @@
           "Jupiter XXXV",
           "S|2001 J 9"
         ],
-        "radius": 1.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -706,8 +737,10 @@
           "inclination": 145.538,
           "ascendingNode": 237.202,
           "argOfPeriapsis": 247.923,
-          "longOfPeriapsis": 125.125
-        }
+          "meanAnomaly": 161.134,
+          "longOfPeriapsis": 485.125
+        },
+        "radius": 1.0
       }
     },
     {
@@ -717,7 +750,6 @@
           "Jupiter XXXVI",
           "S|2001 J 5"
         ],
-        "radius": 1.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -729,8 +761,10 @@
           "inclination": 153.405,
           "ascendingNode": 128.207,
           "argOfPeriapsis": 52.911,
+          "meanAnomaly": 177.408,
           "longOfPeriapsis": 181.118
-        }
+        },
+        "radius": 1.0
       }
     },
     {
@@ -740,7 +774,6 @@
           "Jupiter XXXVII",
           "S|2001 J 8"
         ],
-        "radius": 1.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -752,8 +785,10 @@
           "inclination": 166.119,
           "ascendingNode": 69.924,
           "argOfPeriapsis": 60.165,
+          "meanAnomaly": 175.65,
           "longOfPeriapsis": 130.089
-        }
+        },
+        "radius": 1.0
       }
     },
     {
@@ -763,7 +798,6 @@
           "Jupiter XXXVIII",
           "S|2001 J 6"
         ],
-        "radius": 1.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -775,8 +809,10 @@
           "inclination": 161.049,
           "ascendingNode": 341.65,
           "argOfPeriapsis": 210.162,
-          "longOfPeriapsis": 191.812
-        }
+          "meanAnomaly": 237.866,
+          "longOfPeriapsis": 551.812
+        },
+        "radius": 1.0
       }
     },
     {
@@ -786,7 +822,6 @@
           "Jupiter XXXIX",
           "S|2003 J 8"
         ],
-        "radius": 1.5,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -798,8 +833,10 @@
           "inclination": 150.102,
           "ascendingNode": 350.813,
           "argOfPeriapsis": 217.762,
-          "longOfPeriapsis": 208.57500000000005
-        }
+          "meanAnomaly": 43.073,
+          "longOfPeriapsis": 568.575
+        },
+        "radius": 1.5
       }
     },
     {
@@ -809,7 +846,6 @@
           "Jupiter XL",
           "S|2003 J 21"
         ],
-        "radius": 1.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -821,8 +857,10 @@
           "inclination": 145.402,
           "ascendingNode": 34.889,
           "argOfPeriapsis": 48.811,
+          "meanAnomaly": 168.011,
           "longOfPeriapsis": 83.7
-        }
+        },
+        "radius": 1.0
       }
     },
     {
@@ -832,7 +870,6 @@
           "Jupiter XLI",
           "S|2003 J 7"
         ],
-        "radius": 2.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -844,8 +881,10 @@
           "inclination": 160.844,
           "ascendingNode": 219.018,
           "argOfPeriapsis": 96.186,
+          "meanAnomaly": 343.823,
           "longOfPeriapsis": 315.204
-        }
+        },
+        "radius": 2.0
       }
     },
     {
@@ -855,7 +894,6 @@
           "Jupiter XLII",
           "S|2003 J 22"
         ],
-        "radius": 1.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -867,8 +905,10 @@
           "inclination": 150.941,
           "ascendingNode": 215.311,
           "argOfPeriapsis": 323.714,
-          "longOfPeriapsis": 179.02499999999998
-        }
+          "meanAnomaly": 191.904,
+          "longOfPeriapsis": 539.025
+        },
+        "radius": 1.0
       }
     },
     {
@@ -878,7 +918,6 @@
           "Jupiter XLIII",
           "S|2002 J 1"
         ],
-        "radius": 1.5,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -890,8 +929,10 @@
           "inclination": 160.38,
           "ascendingNode": 356.413,
           "argOfPeriapsis": 171.807,
-          "longOfPeriapsis": 168.22000000000003
-        }
+          "meanAnomaly": 29.942,
+          "longOfPeriapsis": 528.22
+        },
+        "radius": 1.5
       }
     },
     {
@@ -901,7 +942,6 @@
           "Jupiter XLIV",
           "S|2003 J 11"
         ],
-        "radius": 1.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -913,8 +953,10 @@
           "inclination": 162.6,
           "ascendingNode": 50.546,
           "argOfPeriapsis": 353.932,
-          "longOfPeriapsis": 44.47800000000001
-        }
+          "meanAnomaly": 260.174,
+          "longOfPeriapsis": 404.478
+        },
+        "radius": 1.0
       }
     },
     {
@@ -924,7 +966,6 @@
           "Jupiter XLV",
           "S|2003 J 6"
         ],
-        "radius": 2.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -936,8 +977,10 @@
           "inclination": 157.74,
           "ascendingNode": 117.752,
           "argOfPeriapsis": 293.662,
-          "longOfPeriapsis": 51.41399999999999
-        }
+          "meanAnomaly": 326.097,
+          "longOfPeriapsis": 411.414
+        },
+        "radius": 2.0
       }
     },
     {
@@ -947,7 +990,6 @@
           "Jupiter XLVI",
           "S|2003 J 20"
         ],
-        "radius": 1.5,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -959,8 +1001,10 @@
           "inclination": 54.223,
           "ascendingNode": 72.057,
           "argOfPeriapsis": 78.282,
+          "meanAnomaly": 140.992,
           "longOfPeriapsis": 150.339
-        }
+        },
+        "radius": 1.5
       }
     },
     {
@@ -970,7 +1014,6 @@
           "Jupiter XLVII",
           "S|2003 J 1"
         ],
-        "radius": 2.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -982,8 +1025,10 @@
           "inclination": 164.105,
           "ascendingNode": 244.009,
           "argOfPeriapsis": 344.815,
-          "longOfPeriapsis": 228.82399999999996
-        }
+          "meanAnomaly": 18.464,
+          "longOfPeriapsis": 588.824
+        },
+        "radius": 2.0
       }
     },
     {
@@ -993,7 +1038,6 @@
           "Jupiter XLVIII",
           "S|2003 J 13"
         ],
-        "radius": 1.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -1005,8 +1049,10 @@
           "inclination": 141.205,
           "ascendingNode": 281.643,
           "argOfPeriapsis": 212.88,
-          "longOfPeriapsis": 134.52299999999997
-        }
+          "meanAnomaly": 277.114,
+          "longOfPeriapsis": 494.52299999999997
+        },
+        "radius": 1.0
       }
     },
     {
@@ -1016,7 +1062,6 @@
           "Jupiter XLIX",
           "S|2003 J 14"
         ],
-        "radius": 1.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -1028,8 +1073,10 @@
           "inclination": 136.767,
           "ascendingNode": 2.112,
           "argOfPeriapsis": 127.569,
+          "meanAnomaly": 225.954,
           "longOfPeriapsis": 129.681
-        }
+        },
+        "radius": 1.0
       }
     },
     {
@@ -1039,7 +1086,6 @@
           "Jupiter L",
           "S|2003 J 17"
         ],
-        "radius": 1.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -1051,8 +1097,10 @@
           "inclination": 161.918,
           "ascendingNode": 332.506,
           "argOfPeriapsis": 355.621,
-          "longOfPeriapsis": 328.12699999999995
-        }
+          "meanAnomaly": 309.139,
+          "longOfPeriapsis": 688.127
+        },
+        "radius": 1.0
       }
     },
     {
@@ -1061,16 +1109,18 @@
           "Jupiter LI",
           "S|2010 J 1"
         ],
-        "radius": 1.0,
         "parentBody": "Jupiter",
         "orbit": {
+          "period": 724.56,
           "semiMajorAxis": 0.15546,
           "eccentricity": 0.2971427,
           "inclination": 165.23959,
           "ascendingNode": 345.23406,
           "argOfPeriapsis": 270.6731,
-          "longOfPeriapsis": 255.90715999999998
-        }
+          "meanAnomaly": 290.4302,
+          "longOfPeriapsis": 615.90716
+        },
+        "radius": 1.0
       }
     },
     {
@@ -1079,16 +1129,18 @@
           "Jupiter LII",
           "S|2010 J 2"
         ],
-        "radius": 0.5,
         "parentBody": "Jupiter",
         "orbit": {
+          "period": 630.39,
           "semiMajorAxis": 0.1416805,
           "eccentricity": 0.2303812,
           "inclination": 148.25101,
           "ascendingNode": 45.09264,
           "argOfPeriapsis": 48.86908,
+          "meanAnomaly": 253.8496,
           "longOfPeriapsis": 93.96172
-        }
+        },
+        "radius": 0.5
       }
     },
     {
@@ -1098,7 +1150,6 @@
           "Jupiter LIII",
           "S|2000 J 11"
         ],
-        "radius": 2.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -1110,8 +1161,10 @@
           "inclination": 25.851,
           "ascendingNode": 312.669,
           "argOfPeriapsis": 172.672,
-          "longOfPeriapsis": 125.34100000000001
-        }
+          "meanAnomaly": 329.329,
+          "longOfPeriapsis": 485.341
+        },
+        "radius": 2.0
       }
     },
     {
@@ -1119,7 +1172,6 @@
         "names": [
           "S|2003 J 2"
         ],
-        "radius": 1.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -1131,8 +1183,10 @@
           "inclination": 149.167,
           "ascendingNode": 24.567,
           "argOfPeriapsis": 165.326,
+          "meanAnomaly": 337.868,
           "longOfPeriapsis": 189.893
-        }
+        },
+        "radius": 1.0
       }
     },
     {
@@ -1142,7 +1196,6 @@
           "Jupiter LX",
           "S|2003 J 3"
         ],
-        "radius": 1.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -1154,8 +1207,10 @@
           "inclination": 146.629,
           "ascendingNode": 262.887,
           "argOfPeriapsis": 72.641,
+          "meanAnomaly": 271.954,
           "longOfPeriapsis": 335.528
-        }
+        },
+        "radius": 1.0
       }
     },
     {
@@ -1163,7 +1218,6 @@
         "names": [
           "S|2003 J 4"
         ],
-        "radius": 1.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -1175,8 +1229,10 @@
           "inclination": 145.092,
           "ascendingNode": 211.91,
           "argOfPeriapsis": 201.451,
-          "longOfPeriapsis": 53.36099999999999
-        }
+          "meanAnomaly": 75.428,
+          "longOfPeriapsis": 413.361
+        },
+        "radius": 1.0
       }
     },
     {
@@ -1186,7 +1242,6 @@
           "Jupiter LVII",
           "S|2003 J 5"
         ],
-        "radius": 2.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -1198,8 +1253,10 @@
           "inclination": 166.487,
           "ascendingNode": 231.685,
           "argOfPeriapsis": 144.401,
-          "longOfPeriapsis": 16.086000000000013
-        }
+          "meanAnomaly": 125.909,
+          "longOfPeriapsis": 376.086
+        },
+        "radius": 2.0
       }
     },
     {
@@ -1207,7 +1264,6 @@
         "names": [
           "S|2003 J 9"
         ],
-        "radius": 0.5,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -1219,8 +1275,10 @@
           "inclination": 165.07,
           "ascendingNode": 72.935,
           "argOfPeriapsis": 314.062,
-          "longOfPeriapsis": 26.997000000000014
-        }
+          "meanAnomaly": 150.232,
+          "longOfPeriapsis": 386.997
+        },
+        "radius": 0.5
       }
     },
     {
@@ -1228,7 +1286,6 @@
         "names": [
           "S|2003 J 10"
         ],
-        "radius": 1.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -1240,8 +1297,10 @@
           "inclination": 164.202,
           "ascendingNode": 195.659,
           "argOfPeriapsis": 177.632,
-          "longOfPeriapsis": 13.290999999999997
-        }
+          "meanAnomaly": 113.134,
+          "longOfPeriapsis": 373.291
+        },
+        "radius": 1.0
       }
     },
     {
@@ -1249,7 +1308,6 @@
         "names": [
           "S|2003 J 12"
         ],
-        "radius": 0.5,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -1261,8 +1319,10 @@
           "inclination": 141.88,
           "ascendingNode": 82.853,
           "argOfPeriapsis": 19.516,
+          "meanAnomaly": 113.072,
           "longOfPeriapsis": 102.369
-        }
+        },
+        "radius": 0.5
       }
     },
     {
@@ -1272,7 +1332,6 @@
           "Jupiter LVIII",
           "S|2003 J 15"
         ],
-        "radius": 1.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -1284,8 +1343,10 @@
           "inclination": 142.204,
           "ascendingNode": 266.001,
           "argOfPeriapsis": 28.76,
+          "meanAnomaly": 270.87,
           "longOfPeriapsis": 294.76099999999997
-        }
+        },
+        "radius": 1.0
       }
     },
     {
@@ -1293,7 +1354,6 @@
         "names": [
           "S|2003 J 16"
         ],
-        "radius": 1.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -1305,8 +1365,10 @@
           "inclination": 147.37,
           "ascendingNode": 41.164,
           "argOfPeriapsis": 72.31,
+          "meanAnomaly": 206.244,
           "longOfPeriapsis": 113.474
-        }
+        },
+        "radius": 1.0
       }
     },
     {
@@ -1315,7 +1377,6 @@
           "Jupiter LV",
           "S|2003 J 18"
         ],
-        "radius": 1.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -1327,8 +1388,10 @@
           "inclination": 147.719,
           "ascendingNode": 204.34,
           "argOfPeriapsis": 123.909,
+          "meanAnomaly": 174.708,
           "longOfPeriapsis": 328.249
-        }
+        },
+        "radius": 1.0
       }
     },
     {
@@ -1337,16 +1400,18 @@
           "Jupiter LXI",
           "S|2003 J 19"
         ],
-        "radius": 1.91,
         "parentBody": "Jupiter",
         "orbit": {
+          "period": 698.56,
           "semiMajorAxis": 0.1517184,
           "eccentricity": 0.2571569,
           "inclination": 166.65697,
           "ascendingNode": 105.75291,
           "argOfPeriapsis": 284.07783,
-          "longOfPeriapsis": 29.83073999999999
-        }
+          "meanAnomaly": 205.75346,
+          "longOfPeriapsis": 389.83074
+        },
+        "radius": 1.91
       }
     },
     {
@@ -1354,7 +1419,6 @@
         "names": [
           "S|2003 J 23"
         ],
-        "radius": 1.0,
         "parentBody": "Jupiter",
         "body": {
           "albedo": 0.04
@@ -1366,8 +1430,10 @@
           "inclination": 146.42,
           "ascendingNode": 67.747,
           "argOfPeriapsis": 253.422,
+          "meanAnomaly": 328.912,
           "longOfPeriapsis": 321.169
-        }
+        },
+        "radius": 1.0
       }
     },
     {
@@ -1376,16 +1442,18 @@
           "Jupiter LXXII",
           "S|2011 J 1"
         ],
-        "radius": 0.5,
         "parentBody": "Jupiter",
         "orbit": {
+          "period": 679.93,
           "semiMajorAxis": 0.1490094,
           "eccentricity": 0.2497127,
           "inclination": 163.58436,
           "ascendingNode": 303.17474,
           "argOfPeriapsis": 111.14414,
-          "longOfPeriapsis": 54.31887999999998
-        }
+          "meanAnomaly": 242.4276,
+          "longOfPeriapsis": 414.31888
+        },
+        "radius": 0.5
       }
     },
     {
@@ -1394,22 +1462,18 @@
           "Jupiter LVI",
           "S|2011 J 2"
         ],
-        "radius": 227000.0,
         "parentBody": "Jupiter",
-        "mass": 317.832,
-        "body": {
-          "albedo": 0.503,
-          "rotationPeriod": 9.92425,
-          "obliquity": 2.222461
-        },
         "orbit": {
+          "period": 725.06,
           "semiMajorAxis": 0.1555314,
           "eccentricity": 0.3866892,
           "inclination": 151.85138,
           "ascendingNode": 88.66552,
           "argOfPeriapsis": 322.19842,
-          "longOfPeriapsis": 50.863940000000014
-        }
+          "meanAnomaly": 12.65424,
+          "longOfPeriapsis": 410.86394
+        },
+        "radius": 0.5
       }
     },
     {
@@ -1418,7 +1482,6 @@
           "Jupiter LIV",
           "S|2016 J 1"
         ],
-        "radius": 0.75,
         "parentBody": "Jupiter",
         "orbit": {
           "period": 1.65,
@@ -1427,8 +1490,10 @@
           "inclination": 139.83916,
           "ascendingNode": 293.75814,
           "argOfPeriapsis": 328.15054,
-          "longOfPeriapsis": 261.90868
-        }
+          "meanAnomaly": 25.52802,
+          "longOfPeriapsis": 621.90868
+        },
+        "radius": 0.75
       }
     },
     {
@@ -1438,16 +1503,18 @@
           "Jupiter LXXI",
           "S|2018 J 1"
         ],
-        "radius": 1.5,
         "parentBody": "Jupiter",
         "orbit": {
+          "period": 250.4,
           "semiMajorAxis": 0.0765586,
           "eccentricity": 0.0943576,
           "inclination": 30.60635,
           "ascendingNode": 93.38919,
           "argOfPeriapsis": 346.68519,
-          "longOfPeriapsis": 80.07437999999996
-        }
+          "meanAnomaly": 139.33114,
+          "longOfPeriapsis": 440.07437999999996
+        },
+        "radius": 1.5
       }
     },
     {
@@ -1456,7 +1523,6 @@
           "Jupiter LIX",
           "S|2017 J 1"
         ],
-        "radius": 0.75,
         "parentBody": "Jupiter",
         "orbit": {
           "period": 2.01,
@@ -1465,8 +1531,10 @@
           "inclination": 149.19651,
           "ascendingNode": 326.77425,
           "argOfPeriapsis": 79.73238,
-          "longOfPeriapsis": 46.50662999999997
-        }
+          "meanAnomaly": 161.32649,
+          "longOfPeriapsis": 406.50663
+        },
+        "radius": 0.75
       }
     },
     {
@@ -1475,22 +1543,18 @@
           "Jupiter LXIII",
           "S|2017 J 2"
         ],
-        "radius": 227000.0,
         "parentBody": "Jupiter",
-        "mass": 317.832,
-        "body": {
-          "albedo": 0.503,
-          "rotationPeriod": 9.92425,
-          "obliquity": 2.222461
-        },
         "orbit": {
+          "period": 723.83,
           "semiMajorAxis": 0.1553562,
           "eccentricity": 0.2359972,
           "inclination": 166.39844,
           "ascendingNode": 74.73352,
           "argOfPeriapsis": 231.90962,
+          "meanAnomaly": 344.42867,
           "longOfPeriapsis": 306.64314
-        }
+        },
+        "radius": 1.98
       }
     },
     {
@@ -1499,16 +1563,18 @@
           "Jupiter LXIV",
           "S|2017 J 3"
         ],
-        "radius": 1.66,
         "parentBody": "Jupiter",
         "orbit": {
+          "period": 605.76,
           "semiMajorAxis": 0.1379653,
           "eccentricity": 0.1477301,
           "inclination": 147.91516,
           "ascendingNode": 82.51383,
           "argOfPeriapsis": 171.6484,
+          "meanAnomaly": 91.21136,
           "longOfPeriapsis": 254.16223000000002
-        }
+        },
+        "radius": 1.66
       }
     },
     {
@@ -1518,16 +1584,18 @@
           "Jupiter LXV",
           "S|2017 J 4"
         ],
-        "radius": 1.5,
         "parentBody": "Jupiter",
         "orbit": {
+          "period": 251.77,
           "semiMajorAxis": 0.076838,
           "eccentricity": 0.1799542,
           "inclination": 28.1547,
           "ascendingNode": 228.44729,
           "argOfPeriapsis": 238.76803,
-          "longOfPeriapsis": 107.21532000000002
-        }
+          "meanAnomaly": 282.4814,
+          "longOfPeriapsis": 467.21532
+        },
+        "radius": 1.5
       }
     },
     {
@@ -1536,16 +1604,18 @@
           "Jupiter LXVI",
           "S|2017 J 5"
         ],
-        "radius": 1.97,
         "parentBody": "Jupiter",
         "orbit": {
+          "period": 720.49,
           "semiMajorAxis": 0.1548778,
           "eccentricity": 0.284222,
           "inclination": 164.33102,
           "ascendingNode": 118.22283,
           "argOfPeriapsis": 11.89929,
+          "meanAnomaly": 77.56833,
           "longOfPeriapsis": 130.12212
-        }
+        },
+        "radius": 1.97
       }
     },
     {
@@ -1554,22 +1624,18 @@
           "Jupiter LXVII",
           "S|2017 J 6"
         ],
-        "radius": 227000.0,
         "parentBody": "Jupiter",
-        "mass": 317.832,
-        "body": {
-          "albedo": 0.503,
-          "rotationPeriod": 9.92425,
-          "obliquity": 2.222461
-        },
         "orbit": {
+          "period": 684.66,
           "semiMajorAxis": 0.1496992,
           "eccentricity": 0.5568606,
           "inclination": 155.18516,
           "ascendingNode": 26.34913,
           "argOfPeriapsis": 77.37563,
+          "meanAnomaly": 184.52889,
           "longOfPeriapsis": 103.72476
-        }
+        },
+        "radius": 1.87
       }
     },
     {
@@ -1578,16 +1644,18 @@
           "Jupiter LXVIII",
           "S|2017 J 7"
         ],
-        "radius": 1.65,
         "parentBody": "Jupiter",
         "orbit": {
+          "period": 602.774,
           "semiMajorAxis": 0.1375117,
           "eccentricity": 0.214697,
           "inclination": 143.43936,
           "ascendingNode": 321.50627,
           "argOfPeriapsis": 323.55054,
-          "longOfPeriapsis": 285.05681000000004
-        }
+          "meanAnomaly": 236.8988,
+          "longOfPeriapsis": 645.05681
+        },
+        "radius": 1.65
       }
     },
     {
@@ -1596,16 +1664,18 @@
           "Jupiter LXIX",
           "S|2017 J 8"
         ],
-        "radius": 1.97,
         "parentBody": "Jupiter",
         "orbit": {
+          "period": 720.73,
           "semiMajorAxis": 0.1549116,
           "eccentricity": 0.2287964,
           "inclination": 164.78217,
           "ascendingNode": 160.25804,
           "argOfPeriapsis": 45.16406,
+          "meanAnomaly": 70.81564,
           "longOfPeriapsis": 205.4221
-        }
+        },
+        "radius": 1.97
       }
     },
     {
@@ -1614,502 +1684,1871 @@
           "Jupiter LXX",
           "S|2017 J 9"
         ],
-        "radius": 1.75,
         "parentBody": "Jupiter",
         "orbit": {
-          "period": 1.3,
-          "semiMajorAxis": 0.0783795,
-          "eccentricity": 0.2189598,
-          "inclination": 45.88107,
-          "ascendingNode": 281.11704,
-          "argOfPeriapsis": 103.1444,
-          "longOfPeriapsis": 24.261439999999993
-        }
+          "period": 640.9,
+          "semiMajorAxis": 0.1432504,
+          "eccentricity": 0.2287964,
+          "inclination": 152.66144,
+          "ascendingNode": 306.44369,
+          "argOfPeriapsis": 317.78631,
+          "meanAnomaly": 259.48554,
+          "longOfPeriapsis": 624.23
+        },
+        "radius": 1.75
       }
     },
     {
       "dwarfmoon": {
         "names": [
-          "S|2023 S 8"
+          "Valetudo",
+          "Jupiter LXII",
+          "S|2016 J 2"
         ],
-        "radius": 1.5,
+        "parentBody": "Jupiter",
+        "orbit": {
+          "period": 532.01,
+          "semiMajorAxis": 0.1265265,
+          "eccentricity": 0.2219283,
+          "inclination": 34.01457,
+          "ascendingNode": 240.2592,
+          "argOfPeriapsis": 116.83071,
+          "meanAnomaly": 201.41718,
+          "longOfPeriapsis": 357.08991
+        },
+        "radius": 1.46
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "S|2018 J 2"
+        ],
+        "parentBody": "Jupiter",
+        "orbit": {
+          "period": 249.924023,
+          "semiMajorAxis": 0.07633597956476143,
+          "eccentricity": 0.152,
+          "inclination": 28.3,
+          "ascendingNode": 93.2,
+          "argOfPeriapsis": 293.7,
+          "meanAnomaly": 108.3,
+          "longOfPeriapsis": 386.9
+        },
+        "radius": 1.5
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "S|2011 J 3"
+        ],
+        "parentBody": "Jupiter",
+        "orbit": {
+          "period": 259.836323,
+          "semiMajorAxis": 0.07832197039890687,
+          "eccentricity": 0.192,
+          "inclination": 27.6,
+          "ascendingNode": 126.0,
+          "argOfPeriapsis": 148.0,
+          "meanAnomaly": 343.2,
+          "longOfPeriapsis": 274.0
+        },
+        "radius": 1.5
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "S|2018 J 3"
+        ],
+        "parentBody": "Jupiter",
+        "orbit": {
+          "period": 747.024566,
+          "semiMajorAxis": 0.1564213440466288,
+          "eccentricity": 0.268,
+          "inclination": 164.9,
+          "ascendingNode": 134.6,
+          "argOfPeriapsis": 175.7,
+          "meanAnomaly": 7.5,
+          "longOfPeriapsis": 310.29999999999995
+        },
+        "radius": 0.5
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "S|2021 J 1"
+        ],
+        "parentBody": "Jupiter",
+        "orbit": {
+          "period": 627.143382,
+          "semiMajorAxis": 0.1400735177794256,
+          "eccentricity": 0.228,
+          "inclination": 150.5,
+          "ascendingNode": 240.6,
+          "argOfPeriapsis": 18.9,
+          "meanAnomaly": 3.9,
+          "longOfPeriapsis": 259.5
+        },
+        "radius": 0.5
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "S|2021 J 2"
+        ],
+        "parentBody": "Jupiter",
+        "orbit": {
+          "period": 625.13919,
+          "semiMajorAxis": 0.13988568088127853,
+          "eccentricity": 0.242,
+          "inclination": 148.1,
+          "ascendingNode": 272.6,
+          "argOfPeriapsis": 28.5,
+          "meanAnomaly": 282.2,
+          "longOfPeriapsis": 301.1
+        },
+        "radius": 0.5
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "S|2021 J 3"
+        ],
+        "parentBody": "Jupiter",
+        "orbit": {
+          "period": 618.332595,
+          "semiMajorAxis": 0.13888366127159021,
+          "eccentricity": 0.239,
+          "inclination": 147.9,
+          "ascendingNode": 150.8,
+          "argOfPeriapsis": 218.9,
+          "meanAnomaly": 233.0,
+          "longOfPeriapsis": 369.70000000000005
+        },
+        "radius": 1.0
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "S|2021 J 4"
+        ],
+        "parentBody": "Jupiter",
+        "orbit": {
+          "period": 728.278426,
+          "semiMajorAxis": 0.15387719018774038,
+          "eccentricity": 0.265,
+          "inclination": 164.6,
+          "ascendingNode": 121.6,
+          "argOfPeriapsis": 109.8,
+          "meanAnomaly": 4.1,
+          "longOfPeriapsis": 231.39999999999998
+        },
+        "radius": 0.5
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "S|2021 J 5"
+        ],
+        "parentBody": "Jupiter",
+        "orbit": {
+          "period": 747.735358,
+          "semiMajorAxis": 0.156516933642483,
+          "eccentricity": 0.272,
+          "inclination": 164.9,
+          "ascendingNode": 149.7,
+          "argOfPeriapsis": 279.4,
+          "meanAnomaly": 290.1,
+          "longOfPeriapsis": 429.09999999999997
+        },
+        "radius": 1.0
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "S|2021 J 6"
+        ],
+        "parentBody": "Jupiter",
+        "orbit": {
+          "period": 720.968561,
+          "semiMajorAxis": 0.1528785128716134,
+          "eccentricity": 0.271,
+          "inclination": 164.9,
+          "ascendingNode": 80.2,
+          "argOfPeriapsis": 148.9,
+          "meanAnomaly": 33.5,
+          "longOfPeriapsis": 229.10000000000002
+        },
+        "radius": 0.5
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "S|2016 J 3"
+        ],
+        "parentBody": "Jupiter",
+        "orbit": {
+          "period": 713.641308,
+          "semiMajorAxis": 0.15186914021609013,
+          "eccentricity": 0.251,
+          "inclination": 164.6,
+          "ascendingNode": 40.6,
+          "argOfPeriapsis": 88.5,
+          "meanAnomaly": 350.0,
+          "longOfPeriapsis": 129.1
+        },
+        "radius": 1.0
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "S|2016 J 4"
+        ],
+        "parentBody": "Jupiter",
+        "orbit": {
+          "period": 727.010204,
+          "semiMajorAxis": 0.15450620983598368,
+          "eccentricity": 0.294,
+          "inclination": 147.1,
+          "ascendingNode": 213.1,
+          "argOfPeriapsis": 238.8,
+          "meanAnomaly": 171.3,
+          "longOfPeriapsis": 451.9
+        },
+        "radius": 0.5
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "S|2018 J 4"
+        ],
+        "parentBody": "Jupiter",
+        "orbit": {
+          "period": 427.631071,
+          "semiMajorAxis": 0.10914928083252687,
+          "eccentricity": 0.177,
+          "inclination": 50.2,
+          "ascendingNode": 62.0,
+          "argOfPeriapsis": 272.1,
+          "meanAnomaly": 147.7,
+          "longOfPeriapsis": 334.1
+        },
+        "radius": 1.0
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "S|2003 J 24"
+        ],
+        "parentBody": "Jupiter",
+        "orbit": {
+          "period": 721.603536,
+          "semiMajorAxis": 0.15299281931141107,
+          "eccentricity": 0.259,
+          "inclination": 164.5,
+          "ascendingNode": 207.2,
+          "argOfPeriapsis": 24.2,
+          "meanAnomaly": 131.8,
+          "longOfPeriapsis": 231.39999999999998
+        },
+        "radius": 1.0
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "S|2009 S 1"
+        ],
         "parentBody": "Saturn",
         "orbit": {
-          "period": 1.75,
-          "semiMajorAxis": 0.0957744,
-          "eccentricity": 0.1197321,
-          "inclination": 165.17946,
-          "ascendingNode": 253.56651,
-          "argOfPeriapsis": 311.26281,
-          "longOfPeriapsis": 204.82932000000005
-        }
+          "semiMajorAxis": 0.0007821180840312526,
+          "eccentricity": 0.0,
+          "inclination": 0.0
+        },
+        "radius": 0.3
       }
     },
     {
       "dwarfmoon": {
         "names": [
-          "S|2023 S 9"
+          "Helene",
+          "Saturn XII",
+          "S|1980 S 6"
         ],
-        "radius": 2.5,
+        "parentBody": "Saturn",
+        "body": {
+          "albedo": 0.6,
+          "rotationPeriod": 2.7352005485815467,
+          "obliquity": 6.659999999999997
+        },
+        "orbit": {
+          "period": 0.007493424911,
+          "semiMajorAxis": 0.002522727272,
+          "eccentricity": 0.0001,
+          "inclination": 0.202,
+          "ascendingNode": 121.154,
+          "argOfPeriapsis": 48.574,
+          "meanAnomaly": 19.782,
+          "longOfPeriapsis": 169.728
+        },
+        "radius": 16.0,
+        "mass": 4.185e-10
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Telesto",
+          "Saturn XIII",
+          "S|1980 S 13"
+        ],
+        "parentBody": "Saturn",
+        "body": {
+          "albedo": 1.0,
+          "rotationPeriod": 1.8878023162549935,
+          "obliquity": 5.939999999999998
+        },
+        "orbit": {
+          "period": 0.005168630569,
+          "semiMajorAxis": 0.001969652406,
+          "eccentricity": 0.001,
+          "inclination": 1.17,
+          "ascendingNode": 188.718,
+          "argOfPeriapsis": 358.944,
+          "meanAnomaly": 18.554,
+          "longOfPeriapsis": 547.662
+        },
+        "radius": 12.0,
+        "mass": 1.2e-09
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Calypso",
+          "Saturn XIV",
+          "S|1980 S 25"
+        ],
+        "parentBody": "Saturn",
+        "body": {
+          "albedo": 0.7,
+          "rotationPeriod": 1.8880369214934314,
+          "obliquity": 4.959999999999994
+        },
+        "orbit": {
+          "period": 0.005168630569,
+          "semiMajorAxis": 0.001969652406,
+          "eccentricity": 0.0005,
+          "inclination": 1.472,
+          "ascendingNode": 273.86,
+          "argOfPeriapsis": 186.307,
+          "meanAnomaly": 348.156,
+          "longOfPeriapsis": 460.16700000000003
+        },
+        "radius": 9.5,
+        "mass": 6.02e-10
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Pan",
+          "Saturn XVIII",
+          "S|1981 S 13"
+        ],
+        "parentBody": "Saturn",
+        "body": {
+          "albedo": 0.5,
+          "rotationPeriod": 0.5750394540958783,
+          "obliquity": 6.5
+        },
+        "orbit": {
+          "semiMajorAxis": 0.0008929538861948293,
+          "eccentricity": 1.44e-05,
+          "inclination": 0.0001,
+          "ascendingNode": 282.0
+        },
+        "radius": 12.8,
+        "mass": 8.2e-10
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Atlas",
+          "Saturn XV",
+          "S|1980 S 28"
+        ],
+        "parentBody": "Saturn",
+        "body": {
+          "albedo": 0.4,
+          "rotationPeriod": 0.6016987962681303,
+          "obliquity": 6.469999999999999
+        },
+        "orbit": {
+          "period": 0.00164737262,
+          "semiMajorAxis": 0.0009202205881,
+          "eccentricity": 0.0012,
+          "inclination": 0.009,
+          "ascendingNode": 241.0
+        },
+        "radius": 10.0,
+        "mass": 1.1e-09
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Prometheus",
+          "Saturn XVI",
+          "S|1980 S 27"
+        ],
+        "parentBody": "Saturn",
+        "body": {
+          "albedo": 0.6,
+          "rotationPeriod": 0.6129861107563738,
+          "obliquity": 6.469999999999999
+        },
+        "orbit": {
+          "period": 0.001678300043,
+          "semiMajorAxis": 0.0009314839571,
+          "eccentricity": 0.0023,
+          "inclination": 0.0,
+          "meanAnomaly": 22.695
+        },
+        "radius": 74.0,
+        "mass": 2.68e-08
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Pandora",
+          "Saturn XVII",
+          "S|1980 S 26"
+        ],
+        "parentBody": "Saturn",
+        "body": {
+          "albedo": 0.5,
+          "rotationPeriod": 0.6285035801135183,
+          "obliquity": 6.469999999999999
+        },
+        "orbit": {
+          "period": 0.001721608292,
+          "semiMajorAxis": 0.0009471925132,
+          "eccentricity": 0.0044,
+          "inclination": 0.0,
+          "meanAnomaly": 62.483
+        },
+        "radius": 57.0,
+        "mass": 2.34e-08
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Epimetheus",
+          "Saturn XI",
+          "S|1980 S 3"
+        ],
+        "parentBody": "Saturn",
+        "body": {
+          "albedo": 0.5,
+          "rotationPeriod": 0.6943229327077263,
+          "obliquity": 6.480000000000004
+        },
+        "orbit": {
+          "period": 0.00190172439,
+          "semiMajorAxis": 0.001012179144,
+          "eccentricity": 0.0205,
+          "inclination": 0.337,
+          "ascendingNode": 149.88,
+          "argOfPeriapsis": 86.905,
+          "meanAnomaly": 192.354,
+          "longOfPeriapsis": 236.785
+        },
+        "radius": 72.0,
+        "mass": 8.87e-08
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Janus",
+          "Saturn X",
+          "S|1980 S 1"
+        ],
+        "parentBody": "Saturn",
+        "body": {
+          "albedo": 0.6,
+          "rotationPeriod": 0.6946642236622627,
+          "obliquity": 6.469999999999999
+        },
+        "orbit": {
+          "period": 0.00190172439,
+          "semiMajorAxis": 0.001012513369,
+          "eccentricity": 0.0073,
+          "inclination": 0.168,
+          "ascendingNode": 120.557,
+          "argOfPeriapsis": 43.066,
+          "meanAnomaly": 79.973,
+          "longOfPeriapsis": 163.623
+        },
+        "radius": 96.0,
+        "mass": 3.18e-07
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Ymir",
+          "Saturn XIX",
+          "S|2000 S 1"
+        ],
+        "parentBody": "Saturn",
+        "body": {
+          "albedo": 0.06
+        },
+        "orbit": {
+          "period": 1356.98,
+          "semiMajorAxis": 0.1580209,
+          "eccentricity": 0.2664596,
+          "inclination": 172.65551,
+          "ascendingNode": 220.04361,
+          "argOfPeriapsis": 40.03154,
+          "meanAnomaly": 245.65964,
+          "longOfPeriapsis": 260.07515
+        },
+        "radius": 8.0
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Paaliaq",
+          "Saturn XX",
+          "S|2000 S 2"
+        ],
+        "parentBody": "Saturn",
+        "body": {
+          "albedo": 0.06
+        },
+        "orbit": {
+          "period": 682.98,
+          "semiMajorAxis": 0.0999856,
+          "eccentricity": 0.5378173,
+          "inclination": 43.6965,
+          "ascendingNode": 338.79482,
+          "argOfPeriapsis": 246.36302,
+          "meanAnomaly": 32.27504,
+          "longOfPeriapsis": 585.1578400000001
+        },
+        "radius": 9.5
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Tarvos",
+          "Saturn XXI",
+          "S|2000 S 4"
+        ],
+        "parentBody": "Saturn",
+        "body": {
+          "albedo": 0.06
+        },
+        "orbit": {
+          "period": 944.23,
+          "semiMajorAxis": 0.1240847,
+          "eccentricity": 0.5438466,
+          "inclination": 34.67938,
+          "ascendingNode": 92.27997,
+          "argOfPeriapsis": 278.59876,
+          "meanAnomaly": 66.85134,
+          "longOfPeriapsis": 370.87873
+        },
+        "radius": 6.5
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Ijiraq",
+          "Saturn XXII",
+          "S|2000 S 6"
+        ],
+        "parentBody": "Saturn",
+        "body": {
+          "albedo": 0.06
+        },
+        "orbit": {
+          "period": 450.88,
+          "semiMajorAxis": 0.0758069,
+          "eccentricity": 0.3476001,
+          "inclination": 50.40892,
+          "ascendingNode": 148.94133,
+          "argOfPeriapsis": 66.20777,
+          "meanAnomaly": 353.14102,
+          "longOfPeriapsis": 215.14909999999998
+        },
+        "radius": 5.0
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Suttungr",
+          "Saturn XXIII",
+          "S|2000 S 12"
+        ],
+        "parentBody": "Saturn",
+        "body": {
+          "albedo": 0.06
+        },
+        "orbit": {
+          "period": 1026.83,
+          "semiMajorAxis": 0.1312197,
+          "eccentricity": 0.0851205,
+          "inclination": 174.21824,
+          "ascendingNode": 259.68701,
+          "argOfPeriapsis": 59.42924,
+          "meanAnomaly": 183.09734,
+          "longOfPeriapsis": 319.11625
+        },
+        "radius": 2.8
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Kiviuq",
+          "Saturn XXIV",
+          "S|2000 S 5"
+        ],
+        "parentBody": "Saturn",
+        "body": {
+          "albedo": 0.06
+        },
+        "orbit": {
+          "period": 446.87,
+          "semiMajorAxis": 0.0753558,
+          "eccentricity": 0.1550643,
+          "inclination": 49.45808,
+          "ascendingNode": 349.25027,
+          "argOfPeriapsis": 93.28925,
+          "meanAnomaly": 140.387,
+          "longOfPeriapsis": 442.53952
+        },
+        "radius": 7.0
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Mundilfari",
+          "Saturn XXV",
+          "S|2000 S 9"
+        ],
+        "parentBody": "Saturn",
+        "body": {
+          "albedo": 0.06
+        },
+        "orbit": {
+          "period": 2.604792108,
+          "semiMajorAxis": 0.1250601604,
+          "eccentricity": 0.2078,
+          "inclination": 150.253,
+          "ascendingNode": 338.432,
+          "argOfPeriapsis": 16.508,
+          "meanAnomaly": 97.432,
+          "longOfPeriapsis": 354.94
+        },
+        "radius": 2.8
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Albiorix",
+          "Saturn XXVI",
+          "S|2000 S 11"
+        ],
+        "parentBody": "Saturn",
+        "body": {
+          "albedo": 0.06
+        },
+        "orbit": {
+          "period": 773.35,
+          "semiMajorAxis": 0.1086213,
+          "eccentricity": 0.5294951,
+          "inclination": 34.88112,
+          "ascendingNode": 89.72321,
+          "argOfPeriapsis": 81.5317,
+          "meanAnomaly": 96.10569,
+          "longOfPeriapsis": 171.25491
+        },
+        "radius": 13.0
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Skathi",
+          "Saturn XXVII",
+          "S|2000 S 8"
+        ],
+        "parentBody": "Saturn",
+        "body": {
+          "albedo": 0.06
+        },
+        "orbit": {
+          "period": 728.08,
+          "semiMajorAxis": 0.1043402,
+          "eccentricity": 0.261408,
+          "inclination": 148.79194,
+          "ascendingNode": 286.31716,
+          "argOfPeriapsis": 217.32385,
+          "meanAnomaly": 334.49919,
+          "longOfPeriapsis": 503.64101
+        },
+        "radius": 3.2
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Erriapus",
+          "Saturn XXVIII",
+          "S|2000 S 10"
+        ],
+        "parentBody": "Saturn",
+        "body": {
+          "albedo": 0.06
+        },
+        "orbit": {
+          "period": 865.8,
+          "semiMajorAxis": 0.1171147,
+          "eccentricity": 0.4556672,
+          "inclination": 37.09417,
+          "ascendingNode": 130.58894,
+          "argOfPeriapsis": 296.04571,
+          "meanAnomaly": 12.37329,
+          "longOfPeriapsis": 426.63464999999997
+        },
+        "radius": 4.3
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Siarnaq",
+          "Saturn XXIX",
+          "S|2000 S 3"
+        ],
+        "parentBody": "Saturn",
+        "body": {
+          "albedo": 0.06
+        },
+        "orbit": {
+          "period": 896.88,
+          "semiMajorAxis": 0.1199007,
+          "eccentricity": 0.4476265,
+          "inclination": 46.10229,
+          "ascendingNode": 47.82487,
+          "argOfPeriapsis": 71.02528,
+          "meanAnomaly": 315.95128,
+          "longOfPeriapsis": 118.85014999999999
+        },
+        "radius": 16.0
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Thrymr",
+          "Saturn XXX",
+          "S|2000 S 7"
+        ],
+        "parentBody": "Saturn",
+        "body": {
+          "albedo": 0.06
+        },
+        "orbit": {
+          "period": 1113.24,
+          "semiMajorAxis": 0.1384815,
+          "eccentricity": 0.3963978,
+          "inclination": 174.43844,
+          "ascendingNode": 261.00547,
+          "argOfPeriapsis": 112.19208,
+          "meanAnomaly": 109.79136,
+          "longOfPeriapsis": 373.19755
+        },
+        "radius": 2.8
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Narvi",
+          "Saturn XXXI",
+          "S|2003 S 1"
+        ],
+        "parentBody": "Saturn",
+        "body": {
+          "albedo": 0.06
+        },
+        "orbit": {
+          "period": 996.36,
+          "semiMajorAxis": 0.1286105,
+          "eccentricity": 0.28137,
+          "inclination": 138.32068,
+          "ascendingNode": 187.00285,
+          "argOfPeriapsis": 175.79026,
+          "meanAnomaly": 355.96217,
+          "longOfPeriapsis": 362.79310999999996
+        },
+        "radius": 3.3
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Methone",
+          "Saturn XXXII",
+          "S|2004 S 1"
+        ],
+        "parentBody": "Saturn",
+        "body": {
+          "albedo": 0.7
+        },
+        "orbit": {
+          "period": 1.009573975,
+          "semiMajorAxis": 0.0012997511201320712,
+          "eccentricity": 0.0001,
+          "inclination": 0.007
+        },
+        "radius": 1.45
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Pallene",
+          "Saturn XXXIII",
+          "S|1981 S 14",
+          "S|2004 S 2"
+        ],
         "parentBody": "Saturn",
         "orbit": {
-          "period": 1.9,
-          "semiMajorAxis": 0.1009964,
-          "eccentricity": 0.2617621,
-          "inclination": 172.17424,
-          "ascendingNode": 333.69209,
-          "argOfPeriapsis": 240.64876,
-          "longOfPeriapsis": 214.34085000000005
-        }
+          "period": 1.153745829,
+          "semiMajorAxis": 0.0014190041544005147,
+          "eccentricity": 0.004,
+          "inclination": 0.181
+        },
+        "radius": 2.22
       }
     },
     {
       "dwarfmoon": {
         "names": [
-          "S|2023 S 10"
+          "Polydeuces",
+          "Saturn XXXIV",
+          "S|2004 S 5"
         ],
-        "radius": 2.5,
         "parentBody": "Saturn",
         "orbit": {
-          "period": 1.96,
-          "semiMajorAxis": 0.1031213,
-          "eccentricity": 0.2697668,
-          "inclination": 161.58714,
-          "ascendingNode": 322.35444,
-          "argOfPeriapsis": 135.83136,
-          "longOfPeriapsis": 98.18579999999997
-        }
+          "period": 2.7369,
+          "semiMajorAxis": 0.002522696334224657,
+          "eccentricity": 0.0182,
+          "inclination": 0.1705,
+          "ascendingNode": 262.0
+        },
+        "radius": 1.3
       }
     },
     {
       "dwarfmoon": {
         "names": [
-          "S|2023 S 13"
+          "Daphnis",
+          "Saturn XXXV",
+          "S|2005 S 1"
         ],
-        "radius": 2.5,
+        "parentBody": "Saturn",
+        "body": {
+          "albedo": 0.5
+        },
+        "orbit": {
+          "semiMajorAxis": 0.0009124829074737114,
+          "eccentricity": 3.31e-05,
+          "inclination": 0.0036,
+          "ascendingNode": 143.0
+        },
+        "radius": 3.8
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Aegir",
+          "Saturn XXXVI",
+          "S|2004 S 10"
+        ],
         "parentBody": "Saturn",
         "orbit": {
-          "period": 2.14,
-          "semiMajorAxis": 0.1092481,
-          "eccentricity": 0.2096387,
-          "inclination": 170.20141,
-          "ascendingNode": 152.80701,
-          "argOfPeriapsis": 107.0266,
-          "longOfPeriapsis": 259.83361
-        }
+          "period": 1094.46,
+          "semiMajorAxis": 0.1369194,
+          "eccentricity": 0.225289,
+          "inclination": 167.42544,
+          "ascendingNode": 196.07601,
+          "argOfPeriapsis": 263.95347,
+          "meanAnomaly": 25.93837,
+          "longOfPeriapsis": 460.02948
+        },
+        "radius": 3.0
       }
     },
     {
       "dwarfmoon": {
         "names": [
-          "S|2023 S 16"
+          "Bebhionn",
+          "Saturn XXXVII",
+          "S|2004 S 11"
         ],
-        "radius": 2.5,
         "parentBody": "Saturn",
         "orbit": {
-          "period": 2.32,
-          "semiMajorAxis": 0.1152835,
-          "eccentricity": 0.233157,
-          "inclination": 160.32,
-          "ascendingNode": 286.52656,
-          "argOfPeriapsis": 133.87655,
-          "longOfPeriapsis": 60.40311000000003
-        }
+          "period": 814.56,
+          "semiMajorAxis": 0.1124468,
+          "eccentricity": 0.3573556,
+          "inclination": 42.09869,
+          "ascendingNode": 190.91369,
+          "argOfPeriapsis": 10.34439,
+          "meanAnomaly": 232.32715,
+          "longOfPeriapsis": 201.25808
+        },
+        "radius": 3.0
       }
     },
     {
       "dwarfmoon": {
         "names": [
-          "S|2023 S 17"
+          "Bergelmir",
+          "Saturn XXXVIII",
+          "S|2004 S 15"
         ],
-        "radius": 2.5,
         "parentBody": "Saturn",
         "orbit": {
-          "semiMajorAxis": 0.1159122,
-          "eccentricity": 0.5688289,
-          "inclination": 33.83846,
-          "ascendingNode": 189.65497,
-          "argOfPeriapsis": 306.41185,
-          "longOfPeriapsis": 136.06682
-        }
+          "period": 982.52,
+          "semiMajorAxis": 0.127417,
+          "eccentricity": 0.1730432,
+          "inclination": 157.42145,
+          "ascendingNode": 218.08311,
+          "argOfPeriapsis": 151.38098,
+          "meanAnomaly": 173.61109,
+          "longOfPeriapsis": 369.46409
+        },
+        "radius": 3.0
       }
     },
     {
       "dwarfmoon": {
         "names": [
-          "S|2023 S 18"
+          "Bestla",
+          "Saturn XXXIX",
+          "S|2004 S 18"
         ],
-        "radius": 2.5,
         "parentBody": "Saturn",
         "orbit": {
-          "period": 2.31,
-          "semiMajorAxis": 0.1151701,
-          "eccentricity": 0.5080609,
-          "inclination": 38.53646,
-          "ascendingNode": 45.80638,
-          "argOfPeriapsis": 307.59764,
-          "longOfPeriapsis": 353.40402
-        }
+          "period": 1082.96,
+          "semiMajorAxis": 0.1359586,
+          "eccentricity": 0.6366704,
+          "inclination": 143.92454,
+          "ascendingNode": 320.96125,
+          "argOfPeriapsis": 114.83527,
+          "meanAnomaly": 27.69652,
+          "longOfPeriapsis": 435.79652
+        },
+        "radius": 3.5
       }
     },
     {
       "dwarfmoon": {
         "names": [
-          "S|2023 S 19"
+          "Farbauti",
+          "Saturn XL",
+          "S|2004 S 9"
         ],
-        "radius": 1.0,
         "parentBody": "Saturn",
         "orbit": {
-          "period": 2.36,
-          "semiMajorAxis": 0.1167393,
-          "eccentricity": 0.0557038,
-          "inclination": 48.23697,
-          "ascendingNode": 36.80096,
-          "argOfPeriapsis": 242.5758,
-          "longOfPeriapsis": 279.37676
-        }
+          "period": 1052.03,
+          "semiMajorAxis": 0.1333573,
+          "eccentricity": 0.1858843,
+          "inclination": 158.435,
+          "ascendingNode": 146.03201,
+          "argOfPeriapsis": 339.80951,
+          "meanAnomaly": 95.10173,
+          "longOfPeriapsis": 485.84152
+        },
+        "radius": 2.5
       }
     },
     {
       "dwarfmoon": {
         "names": [
-          "S|2023 S 20"
+          "Fenrir",
+          "Saturn XLI",
+          "S|2004 S 16"
         ],
-        "radius": 2.5,
         "parentBody": "Saturn",
         "orbit": {
-          "period": 2.47,
-          "semiMajorAxis": 0.1203493,
-          "eccentricity": 0.2632029,
-          "inclination": 134.5548,
-          "ascendingNode": 124.17699,
-          "argOfPeriapsis": 335.00322,
-          "longOfPeriapsis": 99.18020999999999
-        }
+          "period": 1268.35,
+          "semiMajorAxis": 0.1510631,
+          "eccentricity": 0.1257469,
+          "inclination": 162.79638,
+          "ascendingNode": 243.07248,
+          "argOfPeriapsis": 156.18737,
+          "meanAnomaly": 149.19782,
+          "longOfPeriapsis": 399.25985000000003
+        },
+        "radius": 2.0
       }
     },
     {
       "dwarfmoon": {
         "names": [
-          "S|2023 S 21"
+          "Fornjot",
+          "Saturn XLII",
+          "S|2004 S 8"
         ],
-        "radius": 2.5,
         "parentBody": "Saturn",
         "orbit": {
-          "period": 2.6,
-          "semiMajorAxis": 0.1244994,
-          "eccentricity": 0.0621722,
-          "inclination": 159.018,
-          "ascendingNode": 142.10668,
-          "argOfPeriapsis": 343.31459,
-          "longOfPeriapsis": 125.42127000000005
-        }
+          "period": 1544.49,
+          "semiMajorAxis": 0.1722618,
+          "eccentricity": 0.1561016,
+          "inclination": 167.77881,
+          "ascendingNode": 273.35441,
+          "argOfPeriapsis": 356.68964,
+          "meanAnomaly": 114.89169,
+          "longOfPeriapsis": 630.04405
+        },
+        "radius": 3.0
       }
     },
     {
       "dwarfmoon": {
         "names": [
-          "S|2023 S 22"
+          "Hati",
+          "Saturn XLIII",
+          "S|2004 S 14"
         ],
-        "radius": 2.5,
         "parentBody": "Saturn",
         "orbit": {
-          "period": 2.56,
-          "semiMajorAxis": 0.1231835,
-          "eccentricity": 0.3572236,
-          "inclination": 46.99422,
-          "ascendingNode": 103.52223,
-          "argOfPeriapsis": 263.32519,
-          "longOfPeriapsis": 6.84742
-        }
+          "period": 1033.05,
+          "semiMajorAxis": 0.1317488,
+          "eccentricity": 0.3080404,
+          "inclination": 163.13102,
+          "ascendingNode": 323.7316,
+          "argOfPeriapsis": 30.57357,
+          "meanAnomaly": 224.30337,
+          "longOfPeriapsis": 354.30517000000003
+        },
+        "radius": 3.0
       }
     },
     {
       "dwarfmoon": {
         "names": [
-          "S|2023 S 23"
+          "Hyrrokkin",
+          "Saturn XLIV",
+          "S|2004 S 19"
         ],
-        "radius": 2.5,
         "parentBody": "Saturn",
         "orbit": {
-          "period": 2.72,
-          "semiMajorAxis": 0.1284274,
-          "eccentricity": 0.4111913,
-          "inclination": 165.0158,
-          "ascendingNode": 221.087,
-          "argOfPeriapsis": 138.91758,
-          "longOfPeriapsis": 0.004579999999975826
-        }
+          "period": 927.85,
+          "semiMajorAxis": 0.1226448,
+          "eccentricity": 0.3552227,
+          "inclination": 153.34189,
+          "ascendingNode": 52.68028,
+          "argOfPeriapsis": 280.64053,
+          "meanAnomaly": 232.7056,
+          "longOfPeriapsis": 333.32081
+        },
+        "radius": 4.0
       }
     },
     {
       "dwarfmoon": {
         "names": [
-          "S|2023 S 24"
+          "Kari",
+          "Saturn XLV",
+          "S|2006 S 2"
         ],
-        "radius": 2.5,
         "parentBody": "Saturn",
         "orbit": {
-          "period": 2.75,
-          "semiMajorAxis": 0.1292861,
-          "eccentricity": 0.2987963,
-          "inclination": 169.27201,
-          "ascendingNode": 20.72812,
-          "argOfPeriapsis": 358.49548,
-          "longOfPeriapsis": 19.223599999999976
-        }
+          "period": 1238.3,
+          "semiMajorAxis": 0.1486677,
+          "eccentricity": 0.4049385,
+          "inclination": 146.52058,
+          "ascendingNode": 299.60214,
+          "argOfPeriapsis": 178.23832,
+          "meanAnomaly": 207.97437,
+          "longOfPeriapsis": 477.84046
+        },
+        "radius": 3.5
       }
     },
     {
       "dwarfmoon": {
         "names": [
-          "S|2023 S 25"
+          "Loge",
+          "Saturn XLVI",
+          "S|2006 S 5"
         ],
-        "radius": 2.5,
         "parentBody": "Saturn",
         "orbit": {
-          "period": 2.83,
-          "semiMajorAxis": 0.1319279,
-          "eccentricity": 0.3355075,
-          "inclination": 164.66987,
-          "ascendingNode": 242.03929,
-          "argOfPeriapsis": 337.23576,
-          "longOfPeriapsis": 219.27504999999996
-        }
+          "period": 1319.86,
+          "semiMajorAxis": 0.155126,
+          "eccentricity": 0.1789309,
+          "inclination": 166.68662,
+          "ascendingNode": 344.65457,
+          "argOfPeriapsis": 42.57913,
+          "meanAnomaly": 336.51735,
+          "longOfPeriapsis": 387.2337
+        },
+        "radius": 3.0
       }
     },
     {
       "dwarfmoon": {
         "names": [
-          "S|2023 S 27"
+          "Skoll",
+          "Saturn XLVII",
+          "S|2006 S 8"
         ],
-        "radius": 2.5,
         "parentBody": "Saturn",
         "orbit": {
-          "period": 2.81,
-          "semiMajorAxis": 0.1311094,
-          "eccentricity": 0.5576691,
-          "inclination": 149.0553,
-          "ascendingNode": 340.77572,
-          "argOfPeriapsis": 146.94873,
-          "longOfPeriapsis": 127.72444999999999
-        }
+          "period": 870.02,
+          "semiMajorAxis": 0.1174943,
+          "eccentricity": 0.4294175,
+          "inclination": 155.55149,
+          "ascendingNode": 296.88701,
+          "argOfPeriapsis": 205.31117,
+          "meanAnomaly": 37.77325,
+          "longOfPeriapsis": 502.19818
+        },
+        "radius": 3.0
       }
     },
     {
       "dwarfmoon": {
         "names": [
-          "S|2023 S 29"
+          "Surtur",
+          "Saturn XLVIII",
+          "S|2006 S 7"
         ],
-        "radius": 2.5,
         "parentBody": "Saturn",
         "orbit": {
-          "period": 3.06,
-          "semiMajorAxis": 0.1389277,
-          "eccentricity": 0.1050406,
-          "inclination": 170.81433,
-          "ascendingNode": 250.17221,
-          "argOfPeriapsis": 59.0193,
-          "longOfPeriapsis": 309.19151
-        }
+          "period": 1329.27,
+          "semiMajorAxis": 0.1558619,
+          "eccentricity": 0.4015913,
+          "inclination": 166.35432,
+          "ascendingNode": 261.99511,
+          "argOfPeriapsis": 343.03842,
+          "meanAnomaly": 144.87009,
+          "longOfPeriapsis": 605.0335299999999
+        },
+        "radius": 3.0
       }
     },
     {
       "dwarfmoon": {
         "names": [
-          "S|2023 S 30"
+          "Anthe",
+          "Saturn XLIX",
+          "S|2007 S 4"
         ],
-        "radius": 2.5,
         "parentBody": "Saturn",
         "orbit": {
-          "period": 3.18,
-          "semiMajorAxis": 0.1425074,
-          "eccentricity": 0.2769042,
-          "inclination": 143.47324,
-          "ascendingNode": 263.21841,
-          "argOfPeriapsis": 241.29028,
-          "longOfPeriapsis": 144.50869
-        }
+          "period": 1.0365,
+          "semiMajorAxis": 0.0013215428741519774,
+          "eccentricity": 0.001,
+          "inclination": 0.1
+        },
+        "radius": 0.5
       }
     },
     {
       "dwarfmoon": {
         "names": [
-          "S|2023 S 32"
+          "Jarnsaxa",
+          "Saturn L",
+          "S|2006 S 6"
         ],
-        "radius": 2.5,
+        "parentBody": "Saturn",
+        "orbit": {
+          "period": 980.85,
+          "semiMajorAxis": 0.1272727,
+          "eccentricity": 0.1941819,
+          "inclination": 163.1733,
+          "ascendingNode": 21.20427,
+          "argOfPeriapsis": 234.58024,
+          "meanAnomaly": 70.03385,
+          "longOfPeriapsis": 255.78451
+        },
+        "radius": 3.0
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Greip",
+          "Saturn LI",
+          "S|2006 S 4"
+        ],
+        "parentBody": "Saturn",
+        "orbit": {
+          "period": 951.2,
+          "semiMajorAxis": 0.1246944,
+          "eccentricity": 0.3169818,
+          "inclination": 172.85089,
+          "ascendingNode": 343.63214,
+          "argOfPeriapsis": 138.77572,
+          "meanAnomaly": 263.7781,
+          "longOfPeriapsis": 482.40786
+        },
+        "radius": 3.0
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Tarqeq",
+          "Saturn LII",
+          "S|2007 S 1"
+        ],
+        "parentBody": "Saturn",
+        "orbit": {
+          "period": 892.55,
+          "semiMajorAxis": 0.1195145,
+          "eccentricity": 0.1066147,
+          "inclination": 49.86428,
+          "ascendingNode": 91.88074,
+          "argOfPeriapsis": 64.99884,
+          "meanAnomaly": 127.40267,
+          "longOfPeriapsis": 156.87958
+        },
+        "radius": 3.5
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Aegaeon",
+          "Saturn LIII",
+          "S|2008 S 1"
+        ],
+        "parentBody": "Saturn",
+        "orbit": {
+          "period": 0.80812,
+          "semiMajorAxis": 0.0011196683430473252,
+          "eccentricity": 0.0002,
+          "inclination": 0.001
+        },
+        "radius": 0.25
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "S|2007 S 2"
+        ],
+        "parentBody": "Saturn",
+        "orbit": {
+          "period": 792.96,
+          "semiMajorAxis": 0.1104505,
+          "eccentricity": 0.2181375,
+          "inclination": 176.68145,
+          "ascendingNode": 113.10929,
+          "argOfPeriapsis": 62.03765,
+          "meanAnomaly": 184.60626,
+          "longOfPeriapsis": 175.14694
+        },
+        "radius": 6.0
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "S|2004 S 13"
+        ],
+        "parentBody": "Saturn",
+        "orbit": {
+          "period": 906.0,
+          "semiMajorAxis": 0.12333063241327254,
+          "eccentricity": 0.273,
+          "inclination": 167.4,
+          "ascendingNode": 0.0,
+          "argOfPeriapsis": 0.0,
+          "meanAnomaly": 0.0,
+          "longOfPeriapsis": 0.0
+        },
+        "radius": 3.0
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "S|2006 S 1"
+        ],
+        "parentBody": "Saturn",
+        "orbit": {
+          "period": 972.41,
+          "semiMajorAxis": 0.1265409,
+          "eccentricity": 0.1302807,
+          "inclination": 154.23236,
+          "ascendingNode": 340.69785,
+          "argOfPeriapsis": 138.78765,
+          "meanAnomaly": 241.76637,
+          "longOfPeriapsis": 479.4855
+        },
+        "radius": 6.0
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "S|2004 S 17"
+        ],
+        "parentBody": "Saturn",
+        "orbit": {
+          "period": 986.0,
+          "semiMajorAxis": 0.12433332048167313,
+          "eccentricity": 0.259,
+          "inclination": 166.6,
+          "ascendingNode": 0.0,
+          "argOfPeriapsis": 0.0,
+          "meanAnomaly": 0.0,
+          "longOfPeriapsis": 0.0
+        },
+        "radius": 4.0
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "S|2004 S 12"
+        ],
+        "parentBody": "Saturn",
+        "orbit": {
+          "period": 1048.0,
+          "semiMajorAxis": 0.13135213696047726,
+          "eccentricity": 0.401,
+          "inclination": 164.0,
+          "ascendingNode": 0.0,
+          "argOfPeriapsis": 0.0,
+          "meanAnomaly": 0.0,
+          "longOfPeriapsis": 0.0
+        },
+        "radius": 5.0
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "S|2007 S 3"
+        ],
+        "parentBody": "Saturn",
+        "orbit": {
+          "period": 1100.0,
+          "semiMajorAxis": 0.13715770087651669,
+          "eccentricity": 0.13,
+          "inclination": 177.2,
+          "ascendingNode": 0.0,
+          "argOfPeriapsis": 0.0,
+          "meanAnomaly": 0.0,
+          "longOfPeriapsis": 0.0
+        },
+        "radius": 2.5
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "S|2004 S 7"
+        ],
         "parentBody": "Saturn",
         "orbit": {
           "period": 3.12,
-          "semiMajorAxis": 0.1406121,
-          "eccentricity": 0.1128818,
-          "inclination": 169.60414,
-          "ascendingNode": 221.05742,
-          "argOfPeriapsis": 131.78204,
-          "longOfPeriapsis": 352.83946000000003
-        }
+          "semiMajorAxis": 0.1407773,
+          "eccentricity": 0.6018886,
+          "inclination": 164.87383,
+          "ascendingNode": 16.82732,
+          "argOfPeriapsis": 127.76259,
+          "meanAnomaly": 158.4778,
+          "longOfPeriapsis": 144.58991
+        },
+        "radius": 2.5
       }
     },
     {
       "dwarfmoon": {
         "names": [
-          "S|2023 S 33"
+          "S|2006 S 3"
         ],
-        "radius": 2.5,
         "parentBody": "Saturn",
         "orbit": {
-          "period": 3.06,
-          "semiMajorAxis": 0.1387324,
-          "eccentricity": 0.6752723,
-          "inclination": 153.10681,
-          "ascendingNode": 271.13465,
-          "argOfPeriapsis": 333.36092,
-          "longOfPeriapsis": 244.49557000000004
-        }
+          "period": 3.2,
+          "semiMajorAxis": 0.14307,
+          "eccentricity": 0.4295735,
+          "inclination": 153.06197,
+          "ascendingNode": 232.08001,
+          "argOfPeriapsis": 205.41965,
+          "meanAnomaly": 207.34769,
+          "longOfPeriapsis": 437.49965999999995
+        },
+        "radius": 2.5
       }
     },
     {
       "dwarfmoon": {
         "names": [
-          "S|2023 S 34"
+          "S2428b",
+          "S|2004 S 29"
         ],
-        "radius": 2.5,
         "parentBody": "Saturn",
         "orbit": {
-          "period": 3.19,
-          "semiMajorAxis": 0.14285,
-          "eccentricity": 0.4822995,
-          "inclination": 167.75152,
-          "ascendingNode": 336.79612,
-          "argOfPeriapsis": 308.59806,
-          "longOfPeriapsis": 285.39418
-        }
+          "period": 858.77,
+          "semiMajorAxis": 0.11678441624404122,
+          "eccentricity": 0.472,
+          "inclination": 44.43,
+          "ascendingNode": 147.2,
+          "argOfPeriapsis": 330.9,
+          "meanAnomaly": 211.6,
+          "longOfPeriapsis": 478.09999999999997
+        },
+        "radius": 2.0
       }
     },
     {
       "dwarfmoon": {
         "names": [
-          "S|2023 S 42"
+          "Alvaldi",
+          "Saturn LXV",
+          "S|2004 S 35"
         ],
-        "radius": 2.5,
         "parentBody": "Saturn",
         "orbit": {
-          "period": 3.43,
-          "semiMajorAxis": 0.1497602,
-          "eccentricity": 0.082191,
-          "inclination": 167.01461,
-          "ascendingNode": 24.02148,
-          "argOfPeriapsis": 107.47183,
-          "longOfPeriapsis": 131.49331
-        }
+          "period": 1208.1,
+          "semiMajorAxis": 0.14674807802141218,
+          "eccentricity": 0.182,
+          "inclination": 176.4,
+          "ascendingNode": 327.9,
+          "argOfPeriapsis": 210.4,
+          "meanAnomaly": 231.7,
+          "longOfPeriapsis": 538.3
+        },
+        "radius": 2.0
       }
     },
     {
       "dwarfmoon": {
         "names": [
-          "S|2023 S 43"
+          "Eggther",
+          "Saturn LIX",
+          "S|2004 S 27"
         ],
-        "radius": 2.5,
         "parentBody": "Saturn",
         "orbit": {
-          "period": 3.68,
-          "semiMajorAxis": 0.1570623,
-          "eccentricity": 0.2743305,
-          "inclination": 168.4125,
-          "ascendingNode": 269.87191,
-          "argOfPeriapsis": 231.74103,
-          "longOfPeriapsis": 141.61293999999998
-        }
+          "period": 1033.0,
+          "semiMajorAxis": 0.13219907414891963,
+          "eccentricity": 0.12,
+          "inclination": 167.1,
+          "ascendingNode": 87.7,
+          "argOfPeriapsis": 142.5,
+          "meanAnomaly": 92.56,
+          "longOfPeriapsis": 230.2
+        },
+        "radius": 2.0
       }
     },
     {
       "dwarfmoon": {
         "names": [
-          "S|2023 S 45"
+          "T522499",
+          "S|2004 S 31"
         ],
-        "radius": 1.0,
         "parentBody": "Saturn",
         "orbit": {
-          "period": 3.66,
-          "semiMajorAxis": 0.1565521,
-          "eccentricity": 0.6924259,
-          "inclination": 152.63442,
-          "ascendingNode": 115.3131,
-          "argOfPeriapsis": 16.14073,
-          "longOfPeriapsis": 131.45383
-        }
+          "period": 853.8,
+          "semiMajorAxis": 0.11633053277841189,
+          "eccentricity": 0.242,
+          "inclination": 48.11,
+          "ascendingNode": 79.7,
+          "argOfPeriapsis": 255.0,
+          "meanAnomaly": 275.5,
+          "longOfPeriapsis": 334.7
+        },
+        "radius": 2.0
       }
     },
     {
       "dwarfmoon": {
         "names": [
-          "S|2023 S 46"
+          "S8353a",
+          "Saturn LVIII",
+          "S|2004 S 26"
         ],
-        "radius": 2.5,
         "parentBody": "Saturn",
         "orbit": {
-          "period": 4.13,
-          "semiMajorAxis": 0.1695647,
-          "eccentricity": 0.4271615,
-          "inclination": 145.76581,
-          "ascendingNode": 346.38633,
-          "argOfPeriapsis": 107.43532,
-          "longOfPeriapsis": 93.82164999999998
-        }
+          "period": 1624.2,
+          "semiMajorAxis": 0.17873115356854194,
+          "eccentricity": 0.148,
+          "inclination": 171.3,
+          "ascendingNode": 340.7,
+          "argOfPeriapsis": 121.7,
+          "meanAnomaly": 306.6,
+          "longOfPeriapsis": 462.4
+        },
+        "radius": 2.0
       }
     },
     {
       "dwarfmoon": {
         "names": [
-          "S|2023 S 47"
+          "S8881b",
+          "S|2004 S 24"
         ],
-        "radius": 2.5,
         "parentBody": "Saturn",
         "orbit": {
-          "period": 4.45,
-          "semiMajorAxis": 0.1781671,
-          "eccentricity": 0.114054,
-          "inclination": 161.79517,
-          "ascendingNode": 241.69936,
-          "argOfPeriapsis": 313.85499,
-          "longOfPeriapsis": 195.55435
-        }
+          "period": 1317.6,
+          "semiMajorAxis": 0.15529164882289748,
+          "eccentricity": 0.049,
+          "inclination": 36.78,
+          "ascendingNode": 344.3,
+          "argOfPeriapsis": 303.0,
+          "meanAnomaly": 162.7,
+          "longOfPeriapsis": 647.3
+        },
+        "radius": 1.5
       }
     },
     {
       "dwarfmoon": {
         "names": [
-          "S|2023 S 49"
+          "Skrymir",
+          "Saturn LVI",
+          "S|2004 S 23"
         ],
-        "radius": 2.5,
         "parentBody": "Saturn",
         "orbit": {
-          "period": 3.35,
-          "semiMajorAxis": 0.1473417,
-          "eccentricity": 0.0584317,
-          "inclination": 171.81861,
-          "ascendingNode": 223.6629,
-          "argOfPeriapsis": 327.39467,
-          "longOfPeriapsis": 191.05757000000006
-        }
+          "period": 1164.3,
+          "semiMajorAxis": 0.1432306482774629,
+          "eccentricity": 0.399,
+          "inclination": 177.7,
+          "ascendingNode": 208.5,
+          "argOfPeriapsis": 117.9,
+          "meanAnomaly": 357.2,
+          "longOfPeriapsis": 326.4
+        },
+        "radius": 2.0
       }
     },
     {
       "dwarfmoon": {
         "names": [
-          "S|2023 S 50"
+          "Gerd",
+          "Saturn LVII",
+          "S|2004 S 25"
         ],
-        "radius": 2.5,
         "parentBody": "Saturn",
         "orbit": {
-          "period": 2.39,
-          "semiMajorAxis": 0.117724,
-          "eccentricity": 0.1737465,
-          "inclination": 170.26743,
-          "ascendingNode": 47.91859,
-          "argOfPeriapsis": 201.51071,
-          "longOfPeriapsis": 249.42929999999998
-        }
+          "period": 1095.0,
+          "semiMajorAxis": 0.13733150014170611,
+          "eccentricity": 0.457,
+          "inclination": 173.3,
+          "ascendingNode": 266.6,
+          "argOfPeriapsis": 325.5,
+          "meanAnomaly": 301.6,
+          "longOfPeriapsis": 592.1
+        },
+        "radius": 1.5
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Angrboda",
+          "Saturn LV",
+          "S|2004 S 22"
+        ],
+        "parentBody": "Saturn",
+        "orbit": {
+          "period": 1080.4,
+          "semiMajorAxis": 0.13623121710131453,
+          "eccentricity": 0.257,
+          "inclination": 177.4,
+          "ascendingNode": 278.3,
+          "argOfPeriapsis": 82.77,
+          "meanAnomaly": 118.0,
+          "longOfPeriapsis": 361.07
+        },
+        "radius": 1.5
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Gunnlod",
+          "Saturn LXII",
+          "S|2004 S 32"
+        ],
+        "parentBody": "Saturn",
+        "orbit": {
+          "period": 1175.3,
+          "semiMajorAxis": 0.1441477736306933,
+          "eccentricity": 0.262,
+          "inclination": 158.5,
+          "ascendingNode": 57.51,
+          "argOfPeriapsis": 158.5,
+          "meanAnomaly": 298.6,
+          "longOfPeriapsis": 216.01
+        },
+        "radius": 2.0
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Thiazzi",
+          "Saturn LXIII",
+          "S|2004 S 33"
+        ],
+        "parentBody": "Saturn",
+        "orbit": {
+          "period": 1361.5,
+          "semiMajorAxis": 0.15885787605284224,
+          "eccentricity": 0.417,
+          "inclination": 161.5,
+          "ascendingNode": 78.97,
+          "argOfPeriapsis": 321.1,
+          "meanAnomaly": 84.64,
+          "longOfPeriapsis": 400.07000000000005
+        },
+        "radius": 2.0
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "S5613a2",
+          "Saturn LXIV",
+          "S|2004 S 34"
+        ],
+        "parentBody": "Saturn",
+        "orbit": {
+          "period": 1412.5,
+          "semiMajorAxis": 0.16282918926242085,
+          "eccentricity": 0.267,
+          "inclination": 165.7,
+          "ascendingNode": 296.7,
+          "argOfPeriapsis": 15.17,
+          "meanAnomaly": 314.4,
+          "longOfPeriapsis": 311.87
+        },
+        "radius": 1.5
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "S8386a",
+          "S|2004 S 28"
+        ],
+        "parentBody": "Saturn",
+        "orbit": {
+          "period": 1197.2,
+          "semiMajorAxis": 0.14566584336625182,
+          "eccentricity": 0.133,
+          "inclination": 171.0,
+          "ascendingNode": 137.0,
+          "argOfPeriapsis": 205.1,
+          "meanAnomaly": 26.4,
+          "longOfPeriapsis": 342.1
+        },
+        "radius": 2.0
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Beli",
+          "Saturn LXI",
+          "S|2004 S 30"
+        ],
+        "parentBody": "Saturn",
+        "orbit": {
+          "period": 1084.1,
+          "semiMajorAxis": 0.1365260073934243,
+          "eccentricity": 0.113,
+          "inclination": 156.3,
+          "ascendingNode": 261.6,
+          "argOfPeriapsis": 248.2,
+          "meanAnomaly": 132.4,
+          "longOfPeriapsis": 509.8
+        },
+        "radius": 1.5
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "S5602a",
+          "S|2004 S 21"
+        ],
+        "parentBody": "Saturn",
+        "orbit": {
+          "period": 1365.1,
+          "semiMajorAxis": 0.15916269322563603,
+          "eccentricity": 0.312,
+          "inclination": 154.6,
+          "ascendingNode": 118.1,
+          "argOfPeriapsis": 208.8,
+          "meanAnomaly": 136.2,
+          "longOfPeriapsis": 326.9
+        },
+        "radius": 1.5
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Geirrod",
+          "Saturn LXVI",
+          "S|2004 S 38"
+        ],
+        "parentBody": "Saturn",
+        "orbit": {
+          "period": 1295.8,
+          "semiMajorAxis": 0.15378694826158432,
+          "eccentricity": 0.381,
+          "inclination": 155.0,
+          "ascendingNode": 132.2,
+          "argOfPeriapsis": 0.72,
+          "meanAnomaly": 134.5,
+          "longOfPeriapsis": 132.92
+        },
+        "radius": 2.0
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "S64454x",
+          "S|2004 S 39"
+        ],
+        "parentBody": "Saturn",
+        "orbit": {
+          "period": 1277.5,
+          "semiMajorAxis": 0.15234441436051202,
+          "eccentricity": 0.081,
+          "inclination": 167.6,
+          "ascendingNode": 184.4,
+          "argOfPeriapsis": 199.9,
+          "meanAnomaly": 114.7,
+          "longOfPeriapsis": 384.3
+        },
+        "radius": 2.0
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "Gridr",
+          "Saturn LIV",
+          "S|2004 S 20"
+        ],
+        "parentBody": "Saturn",
+        "orbit": {
+          "period": 990.23,
+          "semiMajorAxis": 0.12841760321362486,
+          "eccentricity": 0.204,
+          "inclination": 163.1,
+          "ascendingNode": 341.1,
+          "argOfPeriapsis": 289.5,
+          "meanAnomaly": 341.3,
+          "longOfPeriapsis": 630.6
+        },
+        "radius": 2.0
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "S5605a2",
+          "S|2004 S 37"
+        ],
+        "parentBody": "Saturn",
+        "orbit": {
+          "period": 752.88,
+          "semiMajorAxis": 0.10697545310023439,
+          "eccentricity": 0.506,
+          "inclination": 164.0,
+          "ascendingNode": 147.7,
+          "argOfPeriapsis": 93.73,
+          "meanAnomaly": 326.7,
+          "longOfPeriapsis": 241.43
+        },
+        "radius": 2.0
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "S5593a2",
+          "S|2004 S 36"
+        ],
+        "parentBody": "Saturn",
+        "orbit": {
+          "period": 1354.2,
+          "semiMajorAxis": 0.15841602484403372,
+          "eccentricity": 0.667,
+          "inclination": 147.6,
+          "ascendingNode": 217.3,
+          "argOfPeriapsis": 204.6,
+          "meanAnomaly": 32.5,
+          "longOfPeriapsis": 421.9
+        },
+        "radius": 1.5
+      }
+    },
+    {
+      "dwarfmoon": {
+        "names": [
+          "S|2019 S 1"
+        ],
+        "parentBody": "Saturn",
+        "orbit": {
+          "period": 445.596776,
+          "semiMajorAxis": 0.07516149760730821,
+          "eccentricity": 0.541,
+          "inclination": 46.7,
+          "ascendingNode": 259.0,
+          "argOfPeriapsis": 53.2,
+          "meanAnomaly": 7.4,
+          "longOfPeriapsis": 312.2
+        },
+        "radius": 1.5
       }
     },
     {
@@ -2119,11 +3558,11 @@
           "Uranus VI",
           "S|1986 U 7"
         ],
-        "radius": 20.1,
         "parentBody": "Uranus",
         "body": {
           "albedo": 0.07,
-          "rotationPeriod": -8.040795325004911
+          "rotationPeriod": -0.33503313854187133,
+          "obliquity": 105.18
         },
         "orbit": {
           "period": 0.0009172902255,
@@ -2132,8 +3571,10 @@
           "inclination": 0.085,
           "ascendingNode": 307.256,
           "argOfPeriapsis": 276.012,
-          "longOfPeriapsis": 223.26800000000003
-        }
+          "meanAnomaly": 352.546,
+          "longOfPeriapsis": 583.268
+        },
+        "radius": 20.1
       }
     },
     {
@@ -2143,11 +3584,11 @@
           "Uranus VII",
           "S|1986 U 8"
         ],
-        "radius": 21.4,
         "parentBody": "Uranus",
         "body": {
           "albedo": 0.07,
-          "rotationPeriod": -9.03381266684094
+          "rotationPeriod": -0.3764088611183725,
+          "obliquity": 105.18
         },
         "orbit": {
           "period": 0.001030573411,
@@ -2156,8 +3597,10 @@
           "inclination": 0.104,
           "ascendingNode": 92.308,
           "argOfPeriapsis": 165.041,
+          "meanAnomaly": 78.064,
           "longOfPeriapsis": 257.349
-        }
+        },
+        "radius": 21.4
       }
     },
     {
@@ -2167,11 +3610,11 @@
           "Uranus VIII",
           "S|1986 U 9"
         ],
-        "radius": 25.7,
         "parentBody": "Uranus",
         "body": {
           "albedo": 0.07,
-          "rotationPeriod": -10.429851405182735
+          "rotationPeriod": -0.434577141882614,
+          "obliquity": 105.18
         },
         "orbit": {
           "period": 0.001189832938,
@@ -2180,8 +3623,10 @@
           "inclination": 0.193,
           "ascendingNode": 242.85,
           "argOfPeriapsis": 24.255,
+          "meanAnomaly": 324.54,
           "longOfPeriapsis": 267.105
-        }
+        },
+        "radius": 25.7
       }
     },
     {
@@ -2191,11 +3636,11 @@
           "Uranus IX",
           "S|1986 U 3"
         ],
-        "radius": 39.8,
         "parentBody": "Uranus",
         "body": {
           "albedo": 0.07,
-          "rotationPeriod": -11.125681633428075
+          "rotationPeriod": -0.4635700680595031,
+          "obliquity": 105.18
         },
         "orbit": {
           "period": 0.001269212594,
@@ -2204,8 +3649,10 @@
           "inclination": 0.006,
           "ascendingNode": 112.262,
           "argOfPeriapsis": 184.425,
+          "meanAnomaly": 3.135,
           "longOfPeriapsis": 296.687
-        }
+        },
+        "radius": 39.8
       }
     },
     {
@@ -2215,11 +3662,11 @@
           "Uranus X",
           "S|1986 U 6"
         ],
-        "radius": 32.0,
         "parentBody": "Uranus",
         "body": {
           "albedo": 0.07,
-          "rotationPeriod": -11.367625782506275
+          "rotationPeriod": -0.4736510742710948,
+          "obliquity": 105.18
         },
         "orbit": {
           "period": 0.001296813457,
@@ -2228,8 +3675,10 @@
           "inclination": 0.113,
           "ascendingNode": 133.615,
           "argOfPeriapsis": 141.145,
+          "meanAnomaly": 357.199,
           "longOfPeriapsis": 274.76
-        }
+        },
+        "radius": 32.0
       }
     },
     {
@@ -2239,11 +3688,11 @@
           "Uranus XI",
           "S|1986 U 2"
         ],
-        "radius": 46.8,
         "parentBody": "Uranus",
         "body": {
           "albedo": 0.07,
-          "rotationPeriod": -11.833584206688142
+          "rotationPeriod": -0.49306600861200595,
+          "obliquity": 105.18
         },
         "orbit": {
           "period": 0.001349969965,
@@ -2252,8 +3701,10 @@
           "inclination": 0.065,
           "ascendingNode": 332.582,
           "argOfPeriapsis": 32.168,
-          "longOfPeriapsis": 4.75
-        }
+          "meanAnomaly": 51.564,
+          "longOfPeriapsis": 364.75
+        },
+        "radius": 46.8
       }
     },
     {
@@ -2263,11 +3714,11 @@
           "Uranus XII",
           "S|1986 U 1"
         ],
-        "radius": 67.6,
         "parentBody": "Uranus",
         "body": {
           "albedo": 0.07,
-          "rotationPeriod": -12.316700219387089
+          "rotationPeriod": -0.513195842474462,
+          "obliquity": 105.18
         },
         "orbit": {
           "period": 0.001405083531,
@@ -2276,8 +3727,10 @@
           "inclination": 0.059,
           "ascendingNode": 308.717,
           "argOfPeriapsis": 24.52,
+          "meanAnomaly": 356.184,
           "longOfPeriapsis": 333.23699999999997
-        }
+        },
+        "radius": 67.6
       }
     },
     {
@@ -2287,11 +3740,11 @@
           "Uranus XIII",
           "S|1986 U 4"
         ],
-        "radius": 36.0,
         "parentBody": "Uranus",
         "body": {
           "albedo": 0.07,
-          "rotationPeriod": -13.403013989740234
+          "rotationPeriod": -0.5584589162391764,
+          "obliquity": 105.18
         },
         "orbit": {
           "period": 0.001529009791,
@@ -2300,8 +3753,10 @@
           "inclination": 0.279,
           "ascendingNode": 206.572,
           "argOfPeriapsis": 180.858,
-          "longOfPeriapsis": 27.430000000000007
-        }
+          "meanAnomaly": 9.041,
+          "longOfPeriapsis": 387.43
+        },
+        "radius": 36.0
       }
     },
     {
@@ -2311,11 +3766,11 @@
           "Uranus XIV",
           "S|1986 U 5"
         ],
-        "radius": 40.3,
         "parentBody": "Uranus",
         "body": {
           "albedo": 0.07,
-          "rotationPeriod": -14.964593745218616
+          "rotationPeriod": -0.623524739384109,
+          "obliquity": 105.18
         },
         "orbit": {
           "period": 0.001707154321,
@@ -2324,8 +3779,10 @@
           "inclination": 0.031,
           "ascendingNode": 277.82,
           "argOfPeriapsis": 119.908,
-          "longOfPeriapsis": 37.72800000000001
-        }
+          "meanAnomaly": 6.896,
+          "longOfPeriapsis": 397.728
+        },
+        "radius": 40.3
       }
     },
     {
@@ -2335,11 +3792,11 @@
           "Uranus XV",
           "S|1985 U 1"
         ],
-        "radius": 81.0,
         "parentBody": "Uranus",
         "body": {
           "albedo": 0.07,
-          "rotationPeriod": -18.28397028517083
+          "rotationPeriod": -0.7618320952154513,
+          "obliquity": 105.18
         },
         "orbit": {
           "period": 0.002085827158,
@@ -2348,8 +3805,10 @@
           "inclination": 0.319,
           "ascendingNode": 214.713,
           "argOfPeriapsis": 33.582,
+          "meanAnomaly": 12.99,
           "longOfPeriapsis": 248.295
-        }
+        },
+        "radius": 81.0
       }
     },
     {
@@ -2359,7 +3818,6 @@
           "Uranus XVI",
           "S|1997 U 1"
         ],
-        "radius": 49.0,
         "parentBody": "Uranus",
         "body": {
           "albedo": 0.07
@@ -2371,8 +3829,10 @@
           "inclination": 42.491,
           "ascendingNode": 7.152,
           "argOfPeriapsis": 328.345,
+          "meanAnomaly": 26.273,
           "longOfPeriapsis": 335.497
-        }
+        },
+        "radius": 49.0
       }
     },
     {
@@ -2382,7 +3842,6 @@
           "Uranus XVII",
           "S|1997 U 2"
         ],
-        "radius": 95.0,
         "parentBody": "Uranus",
         "body": {
           "albedo": 0.07
@@ -2394,8 +3853,10 @@
           "inclination": 82.19,
           "ascendingNode": 27.683,
           "argOfPeriapsis": 285.483,
+          "meanAnomaly": 261.598,
           "longOfPeriapsis": 313.166
-        }
+        },
+        "radius": 95.0
       }
     },
     {
@@ -2405,7 +3866,6 @@
           "Uranus XVIII",
           "S|1999 U 3"
         ],
-        "radius": 15.0,
         "parentBody": "Uranus",
         "body": {
           "albedo": 0.07
@@ -2417,8 +3877,10 @@
           "inclination": 112.068,
           "ascendingNode": 16.124,
           "argOfPeriapsis": 21.033,
+          "meanAnomaly": 247.473,
           "longOfPeriapsis": 37.157
-        }
+        },
+        "radius": 15.0
       }
     },
     {
@@ -2428,7 +3890,6 @@
           "Uranus XIX",
           "S|1999 U 1"
         ],
-        "radius": 15.0,
         "parentBody": "Uranus",
         "body": {
           "albedo": 0.07
@@ -2440,8 +3901,10 @@
           "inclination": 79.227,
           "ascendingNode": 33.869,
           "argOfPeriapsis": 275.958,
+          "meanAnomaly": 173.109,
           "longOfPeriapsis": 309.827
-        }
+        },
+        "radius": 15.0
       }
     },
     {
@@ -2451,7 +3914,6 @@
           "Uranus XX",
           "S|1999 U 2"
         ],
-        "radius": 10.0,
         "parentBody": "Uranus",
         "body": {
           "albedo": 0.07
@@ -2463,8 +3925,10 @@
           "inclination": 47.483,
           "ascendingNode": 18.306,
           "argOfPeriapsis": 358.81,
-          "longOfPeriapsis": 17.115999999999985
-        }
+          "meanAnomaly": 255.381,
+          "longOfPeriapsis": 377.116
+        },
+        "radius": 10.0
       }
     },
     {
@@ -2474,7 +3938,6 @@
           "Uranus XXI",
           "S|2001 U 1"
         ],
-        "radius": 5.0,
         "parentBody": "Uranus",
         "body": {
           "albedo": 0.07
@@ -2486,8 +3949,10 @@
           "inclination": 70.509,
           "ascendingNode": 7.574,
           "argOfPeriapsis": 128.839,
+          "meanAnomaly": 182.392,
           "longOfPeriapsis": 136.413
-        }
+        },
+        "radius": 5.0
       }
     },
     {
@@ -2497,7 +3962,6 @@
           "Uranus XXII",
           "S|2001 U 3"
         ],
-        "radius": 6.0,
         "parentBody": "Uranus",
         "body": {
           "albedo": 0.07
@@ -2509,8 +3973,10 @@
           "inclination": 70.11,
           "ascendingNode": 329.112,
           "argOfPeriapsis": 195.118,
-          "longOfPeriapsis": 164.23000000000002
-        }
+          "meanAnomaly": 20.667,
+          "longOfPeriapsis": 524.23
+        },
+        "radius": 6.0
       }
     },
     {
@@ -2520,7 +3986,6 @@
           "Uranus XXIII",
           "S|2003 U 3"
         ],
-        "radius": 5.5,
         "parentBody": "Uranus",
         "body": {
           "albedo": 0.07
@@ -2532,8 +3997,10 @@
           "inclination": 137.282,
           "ascendingNode": 217.574,
           "argOfPeriapsis": 128.558,
+          "meanAnomaly": 325.27,
           "longOfPeriapsis": 346.132
-        }
+        },
+        "radius": 5.5
       }
     },
     {
@@ -2543,7 +4010,6 @@
           "Uranus XXIV",
           "S|2001 U 2"
         ],
-        "radius": 6.0,
         "parentBody": "Uranus",
         "body": {
           "albedo": 0.07
@@ -2555,8 +4021,10 @@
           "inclination": 75.339,
           "ascendingNode": 10.695,
           "argOfPeriapsis": 109.325,
+          "meanAnomaly": 25.166,
           "longOfPeriapsis": 120.02000000000001
-        }
+        },
+        "radius": 6.0
       }
     },
     {
@@ -2566,7 +4034,6 @@
           "Uranus XXV",
           "S|1986 U 10"
         ],
-        "radius": 15.0,
         "parentBody": "Uranus",
         "body": {
           "albedo": 0.08
@@ -2578,8 +4045,10 @@
           "inclination": 0.0,
           "ascendingNode": 277.82,
           "argOfPeriapsis": 119.908,
-          "longOfPeriapsis": 37.72800000000001
-        }
+          "meanAnomaly": 6.896,
+          "longOfPeriapsis": 397.728
+        },
+        "radius": 15.0
       }
     },
     {
@@ -2589,7 +4058,6 @@
           "Uranus XXVI",
           "S|2003 U 1"
         ],
-        "radius": 24.0,
         "parentBody": "Uranus",
         "body": {
           "albedo": 0.103
@@ -2599,7 +4067,8 @@
           "semiMajorAxis": 0.00065332424,
           "eccentricity": 0.0025,
           "inclination": 0.1335
-        }
+        },
+        "radius": 24.0
       }
     },
     {
@@ -2609,8 +4078,6 @@
           "Uranus XXVII",
           "S|2003 U 2"
         ],
-        "mass": 6.36e-10,
-        "radius": 9.0,
         "parentBody": "Uranus",
         "body": {
           "albedo": 0.07
@@ -2620,25 +4087,9 @@
           "semiMajorAxis": 0.0004972793754,
           "eccentricity": 0.0013,
           "inclination": 0.1
-        }
-      }
-    },
-    {
-      "dwarfmoon": {
-        "names": [
-          "S|2023 U 1"
-        ],
-        "radius": 4.0,
-        "parentBody": "Uranus",
-        "orbit": {
-          "period": 1.86,
-          "semiMajorAxis": 0.0533295,
-          "eccentricity": 0.1866847,
-          "inclination": 141.89388,
-          "ascendingNode": 265.84108,
-          "argOfPeriapsis": 142.16078,
-          "longOfPeriapsis": 48.001859999999965
-        }
+        },
+        "radius": 9.0,
+        "mass": 6.36e-10
       }
     },
     {
@@ -2648,11 +4099,11 @@
           "Neptune III",
           "S|1989 N 6"
         ],
-        "radius": 29.0,
         "parentBody": "Neptune",
         "body": {
           "albedo": 0.06,
-          "rotationPeriod": 7.065495799776225
+          "rotationPeriod": 0.2943956583240094,
+          "obliquity": 46.64
         },
         "orbit": {
           "period": 0.0008060295333,
@@ -2661,8 +4112,10 @@
           "inclination": 5.167,
           "ascendingNode": 8.998,
           "argOfPeriapsis": 30.956,
+          "meanAnomaly": 7.538,
           "longOfPeriapsis": 39.954
-        }
+        },
+        "radius": 29.0
       }
     },
     {
@@ -2672,21 +4125,23 @@
           "Neptune IV",
           "S|1989 N 5"
         ],
-        "radius": 40.0,
         "parentBody": "Neptune",
         "body": {
           "albedo": 0.06,
-          "rotationPeriod": 7.475629181510703
+          "rotationPeriod": 0.3114845492296126,
+          "obliquity": 46.55
         },
         "orbit": {
           "period": 0.0008528176646,
-          "semiMajorAxis": 0.000334725935,
+          "semiMajorAxis": 0.0003347259358,
           "eccentricity": 0.0002,
           "inclination": 0.381,
           "ascendingNode": 353.39,
           "argOfPeriapsis": 274.85,
-          "longOfPeriapsis": 268.24
-        }
+          "meanAnomaly": 350.88,
+          "longOfPeriapsis": 628.24
+        },
+        "radius": 40.0
       }
     },
     {
@@ -2696,11 +4151,11 @@
           "Neptune V",
           "S|1989 N 3"
         ],
-        "radius": 74.0,
         "parentBody": "Neptune",
         "body": {
           "albedo": 0.059,
-          "rotationPeriod": 8.031724148762322
+          "rotationPeriod": 0.3346551728650968,
+          "obliquity": 46.55
         },
         "orbit": {
           "period": 0.000916255022,
@@ -2709,8 +4164,10 @@
           "inclination": 0.589,
           "ascendingNode": 334.279,
           "argOfPeriapsis": 133.891,
-          "longOfPeriapsis": 108.16999999999996
-        }
+          "meanAnomaly": 349.678,
+          "longOfPeriapsis": 468.16999999999996
+        },
+        "radius": 74.0
       }
     },
     {
@@ -2720,21 +4177,23 @@
           "Neptune VI",
           "S|1989 N 4"
         ],
-        "radius": 79.0,
         "parentBody": "Neptune",
         "body": {
           "albedo": 0.063,
-          "rotationPeriod": 10.28988207259928
+          "rotationPeriod": 0.42874508635830333,
+          "obliquity": 46.57
         },
         "orbit": {
           "period": 0.001173864904,
           "semiMajorAxis": 0.0004141243315,
-          "eccentricity": 0,
+          "eccentricity": 0.0,
           "inclination": 0.565,
           "ascendingNode": 327.929,
           "argOfPeriapsis": 89.06,
-          "longOfPeriapsis": 56.988999999999976
-        }
+          "meanAnomaly": 2.357,
+          "longOfPeriapsis": 416.989
+        },
+        "radius": 79.0
       }
     },
     {
@@ -2744,12 +4203,11 @@
           "Neptune VII",
           "S|1981 N 1"
         ],
-        "mass": 8.2e-07,
-        "radius": 98.0,
         "parentBody": "Neptune",
         "body": {
           "albedo": 0.056,
-          "rotationPeriod": 13.311692650173999
+          "rotationPeriod": 0.5546538604239166,
+          "obliquity": 46.59
         },
         "orbit": {
           "period": 0.00151859232,
@@ -2758,8 +4216,11 @@
           "inclination": 0.744,
           "ascendingNode": 324.857,
           "argOfPeriapsis": 215.004,
-          "longOfPeriapsis": 179.861
-        }
+          "meanAnomaly": 157.543,
+          "longOfPeriapsis": 539.861
+        },
+        "radius": 98.0,
+        "mass": 8.2e-07
       }
     },
     {
@@ -2769,7 +4230,6 @@
           "Neptune IX",
           "S|2002 N 1"
         ],
-        "radius": 24.0,
         "parentBody": "Neptune",
         "body": {
           "albedo": 0.155
@@ -2781,8 +4241,10 @@
           "inclination": 139.094,
           "ascendingNode": 163.249,
           "argOfPeriapsis": 148.454,
+          "meanAnomaly": 230.015,
           "longOfPeriapsis": 311.703
-        }
+        },
+        "radius": 24.0
       }
     },
     {
@@ -2792,7 +4254,6 @@
           "Neptune X",
           "S|2003 N 1"
         ],
-        "radius": 14.0,
         "parentBody": "Neptune",
         "body": {
           "albedo": 0.155
@@ -2804,8 +4265,10 @@
           "inclination": 118.763,
           "ascendingNode": 288.194,
           "argOfPeriapsis": 161.232,
-          "longOfPeriapsis": 89.42600000000004
-        }
+          "meanAnomaly": 182.071,
+          "longOfPeriapsis": 449.42600000000004
+        },
+        "radius": 14.0
       }
     },
     {
@@ -2815,7 +4278,6 @@
           "Neptune XI",
           "S|2002 N 2"
         ],
-        "radius": 24.0,
         "parentBody": "Neptune",
         "body": {
           "albedo": 0.155
@@ -2827,8 +4289,10 @@
           "inclination": 26.351,
           "ascendingNode": 23.961,
           "argOfPeriapsis": 47.566,
+          "meanAnomaly": 14.56,
           "longOfPeriapsis": 71.527
-        }
+        },
+        "radius": 24.0
       }
     },
     {
@@ -2838,7 +4302,6 @@
           "Neptune XII",
           "S|2002 N 3"
         ],
-        "radius": 24.0,
         "parentBody": "Neptune",
         "body": {
           "albedo": 0.155
@@ -2850,8 +4313,10 @@
           "inclination": 9.933,
           "ascendingNode": 13.595,
           "argOfPeriapsis": 122.752,
+          "meanAnomaly": 154.007,
           "longOfPeriapsis": 136.347
-        }
+        },
+        "radius": 24.0
       }
     },
     {
@@ -2861,7 +4326,6 @@
           "Neptune XIII",
           "S|2002 N 4"
         ],
-        "radius": 30.0,
         "parentBody": "Neptune",
         "body": {
           "albedo": 0.155
@@ -2873,8 +4337,10 @@
           "inclination": 113.569,
           "ascendingNode": 351.648,
           "argOfPeriapsis": 77.981,
-          "longOfPeriapsis": 69.62900000000002
-        }
+          "meanAnomaly": 216.988,
+          "longOfPeriapsis": 429.629
+        },
+        "radius": 30.0
       }
     },
     {
@@ -2884,49 +4350,14 @@
           "Neptune XIV",
           "S|2004 N 1"
         ],
-        "radius": 17.4,
         "parentBody": "Neptune",
-        "mass": 5e+16,
         "orbit": {
+          "period": 0.9362,
+          "semiMajorAxis": 0.0007037733860361286,
           "eccentricity": 0.00048,
           "inclination": 0.0641
-        }
-      }
-    },
-    {
-      "dwarfmoon": {
-        "names": [
-          "S|2021 N 1"
-        ],
-        "radius": 7.0,
-        "parentBody": "Neptune",
-        "orbit": {
-          "period": 27.822,
-          "semiMajorAxis": 0.3383978,
-          "eccentricity": 0.4408718,
-          "inclination": 134.45902,
-          "ascendingNode": 264.05033,
-          "argOfPeriapsis": 100.79672,
-          "longOfPeriapsis": 4.847049999999967
-        }
-      }
-    },
-    {
-      "dwarfmoon": {
-        "names": [
-          "S|2002 N 5"
-        ],
-        "radius": 11.5,
-        "parentBody": "Neptune",
-        "orbit": {
-          "period": 8.6,
-          "semiMajorAxis": 0.156187,
-          "eccentricity": 0.5476863,
-          "inclination": 42.13349,
-          "ascendingNode": 274.15082,
-          "argOfPeriapsis": 62.72961,
-          "longOfPeriapsis": 336.88043
-        }
+        },
+        "radius": 17.4
       }
     }
   ]

@@ -38,6 +38,11 @@ public class Config
         public final ModConfigSpec.BooleanValue drawEclipticPlane;
         public final ModConfigSpec.BooleanValue drawCelestialEquator;
         public final ModConfigSpec.BooleanValue drawGalacticPlane;
+        public final ModConfigSpec.ConfigValue<String> manualObserverBody;
+        public final ModConfigSpec.BooleanValue enableManualSeason;
+        public final ModConfigSpec.DoubleValue manualSeasonPercentage;
+        public final ModConfigSpec.BooleanValue enableManualTimeOfDay;
+        public final ModConfigSpec.DoubleValue manualTimeOfDayPercentage;
 
         public final ModConfigSpec.BooleanValue enableLensFlare;
         public final ModConfigSpec.DoubleValue lensFlareIntensity;
@@ -237,6 +242,22 @@ public class Config
                     "Smaller values compress the universe into a tighter space.\n"
                 )
                 .defineInRange("auScale", 1000.0D, 1.0D, Double.MAX_VALUE);
+            manualObserverBody = builder.apply("manualObserverBody")
+                .comment("Manually override the observer body. Leave empty to use the dimension name.")
+                .define("manualObserverBody", "");
+            enableManualSeason = builder.apply("enableManualSeason")
+                .comment("If true, seasons are manually controlled using manualSeasonPercentage instead of orbital position.")
+                .define("enableManualSeason", false);
+            manualSeasonPercentage = builder.apply("manualSeasonPercentage")
+                .comment("Manual season control as a percentage of the year (0.0 = winter solstice, 0.25 = spring equinox, 0.5 = summer solstice, 0.75 = autumn equinox).")
+                .defineInRange("manualSeasonPercentage", 0.0D, 0.0D, 1.0D);
+            enableManualTimeOfDay = builder.apply("enableManualTimeOfDay")
+                .comment("If true, time of day is manually controlled using manualTimeOfDayPercentage instead of world time.")
+                .define("enableManualTimeOfDay", false);
+            manualTimeOfDayPercentage = builder.apply("manualTimeOfDayPercentage")
+                .comment("Manual time of day as a percentage (0.0 = midnight, 0.25 = sunrise, 0.5 = noon, 0.75 = sunset).")
+                .defineInRange("manualTimeOfDayPercentage", 0.0D, 0.0D, 1.0D);
+
 
             drawEclipticPlane = builder.apply("drawEclipticPlane").comment("If the ecliptic plane of the current observing body should be rendered.").define("drawEclipticPlane", false);
             drawCelestialEquator = builder.apply("drawCelestialEquator").comment("If the celestial equator plane of the current observing body should be rendered.").define("drawCelestialEquator", false);

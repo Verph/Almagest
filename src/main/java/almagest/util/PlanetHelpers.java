@@ -638,6 +638,31 @@ public class PlanetHelpers
      */
     public static double getTimeOfDay(double t, double r)
     {
+        return getTimeOfDay(t, r, false);
+    }
+
+    /**
+     * Calculates the time of day as an angle in radians.
+     * Supports manual override via config percentage (0.0–1.0).
+     *
+     * @param t The time.
+     * @param r The duration of a day (same units as t).
+     * @param overrideEnabled Whether manual override should be used.
+     * @return The time of day in radians.
+     */
+    public static double getTimeOfDay(double t, double r, boolean overrideEnabled)
+    {
+        if (overrideEnabled)
+        {
+            double pct = Config.COMMON.manualTimeOfDayPercentage.get();
+            pct = Mth.clamp(pct, 0.0D, 1.0D);
+
+            double degrees = pct * 360.0D + 90.0D;
+            double radians = Math.toRadians(degrees);
+
+            return Double.isNaN(radians) ? 0.0D : radians;
+        }
+
         if (r <= 0.0D) return 0.0D;
 
         double phase = AHelpers.modulo(t, r) / r;
@@ -692,10 +717,50 @@ public class PlanetHelpers
      */
     public static double getSeason(CelestialObject object, long time)
     {
+        return getSeason(object, time, false);
+    }
+
+    /**
+     * Calculates the seasonal obliquity/rotation.
+     * Supports manual override via config percentage (0.0–1.0).
+     *
+     * @param object The celestial body.
+     * @param time   The time.
+     * @return The seasonal rotation.
+     */
+    public static double getSeason(CelestialObject object, long time, boolean overrideEnabled)
+    {
         Season season = object.body.getSeason();
         double period = object.period;
-        double offset = season.getWinterSolsticeOffset() > 0.0D ? AHelpers.modulo(season.getWinterSolsticeOffset() / period, period) : 0.0D;
-        double seasonOffset = Math.toRadians(getObliquityVariation(object, season, time, period) * Math.cos((object.elapsedTime / period) * 2.0D * Math.PI + offset + season.getSeasonOffset() + Math.PI) * Config.COMMON.planetSeasonalIntensity.get()); // plus pi or no pi? Breaks some things!
+
+        if (overrideEnabled)
+        {
+            double overridePct = Config.COMMON.manualSeasonPercentage.get();
+            double phase = overridePct * (2.0D * Math.PI);
+            double obVar = getObliquityVariation(object, season, time, period);
+            double seasonOffset = Math.toRadians(
+                obVar *
+                Math.cos(phase + season.getSeasonOffset() + Math.PI) *
+                Config.COMMON.planetSeasonalIntensity.get()
+            );
+            return !Double.isNaN(seasonOffset) ? seasonOffset : 0.0D;
+        }
+
+        double offset = season.getWinterSolsticeOffset() > 0.0D
+            ? AHelpers.modulo(season.getWinterSolsticeOffset() / period, period)
+            : 0.0D;
+
+        double seasonOffset = Math.toRadians(
+            getObliquityVariation(object, season, time, period) *
+            Math.cos(
+                (object.elapsedTime / period) * 2.0D * Math.PI +
+                offset +
+                season.getSeasonOffset() +
+                Math.PI
+            ) *
+            Config.COMMON.planetSeasonalIntensity.get()
+        );
+
         return !Double.isNaN(seasonOffset) ? seasonOffset : 0.0D;
     }
 

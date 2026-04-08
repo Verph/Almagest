@@ -54,7 +54,49 @@ public class Constellations
         this.name = constellation.getName();
         this.alpha = Config.COMMON.drawAllConstellations.get() ? 1.0F : 0.0F;
         this.color = constellation.getColor();
-        this.pairs = constellation.getStarPairs();
+
+        this.pairs = new ArrayList<>();
+        for (int i = 0; i < constellation.getPairs().size(); i++)
+        {
+            this.pairs.add(new ArrayList<>(2));
+        }
+    }
+
+    public void setStarPairs(List<List<Star>> pairs)
+    {
+        this.pairs = pairs;
+    }
+
+    public List<List<Star>> getStarPairs()
+    {
+        return this.pairs;
+    }
+
+    public void addStarToPairs(Star star)
+    {
+        List<List<String>> namePairs = constellation.getPairs();
+
+        while (pairs.size() < namePairs.size())
+        {
+            pairs.add(new ArrayList<>(2));
+        }
+
+        for (int i = 0; i < namePairs.size(); i++)
+        {
+            List<String> pair = namePairs.get(i);
+            List<Star> starList = pairs.get(i);
+
+            for (String name : pair)
+            {
+                if (star.star.getAllNames().stream().anyMatch(n -> n.equalsIgnoreCase(name)))
+                {
+                    if (starList.size() < 2 && !starList.contains(star))
+                    {
+                        starList.add(star);
+                    }
+                }
+            }
+        }
     }
 
     public void tick(boolean isFocused)
@@ -80,11 +122,6 @@ public class Constellations
                 renderSegments.add(new LineSegment(vec1, length, rotation));
             }
         }
-    }
-
-    public void setStarPairs(List<List<Star>> pairs)
-    {
-        this.pairs = pairs;
     }
 
     public void render(BufferBuilder builder, Camera camera, float partialTicks)

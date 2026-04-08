@@ -87,24 +87,22 @@ public class RenderHelpers
         RenderSystem.enableBlend();
         RenderSystem.setShaderTexture(0, obj.ringTexture);
 
-        Vec3 p = obj.getPos();
-        poseStack.translate((float)p.x, (float)p.y, (float)p.z);
-        poseStack.mulPose(obj.getOrientationMatrix());
+        poseStack.mulPose(obj.getTransformationMatrix());
 
         Pose pose = poseStack.last();
 
-        float minRadius = (float) obj.body.getRing().getInnerRadius();
-        float maxRadius = (float) obj.body.getRing().getOuterRadius();
-        int segments = 32;
+        double sizeMul = obj.body.getDiameterFactor() * Config.COMMON.universeScale.get();
+        float minRadius = (float) (obj.body.getRing().getInnerRadius() * sizeMul);
+        float maxRadius = (float) (obj.body.getRing().getOuterRadius() * sizeMul);
 
-        int r = 255;
-        int g = 255;
-        int b = 255;
-        int a = 255;
+        int segments = 64;
+
+        float cx = 0.5f, cy = 0.5f, cz = 0.5f;
+        int r = 255, g = 255, b = 255, a = 255;
 
         double step = 2.0 * Math.PI / segments;
-        float cosStep = (float) Math.cos(step);
-        float sinStep = (float) Math.sin(step);
+        float cosStep = (float)Math.cos(step);
+        float sinStep = (float)Math.sin(step);
 
         float xInner = minRadius;
         float zInner = 0f;
@@ -119,10 +117,34 @@ public class RenderHelpers
             float xOuter2 = xOuter * cosStep - zOuter * sinStep;
             float zOuter2 = xOuter * sinStep + zOuter * cosStep;
 
-            renderTexturedVertex(pose, builder, r, g, b, a, xInner, 0f, zInner, LightTexture.FULL_BRIGHT, 0f, 1f, 0f, 1f, 0f);
-            renderTexturedVertex(pose, builder, r, g, b, a, xInner2, 0f, zInner2, LightTexture.FULL_BRIGHT, 0f, 0f, 0f, 1f, 0f);
-            renderTexturedVertex(pose, builder, r, g, b, a, xOuter2, 0f, zOuter2, LightTexture.FULL_BRIGHT, 1f, 0f, 0f, 1f, 0f);
-            renderTexturedVertex(pose, builder, r, g, b, a, xOuter, 0f, zOuter, LightTexture.FULL_BRIGHT, 1f, 1f, 0f, 1f, 0f);
+            renderTexturedVertex(pose, builder, r,g,b,a, cx + xInner,  cy, cz + zInner,  LightTexture.FULL_BRIGHT, 0f,1f,0f,1f,0f);
+            renderTexturedVertex(pose, builder, r,g,b,a, cx + xInner2, cy, cz + zInner2, LightTexture.FULL_BRIGHT, 0f,0f,0f,1f,0f);
+            renderTexturedVertex(pose, builder, r,g,b,a, cx + xOuter2, cy, cz + zOuter2, LightTexture.FULL_BRIGHT, 1f,0f,0f,1f,0f);
+            renderTexturedVertex(pose, builder, r,g,b,a, cx + xOuter,  cy, cz + zOuter,  LightTexture.FULL_BRIGHT, 1f,1f,0f,1f,0f);
+
+            xInner = xInner2;
+            zInner = zInner2;
+            xOuter = xOuter2;
+            zOuter = zOuter2;
+        }
+
+        xInner = minRadius;
+        zInner = 0f;
+        xOuter = maxRadius;
+        zOuter = 0f;
+
+        for (int i = 0; i < segments; i++)
+        {
+            float xInner2 = xInner * cosStep - zInner * sinStep;
+            float zInner2 = xInner * sinStep + zInner * cosStep;
+
+            float xOuter2 = xOuter * cosStep - zOuter * sinStep;
+            float zOuter2 = xOuter * sinStep + zOuter * cosStep;
+
+            renderTexturedVertex(pose, builder, r,g,b,a, cx + xOuter,  cy, cz + zOuter,  LightTexture.FULL_BRIGHT, 1f,1f,0f,1f,0f);
+            renderTexturedVertex(pose, builder, r,g,b,a, cx + xOuter2, cy, cz + zOuter2, LightTexture.FULL_BRIGHT, 1f,0f,0f,1f,0f);
+            renderTexturedVertex(pose, builder, r,g,b,a, cx + xInner2, cy, cz + zInner2, LightTexture.FULL_BRIGHT, 0f,0f,0f,1f,0f);
+            renderTexturedVertex(pose, builder, r,g,b,a, cx + xInner,  cy, cz + zInner,  LightTexture.FULL_BRIGHT, 0f,1f,0f,1f,0f);
 
             xInner = xInner2;
             zInner = zInner2;
@@ -190,9 +212,7 @@ public class RenderHelpers
         RenderSystem.applyModelViewMatrix();
         RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
 
-        Vec3 p = object.getPos();
-        poseStack.translate((float)p.x, (float)p.y, (float)p.z);
-        poseStack.mulPose(object.getOrientationMatrix());
+        poseStack.mulPose(object.getTransformationMatrix());
 
         renderBlockModel(builder, object.getBlockModel(), poseStack, LightTexture.FULL_BRIGHT, RenderType.cutout(), object.getColor());
 
